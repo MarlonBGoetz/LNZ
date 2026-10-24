@@ -45,6 +45,13 @@ API_KEY_ENV = "RUNPOD_API_KEY"
 REST_BASE = "https://rest.runpod.io/v1"
 GRAPHQL_URL = "https://api.runpod.io/graphql"
 
+# Runpod sits behind Cloudflare, which blocks urllib's default
+# ``User-Agent: Python-urllib/3.x`` with a 403 ``error code: 1010`` (a
+# client-signature block). Sending a curl-like User-Agent (the exact request
+# curl makes and that returns 200) avoids the block. Both transport methods
+# (:meth:`RealBackend._request` / :meth:`RealBackend._graphql`) must set it.
+USER_AGENT = "curl/8.4.0"
+
 # The Pod name prefix and env var that identify an overwatch-owned Pod. The
 # real Runpod Pod response has NO ``created_by`` field, so ownership is derived
 # from the ``ow-`` name prefix OR an ``OVERWATCH_RUN`` env var.
@@ -355,6 +362,8 @@ class RealBackend(Backend):
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT,
         }
         req = urllib.request.Request(url, data=data, headers=headers, method=method)
         with urllib.request.urlopen(req, timeout=30.0) as resp:
@@ -370,7 +379,11 @@ class RealBackend(Backend):
         """
         url = f"{GRAPHQL_URL}?api_key={self.api_key}"
         data = json.dumps({"query": query}).encode("utf-8")
-        headers = {"Content-Type": "application/json"}
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT,
+        }
         req = urllib.request.Request(url, data=data, headers=headers, method="POST")
         with urllib.request.urlopen(req, timeout=30.0) as resp:
             payload = resp.read().decode("utf-8")
