@@ -23,6 +23,8 @@ dev = ["pytest"]
 [project.scripts]
 overwatch = "overwatch.cli:main"
 
-[tool.setuptools]
-# Only the `overwatch` package is distributed; `tests` is not packaged.
-packages = ["overwatch", "overwatch.sidecar"]
+[tool.setuptools.packages.find]
+# Distribute every real `overwatch` subpackage (overwatch, overwatch.sidecar,
+# overwatch.datagen) via automatic discovery so new subpackages ship too.
+# `tests` is intentionally not matched and stays unpackaged.
+include = ["overwatch*"]

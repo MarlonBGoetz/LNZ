@@ -75,5 +75,26 @@ def test_graphql_sets_non_default_user_agent(capture_request):
     assert ua == runpod_client.USER_AGENT
 
 
+def test_graphql_sends_key_via_auth_header_not_url(capture_request):
+    """The GraphQL key must travel in an Authorization: Bearer header only.
+
+    Regression guard: the key must never be appended to the URL as a
+    ``?api_key=`` query string, where it would leak into logs/referrers.
+    """
+    backend = runpod_client.RealBackend("secret-key")
+    backend._graphql("{ gpuTypes { id } }")
+
+    req = capture_request["req"]
+    # (a) key delivered via the Bearer header, exactly like REST _request.
+    assert req.get_header("Authorization") == "Bearer secret-key"
+    # (b) key is absent from the URL; no query string smuggling the key.
+    assert "secret-key" not in req.full_url
+    assert "?api_key=" not in req.full_url
+    assert req.full_url == runpod_client.GRAPHQL_URL
+    # Content negotiation headers preserved alongside the auth change.
+    assert req.get_header("Content-type") == "application/json"
+    assert req.get_header("Accept") == "application/json"
+
+
 def test_user_agent_constant_is_not_default():
     assert "python-urllib" not in runpod_client.USER_AGENT.lower()

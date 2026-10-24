@@ -383,9 +383,10 @@ class RealBackend(Backend):
 
         Overridable so tests can inject a fake transport.
         """
-        url = f"{GRAPHQL_URL}?api_key={self.api_key}"
+        url = GRAPHQL_URL
         data = json.dumps({"query": query}).encode("utf-8")
         headers = {
+            "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
             "Accept": "application/json",
             "User-Agent": USER_AGENT,
