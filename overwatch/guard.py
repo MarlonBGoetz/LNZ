@@ -204,7 +204,16 @@ def main(argv: Optional[list] = None) -> int:
 
     Returns ``0`` to allow the call and ``1`` to block it (writing the reason to
     stderr). Never raises for an ordinary block.
+
+    ``--require-smoke-passed`` makes the smoke-test requirement explicit for
+    ``run_launch`` / ``run_restart`` events: the call is blocked unless the
+    event carries a truthy ``smoke_passed`` (the ``guard-launch`` hook passes
+    this flag). :func:`check` already enforces the same rule for those tools, so
+    the flag tightens intent rather than loosening it.
     """
+    argv = list(sys.argv[1:] if argv is None else argv)
+    require_smoke = "--require-smoke-passed" in argv
+
     raw = sys.stdin.read()
     try:
         event = json.loads(raw) if raw.strip() else {}
@@ -216,6 +225,17 @@ def main(argv: Optional[list] = None) -> int:
     except GuardError as exc:
         sys.stderr.write(f"BLOCKED [{exc.category}]: {exc.message}\n")
         return 1
+
+    if require_smoke:
+        tool = event.get("tool") or event.get("name") or ""
+        if tool in ("run_launch", "run_restart"):
+            args = event.get("args") or event.get("arguments") or event.get("input") or {}
+            if not isinstance(args, dict) or not _smoke_passed(args):
+                sys.stderr.write(
+                    f"BLOCKED [{NO_SMOKE}]: --require-smoke-passed: "
+                    f"{tool} requires a passed smoke test\n"
+                )
+                return 1
     return 0
 
 

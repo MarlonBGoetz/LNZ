@@ -11,7 +11,7 @@ import os
 
 import pytest
 
-from overwatch import runpod_client, tools
+from overwatch import guard, runpod_client, tools
 from overwatch import state as state_mod
 from overwatch.datagen import driver
 from tests.fixtures import seed_fleet
@@ -165,9 +165,11 @@ def test_datagen_sharded_mode_launches_and_terminates_pods(tmp_path, fake_env):
     spec = _spec_file(tmp_path, inp, out, mode="sharded")
 
     pods_before = len(fake_env.list_pods())
+    # A valid sharded job (allowed GPU, passed smoke, within budget) still
+    # provisions its shard Pods.
     start, _ = tools.datagen_start(
         spec=spec, base_dir=str(tmp_path), output_dir=out, shard_size=10,
-        shards=2, volume_id="vol-PLACEHOLDER",
+        shards=2, volume_id="vol-PLACEHOLDER", smoke_passed=True,
     )
     assert start["mode"] == "sharded"
     assert len(start["shard_pods"]) == 2
@@ -180,6 +182,66 @@ def test_datagen_sharded_mode_launches_and_terminates_pods(tmp_path, fake_env):
     # Stop terminates the shard Pods.
     stop, _ = tools.datagen_stop(job_id=start["job_id"])
     assert len(stop["teardown"]["sharded_terminated"]) == 2
+    assert len(fake_env.list_pods()) == pods_before
+
+
+# ----------------------------------------------------------------------
+# sharded provisioning is gated by the SAME guard as run_launch
+# ----------------------------------------------------------------------
+def test_datagen_sharded_blocked_on_disallowed_gpu(tmp_path, fake_env):
+    """A sharded job on a GPU outside the allowlist is refused by the guard
+    (no shard Pod is created)."""
+    inp = os.path.join(str(tmp_path), "prompts.jsonl")
+    out = os.path.join(str(tmp_path), "out")
+    _write_prompts(inp, 4)
+    spec = _spec_file(tmp_path, inp, out, mode="sharded")
+
+    pods_before = len(fake_env.list_pods())
+    with pytest.raises(guard.GuardError) as exc:
+        tools.datagen_start(
+            spec=spec, base_dir=str(tmp_path), output_dir=out, shard_size=10,
+            shards=2, volume_id="vol-PLACEHOLDER", smoke_passed=True,
+            gpu="T4",  # not in the [A100, H100] allowlist
+        )
+    assert exc.value.category == guard.DISALLOWED_GPU
+    # Fail closed: no shard Pod was provisioned.
+    assert len(fake_env.list_pods()) == pods_before
+
+
+def test_datagen_sharded_blocked_without_smoke(tmp_path, fake_env):
+    """A sharded job without a passed smoke test is refused by the guard."""
+    inp = os.path.join(str(tmp_path), "prompts.jsonl")
+    out = os.path.join(str(tmp_path), "out")
+    _write_prompts(inp, 4)
+    spec = _spec_file(tmp_path, inp, out, mode="sharded")
+
+    pods_before = len(fake_env.list_pods())
+    with pytest.raises(guard.GuardError) as exc:
+        tools.datagen_start(
+            spec=spec, base_dir=str(tmp_path), output_dir=out, shard_size=10,
+            shards=2, volume_id="vol-PLACEHOLDER",  # smoke_passed defaults False
+        )
+    assert exc.value.category == guard.NO_SMOKE
+    assert len(fake_env.list_pods()) == pods_before
+
+
+def test_datagen_sharded_blocked_over_budget(tmp_path, fake_env):
+    """A sharded job whose projected cost breaches a cap is refused by the
+    guard, exactly as run_launch refuses."""
+    inp = os.path.join(str(tmp_path), "prompts.jsonl")
+    out = os.path.join(str(tmp_path), "out")
+    _write_prompts(inp, 4)
+    spec = _spec_file(tmp_path, inp, out, mode="sharded")
+
+    pods_before = len(fake_env.list_pods())
+    with pytest.raises(guard.GuardError) as exc:
+        tools.datagen_start(
+            spec=spec, base_dir=str(tmp_path), output_dir=out, shard_size=10,
+            shards=2, volume_id="vol-PLACEHOLDER", smoke_passed=True,
+            # H100 @ 2.99/hr * 8 gpus = 23.92/hr; * 8h = 191.36 > per-run cap 20.
+            gpu="H100", gpu_count=8,
+        )
+    assert exc.value.category == guard.OVER_BUDGET
     assert len(fake_env.list_pods()) == pods_before
 
 

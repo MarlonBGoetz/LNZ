@@ -945,6 +945,9 @@ def datagen_start(
     base_backoff: float = 0.0,
     shard_size: Optional[int] = None,
     gpu: str = "A100",
+    gpu_count: int = 1,
+    smoke_passed: bool = False,
+    max_hours: Optional[float] = None,
     volume_id: Optional[str] = None,
     shards: int = 1,
     backend: Optional[runpod_client.Backend] = None,
@@ -955,8 +958,16 @@ def datagen_start(
     The job runs the datagen driver against the inference backend (the fake
     backend offline). A *job-level* budget caps spend: ``budget_usd`` falls back
     to the spec's ``budget_usd``. ``mode: serverless`` fans out over the
-    endpoint; ``mode: sharded`` provisions N supervised Pods via ``run_launch``
-    (each ``OVERWATCH_SHARD i of N``) behind the fake backend for tests.
+    endpoint; ``mode: sharded`` provisions N supervised Pods (each
+    ``OVERWATCH_SHARD i of N`` + ``OVERWATCH_DATAGEN_JOB``), behind the fake
+    backend for tests.
+
+    Every sharded Pod is gated by the same :func:`guard.check` that
+    ``run_launch`` enforces: a shard on a disallowed GPU, without a passed
+    smoke test, or whose projected cost breaches the per-run / session cap is
+    refused (raising :class:`guard.GuardError`) before any Pod is created, so
+    the sharded provisioning path cannot bypass the budget / GPU-allowlist /
+    smoke guardrails.
     """
     backend = backend or runpod_client.get_backend()
     spec_data = _load_spec(spec, base_dir)
@@ -971,13 +982,35 @@ def datagen_start(
 
     sharded_pods: List[Dict[str, Any]] = []
     if mode == _datagen.SHARDED:
-        # Sharded mode reuses run_launch: each shard is a supervised Pod.
+        # Sharded mode provisions one supervised Pod per shard. Each shard goes
+        # through the SAME guard as run_launch (GPU allowlist, passed smoke,
+        # per-run + session budget) BEFORE any Pod is created, so a sharded job
+        # cannot bypass the guardrails that a direct run_launch enforces.
+        policy = _policy()
+        shard_price = (backend.gpu_price(gpu) or 0.0) * int(gpu_count)
+        shard_max_hours = max_hours if max_hours is not None else policy.max_hours
         n = max(1, int(shards or spec_data.get("shards", 1)))
+        # Fail closed before provisioning any Pod: validate each shard against
+        # the guard (with the live fleet growing as prior shards are counted).
         for i in range(n):
+            guard.check(
+                {
+                    "tool": "run_launch",
+                    "args": {
+                        "gpu": gpu,
+                        "smoke_passed": smoke_passed,
+                        "price_per_hour": shard_price,
+                        "max_hours": shard_max_hours,
+                    },
+                },
+                policy=policy,
+                state=state,
+            )
             shard_run = f"{job_id}-shard-{i}"
             pod = backend.create_pod(
                 name=f"{POD_PREFIX}{shard_run}",
                 gpu=gpu,
+                gpu_count=gpu_count,
                 image=DEFAULT_IMAGE,
                 volume_id=volume_id,
                 env={
@@ -986,7 +1019,23 @@ def datagen_start(
                     "OVERWATCH_SHARD": f"{i} of {n}",
                     "OVERWATCH_DATAGEN_JOB": job_id,
                 },
+                price_per_hour=backend.gpu_price(gpu) or 0.0,
             )
+            # Record the shard as a live run so its spend rate counts toward
+            # the session cap when the next shard is guard-checked.
+            shard_state_run = state_mod.new_run(
+                shard_run,
+                pod_id=pod["id"],
+                status="running",
+                price_per_hour=pod["price_per_hour"],
+                budget=job_budget,
+                max_hours=shard_max_hours,
+            )
+            shard_state_run["gpu"] = gpu
+            shard_state_run["gpu_count"] = gpu_count
+            shard_state_run["env"] = dict(pod["env"])
+            shard_state_run["datagen_job"] = job_id
+            state_mod.put_run(state, shard_state_run)
             sharded_pods.append({"shard": i, "of": n, "pod_id": pod["id"], "run_id": shard_run})
 
     # Run the driver (serverless fan-out; also drives the sharded output).

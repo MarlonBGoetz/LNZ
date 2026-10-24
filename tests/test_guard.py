@@ -147,6 +147,34 @@ def test_no_smoke_stdin(monkeypatch, capsys, temp_state):
     assert "no_smoke" in err
 
 
+def _run_main_argv(event, argv, monkeypatch, capsys):
+    """Feed an event as stdin to guard.main with explicit argv flags."""
+    monkeypatch.setattr("sys.stdin", io.StringIO(json.dumps(event)))
+    code = guard.main(argv)
+    captured = capsys.readouterr()
+    return code, captured.err
+
+
+def test_require_smoke_passed_flag_blocks_missing_smoke(monkeypatch, capsys, temp_state):
+    """The guard-launch hook's --require-smoke-passed flag is honored: a
+    run_launch without smoke_passed is blocked for NO_SMOKE."""
+    event = {"tool": "run_launch", "args": {"gpu": "A100"}}  # no smoke_passed
+    code, err = _run_main_argv(event, ["--require-smoke-passed"], monkeypatch, capsys)
+    assert code == 1
+    assert "no_smoke" in err
+
+
+def test_require_smoke_passed_flag_allows_with_smoke(monkeypatch, capsys, temp_state):
+    """With smoke_passed truthy, the flagged launch is allowed."""
+    event = {
+        "tool": "run_launch",
+        "args": {"gpu": "A100", "smoke_passed": True, "price_per_hour": 1.89, "max_hours": 1},
+    }
+    code, err = _run_main_argv(event, ["--require-smoke-passed"], monkeypatch, capsys)
+    assert code == 0
+    assert err == ""
+
+
 # ----------------------------------------------------------------------
 # 6. agent edit to policy.yaml
 # ----------------------------------------------------------------------

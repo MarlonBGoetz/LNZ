@@ -146,6 +146,15 @@ The PostTaskExecution hook runs `pytest -q tests/`.
 
 ### supervise-run.workflow.json
 
+> Note: the JSON below is a simplified linear sketch (`preflight -> launch ->
+> watch -> report -> teardown`). The committed
+> `.kiro/workflows/supervise-run.workflow.json` implements the richer, detailed
+> recipe actually used: a `repeat` loop (watch + `gpu-medic` triage per
+> iteration, stopping on the terminal health state) plus a post-mortem step.
+> The implemented recipe carries `runId` through `config` (never templated into
+> the command) and passes `python -m overwatch.validate_workflow`; treat this
+> inlined block as an illustrative sketch, not the source of truth.
+
 ```json
 {
   "name": "supervise-run",
