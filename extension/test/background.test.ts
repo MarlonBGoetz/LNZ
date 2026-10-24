@@ -87,6 +87,35 @@ describe('background PIN/config authority across tabs', () => {
 });
 
 describe('background analysis generations', () => {
+  it('re-announces the saved config so a restarted dashboard relay is not stale', async () => {
+    const configured = {
+      ...structuredClone(DEFAULT_CONFIG),
+      filters: { ...DEFAULT_CONFIG.filters, learn: { ...DEFAULT_CONFIG.filters.learn, enabled: true } },
+    };
+    local['lnz:config'] = configured;
+
+    let receive!: (message: PortIn) => Promise<void>;
+    onConnect({
+      name: 'lnz-analysis', sender: { id: 'lnz-test' },
+      onMessage: { addListener: (listener: typeof receive) => { receive = listener; } },
+      onDisconnect: { addListener: vi.fn() },
+      postMessage: vi.fn(),
+    } as unknown as chrome.runtime.Port);
+
+    await receive({
+      type: 'analyze',
+      video: { videoId: 'v-config', url: 'https://www.tiktok.com/' },
+      requestId: 1,
+      providerKey: classifierKey(configured),
+    });
+    await flush();
+
+    const events = vi.mocked(fetch).mock.calls.map((call) => JSON.parse(String((call[1] as RequestInit).body)));
+    const config = events.find((event) => event.type === 'config');
+    expect(config?.config.filters.learn.enabled).toBe(true);
+    expect(config?.config.active).toBe(true);
+  });
+
   it('echoes tokens and ignores late same-video work even if a provider ignores abort', async () => {
     const pending: Array<(value: ClassifierOutput) => void> = [];
     const provider: ClassifierProvider = {

@@ -182,6 +182,23 @@ chrome.runtime.onConnect.addListener((port) => {
     if (ctrl.signal.aborted || !config.active || msg.providerKey !== classifierKey(config)) return;
     const list = await ensureProviders(config);
     if (ctrl.signal.aborted) return;
+
+    // Re-announce the effective configuration with each new video. The dashboard
+    // relay is stateless across restarts; without this it would fall back to
+    // DEFAULT_CONFIG and show filters the user has changed (e.g. Learn on).
+    void readUnlocked().then((unlocked) => {
+      void postAnalytics({
+        type: 'config',
+        at: Date.now(),
+        config: {
+          active: config.active,
+          locked: !unlocked,
+          autoSkip: config.autoSkip,
+          filters: config.filters,
+          providerMode: config.providers.mode,
+        },
+      });
+    });
     void postAnalytics({ type: 'video', video, at: Date.now() });
 
     const emit = (result: ClassifierResult) => {

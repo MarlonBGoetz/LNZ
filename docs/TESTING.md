@@ -4,7 +4,7 @@ Run `npm run typecheck`, `npm test`, and `npm run build` from the repository roo
 
 ## Automated coverage
 
-The 37 unit/regression tests cover deterministic rules, PIN verifier and retry delays, provider payload validation, analysis request generations, provider changes, delayed skip cancellation/deduplication, concurrent PIN/configuration messages, playback hold transitions, source cleanup/restart, and Chrome toolbar routing.
+The 38 unit/regression tests cover deterministic rules, PIN verifier and retry delays, provider payload validation, analysis request generations, provider changes, dashboard config re-announcement, delayed skip cancellation/deduplication, concurrent PIN/configuration messages, playback hold transitions, source cleanup/restart, and Chrome toolbar routing.
 
 A result belongs to both a video and its analysis request/provider. Changing providers or disconnecting clears the previous result. Demo labels follow the results actually displayed, including while a different provider is selected in an unsaved draft. A pending skip is cancelled when editing begins or state changes, and its current conditions are checked again immediately before navigation.
 
