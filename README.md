@@ -27,7 +27,7 @@ Chrome 137+ no longer honours `--load-extension` for branded Chrome. Load unpack
 
 `chrome://extensions` → LNZ → **Extension options**, or open `chrome-extension://<extension-id>/preview.html`. This is a synthetic four-clip TikTok-style stage that mounts the **real content script**, PIN lock, decision engine and demo classifiers. Every value is labelled **DEMO DATA**; the clips are generated for the review and are not TikTok content. Use it to open the panel, test a locked change, unlock/edit/save, and watch auto-skip advance through clips that keep or reject.
 
-The X-style stage is at `chrome-extension://<extension-id>/preview-x.html?platform=x` (linked from the TikTok stage header). It uses the same content script with the X DOM adapter, so the post text, `@handle` and `/status/<id>` become the video identity. It is a controlled timeline, not X content.
+The X-style stage is at `chrome-extension://<extension-id>/preview-x.html?platform=x` (linked from the TikTok stage header). It uses the same content script with the X DOM adapter, so the post text, `@handle` and `/status/<id>` become the video identity. It is a controlled timeline, not X content. Use the two-icon **TikTok / X switch** in the stage header to jump between the interfaces.
 
 Relaunch it with `./scripts/demo-stage.sh`. The script builds the extension, derives the unpacked-extension ID, and opens the stage in Chrome for Testing / Chromium. Set `CHROME_FOR_TESTING` if the browser is elsewhere. Use `LNZ_STAGE=x ./scripts/demo-stage.sh` for the X stage. The dashboard still runs separately with `npm run dev:analytics`.
 

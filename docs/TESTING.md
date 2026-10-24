@@ -20,6 +20,7 @@ A result belongs to both a video and its analysis request/provider. Changing pro
 - PIN `1234` unlocks to **EDIT MODE**; the Learn slider changes to 95%, Save & lock relocks and re-evaluates the clip to **SKIP** (`Learn 91% < 95%`).
 - The learning threshold was restored to 50% and the stage returned to clip 1 → **KEEP**.
 - The dashboard at `http://localhost:5174` shows the same video, scores and **KEEP** decision from the stage events.
+- The stage header's two-icon TikTok/X switch jumps between `preview.html` and `preview-x.html?platform=x`; the active interface is marked with `aria-current="page"`.
 - X post 1 (`@nightatlas`, status `100000000000039`) shows the post text and `@handle` in the panel, with Calm 5% / Learn 87% / Shield no flags → **KEEP**.
 - X post 2 (`100000000000004`) is rejected and the X navigator advances to post 3 (`100000000000024`, amber Calm → **KEEP**).
 - X post 4 (`100000000000043`) flags **S1 Violent crimes**, the rail turns red for Shield and the launcher dot is red → **SKIP**.

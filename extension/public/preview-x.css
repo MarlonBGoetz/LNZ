@@ -60,6 +60,36 @@ svg { display: block; }
 .brand .sep { width: 1px; height: 18px; background: var(--border-2); margin: 0 2px; }
 .brand .title { color: var(--muted); font-size: 13px; }
 
+.platform-switch {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(8, 12, 16, 0.5);
+}
+.platform-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 30px;
+  height: 26px;
+  justify-content: center;
+  padding: 0;
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 500;
+  transition: color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.platform-link svg { width: 14px; height: 14px; }
+.platform-link:hover { color: var(--text); background: rgba(255, 255, 255, 0.04); }
+.platform-link.on { color: var(--text); background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--border-2); }
+.platform-link.on svg { color: var(--cyan); }
+
+
 .pills { display: flex; gap: 6px; margin-left: 12px; }
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border: 1px solid var(--border-2); border-radius: 6px; color: var(--muted); font: 9.5px var(--mono); letter-spacing: 0.12em; white-space: nowrap; }
 .pill i { width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
@@ -173,4 +203,9 @@ h1 em { font-style: normal; color: var(--cyan); text-shadow: 0 0 30px rgba(0, 22
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media (max-width: 700px) {
+  .platform-link span { display: none; }
+  .platform-link { padding: 0 8px; }
 }
