@@ -1,0 +1,10 @@
+{
+  "name": "audit-log",
+  "description": "After every Runpod or overwatch tool call, append the tool name, arguments and result to the audit log for spend and state tracking.",
+  "trigger": "PostToolUse",
+  "matcher": "@power-gpu-overwatch-runpod|@power-gpu-overwatch-overwatch",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.cli audit --append .overwatch/audit.jsonl"
+  }
+}
