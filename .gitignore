@@ -6,3 +6,6 @@ dist/
 .env.*
 # Generated from assets/lnz-mask.svg by scripts/icons.mjs
 extension/public/icons/*.png
+
+# Local demo browser profile
+.chrome-demo/

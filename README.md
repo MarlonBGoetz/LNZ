@@ -27,6 +27,8 @@ Chrome 137+ no longer honours `--load-extension` for branded Chrome. Load unpack
 
 `chrome://extensions` → LNZ → **Extension options**, or open `chrome-extension://<extension-id>/preview.html`. This is a synthetic four-clip stage that mounts the **real content script**, PIN lock, decision engine and demo classifiers. Every value is labelled **DEMO DATA**; the clips are generated for the review and are not TikTok content. Use it to open the panel, test a locked change, unlock/edit/save, and watch auto-skip advance through clips that keep or reject.
 
+Relaunch it with `./scripts/demo-stage.sh`. The script builds the extension, derives the unpacked-extension ID, and opens the stage in Chrome for Testing / Chromium. Set `CHROME_FOR_TESTING` if the browser is elsewhere. The dashboard still runs separately with `npm run dev:analytics`.
+
 ### Split-screen demo
 
 - Left: Chrome on TikTok with LNZ.
