@@ -45,6 +45,54 @@ DEFAULT_PER_RUN_CAP_USD = 20.0
 DEFAULT_MAX_HOURS = 8.0
 DEFAULT_GPU_ALLOWLIST = ["A100", "H100"]
 
+# Explicit translation layer: short allowlist name -> concrete Runpod
+# ``gpuTypeIds``. This is STRICTLY a translation/reporting aid used to build the
+# ``gpuTypeIds`` array for a Pod create call and to recognise a live Pod's GPU
+# as A100/H100 for reporting. It MUST NOT be used to decide allowlisting --
+# :meth:`Policy.gpu_allowed` stays an exact-string check on the SHORT names, so
+# a full Runpod id (e.g. "NVIDIA H100 80GB HBM3") is never treated as allowed.
+# The first id in each list is the preferred full id for create_pod.
+GPU_SHORT_TO_IDS: Dict[str, List[str]] = {
+    "A100": [
+        "NVIDIA A100 80GB PCIe",
+        "NVIDIA A100-SXM4-80GB",
+    ],
+    "H100": [
+        "NVIDIA H100 80GB HBM3",
+        "NVIDIA H100 PCIe",
+        "NVIDIA H100 NVL",
+    ],
+}
+
+
+def gpu_type_ids(short: str) -> List[str]:
+    """Return the full Runpod ``gpuTypeIds`` for a short GPU name.
+
+    The first element is the preferred full id. Raises :class:`KeyError` for an
+    unknown short name (callers should validate against the allowlist first).
+    This is a pure translation helper; it performs NO allowlist check.
+    """
+    try:
+        return list(GPU_SHORT_TO_IDS[short])
+    except KeyError as exc:
+        raise KeyError(f"no Runpod gpuTypeIds mapping for short GPU name: {short!r}") from exc
+
+
+def short_name_for(full_id: Optional[str]) -> Optional[str]:
+    """Map a full Runpod gpu id/displayName back to a short name, else ``None``.
+
+    Used only for normalisation/reporting so ``fleet_status`` can display
+    ``A100``/``H100`` for a live Pod. Never used for allowlisting.
+    """
+    if not full_id:
+        return None
+    for short, ids in GPU_SHORT_TO_IDS.items():
+        if full_id in ids:
+            return short
+        if full_id == short:
+            return short
+    return None
+
 
 class BudgetRaiseError(ValueError):
     """Raised when a tool attempts to raise a spend cap (not permitted)."""
