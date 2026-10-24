@@ -114,6 +114,23 @@ export function App() {
           <span className="sep" />
           <span className="title">{view === 'day' ? 'Day Summary' : 'Live Analysis'}</span>
         </div>
+        <nav className="platform-switch" aria-label="Demo surfaces">
+          <a className="platform-link" href="/stage/tiktok.html" target="_blank" rel="noreferrer" title="TikTok stage" aria-label="TikTok stage">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" /></svg>
+          </a>
+          <a className="platform-link" href="/stage/x.html?platform=x" target="_blank" rel="noreferrer" title="X stage" aria-label="X stage">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" /></svg>
+          </a>
+          <span className="platform-sep" aria-hidden="true" />
+          <a className="platform-link live" href="https://www.tiktok.com/foryou" target="_blank" rel="noreferrer" title="Live on tiktok.com" aria-label="Live TikTok on tiktok.com">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" /></svg>
+            <i className="live-dot" aria-hidden="true" />
+          </a>
+          <a className="platform-link live" href="https://x.com/home" target="_blank" rel="noreferrer" title="Live on x.com" aria-label="Live X on x.com">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" /></svg>
+            <i className="live-dot" aria-hidden="true" />
+          </a>
+        </nav>
         <div className="pills">
           <Pill on={relay === 'open'} label={relay === 'open' ? 'RELAY' : relay === 'down' ? 'RELAY DOWN' : 'RELAY …'} />
           <Pill on={linked} label={linked ? 'EXTENSION LINKED' : 'NO EXTENSION'} />

@@ -319,3 +319,8 @@ h1 em { font-style: normal; color: var(--cyan); text-shadow: 0 0 34px rgba(0, 22
   .platform-link span { display: none; }
   .platform-link { padding: 0 8px; }
 }
+
+/* live-site links (real tiktok.com / x.com with the extension) */
+.platform-sep { width: 1px; height: 16px; margin: 0 3px; background: var(--border-2, #2a3642); }
+.platform-link.live { position: relative; }
+.platform-link .live-dot { position: absolute; top: 4px; right: 5px; width: 5px; height: 5px; border-radius: 50%; background: #ff4d5e; box-shadow: 0 0 6px #ff4d5e; }

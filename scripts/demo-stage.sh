@@ -11,7 +11,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-if [[ ! -f extension/dist/content.js || ! -f extension/dist/preview.html ]]; then
+if [[ ! -f extension/dist/content.js ]]; then
   npm run build:ext
 fi
 
@@ -28,9 +28,9 @@ PROFILE="${LNZ_DEMO_PROFILE:-$ROOT/.chrome-demo}"
 PORT="${LNZ_CDP_PORT:-9222}"
 WINDOW="${LNZ_WINDOW_SIZE:-1512,949}"
 if [[ "${LNZ_STAGE:-tiktok}" == "x" ]]; then
-  STAGE="chrome-extension://$EXT_ID/preview-x.html?platform=x"
+  STAGE="http://localhost:5174/stage/x.html?platform=x"
 else
-  STAGE="chrome-extension://$EXT_ID/preview.html"
+  STAGE="http://localhost:5174/stage/tiktok.html"
 fi
 
 CHROME="${CHROME_FOR_TESTING:-}"
