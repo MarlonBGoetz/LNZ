@@ -7,6 +7,74 @@ Take control of your short-form video feed. LNZ is a Chrome extension that float
 | Extension | `extension/` | MV3 Chrome extension: launcher, panel, PIN lock, onboarding, TikTok and X DOM adapters |
 | Dashboard | `analytics/` | Local session monitor + persisted day summary (localhost:5174) |
 | Contracts | `shared/` | TypeScript interfaces, decision engine, demo provider, brand mark |
+| Calm model | `models/` | Browser-ready ONNX student distilled from Meta's TRIBE v2, stress readout, PyTorch weights |
+| Distillation pipeline | `pipeline/` | GPU pipeline that produced the Calm model: data prep, transcription, TRIBE teacher, student features, training and export |
+| Brain demo | `brain-demo/` | Second-by-second replay of the model on 60 held-out clips (`live_demo.html`) |
+
+## Calm model: TRIBE v2 distilled for the browser
+
+The Calm filter is built on **TRIBE v2**, Meta's brain-encoding model, which predicts fMRI responses across the cortex from video, audio and speech. TRIBE is far too large for a browser. It needs V-JEPA 2, Llama 3.2 3B, Wav2Vec-BERT and a WhisperX transcript, and takes about 80 s per 10 s clip on an H100. We distilled it into a **student** small enough to run next to the video, live, once per second.
+
+### Strengths
+
+- **Small and fast:**
+  - frozen MobileCLIP-S1 vision encoder (21.5M params) and EfficientAT mn10_as audio encoder (4.9M);
+  - a head under 5M params;
+  - about 10 ms per one-second window on an H100.
+  - The fp16 ONNX files total about 54 MB.
+- **Live by design:** a causal 3-second window, so the score updates every second as the clip plays. It needs no transcript and no lookahead.
+- **Brain-shaped output:** each second, the student predicts all 148 Destrieux cortical parcels and 6 regions of interest (left/right anterior insula, dACC, mPFC, early auditory, early visual). It doesn't just output a single opaque score, so the dashboard can show *where* a clip is predicted to drive the brain.
+- **Tracks the teacher:** on held-out test clips, the parcel-level correlation with TRIBE is 0.50 mean and 0.54 median. By region: visual 0.63, auditory 0.50, mPFC 0.40, insula 0.33, dACC 0.22.
+- **Fits LNZ's Calm contract:**
+  - the running stress readout gives a `score` in `[0, 1]`;
+  - the per-second curve gives the `timeline`;
+  - ROI values can feed `regions`.
+
+  See [`docs/INTEGRATION.md`](docs/INTEGRATION.md).
+- **Reproducible and cost-capped:** the pipeline ran on two RunPod H100s, with a dead-man switch that shuts each pod down on its own. Clip work is shared through atomic claim files, so pods never duplicate work. The run cost about $10.
+
+### Limits
+
+- **Stress AUROC on TikHarm:** student 0.62, TRIBE regions 0.68. A raw-feature baseline reaches 0.93, because TikHarm's labels are moderation tags that correlate with language and region, not stress ratings.
+- **Cortex only:** TRIBE predicts no subcortical regions such as the amygdala.
+- **English only:** TRIBE's text pathway assumes English.
+
+Full numbers are in [`docs/CALM_MODEL_REPORT.md`](docs/CALM_MODEL_REPORT.md). The demo clips are broken down in [`brain-demo/DEMO_CLIPS.md`](brain-demo/DEMO_CLIPS.md).
+
+### Code geography
+
+```
+models/                      what the browser loads
+  vision_encoder.fp16.onnx   MobileCLIP-S1, 4 fps frames -> 512-d
+  audio_encoder.*.onnx       EfficientAT mn10_as, 1 s / 32 kHz log-mel -> 960-d
+  student_head.*.onnx        last 3 windows x 2496-d features -> 148 parcels + 6 ROIs
+  stress_readout.json        logistic readout on running mean/max of the 6 ROIs
+  README.md                  the web contract: inputs, preprocessing, shapes, parity checks
+  pytorch/student_head.pt    head weights for further training
+pipeline/                    how the model was made (runs on RunPod, volume at /workspace)
+  bootstrap.sh               pod entrypoint: timeout + self-stop trap
+  run.sh                     installs, then runs each stage by ROLE (A = prep, B = train)
+  common.py                  paths, claim files, progress JSON, Destrieux atlas and ROIs
+  prep_data.py               TikHarm -> 10 s clips + manifest
+  xd_prep.py                 XD-Violence onset / calm / normal windows (written, not run yet)
+  dl_models.py               model downloads with Llama sha256 check
+  transcribe.py              WhisperX worker -> TRIBE-format word TSVs
+  teacher.py                 TRIBE v2 inference, 3 workers per GPU -> parcels / ROIs per second
+  encoders.py                student encoders and exact preprocessing
+  student_features.py        per-clip vision and audio embeddings
+  train_export.py            train head, fit stress readout, eval, ablations, ONNX export, demo traces
+  data/manifest.csv          every clip: split, label, source
+  ops/                       laptop-side S3 polling scripts (need your own secrets file)
+  run-logs/                  progress snapshots from the final run
+brain-demo/
+  live_demo.html             open in a browser: video on the left, live per-second numbers on the right
+  demo/                      60 held-out clips (mp4 plus per-second student and teacher JSON)
+docs/
+  CALM_MODEL_REPORT.md       metrics, ablations, label caveats
+  TRIBE_DISTILL_HANDOFF.md   the original task brief and spending rules
+```
+
+TRIBE v2 weights are CC BY-NC 4.0, so the distilled Calm model is non-commercial too.
 
 ## Run it
 
