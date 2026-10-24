@@ -23,7 +23,7 @@ describe("StressLexiconClassifier", () => {
     expect(await verdict(item("sad day"))).toBe("allow");
     expect(await verdict(item("sad day, crying"))).toBe("block");
   });
-  it("matches multi-word phrases across whitespace", () => expect(c.score(item("he passed   away last night")).hits).toContain("passed away"));
+  it("matches multi-word phrases across whitespace", () => expect(c.match(item("he passed   away last night")).hits).toContain("passed away"));
   it("explains hits", () => expect(c.explain(item("war footage"))).toBe("war (3)"));
   it("labels every fixture item without throwing", async () => {
     const all = [1, 2, 3, 4, 5].flatMap((n) => parseTikTok(JSON.parse(fs.readFileSync(path.resolve(import.meta.dirname, `../fixtures/item_list_${n}.json`), "utf8")), { capturedAt: 0 }));

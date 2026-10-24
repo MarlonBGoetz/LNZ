@@ -25,8 +25,13 @@ npm run typecheck
 
 1. Open `chrome://extensions`, enable **Developer mode**, click **Load unpacked** and select `dist/`.
 2. Open https://www.tiktok.com/ (For You). Pin the LNZ icon and open its popup.
-3. Choose a classifier and mode (below). Turn on **Debug overlay** to see what's happening.
-4. After a rebuild, click the reload icon on the extension card, then reload TikTok.
+3. Click a preset in the popup:
+   - **Video model**: TRIBE video + audio model, skips stressful videos (threshold 0.72, waits up to 6 s for a verdict, plays the video if the model is late).
+   - **Text filter**: instant text model, drops stressful videos before TikTok renders them.
+   - **Observe**: scores only, nothing is skipped.
+   The popup shows live counts and the latest verdicts with stress bars; the on-page overlay (bottom-left, click its header to collapse) shows the upcoming queue.
+4. **Model demo:** popup → "Open model demo" (`demo.html`). Pick a clip or drop in any MP4: the model runs in the browser, then the video plays with the live stress curve, the 6 brain-region values and the verdict.
+5. After a rebuild, click the reload icon on the extension card, then reload TikTok.
 
 ### Model files
 
@@ -81,7 +86,7 @@ injected.js                      bridge.js                            model-host
 | `stub` | metadata | Allows everything. |
 | `keyword` | metadata | Blocks when caption contains the pattern or a hashtag equals it. |
 | `stressText` | metadata | Weighted stress lexicon over caption, hashtags, topic labels. Instant. Test stand-in. |
-| `tribe` | video + audio | Distilled TRIBE v2 student: MobileCLIP-S1 + EfficientAT encoders, causal head → 6 stress ROIs → logistic readout. Threshold 0.67 and seconds analyzed (10) are configurable. |
+| `tribe` | video + audio | Distilled TRIBE v2 student: MobileCLIP-S1 + EfficientAT encoders, causal head → 6 stress ROIs → logistic readout. Threshold (0.72) and seconds analyzed (10) are configurable. |
 | `mockStress` | media | Fake curve + latency, for UI testing. |
 | `http` | metadata | POSTs `{ items }` (without `raw`) to your URL via the service worker; expects `{ "<id>": "allow" \| "block" \| "unknown" }`. Asks host permission for that origin only. |
 
@@ -89,7 +94,7 @@ To add one: implement `Classifier` in `src/classifier/types.ts`, register it in 
 
 ## Known limits
 
-- TRIBE accuracy is modest. Our teammate's report gives AUROC 0.62 on held-out TikHarm clips; at 0.67 it catches ~57% of harmful demo clips and flags ~24% of safe ones. The labels are "harmful", not "stressful".
+- TRIBE accuracy is modest. Our teammate's report gives AUROC 0.62 on held-out TikHarm clips; at the default 0.72 it catches 8/23 harmful demo clips and wrongly flags 4/37 safe ones (at 0.67: 13/23 and 9/37). We chose fewer false skips for the demo. The labels are "harmful", not "stressful".
 - Video-based verdicts can only skip, not drop: TikTok downloads media after the batch has arrived.
 - Long videos come as separate audio/video files; when the partial audio can't be decoded, the clip is scored on video only (`no audio` in the overlay).
 - Desktop For You layout and response formats can change.

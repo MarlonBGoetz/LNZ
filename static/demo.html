@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LNZ · TRIBE stress model demo</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <header>
+      <div><span class="logo">◐</span> <b>LNZ</b> <span class="mut">brain-response stress model, running in your browser</span></div>
+      <div id="status" class="mut">loading model…</div>
+    </header>
+    <main>
+      <aside>
+        <h3>Clips</h3>
+        <div id="clips"></div>
+        <label class="file">Analyze your own MP4<input id="file" type="file" accept="video/mp4,video/*" /></label>
+        <p class="mut small">Nothing is uploaded. Frames (4 fps) and audio (32 kHz) are decoded locally, run through MobileCLIP + EfficientAT encoders and the distilled TRIBE head on WebGPU.</p>
+      </aside>
+      <section class="stage">
+        <div class="player">
+          <video id="v" controls muted playsinline loop></video>
+          <div id="verdict" class="verdict"></div>
+        </div>
+        <canvas id="chart" width="900" height="220"></canvas>
+        <div class="legend">
+          <span><i class="ours"></i> in-browser student (live)</span>
+          <span><i class="ref"></i> exported student (reference)</span>
+          <span><i class="teach"></i> TRIBE teacher</span>
+          <span><i class="thr"></i> skip threshold</span>
+        </div>
+        <div id="rois" class="rois"></div>
+        <p id="info" class="mut small"></p>
+      </section>
+    </main>
+    <script type="module" src="demo.js"></script>
+  </body>
+</html>

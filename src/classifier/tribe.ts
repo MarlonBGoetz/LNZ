@@ -19,6 +19,7 @@ export class TribeStressClassifier implements Classifier {
   readonly needs = "media";
   readonly defaultTimeoutMs: number;
   private readonly notes = new Map<string, string>();
+  private readonly scores = new Map<string, number>();
 
   constructor(
     private readonly model: StressModel,
@@ -39,6 +40,7 @@ export class TribeStressClassifier implements Classifier {
         const final = a.stress.at(-1);
         if (final === undefined) throw new Error("empty curve");
         out[item.id] = final >= this.opts.threshold ? "block" : "allow";
+        this.scores.set(item.id, final);
         this.notes.set(item.id, `stress ${final.toFixed(2)} (≥${this.opts.threshold} blocks) · ${a.stress.length}s · ${Math.round(a.totalMs)}ms ${a.backend}${a.audioOk ? "" : " · no audio"}`);
       } catch (e) {
         out[item.id] = "unknown";
@@ -46,6 +48,10 @@ export class TribeStressClassifier implements Classifier {
       }
     }
     return out;
+  }
+
+  score(item: FeedItem): number | null {
+    return this.scores.get(item.id) ?? null;
   }
 
   explain(item: FeedItem): string | null {

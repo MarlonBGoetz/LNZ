@@ -46,18 +46,23 @@ export class StressLexiconClassifier implements Classifier {
     this.terms = compile(lexicon);
   }
 
-  score(item: FeedItem): { score: number; hits: string[] } {
+  match(item: FeedItem): { score: number; hits: string[] } {
     const text = textOf(item);
     const hits = this.terms.filter((t) => t.re.test(text));
     return { score: hits.reduce((a, t) => a + t.weight, 0), hits: hits.map((t) => t.term) };
   }
 
+  /** Lexicon score scaled so the block threshold sits at the middle of the bar. */
+  score(item: FeedItem): number {
+    return Math.min(1, this.match(item).score / (2 * this.threshold));
+  }
+
   explain(item: FeedItem): string | null {
-    const { score, hits } = this.score(item);
+    const { score, hits } = this.match(item);
     return hits.length ? `${hits.join(", ")} (${score})` : null;
   }
 
   async classify(reqs: ClassifyRequest[]): Promise<Record<string, Verdict>> {
-    return Object.fromEntries(reqs.map(({ item }) => [item.id, this.score(item).score >= this.threshold ? "block" : ("allow" as Verdict)]));
+    return Object.fromEntries(reqs.map(({ item }) => [item.id, this.match(item).score >= this.threshold ? "block" : ("allow" as Verdict)]));
   }
 }

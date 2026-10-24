@@ -9,7 +9,7 @@ export type Config = {
   drop: boolean;
   classifier: ClassifierKind;
   keywordPattern: string;
-  /** TRIBE: block when final stress ≥ this. 0.67 = best balanced accuracy on the demo set. */
+  /** TRIBE: block when final stress ≥ this. 0.72: on the demo set, 4/37 safe clips wrongly blocked (0.67: 9/37). */
   tribeThreshold: number;
   /** TRIBE: seconds of each video analyzed (training used 10 s). */
   tribeSeconds: number;
@@ -32,7 +32,7 @@ export const DEFAULT_CONFIG: Config = {
   drop: false,
   classifier: "stub",
   keywordPattern: "#test",
-  tribeThreshold: 0.67,
+  tribeThreshold: 0.72,
   tribeSeconds: 10,
   httpUrl: "",
   classifierTimeoutMs: 0,

@@ -22,4 +22,6 @@ export interface Classifier {
   classify(reqs: ClassifyRequest[]): Promise<Record<string, Verdict>>;
   /** Optional debug text: why an item would be blocked. */
   explain?(item: FeedItem): string | null;
+  /** Optional debug score in [0,1] for UI bars (e.g. stress probability). */
+  score?(item: FeedItem): number | null;
 }

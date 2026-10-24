@@ -1,0 +1,27 @@
+:root{--bg:#0b0d11;--card:#14171e;--line:#232733;--fg:#e8eaf0;--mut:#8b91a1;--calm:#3ecf8e;--stress:#ff5b6b;--acc:#7c9cff;--teach:#c08cff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,system-ui,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-bottom:1px solid var(--line)}
+.logo{color:var(--calm);font-size:18px}
+.mut{color:var(--mut)}.small{font-size:12px}
+main{display:grid;grid-template-columns:270px 1fr;gap:18px;padding:18px 22px}
+aside h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut)}
+.clip{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;padding:8px 10px;margin-bottom:6px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;font:inherit;font-size:12.5px}
+.clip.on{border-color:var(--acc)}
+.tagH{color:var(--stress)}.tagS{color:var(--calm)}
+.file{display:block;margin-top:12px;padding:10px;border:1px dashed var(--line);border-radius:8px;color:var(--mut);font-size:12.5px;cursor:pointer}
+.file input{display:block;margin-top:6px;color:var(--mut)}
+.stage{display:flex;flex-direction:column;gap:12px}
+.player{position:relative;align-self:flex-start}
+video{height:380px;max-width:100%;background:#000;border-radius:12px;display:block}
+.verdict{position:absolute;top:12px;left:12px;padding:6px 12px;border-radius:20px;font-weight:700;font-size:13px;background:#000a;backdrop-filter:blur(6px)}
+.verdict.block{color:var(--stress)}.verdict.allow{color:var(--calm)}
+canvas{width:100%;max-width:900px;height:220px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--mut)}
+.legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:4px;border-radius:2px}
+.legend .ours{background:var(--calm)}.legend .ref{background:var(--acc)}.legend .teach{background:var(--teach)}.legend .thr{background:var(--stress)}
+.rois{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;max-width:900px}
+.roi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-size:11px;color:var(--mut)}
+.roi b{display:block;color:var(--fg);font-size:15px}
+.roi .bar{height:4px;background:#ffffff14;border-radius:2px;margin-top:4px;overflow:hidden}
+.roi .bar i{display:block;height:100%;background:var(--acc)}

@@ -79,6 +79,13 @@ const runClassifier = async (reqs: ClassifyRequest[]) => {
   reqs.forEach((r) => verdicts.start(r.item.id));
   const out = await classifyWithPolicy(classifier, reqs, timeoutFor(cfg, classifier), cfg.failMode);
   for (const [id, v] of Object.entries(out)) {
+    // A media model that failed (e.g. a clip that couldn't be decoded yet) is not a stress verdict: retry later.
+    if (classifier.needs === "media" && v.reason !== "classifier" && (attempts.get(id) ?? 0) < MEDIA_RETRIES) {
+      attempts.set(id, (attempts.get(id) ?? 0) + 1);
+      verdicts.cancel(id);
+      setTimeout(() => classifyIfReady(id), MEDIA_RETRY_MS);
+      continue;
+    }
     verdicts.set(id, v);
     if (v.reason === "timeout") stats.timeouts++;
     if (v.verdict === "block") stats.blocked++;
@@ -88,6 +95,9 @@ const runClassifier = async (reqs: ClassifyRequest[]) => {
 
 // Media classifiers are slow, so clips run one at a time: the current video first, then the nearest upcoming one.
 // Clips for videos already scrolled past are skipped (they run again if you scroll back to them).
+const MEDIA_RETRIES = 2;
+const MEDIA_RETRY_MS = 1500;
+const attempts = new Map<string, number>();
 const mediaReadyIds = new Set<string>();
 const counted = new Set<string>();
 let mediaBusy = false;
@@ -192,6 +202,11 @@ const unblurAll = () => {
   blurred.clear();
 };
 
+const scoreOf = (id: string): number | null => {
+  const item = feed.items.get(id);
+  return item && classifier.score ? classifier.score(item) : null;
+};
+
 const why = (id: string): string | null => {
   const item = feed.items.get(id);
   return item && classifier.explain ? classifier.explain(item) : null;
@@ -211,6 +226,7 @@ const skipNow = (cur: Current) => {
     skipLog.length = Math.min(skipLog.length, SKIP_LOG_MAX);
   }
   navigator_.advance(cur, 0, (r) => entry && Object.assign(entry, { adapter: r.adapter, ms: r.ms, ok: r.ok }));
+  persistSoon();
 };
 
 /** Upcoming videos: blocked ones are silenced and blurred before they reach the screen; pending ones are silenced. */
@@ -310,7 +326,7 @@ const tick = () => {
       skips: skipLog,
       rows: ids.map((id) => {
         const verdict = verdicts.get(id).verdict;
-        return { item: feed.items.get(id)!, verdict, media: media.status(id), current: id === current?.id, skipped: skippedIds.has(id), why: why(id) };
+        return { item: feed.items.get(id)!, verdict, media: media.status(id), current: id === current?.id, skipped: skippedIds.has(id), why: why(id), score: scoreOf(id) };
       }),
     });
   }
@@ -332,7 +348,7 @@ const hostLine = (h: ModelHostClient): string => {
 const snapshot = (withRaw: boolean) =>
   feed.order.slice(-PERSIST_MAX).map((id) => {
     const { raw, ...rest } = feed.items.get(id)!;
-    return { ...rest, ...(withRaw ? { raw } : {}), verdict: verdicts.get(id), why: why(id) };
+    return { ...rest, ...(withRaw ? { raw } : {}), verdict: verdicts.get(id), why: why(id), score: scoreOf(id), shown: shown.has(id), skipped: skippedIds.has(id) };
   });
 
 let persistTimer: ReturnType<typeof setTimeout> | undefined;

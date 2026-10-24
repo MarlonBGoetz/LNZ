@@ -9,11 +9,11 @@ const IIFE = {
   background: "src/background/index.ts",
   popup: "src/popup/index.ts",
 };
-const ESM = { "model-host": "src/model-host/index.ts", selftest: "src/selftest/index.ts" };
+const ESM = { "model-host": "src/model-host/index.ts", selftest: "src/selftest/index.ts", demo: "src/demo/index.ts" };
 const MODEL_DIR = "model/tribe_student_export";
 const MODEL_FILES = ["vision_encoder.fp16.onnx", "audio_encoder.fp16.onnx", "student_head.fp16.onnx", "stress_readout.json"];
 const ORT_FILES = ["ort-wasm-simd-threaded.asyncify.wasm", "ort-wasm-simd-threaded.asyncify.mjs"];
-const SELFTEST_CLIPS = 6;
+const SELFTEST_CLIPS = 8;
 const watch = process.argv.includes("--watch");
 
 fs.rmSync("dist", { recursive: true, force: true });

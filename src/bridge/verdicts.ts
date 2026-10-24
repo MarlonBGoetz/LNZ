@@ -27,6 +27,10 @@ export class VerdictCache {
   start(id: string): void {
     this.inFlight.add(id);
   }
+  /** Give up on an in-flight attempt without a final verdict (it may be retried). */
+  cancel(id: string): void {
+    this.inFlight.delete(id);
+  }
   set(id: string, v: FinalVerdict): void {
     this.inFlight.delete(id);
     if (!this.map.has(id)) {

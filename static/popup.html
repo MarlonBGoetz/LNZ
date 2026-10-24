@@ -6,44 +6,64 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <h1>LNZ Feed Filter</h1>
-    <form id="cfg">
-      <label class="row"><input type="checkbox" name="enabled" /> Enabled</label>
-      <label>Mode
-        <select name="mode">
-          <option value="skip">skip (hold, then skip stressful)</option>
-          <option value="observe">observe (log only)</option>
-        </select>
-      </label>
-      <label>Classifier
-        <select name="classifier">
-          <option value="stub">stub (allow all)</option>
-          <option value="tribe">TRIBE stress model (video + audio)</option>
-          <option value="stressText">stress text model (test, instant)</option>
-          <option value="keyword">keyword (test)</option>
-          <option value="mockStress">mock stress model (needs media)</option>
-          <option value="http">HTTP endpoint</option>
-        </select>
-      </label>
-      <label data-for="tribe">Stress threshold (0–1) <input name="tribeThreshold" type="number" min="0" max="1" step="0.01" /></label>
-      <label data-for="tribe">Seconds analyzed <input name="tribeSeconds" type="number" min="1" max="30" /></label>
-      <label data-for="keyword">Block pattern <input name="keywordPattern" /></label>
-      <label data-for="http">Endpoint URL <input name="httpUrl" type="url" placeholder="http://localhost:8000/classify" /></label>
-      <label>Classifier timeout ms (0 = default) <input name="classifierTimeoutMs" type="number" min="0" /></label>
-      <label>Hold timeout ms <input name="holdTimeoutMs" type="number" min="0" /></label>
-      <label>When unanswered
-        <select name="failMode">
-          <option value="failClosed">failClosed (treat as stressful)</option>
-          <option value="failOpen">failOpen (treat as fine)</option>
-        </select>
-      </label>
-      <label class="row"><input type="checkbox" name="drop" /> Drop mode (text classifiers only, delays each batch)</label>
-      <label class="row"><input type="checkbox" name="autoScroll" /> Auto-scroll <span class="hint">Alt+Shift+A</span></label>
-      <label>Advance after N s (0 = on end) <input name="autoScrollSec" type="number" min="0" /></label>
-      <label class="row"><input type="checkbox" name="overlay" /> Debug overlay <span class="hint">Alt+Shift+O</span></label>
-    </form>
-    <p id="stats" class="hint"></p>
-    <button id="export">Export last 500 items</button>
+    <header>
+      <div class="brand"><span class="logo">◐</span> LNZ <small>calm feed</small></div>
+      <label class="switch" title="Enable / disable"><input type="checkbox" form="cfg" name="enabled" /><span></span></label>
+    </header>
+
+    <section class="presets">
+      <button data-preset="video" class="preset"><b>Video model</b><span>TRIBE · skips stressful</span></button>
+      <button data-preset="text" class="preset"><b>Text filter</b><span>drops before render</span></button>
+      <button data-preset="observe" class="preset"><b>Observe</b><span>score only</span></button>
+    </section>
+    <p id="active" class="active"></p>
+    <a class="demo-link" href="demo.html" target="_blank">▶ Open model demo</a>
+
+    <section class="tiles" id="tiles"></section>
+
+    <section>
+      <h2>Recent <button id="refresh" class="link">refresh</button></h2>
+      <ul id="recent" class="recent"><li class="empty">Open TikTok For You and scroll.</li></ul>
+    </section>
+
+    <details>
+      <summary>Advanced settings</summary>
+      <form id="cfg">
+        <label>Mode
+          <select name="mode">
+            <option value="skip">skip (pre-blur, then skip stressful)</option>
+            <option value="observe">observe (score only)</option>
+          </select>
+        </label>
+        <label>Classifier
+          <select name="classifier">
+            <option value="tribe">TRIBE stress model (video + audio)</option>
+            <option value="stressText">stress text model (instant)</option>
+            <option value="keyword">keyword (test)</option>
+            <option value="mockStress">mock stress model</option>
+            <option value="http">HTTP endpoint</option>
+            <option value="stub">stub (allow all)</option>
+          </select>
+        </label>
+        <label data-for="tribe">Stress threshold (0–1) <input name="tribeThreshold" type="number" min="0" max="1" step="0.01" /></label>
+        <label data-for="tribe">Seconds analyzed <input name="tribeSeconds" type="number" min="1" max="30" /></label>
+        <label data-for="keyword">Block pattern <input name="keywordPattern" /></label>
+        <label data-for="http">Endpoint URL <input name="httpUrl" type="url" placeholder="http://localhost:8000/classify" /></label>
+        <label>Hold timeout ms <input name="holdTimeoutMs" type="number" min="0" /></label>
+        <label>When unanswered
+          <select name="failMode">
+            <option value="failOpen">failOpen (play it)</option>
+            <option value="failClosed">failClosed (skip it)</option>
+          </select>
+        </label>
+        <label>Classifier timeout ms (0 = default) <input name="classifierTimeoutMs" type="number" min="0" /></label>
+        <label class="row"><input type="checkbox" name="drop" /> Drop mode (text classifiers only)</label>
+        <label class="row"><input type="checkbox" name="autoScroll" /> Auto-scroll <span class="hint">Alt+Shift+A</span></label>
+        <label>Advance after N s (0 = on end) <input name="autoScrollSec" type="number" min="0" /></label>
+        <label class="row"><input type="checkbox" name="overlay" /> Debug overlay on TikTok <span class="hint">Alt+Shift+O</span></label>
+      </form>
+      <button id="export" class="secondary">Export last 500 items (JSON)</button>
+    </details>
     <script src="popup.js"></script>
   </body>
 </html>

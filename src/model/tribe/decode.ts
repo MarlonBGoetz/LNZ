@@ -58,7 +58,8 @@ export const decodeFrames = async (video: Blob, maxSec: number): Promise<Float32
   el.preload = "auto";
   el.src = url;
   try {
-    if (!(await once(el, "loadeddata", LOAD_TIMEOUT_MS))) return [];
+    if (!(await once(el, "loadeddata", LOAD_TIMEOUT_MS)))
+      throw new Error(`video ${el.error ? `error ${el.error.code} ${el.error.message}` : "load timeout"} (${Math.round(video.size / 1024)} KB, ${video.type || "?"}, tab ${document.visibilityState})`);
     const canvas = document.createElement("canvas");
     canvas.width = canvas.height = VIS_SIZE;
     const ctx = canvas.getContext("2d", { willReadFrequently: true })!;
