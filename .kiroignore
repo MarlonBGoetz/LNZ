@@ -1,0 +1,3 @@
+# Keep run bearer tokens out of Kiro's context
+.overwatch/state.json
+.overwatch/setup.json

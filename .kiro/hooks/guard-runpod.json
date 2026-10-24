@@ -1,0 +1,10 @@
+{
+  "name": "guard-runpod",
+  "description": "Guard every direct Runpod MCP tool call against policy (budget, GPU allowlist, keep/volume protection) before it runs.",
+  "trigger": "PreToolUse",
+  "matcher": "@power-gpu-overwatch-runpod",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.guard"
+  }
+}

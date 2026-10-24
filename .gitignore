@@ -1,0 +1,19 @@
+# Local overwatch state (holds per-run bearer tokens) — never commit
+.overwatch/state.json
+.overwatch/setup.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Environment
+.env
+.venv/
+
+# Generated datasets and shards
+datasets/
