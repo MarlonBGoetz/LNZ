@@ -21,6 +21,12 @@ npm test
 
 Load the extension: Chrome → `chrome://extensions` → Developer mode → **Load unpacked** → `extension/dist`. Open <https://www.tiktok.com>. First launch asks you to create a PIN.
 
+Chrome 137+ no longer honours `--load-extension` for branded Chrome. Load unpacked manually, or use Chrome for Testing / Chromium when you need a scripted launch. The automated fixture run in `docs/TESTING.md` used Chrome for Testing 133.
+
+### Stage preview (no TikTok account needed)
+
+`chrome://extensions` → LNZ → **Extension options**, or open `chrome-extension://<extension-id>/preview.html`. This is a synthetic four-clip stage that mounts the **real content script**, PIN lock, decision engine and demo classifiers. Every value is labelled **DEMO DATA**; the clips are generated for the review and are not TikTok content. Use it to open the panel, test a locked change, unlock/edit/save, and watch auto-skip advance through clips that keep or reject.
+
 ### Split-screen demo
 
 - Left: Chrome on TikTok with LNZ.
