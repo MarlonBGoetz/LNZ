@@ -178,9 +178,9 @@ button { font: inherit; color: inherit; }
 
 /* session / day view switch */
 .view-tabs { display: flex; align-items: center; gap: 4px; border-bottom: 1px solid var(--border); }
-.view-tabs button { position: relative; padding: 8px 12px; border-radius: 8px 8px 0 0; color: var(--muted); font-size: 12px; }
+.view-tabs button { position: relative; padding: 8px 12px; border: 0; border-radius: 8px 8px 0 0; background: transparent; color: var(--muted); font-size: 12px; cursor: pointer; }
 .view-tabs button:hover { color: var(--text); background: var(--surface-2); }
-.view-tabs button.on { color: var(--text); }
+.view-tabs button.on { color: var(--text); background: var(--surface-2); }
 .view-tabs button.on::after { content: ''; position: absolute; left: 10px; right: 10px; bottom: -1px; height: 2px; border-radius: 2px; background: var(--cyan); }
 .view-spacer { flex: 1; }
 
@@ -255,6 +255,47 @@ button { font: inherit; color: inherit; }
 .day-loading { display: flex; align-items: center; gap: 10px; min-height: 90px; }
 .day-loading .skel { width: 80px; height: 10px; }
 
+
+/* four-card session layout + regional grid */
+.quad { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.quad .card { display: flex; flex-direction: column; }
+.quad .card-head { align-items: flex-start; }
+
+.calm-row { display: flex; align-items: center; gap: 14px; }
+.calm-score { display: flex; align-items: baseline; color: var(--text); font: 600 48px var(--mono); line-height: 1; letter-spacing: -0.04em; }
+.calm-score .unit { margin-left: 3px; color: var(--muted); font-size: 22px; letter-spacing: 0; }
+.calm-score.hot { color: var(--red); text-shadow: 0 0 24px rgba(255, 77, 94, 0.25); }
+.calm-meta { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.calm-meta .lvl-row { flex-wrap: wrap; gap: 7px; }
+.calm-meta .small { font-size: 10px; }
+
+.region-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 9px; }
+.region-tile {
+  min-height: 78px;
+  padding: 8px 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.region-tile > span { color: var(--muted); font: 8.5px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
+.region-tile > b { color: var(--text); font: 600 25px var(--mono); line-height: 1.05; letter-spacing: -0.02em; }
+.region-tile > i { display: block; height: 3px; border-radius: 2px; background: #1d2730; overflow: hidden; }
+.region-tile > i > span { display: block; height: 100%; border-radius: 2px; }
+.region-tile.strong > b { text-shadow: 0 0 16px rgba(0, 221, 235, 0.35); }
+.region-tile.empty > b { color: #5f6b78; }
+
+.region-sub { display: flex; gap: 10px; margin-top: 7px; }
+.region-chip { flex: 1; min-width: 0; display: flex; align-items: center; gap: 6px; color: var(--muted); font: 8px var(--mono); letter-spacing: 0.05em; }
+.region-chip > span { white-space: nowrap; }
+.region-chip > i { flex: 1; height: 2px; border-radius: 2px; background: #1d2730; overflow: hidden; }
+.region-chip > i > b { display: block; height: 100%; background: var(--cyan); opacity: 0.75; }
+.region-chip > b { color: var(--text); font-size: 9px; }
+
 @media (max-width: 1000px) {
   .day-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .day-split { grid-template-columns: 1fr 1fr; }
@@ -281,4 +322,66 @@ button { font: inherit; color: inherit; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Half-screen presentation: four cards fit without scrolling. */
+@media (max-width: 1100px) {
+  .app { max-width: none; padding: 8px 10px 14px; gap: 8px; }
+  .top { padding: 6px 2px 8px; gap: 10px; flex-wrap: nowrap; overflow: hidden; }
+  .brand .sep, .brand .title { display: none; }
+  .pills { margin-left: 4px; gap: 4px; flex-wrap: nowrap; }
+  .pill { padding: 3px 6px; font-size: 8px; letter-spacing: 0.08em; }
+  .right { gap: 6px; }
+  .clock, .ghost-btn, .user .who { display: none; }
+  .user { padding: 2px; border: 0; background: transparent; }
+  .avatar { width: 26px; height: 26px; font-size: 9px; }
+  .view-tabs { gap: 2px; }
+  .view-tabs button { padding: 6px 10px; font-size: 11px; }
+  .now-card { flex-direction: row; align-items: center; padding: 8px 12px; gap: 10px; }
+  .now-left h1 { font-size: 16px; }
+  .now-left .mono { font-size: 10px; }
+  .verdict { min-width: 145px; padding: 6px 10px; }
+  .verdict b { font-size: 18px; }
+  .verdict small { max-width: 190px; font-size: 9px; }
+  .quad { gap: 8px; }
+  .quad .card { padding: 10px 11px; }
+  .quad .card-head { margin-bottom: 6px; }
+  .quad .eyebrow { font-size: 8px; letter-spacing: 0.1em; }
+  .quad .model { font-size: 8px; }
+  .calm-row { gap: 9px; }
+  .calm-score { font-size: 38px; }
+  .calm-score .unit { font-size: 17px; }
+  .calm-meta { gap: 5px; }
+  .calm-meta .lvl-row { gap: 5px; }
+  .calm-meta .small { font-size: 9px; }
+  .region-grid { gap: 5px; margin-top: 6px; }
+  .region-tile { min-height: 62px; padding: 6px 7px; border-radius: 8px; }
+  .region-tile > span { font-size: 7.5px; }
+  .region-tile > b { font-size: 19px; }
+  .region-sub { gap: 6px; margin-top: 5px; }
+  .region-chip { gap: 4px; font-size: 7px; }
+  .region-chip > b { font-size: 8px; }
+  .brain-card .fine { margin-top: 4px; font-size: 8px; line-height: 1.4; }
+  .quad .ring { width: 100px; height: 100px; margin: auto; }
+  .quad .ring-center { padding: 0 8px; }
+  .quad .ring-center span { max-width: 82px; white-space: normal; line-height: 1.25; }
+  .ring-center b { font-size: 23px; }
+  .ring-center span { font-size: 7px; }
+  .ring-center small { font-size: 8px; }
+  .quad .rule-line { padding-top: 6px; font-size: 10px; }
+  .quad .cat-grid { gap: 3px; margin-bottom: 5px; }
+  .quad .cat { padding: 3px 5px; font-size: 8.5px; }
+  .quad .cat i { width: 17px; font-size: 7.5px; }
+  .quad .rule { grid-template-columns: 44px 54px minmax(0, 1fr); gap: 5px; padding: 5px 6px; }
+  .quad .rule small { font-size: 8px; }
+  .quad .rules { gap: 4px; margin-bottom: 6px; }
+  .quad .stats { gap: 4px; }
+  .quad .stat { padding: 5px 3px; }
+  .quad .stat b { font-size: 12px; }
+  .quad .stat span { font-size: 6.5px; }
+  .session, .log { display: none; }
+}
+@media (max-width: 700px) {
+  .quad { grid-template-columns: 1fr; }
+  .session, .log { display: none; }
 }

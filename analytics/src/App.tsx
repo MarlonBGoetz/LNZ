@@ -11,9 +11,9 @@ import {
   type ClassifierResult,
   type FilterId,
 } from '@lnz/shared';
-import { Brain, REGION_META, REGION_ORDER } from './Brain';
+import { REGION_META, REGION_ORDER } from './Brain';
 import { DayView } from './Day';
-import { Ring, SessionBars, Timeline, type Bar } from './Charts';
+import { Ring, SessionBars, type Bar } from './Charts';
 import { emptyStore, filtersOf, reduce, startDemoStream, type Store } from './store';
 
 type Action = { ev: AnalyticsEvent; demo: boolean } | { reset: true };
@@ -192,58 +192,56 @@ export function App() {
         </div>
       </section>
 
-      <section className="card brain-card">
-        <div className="card-head">
-          <span className="eyebrow">01 · NEURAL RESPONSE MODEL · CALM</span>
-          <ModelTag r={calm} fallback="TRIBE v2-derived · distilled" />
-        </div>
-        <div className="brain-grid">
-          <div className="brain-wrap">
-            <Brain regions={calmScore?.regions} hot={hot} analyzing={calm?.state === 'analyzing'} />
+      <div className="quad">
+        <section className="card brain-card">
+          <div className="card-head">
+            <span className="eyebrow">01 · NEURAL RESPONSE MODEL · CALM</span>
+            <ModelTag r={calm} fallback="TRIBE v2-derived · distilled" />
           </div>
-          <div className="brain-side">
-            <span className="eyebrow">PREDICTED STRESS RESPONSE</span>
-            <div className={`big mono ${hot ? 'hot' : ''}`}>
+          <div className="calm-row">
+            <div className={`calm-score mono ${hot ? 'hot' : ''}`}>
               {calmScore ? Math.round(calmScore.score * 100) : calm?.state === 'analyzing' ? <span className="skel" /> : '—'}
               {calmScore && <span className="unit">%</span>}
             </div>
-            <div className="lvl-row">
-              <span className={`lvl ${scoreLevel(calmScore?.score).toLowerCase()}`}>{scoreLevel(calmScore?.score).toUpperCase()}</span>
-              <span className="dim small">
-                {stateText(calm)} · threshold {Math.round(filters.calm.threshold * 100)}%{filters.calm.enabled ? '' : ' · filter off'}
-              </span>
-            </div>
-            <div className="meter">
-              <i style={{ width: `${(calmScore?.score ?? 0) * 100}%` }} className={hot ? 'hot' : ''} />
-              <b style={{ left: `${filters.calm.threshold * 100}%` }} />
-            </div>
-            <div className="regions">
-              {REGION_ORDER.map((k) => {
-                const v = calmScore?.regions?.[k];
-                return (
-                  <div key={k} className="region">
-                    <span>{REGION_META[k].label}</span>
-                    <span className="rbar">
-                      <i style={{ width: `${(v ?? 0) * 100}%` }} />
-                    </span>
-                    <span className="mono">{v == null ? '—' : Math.round(v * 100)}</span>
-                  </div>
-                );
-              })}
+            <div className="calm-meta">
+              <div className="lvl-row">
+                <span className={`lvl ${scoreLevel(calmScore?.score).toLowerCase()}`}>{scoreLevel(calmScore?.score).toUpperCase()}</span>
+                <span className="dim small">
+                  {stateText(calm)} · threshold {Math.round(filters.calm.threshold * 100)}%{filters.calm.enabled ? '' : ' · off'}
+                </span>
+              </div>
+              <div className="meter">
+                <i style={{ width: `${(calmScore?.score ?? 0) * 100}%` }} className={hot ? 'hot' : ''} />
+                <b style={{ left: `${filters.calm.threshold * 100}%` }} />
+              </div>
             </div>
           </div>
-        </div>
-        <Timeline data={calmScore?.timeline} threshold={filters.calm.threshold} hot={hot} />
-        <p className="fine">Model prediction of the stimulus-driven response to this video. It is not a measurement of the viewer.</p>
-      </section>
+          <div className="region-grid" aria-label="Predicted regional response">
+            {REGION_ORDER.slice(0, 4).map((k) => (
+              <RegionTile key={k} label={REGION_META[k].label} value={calmScore?.regions?.[k]} hot={hot} />
+            ))}
+          </div>
+          <div className="region-sub">
+            {REGION_ORDER.slice(4).map((k) => {
+              const v = calmScore?.regions?.[k];
+              return (
+                <div className="region-chip" key={k}>
+                  <span>{REGION_META[k].label}</span>
+                  <i><b style={{ width: `${(v ?? 0) * 100}%` }} /></i>
+                  <b className="mono">{v == null ? '—' : Math.round(v * 100)}</b>
+                </div>
+              );
+            })}
+          </div>
+          <p className="fine">Model prediction of the stimulus-driven response to this video. It is not a measurement of the viewer.</p>
+        </section>
 
-      <div className="row3">
         <section className="card">
           <div className="card-head">
             <span className="eyebrow">02 · LEARN</span>
             <ModelTag r={learn} fallback="VLM · transcript" />
           </div>
-          <Ring value={learnScore} label="EDUCATIONAL VALUE" sub={learn && learn.state !== 'ready' ? stateText(learn) : scoreLevel(learnScore).toUpperCase()} />
+          <Ring value={learnScore} label="EDUCATIONAL" sub={learn && learn.state !== 'ready' ? stateText(learn) : scoreLevel(learnScore).toUpperCase()} />
           <div className="rule-line">
             <span>Keep ≥ {Math.round(filters.learn.minScore * 100)}%</span>
             <RuleTag v={decision?.rules.learn.verdict} />
@@ -333,6 +331,25 @@ export function App() {
       ) : (
         <DayView />
       )}
+    </div>
+  );
+}
+
+function RegionTile({ label, value, hot }: { label: string; value?: number; hot: boolean }) {
+  const v = value ?? 0;
+  const tone = hot ? '255, 77, 94' : '0, 221, 235';
+  return (
+    <div
+      className={`region-tile ${value != null && value >= 0.5 ? 'strong' : ''} ${value == null ? 'empty' : ''}`}
+      style={{
+        background: `linear-gradient(155deg, rgba(${tone}, ${0.035 + v * 0.22}), rgba(10, 14, 18, 0.94))`,
+        borderColor: `rgba(${tone}, ${0.12 + v * 0.42})`,
+        boxShadow: `inset 0 0 ${Math.round(6 + v * 28)}px rgba(${tone}, ${0.05 + v * 0.22})`,
+      }}
+    >
+      <span>{label}</span>
+      <b className="mono">{value == null ? '—' : Math.round(value * 100)}</b>
+      <i><span style={{ width: `${v * 100}%`, background: `rgb(${tone})` }} /></i>
     </div>
   );
 }

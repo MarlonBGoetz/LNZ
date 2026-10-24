@@ -39,6 +39,15 @@ With the local relay running, the dashboard's **Day** tab was checked against th
 
 The day log lives in `analytics/.data/events-2026-10-24.jsonl` (gitignored). It is local-only, unauthenticated, and bound to `127.0.0.1`; see `PRIVACY.md`.
 
+## Half-screen session layout — verified 2026-10-24
+
+At 756×806 (the right-hand demo half), the Session view's four cards fit with `scrollHeight === 806` and no scrolling:
+
+- 2×2 grid: Calm, Learn, Shield, Filter Rules.
+- The Calm card replaces the brain illustration with four lit lobe tiles (Frontal, Parietal, Temporal, Occipital); the 71% Occipital tile is the strongest lit. Limbic and Cerebellum remain as small chips.
+- The header is compact (LNZ, relay/linked/protected/demo, avatar), and the Session / Day tabs are visible.
+- The session/log sections are hidden at this width so the four main cards fit.
+
 ## Verified Chromium fixture run — 2026-10-24
 
 The production unpacked extension was loaded into a fresh Chromium profile on the workstation. A controlled TikTok-shaped page was intercepted at a supported URL; no live TikTok account was used. The test interacted with the actual closed Shadow DOM through Chrome DevTools Protocol and trusted mouse/keyboard input.

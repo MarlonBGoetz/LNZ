@@ -51,6 +51,7 @@ The relay appends every event to `analytics/.data/events-YYYY-MM-DD.jsonl` (giti
 - **Launcher**: mask lit cyan when LNZ is on, grey outline when off. Small padlock badge shows lock state. When on, the three filter icons sit under it.
 - **Heat rail**: with the panel collapsed, Calm, Learn and Shield carry live health rings — green clear, amber pending/moderate/uncertain, red would skip. A dot on the launcher summarises the current video.
 - **X posts**: the adapter selects the most visible video in a timeline post or X's modal player. The post text, `@handle` and `/status/<id>` become the video identity; the same Calm / Learn / Shield rules apply. A rejected post advances to the next timeline article with a video.
+- **Half-screen session**: the Session view is a 2×2 grid of Calm / Learn / Shield / Rules. The Calm card replaces the brain sketch with four lit lobe tiles (Frontal, Parietal, Temporal, Occipital) plus Limbic / Cerebellum chips. At 756×806 the four cards fit without scrolling.
 - **Locked (PROTECTED)**: filters run; any change opens the PIN dialog. Turning LNZ *on* never needs a PIN; turning it *off* does.
 - **Unlocked (EDIT MODE)**: playback pauses while you edit. Save & lock applies the new config and resumes playback. Cancel restores the last saved config.
 - **Decision**: a video is kept only if every enabled filter passes. One rejection is enough to skip. Unavailable classifiers are shown as unknown, never as a pass.
