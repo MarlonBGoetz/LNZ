@@ -47,3 +47,7 @@ With no models connected, the **Demo** provider returns deterministic fixtures f
 ## Integrating models and navigation
 
 See [`docs/INTEGRATION.md`](docs/INTEGRATION.md).
+
+## Verification
+
+See [docs/TESTING.md](docs/TESTING.md) for automated coverage and the manual Chrome/TikTok checklist. The toolbar action opens the overlay on an existing supported tab, or opens TikTok when no overlay is available.

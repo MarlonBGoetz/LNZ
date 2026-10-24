@@ -21,6 +21,9 @@ import {
   writeUnlocked,
 } from '../lib/storage';
 import { buildProviders } from './providers';
+import './toolbar';
+import { classifierKey } from '../lib/analysis';
+import { createSerialQueue } from '../lib/serialQueue';
 
 /**
  * LNZ background service worker.
@@ -37,18 +40,20 @@ let analyticsConnected = false;
 const ports = new Set<chrome.runtime.Port>();
 
 async function ensureProviders(config: LnzConfig): Promise<ClassifierProvider[]> {
-  const key = `${config.providers.mode}|${config.providers.baseUrl}`;
+  const key = classifierKey(config);
+  let selected = providers;
   if (key !== providerKey) {
-    providers = buildProviders(config);
+    selected = buildProviders(config);
+    providers = selected;
     providerKey = key;
-    await refreshAvailability();
+    await refreshAvailability(selected);
   }
-  return providers;
+  return selected;
 }
 
-async function refreshAvailability(): Promise<void> {
-  const entries = await Promise.all(providers.map(async (p) => [p.filterId, await p.availability()] as const));
-  availability = Object.fromEntries(entries) as Record<FilterId, ProviderAvailability>;
+async function refreshAvailability(selected = providers): Promise<void> {
+  const entries = await Promise.all(selected.map(async (p) => [p.filterId, await p.availability()] as const));
+  if (selected === providers) availability = Object.fromEntries(entries) as Record<FilterId, ProviderAvailability>;
 }
 
 async function getState(): Promise<LnzState> {
@@ -145,9 +150,12 @@ async function handle(req: Request): Promise<Response> {
   }
 }
 
+const serialize = createSerialQueue();
+
 chrome.runtime.onMessage.addListener((req: Request, sender, sendResponse) => {
   if (sender.id !== chrome.runtime.id) return false;
-  handle(req).then(sendResponse, (e) => sendResponse({ ok: false, error: String(e) } satisfies Response));
+  if (!req || !['getState', 'setupPin', 'unlock', 'saveAndLock', 'cancelEdit', 'setActive'].includes(req.type)) return false;
+  serialize(() => handle(req)).then(sendResponse, (e) => sendResponse({ ok: false, error: String(e) } satisfies Response));
   return true;
 });
 
@@ -159,6 +167,11 @@ chrome.runtime.onConnect.addListener((port) => {
   port.onMessage.addListener(async (msg: PortIn) => {
     if (msg.type === 'decision') return void postAnalytics({ type: 'decision', decision: msg.decision, at: Date.now() });
     if (msg.type === 'skip') return void postAnalytics({ type: 'skip', videoId: msg.videoId, reason: msg.reason, at: Date.now() });
+    if (msg.type === 'cancelAnalysis') {
+      controller?.abort();
+      controller = null;
+      return;
+    }
     if (msg.type !== 'analyze') return;
 
     controller?.abort();
@@ -166,14 +179,15 @@ chrome.runtime.onConnect.addListener((port) => {
     controller = ctrl;
     const video = msg.video;
     const config = await readConfig();
-    if (!config.active) return;
+    if (ctrl.signal.aborted || !config.active || msg.providerKey !== classifierKey(config)) return;
     const list = await ensureProviders(config);
+    if (ctrl.signal.aborted) return;
     void postAnalytics({ type: 'video', video, at: Date.now() });
 
     const emit = (result: ClassifierResult) => {
       if (ctrl.signal.aborted) return; // stale: a newer video is active
       try {
-        port.postMessage({ type: 'result', result } satisfies PortOut);
+        port.postMessage({ type: 'result', result, requestId: msg.requestId, providerKey: msg.providerKey } satisfies PortOut);
       } catch {
         /* port closed */
       }
@@ -190,12 +204,13 @@ chrome.runtime.onConnect.addListener((port) => {
         const t0 = performance.now();
         try {
           const output = await p.classify(video, ctrl.signal);
-          availability[filterId] = 'connected';
+          if (ctrl.signal.aborted) return;
+          if (list === providers) availability[filterId] = 'connected';
           emit({ ...base, model: p.model, state: 'ready', output, latencyMs: Math.round(performance.now() - t0), receivedAt: Date.now() });
         } catch (e) {
           if (ctrl.signal.aborted) return;
           const network = e instanceof TypeError;
-          if (network) availability[filterId] = 'unavailable';
+          if (network && list === providers) availability[filterId] = 'unavailable';
           emit({ ...base, state: network ? 'unavailable' : 'error', error: e instanceof Error ? e.message : String(e), receivedAt: Date.now() });
         }
       }),

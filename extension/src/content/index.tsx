@@ -30,7 +30,20 @@ function mount() {
   const nav = new TikTokDomNavigator();
   const playback = new TikTokPlayback(source);
 
-  createRoot(container).render(<App source={source} navigator={nav} playback={playback} />);
+  const root = createRoot(container);
+  root.render(<App source={source} navigator={nav} playback={playback} />);
+
+  // Release React effects, runtime ports, polling and playback guards on navigation.
+  // A page restored from the back/forward cache receives a fresh overlay below.
+  window.addEventListener('pagehide', () => {
+    root.unmount();
+    playback.dispose();
+    source.stop();
+    host.remove();
+  }, { once: true });
 }
 
 mount();
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) mount();
+});

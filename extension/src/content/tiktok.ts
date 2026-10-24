@@ -82,16 +82,25 @@ export class TikTokDomVideoSource implements VideoSource {
   private listeners = new Set<(v: VideoRef | null) => void>();
   private timer: number | undefined;
   private count = 0;
+  private running = false;
+  private readonly tick = () => {
+    if (this.running) this.poll();
+  };
 
   start(): void {
-    const tick = () => this.poll();
-    this.timer = window.setInterval(tick, 400);
-    addEventListener('scroll', tick, { passive: true, capture: true });
-    tick();
+    if (this.running) return;
+    this.running = true;
+    this.timer = window.setInterval(this.tick, 400);
+    addEventListener('scroll', this.tick, { passive: true, capture: true });
+    this.tick();
   }
 
   stop(): void {
+    if (!this.running) return;
+    this.running = false;
     clearInterval(this.timer);
+    this.timer = undefined;
+    removeEventListener('scroll', this.tick, true);
   }
 
   current(): VideoRef | null {
@@ -117,8 +126,11 @@ export class TikTokDomVideoSource implements VideoSource {
     if (ref.videoId !== this.cur?.videoId) {
       ref.index = ++this.count;
       this.emit(ref, el);
-    } else {
-      this.el = el;
+    } else if (el !== this.el) {
+      // TikTok can replace a video element without changing its logical ID.
+      // Notify playback owners so their pause guard follows the new element.
+      ref.index = this.cur?.index;
+      this.emit(ref, el);
     }
   }
 
@@ -155,25 +167,51 @@ export class TikTokDomNavigator implements VideoNavigator {
 export class TikTokPlayback implements PlaybackController {
   private held: HTMLVideoElement | null = null;
   private wasPlaying = false;
-  private readonly guard = (e: Event) => (e.target as HTMLVideoElement).pause();
+  private holding = false;
+  private unsubscribe: (() => void) | undefined;
+  private readonly guard = (e: Event) => {
+    if (this.holding && e.target === this.held) this.held?.pause();
+  };
 
   constructor(private readonly source: TikTokDomVideoSource) {}
 
   hold(): void {
-    if (this.held) return;
+    this.holding = true;
+    this.unsubscribe ??= this.source.onActiveVideoChange(() => this.retarget());
+    this.retarget();
+  }
+
+  private retarget(): void {
+    if (!this.holding) return;
     const v = this.source.element() ?? findActiveVideoElement();
+    if (v === this.held) return;
+    // Leaving a video while editing must not restart it in the background.
+    this.detach();
     if (!v) return;
     this.held = v;
     this.wasPlaying = !v.paused;
-    v.pause();
     v.addEventListener('play', this.guard);
+    v.pause();
+  }
+
+  private detach(): void {
+    this.held?.removeEventListener('play', this.guard);
+    this.held = null;
+    this.wasPlaying = false;
   }
 
   release(): void {
     const v = this.held;
-    if (!v) return;
-    v.removeEventListener('play', this.guard);
-    this.held = null;
-    if (this.wasPlaying && v.isConnected) void v.play().catch(() => undefined);
+    // Check the DOM again: a feed transition may precede the next source poll.
+    const shouldResume = this.wasPlaying && v?.isConnected && v === findActiveVideoElement();
+    this.dispose();
+    if (shouldResume && v) void v.play().catch(() => undefined);
+  }
+
+  dispose(): void {
+    this.holding = false;
+    this.unsubscribe?.();
+    this.unsubscribe = undefined;
+    this.detach();
   }
 }

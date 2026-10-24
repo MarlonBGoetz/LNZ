@@ -36,7 +36,8 @@ export function Panel(p: Props) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const locked = !editing;
   const status = !config.active ? 'OFF' : editing ? 'EDIT MODE' : 'PROTECTED';
-  const isDemo = config.providers.mode === 'demo';
+  const isDemo = Object.values(results).some((result) => result?.isDemo)
+    || (Object.keys(results).length === 0 && config.providers.mode === 'demo');
 
   return (
     <section className={`panel ${editing ? 'is-editing' : 'is-locked'} ${config.active ? '' : 'is-off'}`} aria-label="LNZ panel">

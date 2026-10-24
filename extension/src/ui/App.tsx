@@ -4,7 +4,6 @@ import {
   type FilterId,
   type LnzConfig,
   type PlaybackController,
-  type ResultMap,
   type VideoNavigator,
   type VideoRef,
 } from '@lnz/shared';
@@ -14,6 +13,8 @@ import { Launcher } from './Launcher';
 import { Onboarding } from './Onboarding';
 import { Panel } from './Panel';
 import { PinDialog } from './PinDialog';
+import { AnalysisSession, classifierKey, visibleResults } from '../lib/analysis';
+import { DelayedAutoSkip } from '../lib/autoSkip';
 
 interface Props {
   source: TikTokDomVideoSource;
@@ -34,7 +35,9 @@ export function App({ source, navigator, playback }: Props) {
   const [draft, setDraft] = useState<LnzConfig | null>(null);
   const [pinPrompt, setPinPrompt] = useState<string | null>(null);
   const [video, setVideo] = useState<VideoRef | null>(source.current());
-  const [results, setResults] = useState<ResultMap>({});
+  const [analysisSession] = useState(() => new AnalysisSession());
+  const [analysis, setAnalysis] = useState(analysisSession.snapshot);
+  const [autoSkip] = useState(() => new DelayedAutoSkip());
   const [expanded, setExpanded] = useState<FilterId | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [anchor, setAnchor] = useState<Anchor>({ top: 88, right: 24 });
@@ -42,13 +45,45 @@ export function App({ source, navigator, playback }: Props) {
   const portRef = useRef<chrome.runtime.Port | null>(null);
   const videoRef = useRef<VideoRef | null>(video);
   const stateRef = useRef<LnzState | null>(null);
-  const skippedRef = useRef<string | null>(null);
+  const holdingRef = useRef(false);
+  const toastTimer = useRef<number | undefined>(undefined);
   const postedRef = useRef<string>('');
   stateRef.current = state;
+  const results = useMemo(() => visibleResults(analysis, video?.videoId, state?.config), [analysis, video?.videoId, state?.config]);
+
+  const flash = useCallback((msg: string) => {
+    clearTimeout(toastTimer.current);
+    setToast(msg);
+    toastTimer.current = window.setTimeout(() => setToast(null), 2600);
+  }, []);
+
+  useEffect(() => () => {
+    autoSkip.cancel();
+    clearTimeout(toastTimer.current);
+  }, [autoSkip]);
+
+  const applyState = useCallback((next: LnzState) => {
+    stateRef.current = next;
+    autoSkip.cancel();
+    setState(next);
+  }, [autoSkip]);
 
   // ---- background state -------------------------------------------------
   useEffect(() => {
-    void send({ type: 'getState' }).then((r) => r.state && setState(r.state));
+    let alive = true;
+    void send({ type: 'getState' }).then((r) => alive && r.state && applyState(r.state));
+    return () => { alive = false; };
+  }, [applyState]);
+
+  useEffect(() => {
+    const onMessage = (message: { type?: string }, sender: chrome.runtime.MessageSender, sendResponse: (response: { ok: boolean }) => void) => {
+      if (sender.id !== chrome.runtime.id || message?.type !== 'openOverlay') return false;
+      setOpen(true);
+      sendResponse({ ok: true });
+      return false;
+    };
+    chrome.runtime.onMessage.addListener(onMessage);
+    return () => chrome.runtime.onMessage.removeListener(onMessage);
   }, []);
 
   const post = useCallback((m: PortIn) => {
@@ -61,9 +96,13 @@ export function App({ source, navigator, playback }: Props) {
 
   const analyze = useCallback(
     (v: VideoRef | null) => {
-      if (v && stateRef.current?.config.active) post({ type: 'analyze', video: v });
+      autoSkip.cancel();
+      const snapshot = analysisSession.begin(v, stateRef.current?.config);
+      setAnalysis(snapshot);
+      if (v && snapshot.request) post({ type: 'analyze', video: v, requestId: snapshot.request.requestId, providerKey: snapshot.request.providerKey });
+      else post({ type: 'cancelAnalysis' });
     },
-    [post],
+    [post, analysisSession, autoSkip],
   );
 
   // Port to the service worker; reconnect if the worker restarts.
@@ -74,14 +113,20 @@ export function App({ source, navigator, playback }: Props) {
       const port = chrome.runtime.connect({ name: ANALYSIS_PORT });
       portRef.current = port;
       port.onMessage.addListener((m: PortOut) => {
-        if (m.type === 'state') setState(m.state);
-        if (m.type === 'result' && m.result.videoId === videoRef.current?.videoId) {
-          setResults((prev) => ({ ...prev, [m.result.filterId]: m.result }));
+        if (!alive) return;
+        if (m.type === 'state') applyState(m.state);
+        if (m.type === 'result') {
+          const snapshot = analysisSession.accept(m.requestId, m.providerKey, m.result);
+          if (snapshot) setAnalysis(snapshot);
         }
       });
       port.onDisconnect.addListener(() => {
+        if (!alive) return;
         portRef.current = null;
-        if (alive) timer = window.setTimeout(() => {
+        autoSkip.cancel();
+        const cleared = analysisSession.begin(null, stateRef.current?.config);
+        setAnalysis(cleared);
+        timer = window.setTimeout(() => {
           connect();
           analyze(videoRef.current);
         }, 800);
@@ -91,9 +136,11 @@ export function App({ source, navigator, playback }: Props) {
     return () => {
       alive = false;
       clearTimeout(timer);
+      autoSkip.cancel();
+      analysisSession.begin(null, stateRef.current?.config);
       portRef.current?.disconnect();
     };
-  }, [analyze]);
+  }, [analyze, analysisSession, autoSkip, applyState]);
 
   // ---- active video -----------------------------------------------------
   useEffect(
@@ -101,7 +148,6 @@ export function App({ source, navigator, playback }: Props) {
       source.onActiveVideoChange((v) => {
         videoRef.current = v;
         setVideo(v);
-        setResults({}); // never show the previous video's results
         analyze(v);
       }),
     [source, analyze],
@@ -109,9 +155,8 @@ export function App({ source, navigator, playback }: Props) {
 
   // Re-run analysis when protection is switched on or the classifier source changes.
   const active = state?.config.active ?? false;
-  const providerKey = `${state?.config.providers.mode}|${state?.config.providers.baseUrl}`;
+  const providerKey = state ? classifierKey(state.config) : '';
   useEffect(() => {
-    if (!active) return setResults({});
     analyze(videoRef.current);
   }, [active, providerKey, analyze]);
 
@@ -156,6 +201,7 @@ export function App({ source, navigator, playback }: Props) {
 
   // ---- hold playback while the user is changing settings ------------------
   const holding = !!state && (!state.hasPin || !!pinPrompt || editing);
+  holdingRef.current = holding;
   useEffect(() => {
     if (holding) playback.hold();
     else playback.release();
@@ -163,41 +209,50 @@ export function App({ source, navigator, playback }: Props) {
 
   // ---- auto-skip ------------------------------------------------------
   useEffect(() => {
-    if (!state || !decision || !video || holding) return;
+    autoSkip.cancel();
+    if (!state || !decision || !video || holding || !analysis.request) return;
     if (!state.config.active || !state.config.autoSkip || decision.verdict !== 'skip') return;
-    if (skippedRef.current === video.videoId) return;
-    skippedRef.current = video.videoId;
-    const reason = decision.rejectedBy.map((id) => decision.rules[id].reason).join(' · ');
-    flash(`Skipped · ${reason}`);
-    post({ type: 'skip', videoId: video.videoId, reason });
-    // Not cleared on re-render: the skip is committed once skippedRef is set.
-    window.setTimeout(() => {
-      if (videoRef.current?.videoId === video.videoId) void navigator.skipToNext(reason);
-    }, 650);
-  }, [decision, state, video, holding, navigator, post]);
-
-  const flash = (msg: string) => {
-    setToast(msg);
-    window.setTimeout(() => setToast((t) => (t === msg ? null : t)), 2600);
-  };
+    const request = analysis.request;
+    const videoId = video.videoId;
+    autoSkip.schedule(videoId, () => {
+      const latest = stateRef.current;
+      const current = analysisSession.snapshot;
+      return !!latest && latest.config.active && latest.config.autoSkip && !holdingRef.current
+        && videoRef.current?.videoId === videoId
+        && current.request?.requestId === request.requestId
+        && current.request?.providerKey === classifierKey(latest.config)
+        && decide(videoId, latest.config.filters, current.results).verdict === 'skip';
+    }, () => {
+      const latest = stateRef.current!;
+      const current = decide(videoId, latest.config.filters, analysisSession.snapshot.results);
+      const reason = current.rejectedBy.map((id) => current.rules[id].reason).join(' · ');
+      flash(`Skipping · ${reason}`);
+      post({ type: 'skip', videoId, reason });
+      void navigator.skipToNext(reason).catch(() => flash('Could not skip this video'));
+    });
+    return () => autoSkip.cancel();
+  }, [decision, state, video, holding, navigator, post, analysis.request, analysisSession, autoSkip, flash]);
 
   // ---- actions --------------------------------------------------------
-  const requestUnlock = (reason: string) => setPinPrompt(reason);
+  const requestUnlock = (reason: string) => {
+    autoSkip.cancel();
+    holdingRef.current = true;
+    setPinPrompt(reason);
+  };
 
   const onLockClick = async () => {
     if (!state) return;
     if (!editing) return requestUnlock('Unlock to edit your filters');
     const r = await send({ type: 'saveAndLock', config: draft ?? state.config });
-    if (r.state) setState(r.state);
+    if (r.state) applyState(r.state);
     if (r.ok) {
       flash('Saved · Protected');
-      skippedRef.current = null;
     }
   };
 
   const onCancelEdit = async () => {
     const r = await send({ type: 'cancelEdit' });
-    if (r.state) setState(r.state);
+    if (r.state) applyState(r.state);
     setDraft(null);
   };
 
@@ -206,12 +261,12 @@ export function App({ source, navigator, playback }: Props) {
     if (editing) return setDraft((d) => ({ ...(d ?? state.config), active: next }));
     if (!next) return requestUnlock('Unlock to turn LNZ off');
     const r = await send({ type: 'setActive', active: true });
-    if (r.state) setState(r.state);
+    if (r.state) applyState(r.state);
   };
 
   const onUnlock = async (pin: string): Promise<string | null> => {
     const r = await send({ type: 'unlock', pin });
-    if (r.state) setState(r.state);
+    if (r.state) applyState(r.state);
     if (r.ok) {
       setPinPrompt(null);
       return null;
@@ -221,7 +276,7 @@ export function App({ source, navigator, playback }: Props) {
 
   const onSetup = async (pin: string, config: LnzConfig): Promise<string | null> => {
     const r = await send({ type: 'setupPin', pin, config });
-    if (r.state) setState(r.state);
+    if (r.state) applyState(r.state);
     if (r.ok) flash('PIN set · Protected');
     return r.ok ? null : r.error;
   };
