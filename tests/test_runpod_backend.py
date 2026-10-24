@@ -136,6 +136,43 @@ def test_create_pod_builds_gpu_type_ids(monkeypatch):
     assert pod["price_per_hour"] == pytest.approx(5.38)
 
 
+def test_create_pod_sends_docker_start_cmd_when_provided(monkeypatch):
+    be, transport = _backend(
+        monkeypatch,
+        responses={("POST", "/pods"): {
+            "id": "pod-d", "name": "ow-run-d", "desiredStatus": "RUNNING",
+            "costPerHr": "2.69", "env": {"OVERWATCH_RUN": "run-d"},
+            "gpu": {"id": "NVIDIA H100 80GB HBM3"},
+        }},
+    )
+    start_cmd = "bash -lc 'bash /workspace/pipeline/run.sh'"
+    be.create_pod(
+        name="ow-run-d", gpu="H100", image="img", volume_id="vol-1",
+        data_center_id="US-MO-1", docker_start_cmd=start_cmd,
+    )
+    method, path, body = transport.calls[0]
+    assert (method, path) == ("POST", "/pods")
+    # ASSUMPTION: REST field is dockerStartCmd (to be confirmed live).
+    assert body["dockerStartCmd"] == start_cmd
+
+
+def test_create_pod_omits_docker_start_cmd_by_default(monkeypatch):
+    be, transport = _backend(
+        monkeypatch,
+        responses={("POST", "/pods"): {
+            "id": "pod-n", "name": "ow-run-n", "desiredStatus": "RUNNING",
+            "costPerHr": "2.69", "env": {"OVERWATCH_RUN": "run-n"},
+            "gpu": {"id": "NVIDIA H100 80GB HBM3"},
+        }},
+    )
+    be.create_pod(
+        name="ow-run-n", gpu="H100", image="img", volume_id="vol-1",
+        data_center_id="US-MO-1",
+    )
+    _, _, body = transport.calls[0]
+    assert "dockerStartCmd" not in body
+
+
 def test_create_pod_unknown_gpu_raises(monkeypatch):
     be, _ = _backend(monkeypatch, responses={("POST", "/pods"): {}})
     with pytest.raises(KeyError):

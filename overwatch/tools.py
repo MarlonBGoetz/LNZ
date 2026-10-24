@@ -39,7 +39,7 @@ POD_PREFIX = "ow-"
 RUN_ENV = "OVERWATCH_RUN"
 KEEP_ENV = "OVERWATCH_KEEP"
 REPORTS_DIR = os.path.join(".overwatch", "reports")
-DEFAULT_IMAGE = "runpod/pytorch:2.3.0-py3.11-cuda12.1"
+DEFAULT_IMAGE = "runpod/pytorch:1.4.1-cu1290-torch291-ubuntu2404"
 
 # Smoke runs are always short-lived and self-terminating.
 SMOKE_MAX_MINUTES = 10
@@ -182,9 +182,14 @@ def run_launch(
     volume_id: Optional[str] = None,
     keep: bool = False,
     image: str = DEFAULT_IMAGE,
+    docker_start_cmd: Optional[str] = None,
     backend: Optional[runpod_client.Backend] = None,
 ) -> Result:
     """Provision an ``ow-<run>`` Pod and start a supervised run.
+
+    ``docker_start_cmd`` (optional) is a shell command string the Pod container
+    runs on boot so it can self-run the on-pod pipeline without SSH; it is
+    forwarded to ``backend.create_pod`` only when provided.
 
     Refuses (raising :class:`guard.GuardError` or ``ValueError``) unless the
     smoke test passed, a budget and max hours are set, a network volume is
@@ -235,6 +240,7 @@ def run_launch(
             "OVERWATCH_TOKEN": bearer,
         },
         price_per_hour=backend.gpu_price(gpu) or 0.0,
+        docker_start_cmd=docker_start_cmd,
     )
 
     run = state_mod.new_run(
@@ -268,6 +274,7 @@ def run_launch(
         "status_url": status_url,
         "bearer_issued": True,
         "env": {RUN_ENV: run_id, KEEP_ENV: "1" if keep else "0"},
+        "docker_start_cmd_set": bool(docker_start_cmd),
     }
     summary = (
         f"Launched {pod['name']} ({gpu}x{gpu_count}, ${pod['price_per_hour']:.2f}/hr); "

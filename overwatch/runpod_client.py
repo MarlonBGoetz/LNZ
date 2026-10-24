@@ -186,6 +186,7 @@ class FakeBackend(Backend):
         env: Optional[Dict[str, str]] = None,
         price_per_hour: Optional[float] = None,
         created_by: str = "overwatch",
+        docker_start_cmd: Optional[str] = None,
         **extra: Any,
     ) -> Dict[str, Any]:
         pod_id = self._next_id("pod-")
@@ -204,6 +205,11 @@ class FakeBackend(Backend):
             "created_by": created_by,
             "created_at": time.time(),
         }
+        # Only record the container start command when one was supplied so the
+        # default pod shape is unchanged (mirrors RealBackend omitting the REST
+        # field when docker_start_cmd is None).
+        if docker_start_cmd is not None:
+            pod["docker_start_cmd"] = docker_start_cmd
         pod.update(extra)
         self.pods[pod_id] = pod
         return dict(pod)
@@ -445,6 +451,7 @@ class RealBackend(Backend):
         price_per_hour: Optional[float] = None,
         data_center_id: Optional[str] = None,
         cloud_type: str = "SECURE",
+        docker_start_cmd: Optional[str] = None,
         **extra: Any,
     ) -> Dict[str, Any]:
         from .policy import gpu_type_ids
@@ -464,6 +471,14 @@ class RealBackend(Backend):
             body["dataCenterIds"] = [datacenter]
         if volume_id:
             body["networkVolumeId"] = volume_id
+        # Container start command (lets a Pod self-run the on-pod pipeline on
+        # boot, no SSH). Only added to the body when provided so existing create
+        # bodies/tests are unchanged. ASSUMPTION: the Runpod REST PodCreateInput
+        # field is ``dockerStartCmd``; the live field name (vs dockerArgs /
+        # containerStartCommand) could NOT be verified in this task and MUST be
+        # confirmed against a live create before launch. Sent as a string.
+        if docker_start_cmd is not None:
+            body["dockerStartCmd"] = docker_start_cmd
         for key in ("containerDiskInGb", "volumeInGb"):
             if key in extra:
                 body[key] = extra[key]
