@@ -60,7 +60,7 @@ Full write-ups: [`docs/GPU_OVERWATCH.md`](docs/GPU_OVERWATCH.md) and [`docs/how-
 
 | Part | Path | What it is |
 |---|---|---|
-| Extension | `extension/` | MV3 Chrome extension: launcher, panel, PIN lock, onboarding, TikTok and X DOM adapters |
+| Extension | `extension/` | MV3 Chrome extension: launcher, panel, PIN lock, onboarding, TikTok and X adapters, pre-render feed filtering |
 | Dashboard | `analytics/` | Local session monitor and persisted day summary (localhost:5174) |
 | Contracts | `shared/` | TypeScript interfaces, decision engine, demo provider, brand mark |
 | Calm model | `models/` | Browser-ready ONNX student distilled from TRIBE v2, stress readout, PyTorch weights |
@@ -141,6 +141,8 @@ tests/                          offline Python tests for gpu-overwatch
 
 docs/
   INTEGRATION.md  TESTING.md    model and navigation integration, test checklist
+  FEED_FILTERING.md             how blocked items are dropped before TikTok / X render them
+  OWNER_APPROVAL.md             branch rules and owner review (see also CONTRIBUTING.md)
   CALM_MODEL_REPORT.md          Calm model metrics, ablations and caveats
   TRIBE_DISTILL_HANDOFF.md      the distillation brief and spending rules
   GPU_OVERWATCH.md              full gpu-overwatch guide
@@ -206,6 +208,7 @@ Events are appended to `analytics/.data/events-YYYY-MM-DD.jsonl`, which is gitig
 - **Locked (PROTECTED):** the filters run, and any change opens the PIN dialog. Turning LNZ *on* never needs the PIN; turning it *off* does.
 - **Unlocked (EDIT MODE):** playback pauses while you edit. Save & lock applies the change; Cancel restores the last saved config.
 - **Decision:** a video is kept only if every enabled filter passes. Unavailable classifiers show as unknown, never as a pass.
+- **Feed filtering:** blocked items are removed from TikTok and X feed responses before the site renders them. The fetch/XHR interceptor uses keyword, hashtag, creator and ad rules plus classifier verdicts judged ahead. A DOM safety net catches anything that slips through. See [`docs/FEED_FILTERING.md`](docs/FEED_FILTERING.md).
 - **PIN:**
   - stored only as a PBKDF2-SHA256 verifier (310k iterations, random salt);
   - 3 free attempts, then a 30 s back-off that doubles each time;
