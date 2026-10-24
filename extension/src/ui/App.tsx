@@ -193,11 +193,11 @@ export function App({ source, navigator, playback }: Props) {
 
   useEffect(() => {
     if (!decision || decision.verdict === 'pending') return;
-    const key = `${decision.videoId}:${decision.verdict}:${decision.rejectedBy.join(',')}`;
+    const key = `${video?.platform ?? ''}:${decision.videoId}:${decision.verdict}:${decision.rejectedBy.join(',')}`;
     if (key === postedRef.current) return;
     postedRef.current = key;
-    post({ type: 'decision', decision });
-  }, [decision, post]);
+    post({ type: 'decision', decision: { ...decision, platform: video?.platform } });
+  }, [decision, post, video?.platform]);
 
   // ---- hold playback while the user is changing settings ------------------
   const holding = !!state && (!state.hasPin || !!pinPrompt || editing);
@@ -227,7 +227,7 @@ export function App({ source, navigator, playback }: Props) {
       const current = decide(videoId, latest.config.filters, analysisSession.snapshot.results);
       const reason = current.rejectedBy.map((id) => current.rules[id].reason).join(' · ');
       flash(`Skipping · ${reason}`);
-      post({ type: 'skip', videoId, reason });
+      post({ type: 'skip', videoId, platform: video.platform, reason });
       void navigator.skipToNext(reason).catch(() => flash('Could not skip this video'));
     });
     return () => autoSkip.cancel();
@@ -283,9 +283,16 @@ export function App({ source, navigator, playback }: Props) {
 
   if (!state || !shown) return null;
 
+  // Keep the panel inside the viewport when the active video sits low on the
+  // page (X posts put the video below the author and post text).
+  const panelMax = Math.max(260, Math.min(window.innerHeight - 150, window.innerHeight - anchor.top - 70));
+
   return (
     <>
-      <div className="anchor" style={{ top: anchor.top, right: anchor.right }}>
+      <div
+        className="anchor"
+        style={{ top: anchor.top, right: anchor.right, ['--panel-max' as string]: `${panelMax}px` }}
+      >
         <Launcher
           active={shown.active}
           locked={!editing}

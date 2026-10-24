@@ -35,6 +35,7 @@ export function findActiveVideoElement(): HTMLVideoElement | null {
 function containerOf(v: HTMLVideoElement): Element {
   return (
     v.closest('article') ??
+    v.closest('[role="dialog"]') ??
     v.closest('[data-e2e="recommend-list-item-container"]') ??
     v.closest('[class*="DivItemContainer"]') ??
     v.parentElement?.parentElement?.parentElement ??
@@ -54,8 +55,30 @@ function genericPageTitle(title: string): boolean {
   return !s || /^(TikTok|Log in|Sign up|Watch|For You)\b/i.test(s);
 }
 
-export function describeVideo(v: HTMLVideoElement): VideoRef {
+/** X post inside a timeline article or a video modal. */
+function describeXVideo(v: HTMLVideoElement, c: Element): VideoRef {
+  let videoId = location.pathname.match(/\/status\/(\d+)/)?.[1];
+  if (!videoId) {
+    const href = c.querySelector<HTMLAnchorElement>('a[href*="/status/"]')?.href;
+    videoId = href?.match(/\/status\/(\d+)/)?.[1];
+  }
+  const user = text(c, '[data-testid="User-Name"]');
+  const author = user?.match(/@([A-Za-z0-9_]+)/)?.[1];
+  const title = text(c, '[data-testid="tweetText"]');
+  if (!videoId) videoId = `h${hashString(`${author ?? ''}|${title ?? ''}|${v.poster || v.currentSrc}`).toString(36)}`;
+  return {
+    videoId,
+    url: location.href,
+    title,
+    author,
+    durationSec: Number.isFinite(v.duration) ? Math.round(v.duration) : undefined,
+    platform: 'x',
+  };
+}
+
+export function describeVideo(v: HTMLVideoElement, platform: 'tiktok' | 'x' = 'tiktok'): VideoRef {
   const c = containerOf(v);
+  if (platform === 'x') return describeXVideo(v, c);
   let videoId: string | undefined = location.pathname.match(/\/video\/(\d+)/)?.[1];
   if (!videoId) {
     for (let el: Element | null = v; el && el !== c.parentElement; el = el.parentElement) {
@@ -90,6 +113,7 @@ export function describeVideo(v: HTMLVideoElement): VideoRef {
     title,
     author,
     durationSec: Number.isFinite(v.duration) ? Math.round(v.duration) : undefined,
+    platform: 'tiktok',
   };
 }
 
@@ -103,6 +127,8 @@ export class TikTokDomVideoSource implements VideoSource {
   private readonly tick = () => {
     if (this.running) this.poll();
   };
+
+  constructor(private readonly platform: 'tiktok' | 'x' = 'tiktok') {}
 
   start(): void {
     if (this.running) return;
@@ -139,7 +165,7 @@ export class TikTokDomVideoSource implements VideoSource {
       if (this.cur) this.emit(null, null);
       return;
     }
-    const ref = describeVideo(el);
+    const ref = describeVideo(el, this.platform);
     if (ref.videoId !== this.cur?.videoId) {
       ref.index = ++this.count;
       this.emit(ref, el);
@@ -177,6 +203,35 @@ export class TikTokDomNavigator implements VideoNavigator {
     let el: HTMLElement | null = v?.parentElement ?? null;
     while (el && !(el.scrollHeight > el.clientHeight + 10 && /(auto|scroll)/.test(getComputedStyle(el).overflowY))) el = el.parentElement;
     (el ?? document.scrollingElement ?? document.documentElement).scrollBy({ top: innerHeight * 0.9, behavior: 'smooth' });
+  }
+}
+
+/**
+ * X has no TikTok-style next button. A rejected post advances to the next
+ * timeline article that actually contains a video; if the active video is open
+ * in X's modal player, close it first and continue from the post it belonged to.
+ */
+export class XDomNavigator implements VideoNavigator {
+  constructor(private readonly source: TikTokDomVideoSource) {}
+
+  async skipToNext(): Promise<void> {
+    const current = this.source.element() ?? findActiveVideoElement();
+    const dialog = current?.closest('[role="dialog"]');
+    if (dialog) {
+      document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', code: 'Escape', bubbles: true }));
+      await new Promise((r) => setTimeout(r, 250));
+    }
+
+    const articles = [...document.querySelectorAll('article')].filter((a) => a.querySelector('video'));
+    const status = location.pathname.match(/\/status\/(\d+)/)?.[1];
+    const currentArticle =
+      current?.closest('article') ??
+      (status ? articles.find((a) => a.querySelector(`a[href*="/status/${status}"]`)) : undefined);
+    const index = currentArticle ? articles.indexOf(currentArticle) : -1;
+    const next = index >= 0 ? articles[index + 1] : null;
+
+    if (next) next.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    else window.scrollBy({ top: innerHeight * 0.85, behavior: 'smooth' });
   }
 }
 

@@ -48,4 +48,16 @@ describe('Chrome toolbar action', () => {
     expect(browser.action.setTitle).toHaveBeenCalledWith({ tabId: 12, title: 'Reload this TikTok tab to open LNZ' });
     expect(browser.tabs.create).not.toHaveBeenCalled();
   });
+
+  it('provides the same reload hint on X and Twitter', async () => {
+    browser.tabs.sendMessage.mockRejectedValue(new Error('No receiver'));
+    const { openFromToolbar } = await import('../src/background/toolbar');
+
+    await openFromToolbar(tab('https://x.com/home'));
+    expect(browser.action.setTitle).toHaveBeenCalledWith({ tabId: 12, title: 'Reload this X tab to open LNZ' });
+
+    await openFromToolbar(tab('https://twitter.com/home'));
+    expect(browser.action.setTitle).toHaveBeenCalledWith({ tabId: 12, title: 'Reload this X tab to open LNZ' });
+    expect(browser.tabs.create).not.toHaveBeenCalled();
+  });
 });

@@ -166,7 +166,15 @@ chrome.runtime.onConnect.addListener((port) => {
 
   port.onMessage.addListener(async (msg: PortIn) => {
     if (msg.type === 'decision') return void postAnalytics({ type: 'decision', decision: msg.decision, at: Date.now() });
-    if (msg.type === 'skip') return void postAnalytics({ type: 'skip', videoId: msg.videoId, reason: msg.reason, at: Date.now() });
+    if (msg.type === 'skip') {
+      return void postAnalytics({
+        type: 'skip',
+        videoId: msg.videoId,
+        platform: msg.platform,
+        reason: msg.reason,
+        at: Date.now(),
+      });
+    }
     if (msg.type === 'cancelAnalysis') {
       controller?.abort();
       controller = null;
@@ -215,7 +223,14 @@ chrome.runtime.onConnect.addListener((port) => {
     await Promise.all(
       FILTER_IDS.map(async (filterId) => {
         const p = list.find((x) => x.filterId === filterId);
-        const base = { filterId, videoId: video.videoId, provider: p?.id ?? 'none', isDemo: p?.isDemo ?? false, model: p?.model };
+        const base = {
+          filterId,
+          videoId: video.videoId,
+          platform: video.platform,
+          provider: p?.id ?? 'none',
+          isDemo: p?.isDemo ?? false,
+          model: p?.model,
+        };
         if (!p) return emit({ ...base, state: 'unavailable', receivedAt: Date.now() });
         emit({ ...base, state: 'analyzing', receivedAt: Date.now() });
         const t0 = performance.now();

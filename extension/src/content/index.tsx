@@ -1,12 +1,20 @@
 import { createRoot } from 'react-dom/client';
 import { App } from '../ui/App';
 import css from '../ui/overlay.css?inline';
-import { TikTokDomNavigator, TikTokDomVideoSource, TikTokPlayback } from './tiktok';
+import { TikTokDomNavigator, TikTokDomVideoSource, TikTokPlayback, XDomNavigator } from './tiktok';
 
 /**
- * Content script entry. Mounts the LNZ overlay in a closed Shadow DOM so TikTok's
- * styles cannot leak in and ours cannot leak out.
+ * Content script entry. Mounts the LNZ overlay in a closed Shadow DOM so the
+ * host page's styles cannot leak in and ours cannot leak out.
+ *
+ * `?platform=x` is only used by the local stage preview; the real pages are
+ * selected by hostname.
  */
+function detectPlatform(): 'tiktok' | 'x' {
+  if (new URLSearchParams(location.search).get('platform') === 'x') return 'x';
+  return /(^|\.)(x|twitter)\.com$/i.test(location.hostname) ? 'x' : 'tiktok';
+}
+
 function mount() {
   if (document.getElementById('lnz-root')) return;
   const host = document.createElement('div');
@@ -25,9 +33,10 @@ function mount() {
   }
   shadow.appendChild(container);
 
-  const source = new TikTokDomVideoSource();
+  const platform = detectPlatform();
+  const source = new TikTokDomVideoSource(platform);
   source.start();
-  const nav = new TikTokDomNavigator();
+  const nav = platform === 'x' ? new XDomNavigator(source) : new TikTokDomNavigator();
   const playback = new TikTokPlayback(source);
 
   const root = createRoot(container);

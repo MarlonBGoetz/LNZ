@@ -1,3 +1,9 @@
+function supportedPage(url: string | undefined): 'TikTok' | 'X' | null {
+  if (url?.startsWith('https://www.tiktok.com/')) return 'TikTok';
+  if (url?.startsWith('https://x.com/') || url?.startsWith('https://twitter.com/')) return 'X';
+  return null;
+}
+
 /** Open the existing overlay without bypassing its PIN-protected controls. */
 export async function openFromToolbar(tab: chrome.tabs.Tab): Promise<void> {
   if (tab.id !== undefined) {
@@ -10,9 +16,10 @@ export async function openFromToolbar(tab: chrome.tabs.Tab): Promise<void> {
       return;
     } catch {
       // Tabs opened before installation/reload do not yet have a content script.
-      if (tab.url?.startsWith('https://www.tiktok.com/')) {
+      const supported = supportedPage(tab.url);
+      if (supported) {
         await chrome.action.setBadgeText({ tabId: tab.id, text: '!' });
-        await chrome.action.setTitle({ tabId: tab.id, title: 'Reload this TikTok tab to open LNZ' });
+        await chrome.action.setTitle({ tabId: tab.id, title: `Reload this ${supported} tab to open LNZ` });
         return;
       }
     }

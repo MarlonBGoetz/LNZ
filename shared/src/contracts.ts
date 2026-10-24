@@ -22,7 +22,7 @@ export type BrainRegion = 'frontal' | 'parietal' | 'temporal' | 'occipital' | 'l
 
 /** A video the user is currently looking at. */
 export interface VideoRef {
-  /** Stable id. TikTok numeric id when known, otherwise a derived hash. */
+  /** Stable id. TikTok numeric id / X status id when known, otherwise a derived hash. */
   videoId: string;
   url: string;
   title?: string;
@@ -30,6 +30,8 @@ export interface VideoRef {
   durationSec?: number;
   /** Position in this browsing session (1-based), set by the detector. */
   index?: number;
+  /** Source platform. Older producers may omit it; infer from url when absent. */
+  platform?: 'tiktok' | 'x';
 }
 
 /** Continuous 0..1 score (Calm: predicted stress-related response; Learn: educational value). */
@@ -56,6 +58,8 @@ export type ClassifierOutput = ScoreOutput | CategoryOutput;
 export interface ClassifierResult {
   filterId: FilterId;
   videoId: string;
+  /** Source platform, when known. Lets the day log separate colliding ids. */
+  platform?: 'tiktok' | 'x';
   state: AnalysisState;
   output?: ClassifierOutput;
   /** Provider id, e.g. "demo:calm" or "http:calm". */
@@ -133,6 +137,8 @@ export type DecisionVerdict = 'keep' | 'skip' | 'pending' | 'keep-unverified';
 
 export interface Decision {
   videoId: string;
+  /** Source platform, when known. */
+  platform?: 'tiktok' | 'x';
   verdict: DecisionVerdict;
   rules: Record<FilterId, RuleOutcome>;
   rejectedBy: FilterId[];

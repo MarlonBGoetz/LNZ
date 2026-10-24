@@ -9,7 +9,7 @@ export type AnalyticsEvent =
   | { type: 'video'; video: VideoRef; at: number }
   | { type: 'result'; result: ClassifierResult; at: number }
   | { type: 'decision'; decision: Decision; at: number }
-  | { type: 'skip'; videoId: string; reason: string; at: number }
+  | { type: 'skip'; videoId: string; platform?: 'tiktok' | 'x'; reason: string; at: number }
   | {
       type: 'config';
       config: { active: boolean; locked: boolean; autoSkip: boolean; filters: FilterConfig; providerMode: 'demo' | 'http' };
@@ -19,3 +19,4 @@ export type AnalyticsEvent =
 export const ANALYTICS_EVENTS_PATH = '/api/events';
 export const ANALYTICS_STREAM_PATH = '/api/stream';
 export const ANALYTICS_HISTORY_PATH = '/api/history';
+export const ANALYTICS_DAY_PATH = '/api/day';

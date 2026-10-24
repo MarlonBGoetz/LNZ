@@ -28,7 +28,7 @@ export type PortIn =
   | { type: 'analyze'; video: VideoRef; requestId: number; providerKey: string }
   | { type: 'cancelAnalysis' }
   | { type: 'decision'; decision: Decision }
-  | { type: 'skip'; videoId: string; reason: string };
+  | { type: 'skip'; videoId: string; platform?: 'tiktok' | 'x'; reason: string };
 
 /** Long-lived port 'lnz-analysis': background -> content. */
 export type PortOut = { type: 'result'; result: ClassifierResult; requestId: number; providerKey: string } | { type: 'state'; state: LnzState };
