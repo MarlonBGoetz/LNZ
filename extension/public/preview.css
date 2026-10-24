@@ -8,6 +8,7 @@
   --muted: #91a0af;
   --text: #f5fafc;
   --amber: #f5b84a;
+  --green: #3ddc97;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
   --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
   color-scheme: dark;
@@ -125,6 +126,11 @@ h1 em { font-style: normal; color: var(--cyan); text-shadow: 0 0 34px rgba(0, 22
   font-size: 14px;
   line-height: 1.62;
 }
+.lede.heat-note { margin-top: 9px; font-size: 12.5px; }
+.heat-note b { font-weight: 600; }
+.heat-note .good { color: var(--green); }
+.heat-note .warn { color: var(--amber); }
+.heat-note .bad { color: var(--red); }
 
 .try {
   list-style: none;

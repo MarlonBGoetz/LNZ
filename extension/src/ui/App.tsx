@@ -291,6 +291,8 @@ export function App({ source, navigator, playback }: Props) {
           locked={!editing}
           open={open}
           filters={shown.filters}
+          results={results}
+          decision={decision}
           onToggle={() => setOpen((o) => !o)}
           onFilter={(id) => {
             setExpanded(id);

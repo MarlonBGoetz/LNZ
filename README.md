@@ -41,6 +41,7 @@ If the dashboard runs on another machine (e.g. the GPU box), forward the port: `
 ## How it behaves
 
 - **Launcher**: mask lit cyan when LNZ is on, grey outline when off. Small padlock badge shows lock state. When on, the three filter icons sit under it.
+- **Heat rail**: with the panel collapsed, Calm, Learn and Shield carry live health rings — green clear, amber pending/moderate/uncertain, red would skip. A dot on the launcher summarises the current video.
 - **Locked (PROTECTED)**: filters run; any change opens the PIN dialog. Turning LNZ *on* never needs a PIN; turning it *off* does.
 - **Unlocked (EDIT MODE)**: playback pauses while you edit. Save & lock applies the new config and resumes playback. Cancel restores the last saved config.
 - **Decision**: a video is kept only if every enabled filter passes. One rejection is enough to skip. Unavailable classifiers are shown as unknown, never as a pass.

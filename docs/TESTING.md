@@ -4,7 +4,7 @@ Run `npm run typecheck`, `npm test`, and `npm run build` from the repository roo
 
 ## Automated coverage
 
-The 38 unit/regression tests cover deterministic rules, PIN verifier and retry delays, provider payload validation, analysis request generations, provider changes, dashboard config re-announcement, delayed skip cancellation/deduplication, concurrent PIN/configuration messages, playback hold transitions, source cleanup/restart, and Chrome toolbar routing.
+The 46 unit/regression tests cover deterministic rules, PIN verifier and retry delays, provider payload validation, analysis request generations, provider changes, dashboard config re-announcement, collapsed-rail heat mapping, delayed skip cancellation/deduplication, concurrent PIN/configuration messages, playback hold transitions, source cleanup/restart, and Chrome toolbar routing.
 
 A result belongs to both a video and its analysis request/provider. Changing providers or disconnecting clears the previous result. Demo labels follow the results actually displayed, including while a different provider is selected in an unsaved draft. A pending skip is cancelled when editing begins or state changes, and its current conditions are checked again immediately before navigation.
 
@@ -13,7 +13,9 @@ A result belongs to both a video and its analysis request/provider. Changing pro
 `chrome-extension://<id>/preview.html` (also reachable from `chrome://extensions` → LNZ → Extension options) mounts the real content script over a synthetic four-clip feed. Verified in Chrome for Testing 149 on macOS with the production `extension/dist`:
 
 - Overlay mounts with the real launcher and filter rail; the panel reports **PROTECTED**.
-- Clip 1 (`100000000000039`) resolves to Calm 5% / Learn 87% / Shield no flags → **KEEP** with correct title/author from the stage DOM.
+- Clip 1 (`100000000000039`) resolves to Calm 5% / Learn 87% / Shield no flags → **KEEP** with correct title/author from the stage DOM; the collapsed rail shows three green rings and a green launcher dot.
+- Clip 3 (`100000000000024`) shows an amber Calm ring at 35% and a green Learn/Shield pair; the launcher dot is amber.
+- Clip 4 (`100000000000043`) shows a red Shield ring for the S1 flag, a green Calm ring, an amber Learn ring and a red launcher dot → **SKIP**.
 - A locked control opens the PIN dialog and pauses playback.
 - PIN `1234` unlocks to **EDIT MODE**; the Learn slider changes to 95%, Save & lock relocks and re-evaluates the clip to **SKIP** (`Learn 91% < 95%`).
 - The learning threshold was restored to 50% and the stage returned to clip 1 → **KEEP**.

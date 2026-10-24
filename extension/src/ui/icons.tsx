@@ -37,13 +37,12 @@ function Line({ size = 18, children, ...rest }: P) {
   );
 }
 
-/** Calm: minimal brain with a calm wave through it. */
+/** Calm: rounded brain, legible at 16px. */
 export const CalmIcon = (p: P) => (
   <Line {...p}>
     <path d="M12 5.2c-1-1.4-3.4-1.6-4.6-.2-1.6-.2-3 1.2-2.8 2.8-1.6.8-2 3-.8 4.2-.8 1.6 0 3.6 1.8 4 .4 1.8 2.4 2.8 4 2 .9.9 1.8 1 2.4.6" />
     <path d="M12 5.2c1-1.4 3.4-1.6 4.6-.2 1.6-.2 3 1.2 2.8 2.8 1.6.8 2 3 .8 4.2.8 1.6 0 3.6-1.8 4-.4 1.8-2.4 2.8-4 2-.9.9-1.8 1-2.4.6" />
     <path d="M12 5.2v13.4" />
-    <path d="M6.6 12.2c1-1 1.9-1 2.8 0s1.8 1 2.6 0 1.8-1 2.6 0 1.8 1 2.8 0" />
   </Line>
 );
 
