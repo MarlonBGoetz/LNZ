@@ -1,0 +1,7 @@
+body{width:300px;margin:10px;font:13px system-ui,sans-serif;color:#222}
+h1{font-size:15px;margin:0 0 8px}
+label{display:block;margin:6px 0}
+label.row{display:flex;gap:6px;align-items:center}
+input:not([type=checkbox]),select{display:block;width:100%;box-sizing:border-box;margin-top:2px}
+.hint{color:#888;font-size:11px}
+button{margin-top:6px;width:100%}

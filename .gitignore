@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+# Model export: keep code, docs and fp16 models. Demo clips/traces/live demo hold third-party TikHarm data (videos, uploader handles, transcripts); int8 files are unused.
+model/**/demo/
+model/**/live_demo.html
+model/**/*.int8.onnx
+scripts/tmp/

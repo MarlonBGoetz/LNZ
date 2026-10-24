@@ -1,0 +1,25 @@
+{
+  "name": "lnz-dev",
+  "description": "LNZ extension development: steering-aware, guarded shell, auto typecheck+tests after each turn",
+  "prompt": "You are working on LNZ, a passive Chrome MV3 extension that filters TikTok's For You feed with a local stress classifier. Follow .kiro/steering. Verify browser behavior live before calling it done.",
+  "tools": ["@builtin"],
+  "allowedTools": ["read", "grep", "glob", "code", "introspect", "todo_list"],
+  "toolsSettings": {
+    "shell": {
+      "allowedCommands": ["npm run typecheck", "npm test", "npm run build", "npx vitest run.*", "git status.*", "git diff.*", "git log.*"],
+      "autoAllowReadonly": true
+    },
+    "write": { "allowedPaths": ["./**"], "deniedPaths": ["./node_modules/**", "./model/**"] }
+  },
+  "resources": [
+    "file://.kiro/steering/**/*.md",
+    "file://FINDINGS.md",
+    "file://README.md"
+  ],
+  "hooks": {
+    "agentSpawn": [{ "command": "bash .kiro/hooks/session-context.sh" }],
+    "preToolUse": [{ "matcher": "shell", "command": "bash .kiro/hooks/guard-shell.sh" }],
+    "postToolUse": [{ "matcher": "write", "command": "bash .kiro/hooks/check-fixtures.sh" }],
+    "stop": [{ "command": "bash .kiro/hooks/verify.sh", "timeout_ms": 120000 }]
+  }
+}

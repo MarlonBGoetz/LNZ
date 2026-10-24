@@ -1,0 +1,1332 @@
+{
+  "__DEFAULT_SCOPE__": {
+    "webapp.app-context": {},
+    "webapp.biz-context": {},
+    "webapp.i18n-translation": {},
+    "seo.abtest": {},
+    "webapp.updated-items": [
+      {
+        "id": "7689786508206771478",
+        "desc": "What on earth!!!! He’s sooooo talented  He can literally do anything and still look good #fyp #dzcwct #malachibarton #talent @Malachi Barton ",
+        "createTime": "1790417951",
+        "scheduleTime": 0,
+        "video": {
+          "id": "7689786508206771478",
+          "height": 1024,
+          "width": 576,
+          "duration": 11,
+          "ratio": "540p",
+          "cover": "https://redacted.invalid/",
+          "originCover": "https://redacted.invalid/",
+          "dynamicCover": "https://redacted.invalid/",
+          "playAddr": "https://redacted.invalid/",
+          "downloadAddr": "https://redacted.invalid/",
+          "shareCover": [
+            ""
+          ],
+          "reflowCover": "",
+          "bitrate": 1547735,
+          "encodedType": "normal",
+          "format": "mp4",
+          "videoQuality": "normal",
+          "encodeUserTag": "",
+          "codecType": "h264",
+          "definition": "540p",
+          "subtitleInfos": [],
+          "zoomCover": {
+            "240": "https://redacted.invalid/",
+            "480": "https://redacted.invalid/",
+            "720": "https://redacted.invalid/",
+            "960": "https://redacted.invalid/"
+          },
+          "volumeInfo": {
+            "Loudness": -18.8,
+            "Peak": 0.33497
+          },
+          "bitrateInfo": [
+            {
+              "Bitrate": 1547735,
+              "QualityType": 20,
+              "BitrateFPS": 30,
+              "GearName": "normal_540_0",
+              "PlayAddr": {
+                "DataSize": "2244216",
+                "Width": 576,
+                "Height": 1024,
+                "Uri": "v24044gl0000darpo6nog65j7h1g86f0",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v24044gl0000darpo6nog65j7h1g86f0_h264_540p_1547735",
+                "FileHash": "de6a7923e77061636acc86eeb7b1a744",
+                "FileCs": "c:0-11227-d55b"
+              },
+              "CodecType": "h264",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 90.941, \"v960\": 92.842, \"v864\": 95.078, \"v720\": 96.555}, \"ori\": {\"v1080\": 77.559, \"v960\": 79.278, \"v864\": 82.633, \"v720\": 88.002}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 260712}, {\\\"time\\\": 2, \\\"offset\\\": 442061}, {\\\"time\\\": 3, \\\"offset\\\": 635692}, {\\\"time\\\": 4, \\\"offset\\\": 814818}, {\\\"time\\\": 5, \\\"offset\\\": 1022372}, {\\\"time\\\": 10, \\\"offset\\\": 1897281}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 90.941, \\\"v960\\\": 92.842, \\\"v864\\\": 95.078, \\\"v720\\\": 96.555}, \\\"ori\\\": {\\\"v1080\\\": 77.559, \\\"v960\\\": 79.278, \\\"v864\\\": 82.633, \\\"v720\\\": 88.002}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32625}"
+            },
+            {
+              "Bitrate": 1317655,
+              "QualityType": 2,
+              "BitrateFPS": 40,
+              "GearName": "adapt_lowest_1080_1",
+              "PlayAddr": {
+                "DataSize": "1904506",
+                "Width": 1080,
+                "Height": 1920,
+                "Uri": "v24044gl0000darpo6nog65j7h1g86f0",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v24044gl0000darpo6nog65j7h1g86f0_bytevc1_1080p_1317655",
+                "FileHash": "d393b9d42e6d426089bca624a29d4672",
+                "FileCs": "c:0-13960-c235"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 96.587, \"v960\": 96.724, \"v864\": 97.25, \"v720\": 97.928}, \"ori\": {\"v1080\": 89.321, \"v960\": 89.901, \"v864\": 90.732, \"v720\": 92.489}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 251117}, {\\\"time\\\": 2, \\\"offset\\\": 444194}, {\\\"time\\\": 3, \\\"offset\\\": 594677}, {\\\"time\\\": 4, \\\"offset\\\": 785834}, {\\\"time\\\": 5, \\\"offset\\\": 947956}, {\\\"time\\\": 10, \\\"offset\\\": 1670411}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 96.587, \\\"v960\\\": 96.724, \\\"v864\\\": 97.25, \\\"v720\\\": 97.928}, \\\"ori\\\": {\\\"v1080\\\": 89.321, \\\"v960\\\": 89.901, \\\"v864\\\": 90.732, \\\"v720\\\": 92.489}}}\",\"ufq\":\"{\\\"enh\\\":78.952,\\\"playback\\\":{\\\"ori\\\":72.273,\\\"srv1\\\":79.539},\\\"src\\\":78.952,\\\"trans\\\":72.273,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"e91245375450b02a8794eaf362ea32ee\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 98.185, \\\"sr20\\\": 109.028}}\",\"audio_bit_rate\":65036,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgAhyAHgWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAI\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            },
+            {
+              "Bitrate": 813134,
+              "QualityType": 14,
+              "BitrateFPS": 30,
+              "GearName": "adapt_lower_720_1",
+              "PlayAddr": {
+                "DataSize": "1179045",
+                "Width": 720,
+                "Height": 1280,
+                "Uri": "v24044gl0000darpo6nog65j7h1g86f0",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v24044gl0000darpo6nog65j7h1g86f0_bytevc1_720p_813134",
+                "FileHash": "b7bac18866cb795aad0a05bdadd8e013",
+                "FileCs": "c:0-11399-ce4a"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 92.715, \"v960\": 94.328, \"v864\": 95.692, \"v720\": 97.219}, \"ori\": {\"v1080\": 80.641, \"v960\": 84.216, \"v864\": 86.388, \"v720\": 90.059}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 175453}, {\\\"time\\\": 2, \\\"offset\\\": 257936}, {\\\"time\\\": 3, \\\"offset\\\": 360541}, {\\\"time\\\": 4, \\\"offset\\\": 463668}, {\\\"time\\\": 5, \\\"offset\\\": 572302}, {\\\"time\\\": 10, \\\"offset\\\": 1017226}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 92.715, \\\"v960\\\": 94.328, \\\"v864\\\": 95.692, \\\"v720\\\": 97.219}, \\\"ori\\\": {\\\"v1080\\\": 80.641, \\\"v960\\\": 84.216, \\\"v864\\\": 86.388, \\\"v720\\\": 90.059}}}\",\"ufq\":\"{\\\"enh\\\":78.952,\\\"playback\\\":{\\\"ori\\\":64.683,\\\"srv1\\\":76.757},\\\"src\\\":78.952,\\\"trans\\\":64.683,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"e91245375450b02a8794eaf362ea32ee\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 89.187, \\\"sr20\\\": 95.738}}\",\"audio_bit_rate\":65036,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgBaIAUBZYgkSXJJRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmoCAgIIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            },
+            {
+              "Bitrate": 790634,
+              "QualityType": 28,
+              "BitrateFPS": 30,
+              "GearName": "adapt_540_1",
+              "PlayAddr": {
+                "DataSize": "1146420",
+                "Width": 576,
+                "Height": 1024,
+                "Uri": "v24044gl0000darpo6nog65j7h1g86f0",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v24044gl0000darpo6nog65j7h1g86f0_bytevc1_540p_790634",
+                "FileHash": "a17e6aa12e5d4f7b9129b630d4d42b61",
+                "FileCs": "c:0-11399-0c58"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 91.401, \"v960\": 93.698, \"v864\": 95.552, \"v720\": 97.685}, \"ori\": {\"v1080\": 78.289, \"v960\": 82.169, \"v864\": 83.825, \"v720\": 88.101}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 161502}, {\\\"time\\\": 2, \\\"offset\\\": 238080}, {\\\"time\\\": 3, \\\"offset\\\": 332916}, {\\\"time\\\": 4, \\\"offset\\\": 428006}, {\\\"time\\\": 5, \\\"offset\\\": 528596}, {\\\"time\\\": 10, \\\"offset\\\": 974330}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 91.401, \\\"v960\\\": 93.698, \\\"v864\\\": 95.552, \\\"v720\\\": 97.685}, \\\"ori\\\": {\\\"v1080\\\": 78.289, \\\"v960\\\": 82.169, \\\"v864\\\": 83.825, \\\"v720\\\": 88.101}}}\",\"ufq\":\"{\\\"enh\\\":78.952,\\\"playback\\\":{\\\"ori\\\":62.919,\\\"srv1\\\":76.031},\\\"src\\\":78.952,\\\"trans\\\":62.919,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"50de8d0b56f9e7a37279a3ac7cc91f79\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 87.737, \\\"sr20\\\": 96.617}}\",\"audio_bit_rate\":32625,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgBIIAQBZYgkSXJJRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmoCAgIIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            }
+          ],
+          "size": "2244216",
+          "VQScore": "64.79",
+          "claInfo": {
+            "hasOriginalAudio": true,
+            "enableAutoCaption": true,
+            "captionInfos": [],
+            "noCaptionReason": 3
+          },
+          "videoID": "v24044gl0000darpo6nog65j7h1g86f0",
+          "PlayAddrStruct": {
+            "DataSize": "2244216",
+            "Width": 576,
+            "Height": 1024,
+            "Uri": "v24044gl0000darpo6nog65j7h1g86f0",
+            "UrlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ],
+            "UrlKey": "v24044gl0000darpo6nog65j7h1g86f0_h264_540p_1547735",
+            "FileHash": "de6a7923e77061636acc86eeb7b1a744",
+            "FileCs": "c:0-11227-d55b"
+          }
+        },
+        "author": {
+          "id": "user_132",
+          "shortId": "",
+          "uniqueId": "user_133",
+          "nickname": "user_134",
+          "avatarLarger": "https://redacted.invalid/",
+          "avatarMedium": "https://redacted.invalid/",
+          "avatarThumb": "https://redacted.invalid/",
+          "signature": "user_135",
+          "createTime": 1750606024,
+          "verified": false,
+          "secUid": "user_136",
+          "ftc": false,
+          "relation": 0,
+          "openFavorite": false,
+          "commentSetting": 0,
+          "duetSetting": 0,
+          "stitchSetting": 0,
+          "privateAccount": false,
+          "secret": false,
+          "isADVirtual": false,
+          "roomId": "",
+          "uniqueIdModifyTime": 0,
+          "ttSeller": false,
+          "downloadSetting": 0,
+          "recommendReason": "",
+          "nowInvitationCardUrl": "",
+          "nickNameModifyTime": 0,
+          "isEmbedBanned": false,
+          "canExpPlaylist": false,
+          "suggestAccountBind": false,
+          "UserStoryStatus": 1,
+          "shortDramaCreator": {}
+        },
+        "music": {
+          "id": "7689786522282969859",
+          "title": "original sound",
+          "playUrl": "https://redacted.invalid/",
+          "coverLarge": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "authorName": "user_134",
+          "original": true,
+          "private": false,
+          "duration": 11,
+          "scheduleSearchTime": 0,
+          "collected": false,
+          "preciseDuration": {
+            "preciseDuration": 11.598313,
+            "preciseShootDuration": 11.598313,
+            "preciseAuditionDuration": 11.598313,
+            "preciseVideoDuration": 11.598313
+          },
+          "isCopyrighted": false,
+          "tt2dsp": {
+            "tt_to_dsp_song_infos": []
+          },
+          "is_unlimited_music": false,
+          "is_commerce_music": true,
+          "shoot_duration": 11
+        },
+        "challenges": [
+          {
+            "id": "229207",
+            "title": "fyp",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "7609075631539617814",
+            "title": "dzcwct",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "22821109",
+            "title": "malachibarton",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "8123",
+            "title": "talent",
+            "desc": "We're excited to introduce #Talent in the new Categories section! We wanna see your best talent !!!",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          }
+        ],
+        "stats": {
+          "diggCount": 51000,
+          "shareCount": 1460,
+          "commentCount": 138,
+          "playCount": 380500,
+          "collectCount": "5688"
+        },
+        "statsV2": {
+          "diggCount": "51000",
+          "shareCount": "1460",
+          "commentCount": "138",
+          "playCount": "380500",
+          "collectCount": "5688",
+          "repostCount": "0"
+        },
+        "warnInfo": [],
+        "originalItem": false,
+        "officalItem": false,
+        "textExtra": [
+          {
+            "awemeId": "",
+            "start": 89,
+            "end": 93,
+            "hashtagId": "229207",
+            "hashtagName": "fyp",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 94,
+            "end": 101,
+            "hashtagId": "7609075631539617814",
+            "hashtagName": "dzcwct",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 102,
+            "end": 116,
+            "hashtagId": "22821109",
+            "hashtagName": "malachibarton",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 117,
+            "end": 124,
+            "hashtagId": "8123",
+            "hashtagName": "talent",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 125,
+            "end": 140,
+            "hashtagName": "",
+            "type": 0,
+            "subType": 0,
+            "userId": "user_137",
+            "isCommerce": false,
+            "userUniqueId": "user_138",
+            "secUid": "user_139"
+          }
+        ],
+        "secret": false,
+        "forFriend": false,
+        "digged": false,
+        "itemCommentStatus": 0,
+        "isProhibited": false,
+        "penaltyContext": {
+          "status": 102,
+          "video_status": 10,
+          "tns_status": "102",
+          "reviewed": "0",
+          "ec_global_verdict": 1,
+          "arb_content_safety_status": 102,
+          "display_penalty_type": "0",
+          "display_ui_type": "0",
+          "display_policy": 0
+        },
+        "takeDown": 0,
+        "effectStickers": [],
+        "authorStats": {
+          "followerCount": 1830,
+          "followingCount": 871,
+          "heart": 409000,
+          "heartCount": 409000,
+          "videoCount": 1605,
+          "diggCount": 24000,
+          "friendCount": 0
+        },
+        "privateItem": false,
+        "duetEnabled": true,
+        "stitchEnabled": true,
+        "stickersOnItem": [
+          {
+            "stickerText": [
+              "HOW DID MALACHI DO THAT?!!\nWHAT?!?!?!\n"
+            ],
+            "stickerType": 4
+          }
+        ],
+        "isAd": false,
+        "shareEnabled": true,
+        "comments": [],
+        "duetDisplay": 0,
+        "stitchDisplay": 0,
+        "indexEnabled": true,
+        "diversificationLabels": [
+          "Music",
+          "Entertainment Culture",
+          "Entertainment"
+        ],
+        "locationCreated": "GB",
+        "suggestedWords": [
+          "malachi barton",
+          "Malachi",
+          "malachi malachi",
+          "malachi video",
+          "what did malachi barton make",
+          "kamri and malachi dwts",
+          "malachi and freya",
+          "malachi is a bop",
+          "lulu and malachi",
+          "Malachi Barton No Post for Freya's Birthday"
+        ],
+        "contents": [
+          {
+            "desc": "What on earth!!!!",
+            "textExtra": []
+          },
+          {
+            "desc": "He’s sooooo talented ",
+            "textExtra": []
+          },
+          {
+            "desc": "He can literally do anything and still look good",
+            "textExtra": []
+          },
+          {
+            "desc": "#fyp #dzcwct #malachibarton #talent @Malachi Barton ",
+            "textExtra": [
+              {
+                "awemeId": "",
+                "start": 0,
+                "end": 4,
+                "hashtagId": "229207",
+                "hashtagName": "fyp",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 5,
+                "end": 12,
+                "hashtagId": "7609075631539617814",
+                "hashtagName": "dzcwct",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 13,
+                "end": 27,
+                "hashtagId": "22821109",
+                "hashtagName": "malachibarton",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 28,
+                "end": 35,
+                "hashtagId": "8123",
+                "hashtagName": "talent",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 36,
+                "end": 51,
+                "hashtagName": "",
+                "type": 0,
+                "subType": 0,
+                "userId": "user_137",
+                "isCommerce": false,
+                "userUniqueId": "user_138",
+                "secUid": "user_139"
+              }
+            ]
+          }
+        ],
+        "diversificationId": 10046,
+        "collected": false,
+        "channelTags": [],
+        "item_control": {
+          "can_repost": true
+        },
+        "IsAigc": false,
+        "AIGCDescription": "",
+        "ShowAIGC": true,
+        "backendSourceEventTracking": "",
+        "CategoryType": 101,
+        "textLanguage": "en",
+        "textTranslatable": true,
+        "authorStatsV2": {
+          "followerCount": "1830",
+          "followingCount": "871",
+          "heart": "409000",
+          "heartCount": "409000",
+          "videoCount": "1605",
+          "diggCount": "24000",
+          "friendCount": "0"
+        },
+        "isReviewing": false,
+        "creatorAIComment": {
+          "hasAITopic": false,
+          "categoryList": [],
+          "eligibleVideo": false,
+          "notEligibleReason": 211
+        }
+      },
+      {
+        "id": "7691763523977874701",
+        "desc": "@Estação da Ray #анимации #пони #pony #коллаб ",
+        "createTime": "1790878298",
+        "scheduleTime": 0,
+        "video": {
+          "id": "7691763523977874701",
+          "height": 576,
+          "width": 576,
+          "duration": 17,
+          "ratio": "540p",
+          "cover": "https://redacted.invalid/",
+          "originCover": "https://redacted.invalid/",
+          "dynamicCover": "https://redacted.invalid/",
+          "playAddr": "https://redacted.invalid/",
+          "downloadAddr": "https://redacted.invalid/",
+          "shareCover": [
+            ""
+          ],
+          "reflowCover": "",
+          "bitrate": 302121,
+          "encodedType": "normal",
+          "format": "mp4",
+          "videoQuality": "lowest",
+          "encodeUserTag": "",
+          "codecType": "h264",
+          "definition": "540p",
+          "subtitleInfos": [],
+          "zoomCover": {
+            "240": "https://redacted.invalid/",
+            "480": "https://redacted.invalid/",
+            "720": "https://redacted.invalid/",
+            "960": "https://redacted.invalid/"
+          },
+          "volumeInfo": {
+            "Loudness": -15.6,
+            "Peak": 0.80353
+          },
+          "bitrateInfo": [
+            {
+              "Bitrate": 353781,
+              "QualityType": 14,
+              "BitrateFPS": 30,
+              "GearName": "adapt_lower_720_1",
+              "PlayAddr": {
+                "DataSize": "751918",
+                "Width": 720,
+                "Height": 720,
+                "Uri": "v12044gd0000dava41fog65kcsdbbk8g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v12044gd0000dava41fog65kcsdbbk8g_bytevc1_720p_353781",
+                "FileHash": "f5ca7268031a9b119859edcbf4b0fb59",
+                "FileCs": "c:0-15802-e41e"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 95.045, \"v960\": 96.769, \"v864\": 97.514, \"v720\": 98.803}, \"ori\": {\"v1080\": 87.127, \"v960\": 89.912, \"v864\": 91.488, \"v720\": 93.887}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 65140}, {\\\"time\\\": 2, \\\"offset\\\": 80427}, {\\\"time\\\": 3, \\\"offset\\\": 118512}, {\\\"time\\\": 4, \\\"offset\\\": 147898}, {\\\"time\\\": 5, \\\"offset\\\": 187689}, {\\\"time\\\": 10, \\\"offset\\\": 426980}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 95.045, \\\"v960\\\": 96.769, \\\"v864\\\": 97.514, \\\"v720\\\": 98.803}, \\\"ori\\\": {\\\"v1080\\\": 87.127, \\\"v960\\\": 89.912, \\\"v864\\\": 91.488, \\\"v720\\\": 93.887}}}\",\"ufq\":\"{\\\"enh\\\":87.129,\\\"playback\\\":{\\\"ori\\\":78.256,\\\"srv1\\\":86.174},\\\"src\\\":87.129,\\\"trans\\\":78.256,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"4b5574e16dede7b5389a11ced23de6fa\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 96.924, \\\"sr20\\\": 103.041}}\",\"audio_bit_rate\":48508,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgBaIAtFliCRJcklEEzwhERERERGEfMTzl/v/r/Nn8v/r/Mofkv9/9f5s/l/9f4zhAIOagoMCggAAAAwCAAAAPBA==\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            },
+            {
+              "Bitrate": 302121,
+              "QualityType": 25,
+              "BitrateFPS": 30,
+              "GearName": "lowest_540_0",
+              "PlayAddr": {
+                "DataSize": "642121",
+                "Width": 576,
+                "Height": 576,
+                "Uri": "v12044gd0000dava41fog65kcsdbbk8g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v12044gd0000dava41fog65kcsdbbk8g_h264_540p_302121",
+                "FileHash": "6eb5f82adcdf056fd172b7ba57d870ea",
+                "FileCs": "c:0-15468-0909"
+              },
+              "CodecType": "h264",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 83.49, \"v960\": 86.12, \"v864\": 87.128, \"v720\": 92.145}, \"ori\": {\"v1080\": 71.223, \"v960\": 78.272, \"v864\": 79.396, \"v720\": 81.662}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 56018}, {\\\"time\\\": 2, \\\"offset\\\": 70648}, {\\\"time\\\": 3, \\\"offset\\\": 99907}, {\\\"time\\\": 4, \\\"offset\\\": 121878}, {\\\"time\\\": 5, \\\"offset\\\": 148768}, {\\\"time\\\": 10, \\\"offset\\\": 359355}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 83.49, \\\"v960\\\": 86.12, \\\"v864\\\": 87.128, \\\"v720\\\": 92.145}, \\\"ori\\\": {\\\"v1080\\\": 71.223, \\\"v960\\\": 78.272, \\\"v864\\\": 79.396, \\\"v720\\\": 81.662}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32339}"
+            },
+            {
+              "Bitrate": 272825,
+              "QualityType": 28,
+              "BitrateFPS": 30,
+              "GearName": "adapt_540_1",
+              "PlayAddr": {
+                "DataSize": "579856",
+                "Width": 576,
+                "Height": 576,
+                "Uri": "v12044gd0000dava41fog65kcsdbbk8g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v12044gd0000dava41fog65kcsdbbk8g_bytevc1_540p_272825",
+                "FileHash": "e0e7d3a06c86b5660db1f90228d212dc",
+                "FileCs": "c:0-15802-0507"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 92.161, \"v960\": 94.759, \"v864\": 96.109, \"v720\": 97.616}, \"ori\": {\"v1080\": 82.884, \"v960\": 85.194, \"v864\": 87.134, \"v720\": 90.614}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 50290}, {\\\"time\\\": 2, \\\"offset\\\": 60648}, {\\\"time\\\": 3, \\\"offset\\\": 88116}, {\\\"time\\\": 4, \\\"offset\\\": 108731}, {\\\"time\\\": 5, \\\"offset\\\": 136462}, {\\\"time\\\": 10, \\\"offset\\\": 327298}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 92.161, \\\"v960\\\": 94.759, \\\"v864\\\": 96.109, \\\"v720\\\": 97.616}, \\\"ori\\\": {\\\"v1080\\\": 82.884, \\\"v960\\\": 85.194, \\\"v864\\\": 87.134, \\\"v720\\\": 90.614}}}\",\"ufq\":\"{\\\"enh\\\":87.129,\\\"playback\\\":{\\\"ori\\\":74.542,\\\"srv1\\\":83.819},\\\"src\\\":87.129,\\\"trans\\\":74.542,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"50de8d0b56f9e7a37279a3ac7cc91f79\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 92.868, \\\"sr20\\\": 101.367}}\",\"audio_bit_rate\":32339,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwBdAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwBdAACgBIIAkFliCRJcklEEzwhERERERGEfMTzl/v/r/Nn8v/r/Mofkv9/9f5s/l/9f4zhAIOagoMCggAAAAwCAAAAPBA==\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            }
+          ],
+          "size": "642121",
+          "VQScore": "70.51",
+          "claInfo": {
+            "hasOriginalAudio": true,
+            "enableAutoCaption": true,
+            "captionInfos": [],
+            "noCaptionReason": 3
+          },
+          "videoID": "v12044gd0000dava41fog65kcsdbbk8g",
+          "PlayAddrStruct": {
+            "DataSize": "642121",
+            "Width": 576,
+            "Height": 576,
+            "Uri": "v12044gd0000dava41fog65kcsdbbk8g",
+            "UrlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ],
+            "UrlKey": "v12044gd0000dava41fog65kcsdbbk8g_h264_540p_302121",
+            "FileHash": "6eb5f82adcdf056fd172b7ba57d870ea",
+            "FileCs": "c:0-15468-0909"
+          }
+        },
+        "author": {
+          "id": "user_140",
+          "shortId": "",
+          "uniqueId": "user_141",
+          "nickname": "user_142",
+          "avatarLarger": "https://redacted.invalid/",
+          "avatarMedium": "https://redacted.invalid/",
+          "avatarThumb": "https://redacted.invalid/",
+          "signature": "user_143",
+          "createTime": 1717927200,
+          "verified": false,
+          "secUid": "user_144",
+          "ftc": false,
+          "relation": 0,
+          "openFavorite": false,
+          "commentSetting": 0,
+          "duetSetting": 0,
+          "stitchSetting": 0,
+          "privateAccount": false,
+          "secret": false,
+          "isADVirtual": false,
+          "roomId": "",
+          "uniqueIdModifyTime": 0,
+          "ttSeller": false,
+          "downloadSetting": 0,
+          "recommendReason": "",
+          "nowInvitationCardUrl": "",
+          "nickNameModifyTime": 0,
+          "isEmbedBanned": false,
+          "canExpPlaylist": false,
+          "suggestAccountBind": false,
+          "UserStoryStatus": 0,
+          "shortDramaCreator": {}
+        },
+        "music": {
+          "id": "7691763685995465486",
+          "title": "оригинальный звук",
+          "playUrl": "https://redacted.invalid/",
+          "coverLarge": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "authorName": "user_142",
+          "original": true,
+          "private": false,
+          "duration": 17,
+          "scheduleSearchTime": 0,
+          "collected": false,
+          "preciseDuration": {
+            "preciseDuration": 17.031813,
+            "preciseShootDuration": 17.031813,
+            "preciseAuditionDuration": 17.031813,
+            "preciseVideoDuration": 17.031813
+          },
+          "isCopyrighted": false,
+          "tt2dsp": {
+            "tt_to_dsp_song_infos": []
+          },
+          "is_unlimited_music": false,
+          "is_commerce_music": true,
+          "shoot_duration": 17
+        },
+        "challenges": [
+          {
+            "id": "66946061",
+            "title": "анимации",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "15713932",
+            "title": "пони",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "22991",
+            "title": "pony",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          },
+          {
+            "id": "55514012",
+            "title": "коллаб",
+            "desc": "",
+            "profileLarger": "",
+            "profileMedium": "",
+            "profileThumb": "",
+            "coverLarger": "",
+            "coverMedium": "",
+            "coverThumb": ""
+          }
+        ],
+        "stats": {
+          "diggCount": 469100,
+          "shareCount": 5573,
+          "commentCount": 1452,
+          "playCount": 2000000,
+          "collectCount": "58910"
+        },
+        "statsV2": {
+          "diggCount": "469100",
+          "shareCount": "5573",
+          "commentCount": "1452",
+          "playCount": "2000000",
+          "collectCount": "58910",
+          "repostCount": "0"
+        },
+        "warnInfo": [],
+        "originalItem": false,
+        "officalItem": false,
+        "textExtra": [
+          {
+            "awemeId": "",
+            "start": 0,
+            "end": 15,
+            "hashtagName": "",
+            "type": 0,
+            "subType": 0,
+            "userId": "user_145",
+            "isCommerce": false,
+            "userUniqueId": "user_146",
+            "secUid": "user_147"
+          },
+          {
+            "awemeId": "",
+            "start": 16,
+            "end": 25,
+            "hashtagId": "66946061",
+            "hashtagName": "анимации",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 26,
+            "end": 31,
+            "hashtagId": "15713932",
+            "hashtagName": "пони",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 32,
+            "end": 37,
+            "hashtagId": "22991",
+            "hashtagName": "pony",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          },
+          {
+            "awemeId": "",
+            "start": 38,
+            "end": 45,
+            "hashtagId": "55514012",
+            "hashtagName": "коллаб",
+            "type": 1,
+            "subType": 0,
+            "isCommerce": false
+          }
+        ],
+        "secret": false,
+        "forFriend": false,
+        "digged": false,
+        "itemCommentStatus": 0,
+        "isProhibited": false,
+        "penaltyContext": {
+          "status": 102,
+          "video_status": 10,
+          "tns_status": "102",
+          "reviewed": "1",
+          "ec_global_verdict": 1,
+          "arb_content_safety_status": 102,
+          "display_penalty_type": "0",
+          "display_ui_type": "0",
+          "display_policy": 0
+        },
+        "takeDown": 0,
+        "effectStickers": [],
+        "authorStats": {
+          "followerCount": 108100,
+          "followingCount": 172,
+          "heart": 3200000,
+          "heartCount": 3200000,
+          "videoCount": 50,
+          "diggCount": 25500,
+          "friendCount": 0
+        },
+        "privateItem": false,
+        "duetEnabled": true,
+        "stitchEnabled": true,
+        "stickersOnItem": [],
+        "isAd": false,
+        "shareEnabled": true,
+        "comments": [],
+        "duetDisplay": 0,
+        "stitchDisplay": 0,
+        "indexEnabled": true,
+        "diversificationLabels": [
+          "Video Games",
+          "Games",
+          "Entertainment"
+        ],
+        "locationCreated": "BY",
+        "contentLocation": {
+          "address": {
+            "addressCountry": "",
+            "addressLocality": "Tarbes",
+            "addressRegion": "",
+            "streetAddress": "Equestria, 3 Cr Gambetta, 65000 Tarbes, France"
+          }
+        },
+        "poi": {
+          "name": "Equestria",
+          "address": "3 Cr Gambetta, 65000 Tarbes, France",
+          "city": "Tarbes",
+          "province": "",
+          "country": "",
+          "id": "21568226351301210",
+          "fatherPoiId": "",
+          "fatherPoiName": "Tarbes",
+          "type": 0,
+          "category": "Outdoors and Attractions",
+          "cityCode": "2973385",
+          "countryCode": "3017382",
+          "ttTypeCode": "08a4a4",
+          "typeCode": "",
+          "ttTypeNameTiny": "Attraction",
+          "ttTypeNameMedium": "Attraction",
+          "ttTypeNameSuper": "Outdoors and Attractions"
+        },
+        "suggestedWords": [
+          "ray",
+          "my little pony",
+          "animation meme",
+          "Animation",
+          "Pony Horse",
+          "dancing pony",
+          "My Little Pony Edits",
+          "hey hey everybody my little pony",
+          "fluffy pony",
+          "pink pony"
+        ],
+        "contents": [
+          {
+            "desc": "@Estação da Ray #анимации #пони #pony #коллаб ",
+            "textExtra": [
+              {
+                "awemeId": "",
+                "start": 0,
+                "end": 15,
+                "hashtagName": "",
+                "type": 0,
+                "subType": 0,
+                "userId": "user_145",
+                "isCommerce": false,
+                "userUniqueId": "user_146",
+                "secUid": "user_147"
+              },
+              {
+                "awemeId": "",
+                "start": 16,
+                "end": 25,
+                "hashtagId": "66946061",
+                "hashtagName": "анимации",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 26,
+                "end": 31,
+                "hashtagId": "15713932",
+                "hashtagName": "пони",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 32,
+                "end": 37,
+                "hashtagId": "22991",
+                "hashtagName": "pony",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              },
+              {
+                "awemeId": "",
+                "start": 38,
+                "end": 45,
+                "hashtagId": "55514012",
+                "hashtagName": "коллаб",
+                "type": 1,
+                "subType": 0,
+                "isCommerce": false
+              }
+            ]
+          }
+        ],
+        "playlistId": "7678094437432134413",
+        "diversificationId": 10056,
+        "collected": false,
+        "channelTags": [],
+        "item_control": {
+          "can_repost": true
+        },
+        "IsAigc": false,
+        "AIGCDescription": "",
+        "ShowAIGC": true,
+        "backendSourceEventTracking": "",
+        "CategoryType": 103,
+        "textLanguage": "un",
+        "textTranslatable": false,
+        "authorStatsV2": {
+          "followerCount": "108100",
+          "followingCount": "172",
+          "heart": "3200000",
+          "heartCount": "3200000",
+          "videoCount": "50",
+          "diggCount": "25500",
+          "friendCount": "0"
+        },
+        "isReviewing": false,
+        "creatorAIComment": {
+          "hasAITopic": false,
+          "topicName": "Topics",
+          "categoryList": [],
+          "eligibleVideo": true,
+          "topicDescription": "Most frequently discussed topics",
+          "topicSubDescription": "Know which discussions are trending among viewers with this list of AI-summarized topics.",
+          "copyright": "Summarized by AI. Mistakes are possible.",
+          "notEligibleReason": 0
+        }
+      },
+      {
+        "id": "7689925009120234783",
+        "desc": "除了川普夫人拒绝跟习近平握手外，影片到第10秒一直持续到第20秒，可以听到场外高喊“习近平下台”的声浪。 这只是影片，如果在现场会听得更清楚。非常高兴，中国人对自由民主呐喊的声音被习近平听到了，如果他不是聋子的话😁",
+        "createTime": "1790450206",
+        "scheduleTime": 0,
+        "video": {
+          "id": "7689925009120234783",
+          "height": 720,
+          "width": 1280,
+          "duration": 22,
+          "ratio": "720p",
+          "cover": "https://redacted.invalid/",
+          "originCover": "https://redacted.invalid/",
+          "dynamicCover": "https://redacted.invalid/",
+          "playAddr": "https://redacted.invalid/",
+          "downloadAddr": "https://redacted.invalid/",
+          "shareCover": [
+            ""
+          ],
+          "reflowCover": "",
+          "bitrate": 1060866,
+          "encodedType": "normal",
+          "format": "mp4",
+          "videoQuality": "normal",
+          "encodeUserTag": "",
+          "codecType": "h264",
+          "definition": "720p",
+          "subtitleInfos": [],
+          "zoomCover": {
+            "240": "https://redacted.invalid/",
+            "480": "https://redacted.invalid/",
+            "720": "https://redacted.invalid/",
+            "960": "https://redacted.invalid/"
+          },
+          "volumeInfo": {
+            "Loudness": -39.4,
+            "Peak": 0.06383
+          },
+          "bitrateInfo": [
+            {
+              "Bitrate": 1060866,
+              "QualityType": 10,
+              "BitrateFPS": 30,
+              "GearName": "normal_720_0",
+              "PlayAddr": {
+                "DataSize": "2952923",
+                "Width": 1280,
+                "Height": 720,
+                "Uri": "v15044gf0000das1k5nog65n6vptp18g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v15044gf0000das1k5nog65n6vptp18g_h264_720p_1060866",
+                "FileHash": "bd0e340abae3e643b84d1524d579815c",
+                "FileCs": "c:0-19873-8293"
+              },
+              "CodecType": "h264",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 87.839, \"v960\": 90.047, \"v864\": 90.815, \"v720\": 93.543}, \"ori\": {\"v1080\": 87.839, \"v960\": 90.047, \"v864\": 90.815, \"v720\": 93.543}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 166037}, {\\\"time\\\": 2, \\\"offset\\\": 251334}, {\\\"time\\\": 3, \\\"offset\\\": 341397}, {\\\"time\\\": 4, \\\"offset\\\": 431573}, {\\\"time\\\": 5, \\\"offset\\\": 534506}, {\\\"time\\\": 10, \\\"offset\\\": 1172270}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 87.839, \\\"v960\\\": 90.047, \\\"v864\\\": 90.815, \\\"v720\\\": 93.543}, \\\"ori\\\": {\\\"v1080\\\": 87.839, \\\"v960\\\": 90.047, \\\"v864\\\": 90.815, \\\"v720\\\": 93.543}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"65b88c41c0963253ad31b6f68981a242\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":64467}"
+            },
+            {
+              "Bitrate": 990679,
+              "QualityType": 2,
+              "BitrateFPS": 30,
+              "GearName": "adapt_lowest_1080_1",
+              "PlayAddr": {
+                "DataSize": "2757557",
+                "Width": 1920,
+                "Height": 1080,
+                "Uri": "v15044gf0000das1k5nog65n6vptp18g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v15044gf0000das1k5nog65n6vptp18g_bytevc1_1080p_990679",
+                "FileHash": "178dba49c7339d2eebaf97210a276903",
+                "FileCs": "c:0-20102-1bff"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 98.724, \"v960\": 99.002, \"v864\": 99.169, \"v720\": 99.433}, \"ori\": {\"v1080\": 91.81, \"v960\": 92.646, \"v864\": 93.77, \"v720\": 94.841}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 241626}, {\\\"time\\\": 2, \\\"offset\\\": 321742}, {\\\"time\\\": 3, \\\"offset\\\": 412751}, {\\\"time\\\": 4, \\\"offset\\\": 527560}, {\\\"time\\\": 5, \\\"offset\\\": 629237}, {\\\"time\\\": 10, \\\"offset\\\": 1234535}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 98.724, \\\"v960\\\": 99.002, \\\"v864\\\": 99.169, \\\"v720\\\": 99.433}, \\\"ori\\\": {\\\"v1080\\\": 91.81, \\\"v960\\\": 92.646, \\\"v864\\\": 93.77, \\\"v720\\\": 94.841}}}\",\"ufq\":\"{\\\"enh\\\":81.142,\\\"playback\\\":{\\\"ori\\\":76.952,\\\"srv1\\\":83.866},\\\"src\\\":75.922,\\\"trans\\\":76.952,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"241026d54667c44d3823f11f264d8a55\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":48350,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgA8CAEOWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5oCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            },
+            {
+              "Bitrate": 639587,
+              "QualityType": 14,
+              "BitrateFPS": 30,
+              "GearName": "adapt_lower_720_1",
+              "PlayAddr": {
+                "DataSize": "1780292",
+                "Width": 1280,
+                "Height": 720,
+                "Uri": "v15044gf0000das1k5nog65n6vptp18g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v15044gf0000das1k5nog65n6vptp18g_bytevc1_720p_639587",
+                "FileHash": "3f9d20166b6fa6c1a7b06032da923231",
+                "FileCs": "c:0-20101-40ba"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 97.367, \"v960\": 97.762, \"v864\": 98.63, \"v720\": 99.228}, \"ori\": {\"v1080\": 85.745, \"v960\": 87.677, \"v864\": 89.469, \"v720\": 92.224}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 158226}, {\\\"time\\\": 2, \\\"offset\\\": 204388}, {\\\"time\\\": 3, \\\"offset\\\": 261490}, {\\\"time\\\": 4, \\\"offset\\\": 330319}, {\\\"time\\\": 5, \\\"offset\\\": 392506}, {\\\"time\\\": 10, \\\"offset\\\": 779347}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 97.367, \\\"v960\\\": 97.762, \\\"v864\\\": 98.63, \\\"v720\\\": 99.228}, \\\"ori\\\": {\\\"v1080\\\": 85.745, \\\"v960\\\": 87.677, \\\"v864\\\": 89.469, \\\"v720\\\": 92.224}}}\",\"ufq\":\"{\\\"enh\\\":81.142,\\\"playback\\\":{\\\"ori\\\":70.887,\\\"srv1\\\":82.509},\\\"src\\\":75.922,\\\"trans\\\":70.887,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"241026d54667c44d3823f11f264d8a55\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 95.925, \\\"sr20\\\": 102.325}}\",\"audio_bit_rate\":48350,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgAoCALRZYgkSXJJRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmgIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            },
+            {
+              "Bitrate": 548063,
+              "QualityType": 28,
+              "BitrateFPS": 30,
+              "GearName": "adapt_540_1",
+              "PlayAddr": {
+                "DataSize": "1525535",
+                "Width": 1024,
+                "Height": 576,
+                "Uri": "v15044gf0000das1k5nog65n6vptp18g",
+                "UrlList": [
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/",
+                  "https://redacted.invalid/"
+                ],
+                "UrlKey": "v15044gf0000das1k5nog65n6vptp18g_bytevc1_540p_548063",
+                "FileHash": "108608b4289b0616cc6a3e6fa934450f",
+                "FileCs": "c:0-20101-33f6"
+              },
+              "CodecType": "h265_hvc1",
+              "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 95.866, \"v960\": 97.251, \"v864\": 98.207, \"v720\": 99.143}, \"ori\": {\"v1080\": 81.578, \"v960\": 84.654, \"v864\": 86.4, \"v720\": 89.479}}}",
+              "Format": "mp4",
+              "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 136491}, {\\\"time\\\": 2, \\\"offset\\\": 174296}, {\\\"time\\\": 3, \\\"offset\\\": 222557}, {\\\"time\\\": 4, \\\"offset\\\": 281255}, {\\\"time\\\": 5, \\\"offset\\\": 333687}, {\\\"time\\\": 10, \\\"offset\\\": 681390}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 95.866, \\\"v960\\\": 97.251, \\\"v864\\\": 98.207, \\\"v720\\\": 99.143}, \\\"ori\\\": {\\\"v1080\\\": 81.578, \\\"v960\\\": 84.654, \\\"v864\\\": 86.4, \\\"v720\\\": 89.479}}}\",\"ufq\":\"{\\\"enh\\\":81.142,\\\"playback\\\":{\\\"ori\\\":67.575,\\\"srv1\\\":81.863},\\\"src\\\":75.922,\\\"trans\\\":67.575,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"c44a309d54a6f6112c07c1dc5b71a9a3\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 92.24, \\\"sr20\\\": 100.85}}\",\"audio_bit_rate\":32233,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgAgCAJBZYgkSXJJRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmgIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+            }
+          ],
+          "size": "2952923",
+          "VQScore": "62.67",
+          "claInfo": {
+            "hasOriginalAudio": true,
+            "enableAutoCaption": true,
+            "captionInfos": [],
+            "noCaptionReason": 3
+          },
+          "videoID": "v15044gf0000das1k5nog65n6vptp18g",
+          "PlayAddrStruct": {
+            "DataSize": "2952923",
+            "Width": 1280,
+            "Height": 720,
+            "Uri": "v15044gf0000das1k5nog65n6vptp18g",
+            "UrlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ],
+            "UrlKey": "v15044gf0000das1k5nog65n6vptp18g_h264_720p_1060866",
+            "FileHash": "bd0e340abae3e643b84d1524d579815c",
+            "FileCs": "c:0-19873-8293"
+          }
+        },
+        "author": {
+          "id": "user_148",
+          "shortId": "",
+          "uniqueId": "user_149",
+          "nickname": "user_150",
+          "avatarLarger": "https://redacted.invalid/",
+          "avatarMedium": "https://redacted.invalid/",
+          "avatarThumb": "https://redacted.invalid/",
+          "signature": "user_151",
+          "createTime": 1726645644,
+          "verified": false,
+          "secUid": "user_152",
+          "ftc": false,
+          "relation": 0,
+          "openFavorite": false,
+          "commentSetting": 0,
+          "duetSetting": 0,
+          "stitchSetting": 0,
+          "privateAccount": false,
+          "secret": false,
+          "isADVirtual": false,
+          "roomId": "",
+          "uniqueIdModifyTime": 0,
+          "ttSeller": false,
+          "downloadSetting": 0,
+          "recommendReason": "",
+          "nowInvitationCardUrl": "",
+          "nickNameModifyTime": 0,
+          "isEmbedBanned": false,
+          "canExpPlaylist": false,
+          "suggestAccountBind": false,
+          "UserStoryStatus": 0,
+          "shortDramaCreator": {}
+        },
+        "music": {
+          "id": "7689925043732220702",
+          "title": "原創音樂",
+          "playUrl": "https://redacted.invalid/",
+          "coverLarge": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "authorName": "user_150",
+          "original": true,
+          "private": false,
+          "duration": 22,
+          "scheduleSearchTime": 0,
+          "collected": false,
+          "preciseDuration": {
+            "preciseDuration": 22.308563,
+            "preciseShootDuration": 22.308563,
+            "preciseAuditionDuration": 22.308563,
+            "preciseVideoDuration": 22.308563
+          },
+          "isCopyrighted": false,
+          "tt2dsp": {
+            "tt_to_dsp_song_infos": []
+          },
+          "is_unlimited_music": false,
+          "is_commerce_music": true,
+          "shoot_duration": 22
+        },
+        "challenges": [],
+        "stats": {
+          "diggCount": 614,
+          "shareCount": 59,
+          "commentCount": 54,
+          "playCount": 118400,
+          "collectCount": "86"
+        },
+        "statsV2": {
+          "diggCount": "614",
+          "shareCount": "59",
+          "commentCount": "54",
+          "playCount": "118400",
+          "collectCount": "86",
+          "repostCount": "0"
+        },
+        "warnInfo": [],
+        "originalItem": false,
+        "officalItem": false,
+        "textExtra": [],
+        "secret": false,
+        "forFriend": false,
+        "digged": false,
+        "itemCommentStatus": 0,
+        "isProhibited": false,
+        "penaltyContext": {
+          "status": 102,
+          "video_status": 10,
+          "tns_status": "102",
+          "reviewed": "1",
+          "ec_global_verdict": 1,
+          "arb_content_safety_status": 102,
+          "display_penalty_type": "0",
+          "display_ui_type": "0",
+          "display_policy": 0
+        },
+        "takeDown": 0,
+        "effectStickers": [],
+        "authorStats": {
+          "followerCount": 12900,
+          "followingCount": 63,
+          "heart": 148100,
+          "heartCount": 148100,
+          "videoCount": 393,
+          "diggCount": 29,
+          "friendCount": 0
+        },
+        "privateItem": false,
+        "duetEnabled": true,
+        "stitchEnabled": true,
+        "stickersOnItem": [],
+        "isAd": false,
+        "shareEnabled": true,
+        "comments": [],
+        "duetDisplay": 0,
+        "stitchDisplay": 0,
+        "indexEnabled": true,
+        "locationCreated": "US",
+        "suggestedWords": [],
+        "contents": [
+          {
+            "desc": "除了川普夫人拒绝跟习近平握手外，影片到第10秒一直持续到第20秒，可以听到场外高喊“习近平下台”的声浪。",
+            "textExtra": []
+          },
+          {
+            "desc": "",
+            "textExtra": []
+          },
+          {
+            "desc": "这只是影片，如果在现场会听得更清楚。非常高兴，中国人对自由民主呐喊的声音被习近平听到了，如果他不是聋子的话😁",
+            "textExtra": []
+          }
+        ],
+        "diversificationId": 10083,
+        "collected": false,
+        "channelTags": [],
+        "item_control": {
+          "can_repost": true
+        },
+        "IsAigc": false,
+        "AIGCDescription": "",
+        "ShowAIGC": true,
+        "backendSourceEventTracking": "",
+        "CategoryType": 120,
+        "textLanguage": "zh-Hans",
+        "textTranslatable": true,
+        "authorStatsV2": {
+          "followerCount": "12900",
+          "followingCount": "63",
+          "heart": "148100",
+          "heartCount": "148100",
+          "videoCount": "393",
+          "diggCount": "29",
+          "friendCount": "0"
+        },
+        "isReviewing": false,
+        "creatorAIComment": {
+          "hasAITopic": false,
+          "topicName": "Topics",
+          "categoryList": [],
+          "eligibleVideo": true,
+          "topicDescription": "Most frequently discussed topics",
+          "topicSubDescription": "Know which discussions are trending among viewers with this list of AI-summarized topics.",
+          "copyright": "Summarized by AI. Mistakes are possible.",
+          "notEligibleReason": 0
+        }
+      }
+    ],
+    "webapp.a-b": {}
+  }
+}

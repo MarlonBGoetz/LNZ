@@ -1,0 +1,2867 @@
+{
+  "extra": {
+    "fatal_item_ids": [],
+    "logid": "redacted",
+    "now": 1792867795000
+  },
+  "hasMore": true,
+  "itemList": [
+    {
+      "AIGCDescription": "",
+      "CategoryType": 101,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_30",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_31",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_32",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "",
+        "stitchSetting": 0,
+        "uniqueId": "user_33",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 0,
+        "followerCount": 18400,
+        "followingCount": 0,
+        "friendCount": 0,
+        "heart": 1100000,
+        "heartCount": 1100000,
+        "videoCount": 22
+      },
+      "authorStatsV2": {
+        "diggCount": "0",
+        "followerCount": "18400",
+        "followingCount": "0",
+        "friendCount": "0",
+        "heart": "1100000",
+        "heartCount": "1100000",
+        "videoCount": "22"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "Is it drama, comedy, or action? Show us the #Movie you are currently watching 🍿",
+          "id": "9960",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "movie"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "88764338",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "foryoupage"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "23428",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "tiktok"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"100001\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "#movie #foryoupage #tiktok ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 6,
+              "hashtagName": "movie",
+              "isCommerce": false,
+              "start": 0,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 18,
+              "hashtagName": "foryoupage",
+              "isCommerce": false,
+              "start": 7,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 26,
+              "hashtagName": "tiktok",
+              "isCommerce": false,
+              "start": 19,
+              "subType": 0,
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "createTime": 1790418272,
+      "desc": "#movie #foryoupage #tiktok ",
+      "digged": false,
+      "diversificationId": 10045,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7689787857954671903",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_repost": true
+      },
+      "music": {
+        "authorName": "user_31",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 123,
+        "id": "7689787870554491679",
+        "isCopyrighted": false,
+        "is_commerce_music": true,
+        "is_unlimited_music": false,
+        "original": true,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 123,
+        "title": "original sound",
+        "tt2dsp": {}
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 5522,
+        "commentCount": 160,
+        "diggCount": 69200,
+        "playCount": 1100000,
+        "shareCount": 478
+      },
+      "statsV2": {
+        "collectCount": "5522",
+        "commentCount": "160",
+        "diggCount": "69200",
+        "playCount": "1100000",
+        "repostCount": "0",
+        "shareCount": "478"
+      },
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 6,
+          "hashtagName": "movie",
+          "isCommerce": false,
+          "start": 0,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 18,
+          "hashtagName": "foryoupage",
+          "isCommerce": false,
+          "start": 7,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 26,
+          "hashtagName": "tiktok",
+          "isCommerce": false,
+          "start": 19,
+          "subType": 0,
+          "type": 1
+        }
+      ],
+      "textLanguage": "un",
+      "textTranslatable": false,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 10002106,
+          "FileCs": "c:0-102640-f958",
+          "FileHash": "2e8a86acd0d9eeff857ff70a50c299f8",
+          "Height": 974,
+          "Uri": "v15044gf0000darpo0nog65t0ssvpb3g",
+          "UrlKey": "v15044gf0000darpo0nog65t0ssvpb3g_h264_720p_650015",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 720
+        },
+        "VQScore": "64.78",
+        "bitrate": 650015,
+        "bitrateAudioInfo": [
+          {
+            "AudioDataSize": 753796,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 5,
+            "AudioQualityString": "adapt_lower",
+            "Bitrate": 49042,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "33cafe54218310f5973f36aef337559b",
+            "FileId": "33cafe54218310f5973f36aef337559b",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-1282\"},\"check_info\":{\"check_info\":\"a:v15044gf0000darpo0nog65t0ssvpb3g|b:0-1282-ffa7439ede06379472649e242f36f81f|c:0-1282-7e5a\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          },
+          {
+            "AudioDataSize": 507346,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 4,
+            "AudioQualityString": "adapt",
+            "Bitrate": 33161,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "0ccf17ab0a51b181c14efb3644a6872c",
+            "FileId": "0ccf17ab0a51b181c14efb3644a6872c",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-1282\"},\"check_info\":{\"check_info\":\"a:v15044gf0000darpo0nog65t0ssvpb3g|b:0-1282-f25621b1faad2d182a497fcb9632f992|c:0-1282-5839\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          }
+        ],
+        "bitrateInfo": [
+          {
+            "Bitrate": 1229387,
+            "BitrateFPS": 59,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lowest_1080_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 97.996, \"v960\": 98.19, \"v864\": 98.773, \"v720\": 98.754}, \"ori\": {\"v1080\": 93.066, \"v960\": 93.744, \"v864\": 94.424, \"v720\": 94.84}}}",
+            "PlayAddr": {
+              "DataSize": 12195282,
+              "FileCs": "c:0-1551-6d75",
+              "FileHash": "fd56dc8d797ca63a721fd68e73911d51",
+              "Height": 1460,
+              "Uri": "v15044gf0000darpo0nog65t0ssvpb3g",
+              "UrlKey": "v15044gf0000darpo0nog65t0ssvpb3g_bytevc1_1080p_1229387",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1080
+            },
+            "QualityType": 2,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1279\\\",\\\"index_range\\\":\\\"1280-1551\\\",\\\"first_moof_range\\\":\\\"1552-5775\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000darpo0nog65t0ssvpb3g|b:0-1551-748f57cfd10508d9447ea6600fd35f18|c:0-1551-6d75\\\"},\\\"quality_type\\\":2}\",\"definition\":\"1080p\",\"quality\":\"adapt_lowest\",\"quality_desc\":\"\",\"file_id\":\"625bc8fd8b8a44fabe93aa755355498d\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 97.996, \\\"v960\\\": 98.19, \\\"v864\\\": 98.773, \\\"v720\\\": 98.754}, \\\"ori\\\": {\\\"v1080\\\": 93.066, \\\"v960\\\": 93.744, \\\"v864\\\": 94.424, \\\"v720\\\": 94.84}}}\",\"ufq\":\"{\\\"enh\\\":87.308,\\\"playback\\\":{\\\"ori\\\":84.374,\\\"srv1\\\":89.304},\\\"src\\\":78.938,\\\"trans\\\":84.374,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"241026d54667c44d3823f11f264d8a55\",\"audio_file_id\":\"33cafe54218310f5973f36aef337559b\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":48072,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgAhyAFufeWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAMAIAAAB4E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 650015,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "normal_720_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 85.704, \"v960\": 88.161, \"v864\": 89.597, \"v720\": 92.366}, \"ori\": {\"v1080\": 85.704, \"v960\": 88.161, \"v864\": 89.597, \"v720\": 92.366}}}",
+            "PlayAddr": {
+              "DataSize": 10002106,
+              "FileCs": "c:0-102640-f958",
+              "FileHash": "2e8a86acd0d9eeff857ff70a50c299f8",
+              "Height": 974,
+              "Uri": "v15044gf0000darpo0nog65t0ssvpb3g",
+              "UrlKey": "v15044gf0000darpo0nog65t0ssvpb3g_h264_720p_650015",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 720
+            },
+            "QualityType": 10,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 210598}, {\\\"time\\\": 2, \\\"offset\\\": 286740}, {\\\"time\\\": 3, \\\"offset\\\": 383077}, {\\\"time\\\": 4, \\\"offset\\\": 446475}, {\\\"time\\\": 5, \\\"offset\\\": 530066}, {\\\"time\\\": 10, \\\"offset\\\": 1236803}]\",\"format\":\"mp4\",\"sub_info\":\"{\\\"base_range_info\\\":{},\\\"check_info\\\":{\\\"check_info\\\":\\\"c:0-102640-f958\\\"},\\\"quality_type\\\":10}\",\"definition\":\"720p\",\"quality\":\"normal\",\"quality_desc\":\"\",\"file_id\":\"96b0940a1fe1450ea5df4bf1e14236c8\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 85.704, \\\"v960\\\": 88.161, \\\"v864\\\": 89.597, \\\"v720\\\": 92.366}, \\\"ori\\\": {\\\"v1080\\\": 85.704, \\\"v960\\\": 88.161, \\\"v864\\\": 89.597, \\\"v720\\\": 92.366}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"65b88c41c0963253ad31b6f68981a242\",\"audio_file_id\":\"33cafe54218310f5973f36aef337559b\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":64097}"
+          },
+          {
+            "Bitrate": 420529,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 94.694, \"v960\": 96.482, \"v864\": 97.258, \"v720\": 98.434}, \"ori\": {\"v1080\": 86.403, \"v960\": 89.161, \"v864\": 91.171, \"v720\": 94.383}}}",
+            "PlayAddr": {
+              "DataSize": 6059927,
+              "FileCs": "c:0-1552-cce6",
+              "FileHash": "247011873d910c5a76db3ab36f693d53",
+              "Height": 974,
+              "Uri": "v15044gf0000darpo0nog65t0ssvpb3g",
+              "UrlKey": "v15044gf0000darpo0nog65t0ssvpb3g_bytevc1_720p_420529",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 720
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-1552\\\",\\\"first_moof_range\\\":\\\"1553-3036\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000darpo0nog65t0ssvpb3g|b:0-1552-8ed0ee6621737ce596482677be0c3df6|c:0-1552-cce6\\\"},\\\"quality_type\\\":14}\",\"definition\":\"720p\",\"quality\":\"adapt_lower\",\"quality_desc\":\"\",\"file_id\":\"b4ab8a13a2a74e9489aa78cccd910d4e\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 94.694, \\\"v960\\\": 96.482, \\\"v864\\\": 97.258, \\\"v720\\\": 98.434}, \\\"ori\\\": {\\\"v1080\\\": 86.403, \\\"v960\\\": 89.161, \\\"v864\\\": 91.171, \\\"v720\\\": 94.383}}}\",\"ufq\":\"{\\\"enh\\\":88.058,\\\"playback\\\":{\\\"ori\\\":78.461,\\\"srv1\\\":86.752},\\\"src\\\":78.938,\\\"trans\\\":78.461,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"241026d54667c44d3823f11f264d8a55\",\"audio_file_id\":\"33cafe54218310f5973f36aef337559b\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 94.894, \\\"sr20\\\": 100.932}}\",\"audio_bit_rate\":48072,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwB4AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwB4AACgBaIA9H1liCRJcklEEzwhERERERGEfMTzl/v/r/Nn8v/r/Mofkv9/9f5s/l/9f4zhAIOagICAggAAAwACAAADADwQ\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 313154,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 89.062, \"v960\": 92.064, \"v864\": 93.998, \"v720\": 95.696}, \"ori\": {\"v1080\": 78.787, \"v960\": 82.494, \"v864\": 84.764, \"v720\": 88.848}}}",
+            "PlayAddr": {
+              "DataSize": 4147858,
+              "FileCs": "c:0-1551-ec8d",
+              "FileHash": "d4bd8f3de5e93d6a948a3e74e6749589",
+              "Height": 778,
+              "Uri": "v15044gf0000darpo0nog65t0ssvpb3g",
+              "UrlKey": "v15044gf0000darpo0nog65t0ssvpb3g_bytevc1_540p_313154",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 576
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1279\\\",\\\"index_range\\\":\\\"1280-1551\\\",\\\"first_moof_range\\\":\\\"1552-3035\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000darpo0nog65t0ssvpb3g|b:0-1551-2a1c0f8c93e158d5bb44abb67a073b17|c:0-1551-ec8d\\\"},\\\"quality_type\\\":28}\",\"definition\":\"540p\",\"quality\":\"adapt\",\"quality_desc\":\"\",\"file_id\":\"3c173974286a47b2bdc5fe0e4c09552a\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 89.062, \\\"v960\\\": 92.064, \\\"v864\\\": 93.998, \\\"v720\\\": 95.696}, \\\"ori\\\": {\\\"v1080\\\": 78.787, \\\"v960\\\": 82.494, \\\"v864\\\": 84.764, \\\"v720\\\": 88.848}}}\",\"ufq\":\"{\\\"enh\\\":88.058,\\\"playback\\\":{\\\"ori\\\":72.398,\\\"srv1\\\":82.673},\\\"src\\\":78.938,\\\"trans\\\":72.398,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"c44a309d54a6f6112c07c1dc5b71a9a3\",\"audio_file_id\":\"0ccf17ab0a51b181c14efb3644a6872c\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 87.047, \\\"sr20\\\": 95.691}}\",\"audio_bit_rate\":32051,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwBdAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwBdAACgBIIAxHyZYgkSXJJRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmoCAgIIAAAAMAgAAADwQ=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "captionInfos": [
+            {
+              "captionFormat": "webvtt",
+              "claSubtitleID": "7689792651411016478",
+              "expire": "1793040718",
+              "isAutoGen": true,
+              "isOriginalCaption": true,
+              "language": "eng-US",
+              "languageCode": "en",
+              "languageID": "2",
+              "subID": "472892345",
+              "subtitleType": "1",
+              "translationType": "0",
+              "url": "https://redacted.invalid/",
+              "urlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "variant": "big_caption"
+            }
+          ],
+          "captionsType": 1,
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "originalLanguageInfo": {
+            "canTranslateRealTimeNoCheck": true,
+            "language": "eng-US",
+            "languageCode": "en",
+            "languageID": "2"
+          }
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "720p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 123,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 974,
+        "id": "7689787857954671903",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "720p",
+        "size": 10002106,
+        "subtitleInfos": [
+          {
+            "Format": "webvtt",
+            "LanguageCodeName": "eng-US",
+            "LanguageID": "2",
+            "Size": 3057,
+            "Source": "ASR",
+            "Url": "https://redacted.invalid/",
+            "UrlExpire": 1793040718,
+            "Version": "1:big_caption"
+          }
+        ],
+        "videoID": "v15044gf0000darpo0nog65t0ssvpb3g",
+        "videoQuality": "normal",
+        "volumeInfo": {
+          "Loudness": -23.6,
+          "Peak": 0.47315
+        },
+        "width": 720,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    },
+    {
+      "AIGCDescription": "",
+      "CategoryType": 103,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "anchors": [
+        {
+          "description": "CapCut · Video Editor",
+          "extraInfo": {
+            "subtype": ""
+          },
+          "icon": {
+            "urlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ]
+          },
+          "id": "0",
+          "keyword": "CapCut · Edit like a pro",
+          "logExtra": "{\"anchor_id\":0,\"anchor_name\":\"CapCut · Edit like a pro\",\"anchor_title_detail\":\"None\",\"anchor_title_id\":21502485763,\"anchor_type\":\"TT_CAPCUT\",\"anchor_type_level1\":\"tool\",\"anchor_type_level2\":\"tool_video\",\"capability_key\":\"text_animation_6724919382104871427\",\"ccep_vip\":0,\"if_race_trigger\":0,\"is_two_line\":0,\"landing_page_style_id\":21502486275,\"maker_source\":\"\",\"outreach_content\":\"original\",\"outreach_extra_info\":\"{\\\"group_id\\\":\\\"7689199416728751382\\\",\\\"outreach_content_type\\\":\\\"original\\\"}\",\"outreach_intention\":\"diversion\",\"outreach_key\":54,\"outreach_to_app_id\":\"3006\",\"outreach_type\":\"feed_anchor\",\"publish_key\":\"capability\",\"template_id\":\"none\",\"tutorial_id\":\"none\",\"viamaker_anchor_capability_key_weight\":1,\"viamaker_anchor_style_idx\":-1,\"viamaker_anchor_style_source\":3,\"video_source\":0,\"video_type_id\":1}",
+          "schema": "https://redacted.invalid/",
+          "thumbnail": {
+            "height": 64,
+            "urlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ],
+            "width": 64
+          },
+          "type": 54
+        }
+      ],
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_34",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_35",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_36",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "user_37",
+        "stitchSetting": 0,
+        "uniqueId": "user_38",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 2586,
+        "followerCount": 28900,
+        "followingCount": 48,
+        "friendCount": 0,
+        "heart": 3300000,
+        "heartCount": 3300000,
+        "videoCount": 101
+      },
+      "authorStatsV2": {
+        "diggCount": "2586",
+        "followerCount": "28900",
+        "followingCount": "48",
+        "friendCount": "0",
+        "heart": "3300000",
+        "heartCount": "3300000",
+        "videoCount": "101"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "1660381101288453",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "wemmbu"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "7151821367074095109",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "unstablesmp"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "7169599908826546178",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "unstableclips"
+        },
+        {
+          "coverLarger": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "desc": "Whether you are playing to create or playing to survive, you can celebrate all things #Minecraft on TikTok",
+          "id": "7654",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "Minecraft"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "229207",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "fyp"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"100001\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "3 IN 1 EDIT || Bro Wemmbu's New Video Was SOOOO PEAK, Definitely One Of My Favorite So Far || #wemmbu #unstablesmp #unstableclips #minecraft #fyp ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 101,
+              "hashtagName": "wemmbu",
+              "isCommerce": false,
+              "start": 94,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 114,
+              "hashtagName": "unstablesmp",
+              "isCommerce": false,
+              "start": 102,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 129,
+              "hashtagName": "unstableclips",
+              "isCommerce": false,
+              "start": 115,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 140,
+              "hashtagName": "minecraft",
+              "isCommerce": false,
+              "start": 130,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 145,
+              "hashtagName": "fyp",
+              "isCommerce": false,
+              "start": 141,
+              "subType": 0,
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "createTime": 1790281256,
+      "desc": "3 IN 1 EDIT || Bro Wemmbu's New Video Was SOOOO PEAK, Definitely One Of My Favorite So Far || #wemmbu #unstablesmp #unstableclips #minecraft #fyp ",
+      "digged": false,
+      "diversificationId": 10056,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7689199416728751382",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_repost": true
+      },
+      "music": {
+        "authorName": "user_35",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 31,
+        "id": "7689199452669643542",
+        "isCopyrighted": false,
+        "is_commerce_music": true,
+        "is_unlimited_music": false,
+        "original": true,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 31,
+        "title": "original sound",
+        "tt2dsp": {
+          "tt_to_dsp_song_infos": [
+            {
+              "meta_song_id": "7501589436566112273",
+              "platform": 1,
+              "song_id": "1003709533",
+              "token": {
+                "apple_music_token": {
+                  "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3OTMxMjMxMTYsImlhdCI6MTc5Mjg2MzkxNiwiaXNzIjoiTUo3OTdEOFU2RiJ9.aXq7qV-vZkX0ritolhAyDZBkPPvtj9IQ1D0F8Y8h8YqT8f5Rw2_YPs_tvU83J84zZaDpiUOFEmdLu8WVZA6VpQ"
+                }
+              }
+            },
+            {
+              "meta_song_id": "7501589436566112273",
+              "platform": 3,
+              "song_id": "1xcoOutxCfpxaxZfpByzrc"
+            }
+          ]
+        }
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 79200,
+        "commentCount": 2804,
+        "diggCount": 319400,
+        "playCount": 1700000,
+        "shareCount": 46700
+      },
+      "statsV2": {
+        "collectCount": "79190",
+        "commentCount": "2804",
+        "diggCount": "319400",
+        "playCount": "1700000",
+        "repostCount": "0",
+        "shareCount": "46700"
+      },
+      "stickersOnItem": [
+        {
+          "stickerText": [
+            ""
+          ],
+          "stickerType": 9
+        }
+      ],
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 101,
+          "hashtagName": "wemmbu",
+          "isCommerce": false,
+          "start": 94,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 114,
+          "hashtagName": "unstablesmp",
+          "isCommerce": false,
+          "start": 102,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 129,
+          "hashtagName": "unstableclips",
+          "isCommerce": false,
+          "start": 115,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 140,
+          "hashtagName": "minecraft",
+          "isCommerce": false,
+          "start": 130,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 145,
+          "hashtagName": "fyp",
+          "isCommerce": false,
+          "start": 141,
+          "subType": 0,
+          "type": 1
+        }
+      ],
+      "textLanguage": "en",
+      "textTranslatable": true,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 5214295,
+          "FileCs": "c:0-27016-1fed",
+          "FileHash": "c8dcfe7ffd8e4fd6f2650d687516b133",
+          "Height": 576,
+          "Uri": "v24044gl0000daqo9bnog65m4i3qttag",
+          "UrlKey": "v24044gl0000daqo9bnog65m4i3qttag_h264_540p_1315910",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 768
+        },
+        "VQScore": "62.93",
+        "bitrate": 1315910,
+        "bitrateInfo": [
+          {
+            "Bitrate": 1315910,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "normal_540_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 91.41, \"v960\": 94.015, \"v864\": 95.137, \"v720\": 96.804}, \"ori\": {\"v1080\": 81.478, \"v960\": 83.592, \"v864\": 85.783, \"v720\": 88.813}}}",
+            "PlayAddr": {
+              "DataSize": 5214295,
+              "FileCs": "c:0-27016-1fed",
+              "FileHash": "c8dcfe7ffd8e4fd6f2650d687516b133",
+              "Height": 576,
+              "Uri": "v24044gl0000daqo9bnog65m4i3qttag",
+              "UrlKey": "v24044gl0000daqo9bnog65m4i3qttag_h264_540p_1315910",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 768
+            },
+            "QualityType": 20,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 581144}, {\\\"time\\\": 2, \\\"offset\\\": 937899}, {\\\"time\\\": 3, \\\"offset\\\": 1093553}, {\\\"time\\\": 4, \\\"offset\\\": 1242729}, {\\\"time\\\": 5, \\\"offset\\\": 1637002}, {\\\"time\\\": 10, \\\"offset\\\": 2820772}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 91.41, \\\"v960\\\": 94.015, \\\"v864\\\": 95.137, \\\"v720\\\": 96.804}, \\\"ori\\\": {\\\"v1080\\\": 81.478, \\\"v960\\\": 83.592, \\\"v864\\\": 85.783, \\\"v720\\\": 88.813}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32219}"
+          },
+          {
+            "Bitrate": 1272892,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_lowest_1080_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 93.943, \"v960\": 94.809, \"v864\": 95.645, \"v720\": 96.654}, \"ori\": {\"v1080\": 88.751, \"v960\": 90.11, \"v864\": 91.236, \"v720\": 93.096}}}",
+            "PlayAddr": {
+              "DataSize": 5043838,
+              "FileCs": "c:0-27956-f310",
+              "FileHash": "7bd7b4b74aaca04a57b059b08fecf9ee",
+              "Height": 1080,
+              "Uri": "v24044gl0000daqo9bnog65m4i3qttag",
+              "UrlKey": "v24044gl0000daqo9bnog65m4i3qttag_bytevc1_1080p_1272892",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1440
+            },
+            "QualityType": 2,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 589714}, {\\\"time\\\": 2, \\\"offset\\\": 863133}, {\\\"time\\\": 3, \\\"offset\\\": 960987}, {\\\"time\\\": 4, \\\"offset\\\": 1097349}, {\\\"time\\\": 5, \\\"offset\\\": 1374713}, {\\\"time\\\": 10, \\\"offset\\\": 2402809}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 93.943, \\\"v960\\\": 94.809, \\\"v864\\\": 95.645, \\\"v720\\\": 96.654}, \\\"ori\\\": {\\\"v1080\\\": 88.751, \\\"v960\\\": 90.11, \\\"v864\\\": 91.236, \\\"v720\\\": 93.096}}}\",\"ufq\":\"{\\\"enh\\\":76.294,\\\"playback\\\":{\\\"ori\\\":69.045,\\\"srv1\\\":74.237},\\\"src\\\":76.294,\\\"trans\\\":69.045,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"e91245375450b02a8794eaf362ea32ee\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 96.723, \\\"sr20\\\": 105.107}}\",\"audio_bit_rate\":64328,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgAtCAEOWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 690550,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 88.021, \"v960\": 89.817, \"v864\": 91.052, \"v720\": 93.321}, \"ori\": {\"v1080\": 79.657, \"v960\": 82.53, \"v864\": 84.854, \"v720\": 88.012}}}",
+            "PlayAddr": {
+              "DataSize": 2736307,
+              "FileCs": "c:0-27955-2194",
+              "FileHash": "142ae990970e90f0ec8c31fbe177afc9",
+              "Height": 720,
+              "Uri": "v24044gl0000daqo9bnog65m4i3qttag",
+              "UrlKey": "v24044gl0000daqo9bnog65m4i3qttag_bytevc1_720p_690550",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 960
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 292710}, {\\\"time\\\": 2, \\\"offset\\\": 401120}, {\\\"time\\\": 3, \\\"offset\\\": 450834}, {\\\"time\\\": 4, \\\"offset\\\": 516079}, {\\\"time\\\": 5, \\\"offset\\\": 645732}, {\\\"time\\\": 10, \\\"offset\\\": 1151273}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 88.021, \\\"v960\\\": 89.817, \\\"v864\\\": 91.052, \\\"v720\\\": 93.321}, \\\"ori\\\": {\\\"v1080\\\": 79.657, \\\"v960\\\": 82.53, \\\"v864\\\": 84.854, \\\"v720\\\": 88.012}}}\",\"ufq\":\"{\\\"enh\\\":76.294,\\\"playback\\\":{\\\"ori\\\":61.286,\\\"srv1\\\":69.65},\\\"src\\\":76.294,\\\"trans\\\":61.286,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"cebe96cc7e15fab783061bbf7caef166\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 89.551, \\\"sr20\\\": 95.063}}\",\"audio_bit_rate\":64328,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgB4IAtFliCRJckiRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmoCAgIIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 555430,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 85.174, \"v960\": 87.592, \"v864\": 88.972, \"v720\": 91.438}, \"ori\": {\"v1080\": 74.65, \"v960\": 77.915, \"v864\": 80.769, \"v720\": 84.783}}}",
+            "PlayAddr": {
+              "DataSize": 2200895,
+              "FileCs": "c:0-27955-7699",
+              "FileHash": "fb90e97038bfd08a8337c735de60b9e7",
+              "Height": 576,
+              "Uri": "v24044gl0000daqo9bnog65m4i3qttag",
+              "UrlKey": "v24044gl0000daqo9bnog65m4i3qttag_bytevc1_540p_555430",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 768
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 247752}, {\\\"time\\\": 2, \\\"offset\\\": 328492}, {\\\"time\\\": 3, \\\"offset\\\": 368017}, {\\\"time\\\": 4, \\\"offset\\\": 423890}, {\\\"time\\\": 5, \\\"offset\\\": 529376}, {\\\"time\\\": 10, \\\"offset\\\": 959616}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 85.174, \\\"v960\\\": 87.592, \\\"v864\\\": 88.972, \\\"v720\\\": 91.438}, \\\"ori\\\": {\\\"v1080\\\": 74.65, \\\"v960\\\": 77.915, \\\"v864\\\": 80.769, \\\"v720\\\": 84.783}}}\",\"ufq\":\"{\\\"enh\\\":76.294,\\\"playback\\\":{\\\"ori\\\":57.531,\\\"srv1\\\":68.055},\\\"src\\\":76.294,\\\"trans\\\":57.531,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"0fb9126be2a766a8dd0f51cc544b234d\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 85.315, \\\"sr20\\\": 92.906}}\",\"audio_bit_rate\":32219,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgBgIAkFliCRJckiRBM8IRERERERhHzE85f7/6/zZ/L/6/zKH5L/f/X+bP5f/X+M4QCDmoCAgIIAAAAwAgAAADA8E=\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "captionInfos": [
+            {
+              "captionFormat": "webvtt",
+              "claSubtitleID": "7689204872087915286",
+              "expire": "1793040626",
+              "isAutoGen": true,
+              "isOriginalCaption": true,
+              "language": "eng-US",
+              "languageCode": "en",
+              "languageID": "2",
+              "subID": "1308952666",
+              "subtitleType": "1",
+              "translationType": "0",
+              "url": "https://redacted.invalid/",
+              "urlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "variant": "big_caption"
+            }
+          ],
+          "captionsType": 1,
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "originalLanguageInfo": {
+            "canTranslateRealTimeNoCheck": true,
+            "language": "eng-US",
+            "languageCode": "en",
+            "languageID": "2"
+          }
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "540p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 31,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 576,
+        "id": "7689199416728751382",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "540p",
+        "size": 5214295,
+        "subtitleInfos": [
+          {
+            "Format": "webvtt",
+            "LanguageCodeName": "eng-US",
+            "LanguageID": "2",
+            "Size": 424,
+            "Source": "ASR",
+            "Url": "https://redacted.invalid/",
+            "UrlExpire": 1793040626,
+            "Version": "1:big_caption"
+          }
+        ],
+        "videoID": "v24044gl0000daqo9bnog65m4i3qttag",
+        "videoQuality": "normal",
+        "volumeInfo": {
+          "Loudness": -12.6,
+          "Peak": 1
+        },
+        "width": 768,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    },
+    {
+      "AIGCDescription": "",
+      "CategoryType": 101,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_39",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_40",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_41",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "user_42",
+        "stitchSetting": 0,
+        "uniqueId": "user_43",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 2856,
+        "followerCount": 154600,
+        "followingCount": 31,
+        "friendCount": 0,
+        "heart": 8600000,
+        "heartCount": 8600000,
+        "videoCount": 306
+      },
+      "authorStatsV2": {
+        "diggCount": "2856",
+        "followerCount": "154600",
+        "followingCount": "31",
+        "friendCount": "0",
+        "heart": "8600000",
+        "heartCount": "8600000",
+        "videoCount": "306"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "1604496473403393",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "xuhuong"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "7087210781732765722",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "rungdongremix"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "Hãy để những sản phẩm âm nhạc mới của bạn được bùng nổ trên TikTok với hashtag #NhacHayMoiNgay. 😍😍😍\n\nHãy tham gia ngay hashtag về âm nhạc này để chia sẻ những ca khúc cực đỉnh, MV ấn tượng, tiết mục biểu diễn live tâm đắc cho cộng đồng yêu âm nhạc của TikTok nhé!!!",
+          "id": "1664402571548674",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "nhachaymoingay"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "1629672722739202",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "nhacremix"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "5636",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "music"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"100001\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "Rung Động Full - Đại Mèo Remix (Nhạc Hot Trend Tiktok Cực Cuốn) || Em có muốn cùng anh đi qua bao bão giông."
+        },
+        {
+          "desc": "#xuhuong #rungdongremix #nhachaymoingay #nhacremix #music ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 8,
+              "hashtagName": "xuhuong",
+              "isCommerce": false,
+              "start": 0,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 23,
+              "hashtagName": "rungdongremix",
+              "isCommerce": false,
+              "start": 9,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 39,
+              "hashtagName": "nhachaymoingay",
+              "isCommerce": false,
+              "start": 24,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 50,
+              "hashtagName": "nhacremix",
+              "isCommerce": false,
+              "start": 40,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 57,
+              "hashtagName": "music",
+              "isCommerce": false,
+              "start": 51,
+              "subType": 0,
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "createTime": 1788258291,
+      "desc": "Rung Động Full - Đại Mèo Remix (Nhạc Hot Trend Tiktok Cực Cuốn) || Em có muốn cùng anh đi qua bao bão giông. #xuhuong #rungdongremix #nhachaymoingay #nhacremix #music ",
+      "digged": false,
+      "diversificationId": 10046,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7680510841476910356",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_repost": true
+      },
+      "music": {
+        "authorName": "Win Entertainment",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 56,
+        "id": "7085207344610626330",
+        "isCopyrighted": false,
+        "is_commerce_music": true,
+        "is_unlimited_music": false,
+        "original": true,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 56,
+        "title": "Rung Dong . Edward x Vũ Khắc Anh",
+        "tt2dsp": {}
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 11800,
+        "commentCount": 320,
+        "diggCount": 76000,
+        "playCount": 1200000,
+        "shareCount": 25000
+      },
+      "statsV2": {
+        "collectCount": "11762",
+        "commentCount": "320",
+        "diggCount": "76000",
+        "playCount": "1200000",
+        "repostCount": "0",
+        "shareCount": "25000"
+      },
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 117,
+          "hashtagName": "xuhuong",
+          "isCommerce": false,
+          "start": 109,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 132,
+          "hashtagName": "rungdongremix",
+          "isCommerce": false,
+          "start": 118,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 148,
+          "hashtagName": "nhachaymoingay",
+          "isCommerce": false,
+          "start": 133,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 159,
+          "hashtagName": "nhacremix",
+          "isCommerce": false,
+          "start": 149,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 166,
+          "hashtagName": "music",
+          "isCommerce": false,
+          "start": 160,
+          "subType": 0,
+          "type": 1
+        }
+      ],
+      "textLanguage": "vi",
+      "textTranslatable": true,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 107328708,
+          "FileCs": "c:0-232471-672d",
+          "FileHash": "a6905ead694ac46ed845b01f9e92a696",
+          "Height": 576,
+          "Uri": "v14044g50000daba8mfog65n6fop1mrg",
+          "UrlKey": "v14044g50000daba8mfog65n6fop1mrg_h264_540p_2957385",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 1024
+        },
+        "VQScore": "57.94",
+        "bitrate": 2957385,
+        "bitrateAudioInfo": [
+          {
+            "AudioDataSize": 2355485,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 6,
+            "AudioQualityString": "adapt",
+            "Bitrate": 65232,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "fcd7e1a80583ce0a801dc4bae83af84c",
+            "FileId": "fcd7e1a80583ce0a801dc4bae83af84c",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-1606\"},\"check_info\":{\"check_info\":\"a:v14044g50000daba8mfog65n6fop1mrg|b:0-1606-93a31d6647013517515786546098c7e2|c:0-1606-945a\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          },
+          {
+            "AudioDataSize": 3517230,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 7,
+            "AudioQualityString": "adapt_lowest",
+            "Bitrate": 97200,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "2204cf8be1bb00d951aa504ff5d93a79",
+            "FileId": "2204cf8be1bb00d951aa504ff5d93a79",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-1606\"},\"check_info\":{\"check_info\":\"a:v14044g50000daba8mfog65n6fop1mrg|b:0-1606-2ef3fb933d0102d88c2831a7baeb4981|c:0-1606-5709\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          }
+        ],
+        "bitrateInfo": [
+          {
+            "Bitrate": 2957385,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "normal_540_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 89.582, \"v960\": 94.479, \"v864\": 95.217, \"v720\": 96.076}, \"ori\": {\"v1080\": 85.993, \"v960\": 89.252, \"v864\": 90.062, \"v720\": 93.04}}}",
+            "PlayAddr": {
+              "DataSize": 107328708,
+              "FileCs": "c:0-232471-672d",
+              "FileHash": "a6905ead694ac46ed845b01f9e92a696",
+              "Height": 576,
+              "Uri": "v14044g50000daba8mfog65n6fop1mrg",
+              "UrlKey": "v14044g50000daba8mfog65n6fop1mrg_h264_540p_2957385",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 20,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 358352}, {\\\"time\\\": 2, \\\"offset\\\": 588158}, {\\\"time\\\": 3, \\\"offset\\\": 903373}, {\\\"time\\\": 4, \\\"offset\\\": 1173106}, {\\\"time\\\": 5, \\\"offset\\\": 1622940}, {\\\"time\\\": 10, \\\"offset\\\": 3342018}]\",\"format\":\"mp4\",\"sub_info\":\"{\\\"base_range_info\\\":{},\\\"check_info\\\":{\\\"check_info\\\":\\\"c:0-232471-672d\\\"},\\\"quality_type\\\":20}\",\"definition\":\"540p\",\"quality\":\"normal\",\"quality_desc\":\"\",\"file_id\":\"03c313d6ca244d9aa9e225f443d043d7\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 89.582, \\\"v960\\\": 94.479, \\\"v864\\\": 95.217, \\\"v720\\\": 96.076}, \\\"ori\\\": {\\\"v1080\\\": 85.993, \\\"v960\\\": 89.252, \\\"v864\\\": 90.062, \\\"v720\\\": 93.04}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"audio_file_id\":\"fcd7e1a80583ce0a801dc4bae83af84c\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32017}"
+          },
+          {
+            "Bitrate": 2818379,
+            "BitrateFPS": 60,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lowest_1080_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 85.059, \"v960\": 87.103, \"v864\": 89.008, \"v720\": 91.004}, \"ori\": {\"v1080\": 79.51, \"v960\": 81.72, \"v864\": 83.322, \"v720\": 86.27}}}",
+            "PlayAddr": {
+              "DataSize": 96560485,
+              "FileCs": "c:0-1876-a79c",
+              "FileHash": "1df534ad43b2a5f3f1b7cf7bcea93104",
+              "Height": 1080,
+              "Uri": "v14044g50000daba8mfog65n6fop1mrg",
+              "UrlKey": "v14044g50000daba8mfog65n6fop1mrg_bytevc1_1080p_2818379",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1920
+            },
+            "QualityType": 2,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-1876\\\",\\\"first_moof_range\\\":\\\"1877-5336\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v14044g50000daba8mfog65n6fop1mrg|b:0-1876-4b6fb15a7ba4104f9306f99194f50151|c:0-1876-a79c\\\"},\\\"quality_type\\\":2}\",\"definition\":\"1080p\",\"quality\":\"adapt_lowest\",\"quality_desc\":\"\",\"file_id\":\"a20b111583424e11a4e257c32dd83d26\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 85.059, \\\"v960\\\": 87.103, \\\"v864\\\": 89.008, \\\"v720\\\": 91.004}, \\\"ori\\\": {\\\"v1080\\\": 79.51, \\\"v960\\\": 81.72, \\\"v864\\\": 83.322, \\\"v720\\\": 86.27}}}\",\"ufq\":\"{\\\"enh\\\":79.031,\\\"playback\\\":{\\\"ori\\\":63.913,\\\"srv1\\\":69.462},\\\"src\\\":69.161,\\\"trans\\\":63.913,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"da136ba5a47c0cf950d072bc1f656697\",\"audio_file_id\":\"fcd7e1a80583ce0a801dc4bae83af84c\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 86.376, \\\"sr20\\\": -1}}\",\"audio_bit_rate\":96038,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgA8CAEOWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAI\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 1042708,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 74.096, \"v960\": 76.572, \"v864\": 79.688, \"v720\": 83.475}, \"ori\": {\"v1080\": 66.978, \"v960\": 70.138, \"v864\": 72.396, \"v720\": 78.13}}}",
+            "PlayAddr": {
+              "DataSize": 36581926,
+              "FileCs": "c:0-1876-4e34",
+              "FileHash": "56f941ecf444382666c5c57815dc3952",
+              "Height": 720,
+              "Uri": "v14044g50000daba8mfog65n6fop1mrg",
+              "UrlKey": "v14044g50000daba8mfog65n6fop1mrg_bytevc1_720p_1042708",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1280
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-1876\\\",\\\"first_moof_range\\\":\\\"1877-3664\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v14044g50000daba8mfog65n6fop1mrg|b:0-1876-43f42ffa0b1a2a558764f9b8dbb4225f|c:0-1876-4e34\\\"},\\\"quality_type\\\":14}\",\"definition\":\"720p\",\"quality\":\"adapt_lower\",\"quality_desc\":\"\",\"file_id\":\"d36398fdbab84b63aeb5cb5a3277d45d\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 74.096, \\\"v960\\\": 76.572, \\\"v864\\\": 79.688, \\\"v720\\\": 83.475}, \\\"ori\\\": {\\\"v1080\\\": 66.978, \\\"v960\\\": 70.138, \\\"v864\\\": 72.396, \\\"v720\\\": 78.13}}}\",\"ufq\":\"{\\\"enh\\\":78.611,\\\"playback\\\":{\\\"ori\\\":54.094,\\\"srv1\\\":61.212},\\\"src\\\":69.161,\\\"trans\\\":54.094,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"86fda13c754bde67159dea14b7d55d6a\",\"audio_file_id\":\"fcd7e1a80583ce0a801dc4bae83af84c\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 76.796, \\\"sr20\\\": 82.814}}\",\"audio_bit_rate\":64025,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAoCALRZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 921432,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 71.327, \"v960\": 74.798, \"v864\": 76.812, \"v720\": 81.042}, \"ori\": {\"v1080\": 61.833, \"v960\": 66.092, \"v864\": 69.077, \"v720\": 74.425}}}",
+            "PlayAddr": {
+              "DataSize": 32715406,
+              "FileCs": "c:0-1876-f80f",
+              "FileHash": "69e910d01b596bedf91b4fefa07d7f7b",
+              "Height": 576,
+              "Uri": "v14044g50000daba8mfog65n6fop1mrg",
+              "UrlKey": "v14044g50000daba8mfog65n6fop1mrg_bytevc1_540p_921432",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-1876\\\",\\\"first_moof_range\\\":\\\"1877-3664\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v14044g50000daba8mfog65n6fop1mrg|b:0-1876-40f660c7ac3950c305389a47bc7c1df9|c:0-1876-f80f\\\"},\\\"quality_type\\\":28}\",\"definition\":\"540p\",\"quality\":\"adapt\",\"quality_desc\":\"\",\"file_id\":\"65098c85593044a4b5e447c1cdd9ec8f\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 71.327, \\\"v960\\\": 74.798, \\\"v864\\\": 76.812, \\\"v720\\\": 81.042}, \\\"ori\\\": {\\\"v1080\\\": 61.833, \\\"v960\\\": 66.092, \\\"v864\\\": 69.077, \\\"v720\\\": 74.425}}}\",\"ufq\":\"{\\\"enh\\\":78.611,\\\"playback\\\":{\\\"ori\\\":50.235,\\\"srv1\\\":59.729},\\\"src\\\":69.161,\\\"trans\\\":50.235,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"86fda13c754bde67159dea14b7d55d6a\",\"audio_file_id\":\"fcd7e1a80583ce0a801dc4bae83af84c\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 72.474, \\\"sr20\\\": 80.702}}\",\"audio_bit_rate\":64025,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAgCAJBZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "noCaptionReason": 3
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "540p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 290,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 576,
+        "id": "7680510841476910356",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "540p",
+        "size": 107328708,
+        "videoID": "v14044g50000daba8mfog65n6fop1mrg",
+        "videoQuality": "normal",
+        "volumeInfo": {
+          "Loudness": -11.4,
+          "Peak": 1
+        },
+        "width": 1024,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    },
+    {
+      "AIGCDescription": "",
+      "CategoryType": 100,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_44",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_45",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_46",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "user_47",
+        "stitchSetting": 0,
+        "uniqueId": "user_48",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 38200,
+        "followerCount": 6142,
+        "followingCount": 6197,
+        "friendCount": 0,
+        "heart": 893600,
+        "heartCount": 893600,
+        "videoCount": 61
+      },
+      "authorStatsV2": {
+        "diggCount": "38200",
+        "followerCount": "6142",
+        "followingCount": "6197",
+        "friendCount": "0",
+        "heart": "893600",
+        "heartCount": "893600",
+        "videoCount": "61"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "567732",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "luffy"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "3607514",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "monkeydluffy"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "139663",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "onepiece"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "28660027",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "onepieceedit"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "400687",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "animeedit"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"0\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "#LUFFY┊ ➶ ｡˚ Now this edit version of the goat and future king of the pirates Luffy || Thrift shop - Macklemore & Ryan Lewis┊#monkeydluffy #onepiece #onepieceedit #animeedit taglist: @𝒮𝓊𝓅𝒶𝒽ℯℯ𝒽ℯℯ✨😛 @zack @ZackxEdits ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 6,
+              "hashtagName": "luffy",
+              "isCommerce": false,
+              "start": 0,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 138,
+              "hashtagName": "monkeydluffy",
+              "isCommerce": false,
+              "start": 125,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 148,
+              "hashtagName": "onepiece",
+              "isCommerce": false,
+              "start": 139,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 162,
+              "hashtagName": "onepieceedit",
+              "isCommerce": false,
+              "start": 149,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 173,
+              "hashtagName": "animeedit",
+              "isCommerce": false,
+              "start": 163,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 203,
+              "hashtagName": "",
+              "isCommerce": false,
+              "secUid": "user_49",
+              "start": 183,
+              "subType": 0,
+              "type": 0,
+              "userId": "user_50",
+              "userUniqueId": "user_51"
+            },
+            {
+              "awemeId": "",
+              "end": 209,
+              "hashtagName": "",
+              "isCommerce": false,
+              "secUid": "user_52",
+              "start": 204,
+              "subType": 0,
+              "type": 0,
+              "userId": "user_53",
+              "userUniqueId": "user_54"
+            },
+            {
+              "awemeId": "",
+              "end": 221,
+              "hashtagName": "",
+              "isCommerce": false,
+              "secUid": "user_55",
+              "start": 210,
+              "subType": 0,
+              "type": 0,
+              "userId": "user_56",
+              "userUniqueId": "user_57"
+            }
+          ]
+        }
+      ],
+      "createTime": 1790975448,
+      "desc": "#LUFFY┊ ➶ ｡˚ Now this edit version of the goat and future king of the pirates Luffy || Thrift shop - Macklemore & Ryan Lewis┊#monkeydluffy #onepiece #onepieceedit #animeedit taglist: @𝒮𝓊𝓅𝒶𝒽ℯℯ𝒽ℯℯ✨😛 @zack @ZackxEdits ",
+      "digged": false,
+      "diversificationId": 10052,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7692180919486008584",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_repost": true
+      },
+      "music": {
+        "authorName": "user_45",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 23,
+        "id": "7692180978689264390",
+        "isCopyrighted": false,
+        "is_commerce_music": true,
+        "is_unlimited_music": false,
+        "original": true,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 23,
+        "title": "original sound",
+        "tt2dsp": {}
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 8158,
+        "commentCount": 165,
+        "diggCount": 37600,
+        "playCount": 135700,
+        "shareCount": 2185
+      },
+      "statsV2": {
+        "collectCount": "8158",
+        "commentCount": "165",
+        "diggCount": "37600",
+        "playCount": "135700",
+        "repostCount": "0",
+        "shareCount": "2185"
+      },
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 6,
+          "hashtagName": "luffy",
+          "isCommerce": false,
+          "start": 0,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 138,
+          "hashtagName": "monkeydluffy",
+          "isCommerce": false,
+          "start": 125,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 148,
+          "hashtagName": "onepiece",
+          "isCommerce": false,
+          "start": 139,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 162,
+          "hashtagName": "onepieceedit",
+          "isCommerce": false,
+          "start": 149,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 173,
+          "hashtagName": "animeedit",
+          "isCommerce": false,
+          "start": 163,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 203,
+          "hashtagName": "",
+          "isCommerce": false,
+          "secUid": "user_49",
+          "start": 183,
+          "subType": 0,
+          "type": 0,
+          "userId": "user_50",
+          "userUniqueId": "user_51"
+        },
+        {
+          "awemeId": "",
+          "end": 209,
+          "hashtagName": "",
+          "isCommerce": false,
+          "secUid": "user_52",
+          "start": 204,
+          "subType": 0,
+          "type": 0,
+          "userId": "user_53",
+          "userUniqueId": "user_54"
+        },
+        {
+          "awemeId": "",
+          "end": 221,
+          "hashtagName": "",
+          "isCommerce": false,
+          "secUid": "user_55",
+          "start": 210,
+          "subType": 0,
+          "type": 0,
+          "userId": "user_56",
+          "userUniqueId": "user_57"
+        }
+      ],
+      "textLanguage": "en",
+      "textTranslatable": true,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 1732421,
+          "FileCs": "c:0-20739-115e",
+          "FileHash": "1d2bff1dc5d2c636727e7ee7a209d1e8",
+          "Height": 576,
+          "Uri": "v14044g50000db01mvnog65iu6sst7n0",
+          "UrlKey": "v14044g50000db01mvnog65iu6sst7n0_h264_540p_595666",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 1024
+        },
+        "VQScore": "67.84",
+        "bitrate": 595666,
+        "bitrateInfo": [
+          {
+            "Bitrate": 709479,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 93.278, \"v960\": 94.421, \"v864\": 95.347, \"v720\": 96.713}, \"ori\": {\"v1080\": 84.205, \"v960\": 85.861, \"v864\": 87.055, \"v720\": 90.282}}}",
+            "PlayAddr": {
+              "DataSize": 2063433,
+              "FileCs": "c:0-20984-241d",
+              "FileHash": "a4e7fd25452fc19b9a43717aa9d111d2",
+              "Height": 720,
+              "Uri": "v14044g50000db01mvnog65iu6sst7n0",
+              "UrlKey": "v14044g50000db01mvnog65iu6sst7n0_bytevc1_720p_709479",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1280
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 131761}, {\\\"time\\\": 2, \\\"offset\\\": 206900}, {\\\"time\\\": 3, \\\"offset\\\": 301826}, {\\\"time\\\": 4, \\\"offset\\\": 329009}, {\\\"time\\\": 5, \\\"offset\\\": 379533}, {\\\"time\\\": 10, \\\"offset\\\": 801504}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 93.278, \\\"v960\\\": 94.421, \\\"v864\\\": 95.347, \\\"v720\\\": 96.713}, \\\"ori\\\": {\\\"v1080\\\": 84.205, \\\"v960\\\": 85.861, \\\"v864\\\": 87.055, \\\"v720\\\": 90.282}}}\",\"ufq\":\"{\\\"enh\\\":83.312,\\\"playback\\\":{\\\"ori\\\":71.716,\\\"srv1\\\":80.789},\\\"src\\\":83.312,\\\"trans\\\":71.716,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"cebe96cc7e15fab783061bbf7caef166\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 95.101, \\\"sr20\\\": 101.642}}\",\"audio_bit_rate\":64451,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAoCALRZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 605186,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 92.31, \"v960\": 93.842, \"v864\": 95.467, \"v720\": 96.442}, \"ori\": {\"v1080\": 81.134, \"v960\": 83.325, \"v864\": 85.283, \"v720\": 87.93}}}",
+            "PlayAddr": {
+              "DataSize": 1760110,
+              "FileCs": "c:0-20984-1282",
+              "FileHash": "3f1365ea4c59cdeb6b2bae961d6c890a",
+              "Height": 576,
+              "Uri": "v14044g50000db01mvnog65iu6sst7n0",
+              "UrlKey": "v14044g50000db01mvnog65iu6sst7n0_bytevc1_540p_605186",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 120861}, {\\\"time\\\": 2, \\\"offset\\\": 192778}, {\\\"time\\\": 3, \\\"offset\\\": 279278}, {\\\"time\\\": 4, \\\"offset\\\": 302996}, {\\\"time\\\": 5, \\\"offset\\\": 350313}, {\\\"time\\\": 10, \\\"offset\\\": 731872}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 92.31, \\\"v960\\\": 93.842, \\\"v864\\\": 95.467, \\\"v720\\\": 96.442}, \\\"ori\\\": {\\\"v1080\\\": 81.134, \\\"v960\\\": 83.325, \\\"v864\\\": 85.283, \\\"v720\\\": 87.93}}}\",\"ufq\":\"{\\\"enh\\\":83.312,\\\"playback\\\":{\\\"ori\\\":69.413,\\\"srv1\\\":80.589},\\\"src\\\":83.312,\\\"trans\\\":69.413,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"0fb9126be2a766a8dd0f51cc544b234d\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 93.371, \\\"sr20\\\": 101.91}}\",\"audio_bit_rate\":32225,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAgCAJBZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 595666,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "lowest_540_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 72.715, \"v960\": 77.807, \"v864\": 78.461, \"v720\": 82.402}, \"ori\": {\"v1080\": 64.525, \"v960\": 68.684, \"v864\": 70.278, \"v720\": 73.508}}}",
+            "PlayAddr": {
+              "DataSize": 1732421,
+              "FileCs": "c:0-20739-115e",
+              "FileHash": "1d2bff1dc5d2c636727e7ee7a209d1e8",
+              "Height": 576,
+              "Uri": "v14044g50000db01mvnog65iu6sst7n0",
+              "UrlKey": "v14044g50000db01mvnog65iu6sst7n0_h264_540p_595666",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 25,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 92591}, {\\\"time\\\": 2, \\\"offset\\\": 173317}, {\\\"time\\\": 3, \\\"offset\\\": 250146}, {\\\"time\\\": 4, \\\"offset\\\": 277776}, {\\\"time\\\": 5, \\\"offset\\\": 304598}, {\\\"time\\\": 10, \\\"offset\\\": 672488}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 72.715, \\\"v960\\\": 77.807, \\\"v864\\\": 78.461, \\\"v720\\\": 82.402}, \\\"ori\\\": {\\\"v1080\\\": 64.525, \\\"v960\\\": 68.684, \\\"v864\\\": 70.278, \\\"v720\\\": 73.508}}}\",\"ufq\":\"{\\\"enh\\\":83.312,\\\"playback\\\":{\\\"ori\\\":56.956,\\\"srv1\\\":62.658},\\\"src\\\":83.312,\\\"trans\\\":56.956,\\\"version\\\":\\\"v1.1\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32225}"
+          },
+          {
+            "Bitrate": 361503,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "comet_adapt_lowest_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 81.633, \"v960\": 83.274, \"v864\": 84.046, \"v720\": 87.474}, \"ori\": {\"v1080\": 69.646, \"v960\": 71.608, \"v864\": 73.598, \"v720\": 77.269}}}",
+            "PlayAddr": {
+              "DataSize": 1051389,
+              "FileCs": "c:0-20835-0686",
+              "FileHash": "b2b7f6bd23caed817b4110e200fe3fef",
+              "Height": 576,
+              "Uri": "v14044g50000db01mvnog65iu6sst7n0",
+              "UrlKey": "v14044g50000db01mvnog65iu6sst7n0_bytevc1_540p_361503",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 27,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 92447}, {\\\"time\\\": 2, \\\"offset\\\": 143111}, {\\\"time\\\": 3, \\\"offset\\\": 170920}, {\\\"time\\\": 4, \\\"offset\\\": 186920}, {\\\"time\\\": 5, \\\"offset\\\": 222614}, {\\\"time\\\": 10, \\\"offset\\\": 455951}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 81.633, \\\"v960\\\": 83.274, \\\"v864\\\": 84.046, \\\"v720\\\": 87.474}, \\\"ori\\\": {\\\"v1080\\\": 69.646, \\\"v960\\\": 71.608, \\\"v864\\\": 73.598, \\\"v720\\\": 77.269}}}\",\"ufq\":\"{\\\"enh\\\":83.312,\\\"playback\\\":{\\\"ori\\\":60.797,\\\"srv1\\\":72.784},\\\"src\\\":83.312,\\\"trans\\\":60.797,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"b6818cefcb4436e7e30e8e8d1f5a27c2\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":24169,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwBdAACYk5YEgA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwBdAACgAgCAJB/lmJOXJJkEyQhERGEfEzl+/6/Nny/6/MoeSzv9fNnl/r4zhAIOagICAgE=\\\", \\\"pps\\\": \\\"AcERTSA4kkA=\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "noCaptionReason": 3
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "540p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 23,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 576,
+        "id": "7692180919486008584",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "540p",
+        "size": 1732421,
+        "videoID": "v14044g50000db01mvnog65iu6sst7n0",
+        "videoQuality": "lowest",
+        "volumeInfo": {
+          "Loudness": -10.1,
+          "Peak": 0.96605
+        },
+        "width": 1024,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    },
+    {
+      "AIGCDescription": "",
+      "CategoryType": 120,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "anchors": [
+        {
+          "description": "CapCut · Video Editor",
+          "extraInfo": {
+            "subtype": ""
+          },
+          "icon": {
+            "urlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ]
+          },
+          "id": "0",
+          "keyword": "CapCut · Editing made easy",
+          "logExtra": "{\"anchor_id\":0,\"anchor_name\":\"CapCut · Editing made easy\",\"anchor_title_detail\":\"None\",\"anchor_title_id\":21502485763,\"anchor_type\":\"TT_CAPCUT\",\"anchor_type_level1\":\"tool\",\"anchor_type_level2\":\"tool_universal\",\"capability_key\":\"default\",\"ccep_vip\":0,\"if_race_trigger\":0,\"is_two_line\":0,\"landing_page_style_id\":21502486275,\"maker_source\":\"\",\"outreach_content\":\"original\",\"outreach_extra_info\":\"{\\\"group_id\\\":\\\"7678376551699729694\\\",\\\"outreach_content_type\\\":\\\"original\\\"}\",\"outreach_intention\":\"diversion\",\"outreach_key\":54,\"outreach_to_app_id\":\"3006\",\"outreach_type\":\"feed_anchor\",\"publish_key\":\"default\",\"template_id\":\"none\",\"tutorial_id\":\"none\",\"viamaker_anchor_capability_key_weight\":1,\"viamaker_anchor_style_idx\":-1,\"viamaker_anchor_style_source\":3,\"video_source\":1,\"video_type_id\":1}",
+          "schema": "https://redacted.invalid/",
+          "thumbnail": {
+            "height": 64,
+            "urlList": [
+              "https://redacted.invalid/",
+              "https://redacted.invalid/",
+              "https://redacted.invalid/"
+            ],
+            "width": 64
+          },
+          "type": 54
+        }
+      ],
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_58",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_59",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_60",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "user_61",
+        "stitchSetting": 0,
+        "uniqueId": "user_62",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 1276,
+        "followerCount": 1000000,
+        "followingCount": 70,
+        "friendCount": 0,
+        "heart": 7900000,
+        "heartCount": 7900000,
+        "videoCount": 1129
+      },
+      "authorStatsV2": {
+        "diggCount": "1276",
+        "followerCount": "1000000",
+        "followingCount": "70",
+        "friendCount": "0",
+        "heart": "7900000",
+        "heartCount": "7900000",
+        "videoCount": "1129"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "82320741",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "fallrecipes"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "229207",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "fyp"
+        },
+        {
+          "coverLarger": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "desc": "Share an #easyrecipe for Singapore's local food! 10 mouthwatering entries will stand to win $100 NTUC FairPrice vouchers each. 😋🎉\n\nFrom 7 to 27 May 2021, post a recipe on TikTok carrying the hashtags #easyrecipe to participate in the contest. Entries must include a cuisine representing Singapore's cultural food or local dish. Applicable for Singapore residents only. \n\nNeed more ideas? Explore more recipes rich with uniquely Singaporean flavours here! https://go.gov.sg/shf2021-moap\n\n[Contest in partnership with Singapore HeritageFest]",
+          "id": "29431938",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "EasyRecipe"
+        },
+        {
+          "coverLarger": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "desc": "It's officially soup season. Show us your favourite good soup recipes 🥣",
+          "id": "9608",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "soup"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"0\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "Easy hearty crockpot soup and cornbread 😊 #fallrecipes #fyp #easyrecipe #soup ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 55,
+              "hashtagName": "fallrecipes",
+              "isCommerce": false,
+              "start": 43,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 60,
+              "hashtagName": "fyp",
+              "isCommerce": false,
+              "start": 56,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 72,
+              "hashtagName": "easyrecipe",
+              "isCommerce": false,
+              "start": 61,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 78,
+              "hashtagName": "soup",
+              "isCommerce": false,
+              "start": 73,
+              "subType": 0,
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "createTime": 1787761364,
+      "desc": "Easy hearty crockpot soup and cornbread 😊 #fallrecipes #fyp #easyrecipe #soup ",
+      "digged": false,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7678376551699729694",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_comment": true,
+        "can_creator_redirect": true,
+        "can_music_redirect": true,
+        "can_repost": true,
+        "can_share": true
+      },
+      "music": {
+        "authorName": "user_59",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 541,
+        "id": "7678391865536416543",
+        "isCopyrighted": false,
+        "is_commerce_music": true,
+        "is_unlimited_music": false,
+        "original": true,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 541,
+        "title": "original sound",
+        "tt2dsp": {}
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 16400,
+        "commentCount": 1249,
+        "diggCount": 36100,
+        "playCount": 530300,
+        "shareCount": 4026
+      },
+      "statsV2": {
+        "collectCount": "16396",
+        "commentCount": "1249",
+        "diggCount": "36100",
+        "playCount": "530300",
+        "repostCount": "0",
+        "shareCount": "4026"
+      },
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 55,
+          "hashtagName": "fallrecipes",
+          "isCommerce": false,
+          "start": 43,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 60,
+          "hashtagName": "fyp",
+          "isCommerce": false,
+          "start": 56,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 72,
+          "hashtagName": "easyrecipe",
+          "isCommerce": false,
+          "start": 61,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 78,
+          "hashtagName": "soup",
+          "isCommerce": false,
+          "start": 73,
+          "subType": 0,
+          "type": 1
+        }
+      ],
+      "textLanguage": "en",
+      "textTranslatable": true,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 98790443,
+          "FileCs": "c:0-327362-9a1b",
+          "FileHash": "8fd659d091c5378465691b77f8c7a050",
+          "Height": 1280,
+          "Uri": "v15044gf0000da7g0m7og65lmuku5bgg",
+          "UrlKey": "v15044gf0000da7g0m7og65lmuku5bgg_h264_720p_1458608",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 720
+        },
+        "VQScore": "73.39",
+        "bitrate": 1458608,
+        "bitrateAudioInfo": [
+          {
+            "AudioDataSize": 3310601,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 5,
+            "AudioQualityString": "adapt_lower",
+            "Bitrate": 49051,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "7deeb0dafee418e4d4b6457135f9da6e",
+            "FileId": "7deeb0dafee418e4d4b6457135f9da6e",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-2086\"},\"check_info\":{\"check_info\":\"a:v15044gf0000da7g0m7og65lmuku5bgg|b:0-2086-bef0896f1872751f30ccce1ff0168807|c:0-2086-2c75\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          },
+          {
+            "AudioDataSize": 2226600,
+            "AudioFPS": 0,
+            "AudioFormat": "dash",
+            "AudioQuality": 4,
+            "AudioQualityString": "adapt",
+            "Bitrate": 33164,
+            "CodecType": "h265_hvc1",
+            "EncodedType": "normal",
+            "FileHash": "a75977a527a15eb0d5eee256e943cd61",
+            "FileId": "a75977a527a15eb0d5eee256e943cd61",
+            "Format": "dash",
+            "MediaType": "audio",
+            "SubInfoString": "{\"base_range_info\":{\"init_range\":\"0-998\",\"index_range\":\"999-2086\"},\"check_info\":{\"check_info\":\"a:v15044gf0000da7g0m7og65lmuku5bgg|b:0-2086-0c3d41792a9c26833b520607a433f616|c:0-2086-a67b\"}}",
+            "UrlList": {
+              "BackupUrl": "https://redacted.invalid/",
+              "FallbackUrl": "https://redacted.invalid/",
+              "MainUrl": "https://redacted.invalid/"
+            }
+          }
+        ],
+        "bitrateInfo": [
+          {
+            "Bitrate": 1458608,
+            "BitrateFPS": 24,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "normal_720_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 87.98, \"v960\": 91.074, \"v864\": 93.212, \"v720\": 94.725}, \"ori\": {\"v1080\": 87.98, \"v960\": 91.074, \"v864\": 93.212, \"v720\": 94.725}}}",
+            "PlayAddr": {
+              "DataSize": 98790443,
+              "FileCs": "c:0-327362-9a1b",
+              "FileHash": "8fd659d091c5378465691b77f8c7a050",
+              "Height": 1280,
+              "Uri": "v15044gf0000da7g0m7og65lmuku5bgg",
+              "UrlKey": "v15044gf0000da7g0m7og65lmuku5bgg_h264_720p_1458608",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 720
+            },
+            "QualityType": 10,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 605312}, {\\\"time\\\": 2, \\\"offset\\\": 833960}, {\\\"time\\\": 3, \\\"offset\\\": 1044720}, {\\\"time\\\": 4, \\\"offset\\\": 1208489}, {\\\"time\\\": 5, \\\"offset\\\": 1283194}, {\\\"time\\\": 10, \\\"offset\\\": 2041442}]\",\"format\":\"mp4\",\"sub_info\":\"{\\\"base_range_info\\\":{},\\\"check_info\\\":{\\\"check_info\\\":\\\"c:0-327362-9a1b\\\"},\\\"quality_type\\\":10}\",\"definition\":\"720p\",\"quality\":\"normal\",\"quality_desc\":\"\",\"file_id\":\"fff3aa5f45d04c7aaf46cee3255f3a17\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 87.98, \\\"v960\\\": 91.074, \\\"v864\\\": 93.212, \\\"v720\\\": 94.725}, \\\"ori\\\": {\\\"v1080\\\": 87.98, \\\"v960\\\": 91.074, \\\"v864\\\": 93.212, \\\"v720\\\": 94.725}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"65b88c41c0963253ad31b6f68981a242\",\"audio_file_id\":\"7deeb0dafee418e4d4b6457135f9da6e\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":64022}"
+          },
+          {
+            "Bitrate": 1142282,
+            "BitrateFPS": 24,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lowest_1080_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 97.954, \"v960\": 98.686, \"v864\": 99.02, \"v720\": 99.524}, \"ori\": {\"v1080\": 92.405, \"v960\": 94.016, \"v864\": 95.061, \"v720\": 96.629}}}",
+            "PlayAddr": {
+              "DataSize": 69856382,
+              "FileCs": "c:0-2356-4038",
+              "FileHash": "dc019ed5113f7fc7ece645a29583da26",
+              "Height": 1920,
+              "Uri": "v15044gf0000da7g0m7og65lmuku5bgg",
+              "UrlKey": "v15044gf0000da7g0m7og65lmuku5bgg_bytevc1_1080p_1142282",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1080
+            },
+            "QualityType": 2,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-2356\\\",\\\"first_moof_range\\\":\\\"2357-3656\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000da7g0m7og65lmuku5bgg|b:0-2356-b05a02d31c5961e55ec535f9d6c92346|c:0-2356-4038\\\"},\\\"quality_type\\\":2}\",\"definition\":\"1080p\",\"quality\":\"adapt_lowest\",\"quality_desc\":\"\",\"file_id\":\"50761cdec4af4d528a4b03314266a554\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 97.954, \\\"v960\\\": 98.686, \\\"v864\\\": 99.02, \\\"v720\\\": 99.524}, \\\"ori\\\": {\\\"v1080\\\": 92.405, \\\"v960\\\": 94.016, \\\"v864\\\": 95.061, \\\"v720\\\": 96.629}}}\",\"ufq\":\"{\\\"enh\\\":91.171,\\\"playback\\\":{\\\"ori\\\":87.576,\\\"srv1\\\":93.125},\\\"src\\\":91.171,\\\"trans\\\":87.576,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"4b5574e16dede7b5389a11ced23de6fa\",\"audio_file_id\":\"7deeb0dafee418e4d4b6457135f9da6e\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":48016,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgAhyAHgWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAMBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 675996,
+            "BitrateFPS": 24,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 94.558, \"v960\": 96.338, \"v864\": 97.367, \"v720\": 98.605}, \"ori\": {\"v1080\": 84.526, \"v960\": 87.782, \"v864\": 89.789, \"v720\": 93.273}}}",
+            "PlayAddr": {
+              "DataSize": 41428290,
+              "FileCs": "c:0-2356-0250",
+              "FileHash": "f40ed478ad8e7fe43babb0bb361b4988",
+              "Height": 1280,
+              "Uri": "v15044gf0000da7g0m7og65lmuku5bgg",
+              "UrlKey": "v15044gf0000da7g0m7og65lmuku5bgg_bytevc1_720p_675996",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 720
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-2356\\\",\\\"first_moof_range\\\":\\\"2357-3656\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000da7g0m7og65lmuku5bgg|b:0-2356-1937a4eac7f77ed8860a9f0f65c10fcc|c:0-2356-0250\\\"},\\\"quality_type\\\":14}\",\"definition\":\"720p\",\"quality\":\"adapt_lower\",\"quality_desc\":\"\",\"file_id\":\"d480b0cbbe0c4821abb7b41335a74498\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 94.558, \\\"v960\\\": 96.338, \\\"v864\\\": 97.367, \\\"v720\\\": 98.605}, \\\"ori\\\": {\\\"v1080\\\": 84.526, \\\"v960\\\": 87.782, \\\"v864\\\": 89.789, \\\"v720\\\": 93.273}}}\",\"ufq\":\"{\\\"enh\\\":91.171,\\\"playback\\\":{\\\"ori\\\":79.816,\\\"srv1\\\":89.848},\\\"src\\\":91.171,\\\"trans\\\":79.816,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"c6e46db9c6b280303ee4d793775f2363\",\"audio_file_id\":\"7deeb0dafee418e4d4b6457135f9da6e\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 93.341, \\\"sr20\\\": 99.643}}\",\"audio_bit_rate\":48016,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgBaIAUBZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAMBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 582217,
+            "BitrateFPS": 24,
+            "CodecType": "h265_hvc1",
+            "Format": "dash",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 92.136, \"v960\": 94.733, \"v864\": 96.241, \"v720\": 97.978}, \"ori\": {\"v1080\": 79.546, \"v960\": 83.468, \"v864\": 86.166, \"v720\": 90.322}}}",
+            "PlayAddr": {
+              "DataSize": 35884255,
+              "FileCs": "c:0-2356-6784",
+              "FileHash": "40f4724fa5bb3f2ca0ba20301f6daa57",
+              "Height": 1024,
+              "Uri": "v15044gf0000da7g0m7og65lmuku5bgg",
+              "UrlKey": "v15044gf0000da7g0m7og65lmuku5bgg_bytevc1_540p_582217",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 576
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"\",\"format\":\"dash\",\"sub_info\":\"{\\\"base_range_info\\\":{\\\"init_range\\\":\\\"0-1280\\\",\\\"index_range\\\":\\\"1281-2356\\\",\\\"first_moof_range\\\":\\\"2357-3656\\\"},\\\"check_info\\\":{\\\"check_info\\\":\\\"a:v15044gf0000da7g0m7og65lmuku5bgg|b:0-2356-6359fa2cca5d8c36f11b63afc40cc400|c:0-2356-6784\\\"},\\\"quality_type\\\":28}\",\"definition\":\"540p\",\"quality\":\"adapt\",\"quality_desc\":\"\",\"file_id\":\"be5c2fb96e4f4718b65df1bdaa9cecc5\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 92.136, \\\"v960\\\": 94.733, \\\"v864\\\": 96.241, \\\"v720\\\": 97.978}, \\\"ori\\\": {\\\"v1080\\\": 79.546, \\\"v960\\\": 83.468, \\\"v864\\\": 86.166, \\\"v720\\\": 90.322}}}\",\"ufq\":\"{\\\"enh\\\":91.171,\\\"playback\\\":{\\\"ori\\\":76.081,\\\"srv1\\\":88.671},\\\"src\\\":91.171,\\\"trans\\\":76.081,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"0fb9126be2a766a8dd0f51cc544b234d\",\"audio_file_id\":\"a75977a527a15eb0d5eee256e943cd61\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 88.978, \\\"sr20\\\": 97.341}}\",\"audio_bit_rate\":32011,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgBIIAQBZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAMBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "captionInfos": [
+            {
+              "captionFormat": "webvtt",
+              "claSubtitleID": "7688003687213681439",
+              "expire": "1793041136",
+              "isAutoGen": true,
+              "isOriginalCaption": true,
+              "language": "eng-US",
+              "languageCode": "en",
+              "languageID": "2",
+              "subID": "-1204785471",
+              "subtitleType": "1",
+              "translationType": "0",
+              "url": "https://redacted.invalid/",
+              "urlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "variant": "big_caption"
+            }
+          ],
+          "captionsType": 1,
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "originalLanguageInfo": {
+            "canTranslateRealTimeNoCheck": true,
+            "language": "eng-US",
+            "languageCode": "en",
+            "languageID": "2"
+          }
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "720p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 541,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 1280,
+        "id": "7678376551699729694",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "720p",
+        "size": 98790443,
+        "subtitleInfos": [
+          {
+            "Format": "webvtt",
+            "LanguageCodeName": "eng-US",
+            "LanguageID": "2",
+            "Size": 15326,
+            "Source": "ASR",
+            "Url": "https://redacted.invalid/",
+            "UrlExpire": 1793041136,
+            "Version": "1:big_caption"
+          }
+        ],
+        "videoID": "v15044gf0000da7g0m7og65lmuku5bgg",
+        "videoQuality": "normal",
+        "volumeInfo": {
+          "Loudness": -19.2,
+          "Peak": 0.94406
+        },
+        "width": 720,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    },
+    {
+      "AIGCDescription": "",
+      "CategoryType": 101,
+      "IsHDBitrate": false,
+      "ShowAIGC": true,
+      "author": {
+        "avatarLarger": "https://redacted.invalid/",
+        "avatarMedium": "https://redacted.invalid/",
+        "avatarThumb": "https://redacted.invalid/",
+        "commentSetting": 0,
+        "downloadSetting": 0,
+        "duetSetting": 0,
+        "ftc": false,
+        "id": "user_63",
+        "isADVirtual": false,
+        "isEmbedBanned": false,
+        "nickname": "user_64",
+        "openFavorite": false,
+        "privateAccount": false,
+        "relation": 0,
+        "secUid": "user_65",
+        "secret": false,
+        "shortDramaCreator": {},
+        "signature": "user_66",
+        "stitchSetting": 0,
+        "uniqueId": "user_67",
+        "verified": false
+      },
+      "authorStats": {
+        "diggCount": 17300,
+        "followerCount": 2500000,
+        "followingCount": 681,
+        "friendCount": 0,
+        "heart": 333300000,
+        "heartCount": 333300000,
+        "videoCount": 2576
+      },
+      "authorStatsV2": {
+        "diggCount": "17300",
+        "followerCount": "2500000",
+        "followingCount": "681",
+        "friendCount": "0",
+        "heart": "333300000",
+        "heartCount": "333300000",
+        "videoCount": "2576"
+      },
+      "backendSourceEventTracking": "fyp_32",
+      "challenges": [
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "12413",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "spiderman"
+        },
+        {
+          "coverLarger": "https://redacted.invalid/",
+          "coverMedium": "https://redacted.invalid/",
+          "coverThumb": "https://redacted.invalid/",
+          "desc": "Llevando tu contenido al siguiente nivel 🔥 todos los trucos y tips para aprender a editar tus videos en TikTok.",
+          "id": "1518",
+          "profileLarger": "https://redacted.invalid/",
+          "profileMedium": "https://redacted.invalid/",
+          "profileThumb": "https://redacted.invalid/",
+          "title": "edit"
+        },
+        {
+          "coverLarger": "",
+          "coverMedium": "",
+          "coverThumb": "",
+          "desc": "",
+          "id": "5500894",
+          "profileLarger": "",
+          "profileMedium": "",
+          "profileThumb": "",
+          "title": "andrewgarfield"
+        }
+      ],
+      "collected": false,
+      "contentContext": {
+        "status_tag": "{\"traffic_structure_info\":\"{\\\"slate_group_type\\\":\\\"0\\\"}\"}"
+      },
+      "contents": [
+        {
+          "desc": "Not today Flash 🗣️ // Song: 4444live (Slowed) // #spiderman #edit #andrewgarfield ",
+          "textExtra": [
+            {
+              "awemeId": "",
+              "end": 60,
+              "hashtagName": "spiderman",
+              "isCommerce": false,
+              "start": 50,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 66,
+              "hashtagName": "edit",
+              "isCommerce": false,
+              "start": 61,
+              "subType": 0,
+              "type": 1
+            },
+            {
+              "awemeId": "",
+              "end": 82,
+              "hashtagName": "andrewgarfield",
+              "isCommerce": false,
+              "start": 67,
+              "subType": 0,
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "createTime": 1792508256,
+      "desc": "Not today Flash 🗣️ // Song: 4444live (Slowed) // #spiderman #edit #andrewgarfield ",
+      "digged": false,
+      "diversificationId": 10045,
+      "duetDisplay": 0,
+      "duetEnabled": true,
+      "forFriend": false,
+      "id": "7698764317352611105",
+      "isAd": false,
+      "isProhibited": false,
+      "isReviewing": false,
+      "itemCommentStatus": 0,
+      "item_control": {
+        "can_repost": true
+      },
+      "music": {
+        "album": "4444live",
+        "authorName": "FXRR",
+        "coverLarge": "https://redacted.invalid/",
+        "coverMedium": "https://redacted.invalid/",
+        "coverThumb": "https://redacted.invalid/",
+        "duration": 60,
+        "id": "7695888101806442497",
+        "isCopyrighted": true,
+        "is_commerce_music": false,
+        "is_unlimited_music": false,
+        "original": false,
+        "playUrl": "https://redacted.invalid/",
+        "private": false,
+        "shoot_duration": 60,
+        "title": "4444live - Slowed + Reverb",
+        "tt2dsp": {
+          "tt_to_dsp_song_infos": [
+            {
+              "meta_song_id": "7695889517421676596",
+              "platform": 1,
+              "song_id": "6822077940",
+              "token": {
+                "apple_music_token": {
+                  "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3OTMxMjMxMTYsImlhdCI6MTc5Mjg2MzkxNiwiaXNzIjoiTUo3OTdEOFU2RiJ9.aXq7qV-vZkX0ritolhAyDZBkPPvtj9IQ1D0F8Y8h8YqT8f5Rw2_YPs_tvU83J84zZaDpiUOFEmdLu8WVZA6VpQ"
+                }
+              }
+            },
+            {
+              "meta_song_id": "7695889517421676596",
+              "platform": 3,
+              "song_id": "2bBPzADBhtVQeo5RYGNhli"
+            }
+          ]
+        }
+      },
+      "officalItem": false,
+      "originalItem": false,
+      "penaltyContext": {
+        "arb_content_safety_status": 102,
+        "display_penalty_type": 0,
+        "display_policy": 0,
+        "display_ui_type": 0,
+        "ec_global_verdict": 1,
+        "reviewed": 0,
+        "status": 102,
+        "tns_status": 102,
+        "video_status": 10
+      },
+      "playlistId": "7048940541261941510",
+      "privateItem": false,
+      "secret": false,
+      "shareEnabled": true,
+      "stats": {
+        "collectCount": 21400,
+        "commentCount": 880,
+        "diggCount": 200500,
+        "playCount": 1100000,
+        "shareCount": 3531
+      },
+      "statsV2": {
+        "collectCount": "21388",
+        "commentCount": "880",
+        "diggCount": "200500",
+        "playCount": "1100000",
+        "repostCount": "0",
+        "shareCount": "3531"
+      },
+      "stitchDisplay": 0,
+      "stitchEnabled": true,
+      "textExtra": [
+        {
+          "awemeId": "",
+          "end": 60,
+          "hashtagName": "spiderman",
+          "isCommerce": false,
+          "start": 50,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 66,
+          "hashtagName": "edit",
+          "isCommerce": false,
+          "start": 61,
+          "subType": 0,
+          "type": 1
+        },
+        {
+          "awemeId": "",
+          "end": 82,
+          "hashtagName": "andrewgarfield",
+          "isCommerce": false,
+          "start": 67,
+          "subType": 0,
+          "type": 1
+        }
+      ],
+      "textLanguage": "en",
+      "textTranslatable": true,
+      "video": {
+        "PlayAddrStruct": {
+          "DataSize": 15148925,
+          "FileCs": "c:0-45263-9b4c",
+          "FileHash": "89a9760c1d3a9ebd1e3476b34a62b5f6",
+          "Height": 576,
+          "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+          "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_h264_540p_2212854",
+          "UrlList": [
+            "https://redacted.invalid/",
+            "https://redacted.invalid/",
+            "https://redacted.invalid/"
+          ],
+          "Width": 1024
+        },
+        "VQScore": "63.36",
+        "bitrate": 2212854,
+        "bitrateInfo": [
+          {
+            "Bitrate": 2212854,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "normal_540_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 93.9, \"v960\": 97.165, \"v864\": 98.442, \"v720\": 98.096}, \"ori\": {\"v1080\": 85.899, \"v960\": 89.372, \"v864\": 90.971, \"v720\": 93.971}}}",
+            "PlayAddr": {
+              "DataSize": 15148925,
+              "FileCs": "c:0-45263-9b4c",
+              "FileHash": "89a9760c1d3a9ebd1e3476b34a62b5f6",
+              "Height": 576,
+              "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+              "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_h264_540p_2212854",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 20,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 426002}, {\\\"time\\\": 2, \\\"offset\\\": 740686}, {\\\"time\\\": 3, \\\"offset\\\": 1008115}, {\\\"time\\\": 4, \\\"offset\\\": 1197880}, {\\\"time\\\": 5, \\\"offset\\\": 1404119}, {\\\"time\\\": 10, \\\"offset\\\": 2526015}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 93.9, \\\"v960\\\": 97.165, \\\"v864\\\": 98.442, \\\"v720\\\": 98.096}, \\\"ori\\\": {\\\"v1080\\\": 85.899, \\\"v960\\\": 89.372, \\\"v864\\\": 90.971, \\\"v720\\\": 93.971}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32103}"
+          },
+          {
+            "Bitrate": 1843663,
+            "BitrateFPS": 60,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_lowest_1080_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 90.494, \"v960\": 91.873, \"v864\": 93.34, \"v720\": 95.337}, \"ori\": {\"v1080\": 84.311, \"v960\": 86.798, \"v864\": 88.643, \"v720\": 91.514}}}",
+            "PlayAddr": {
+              "DataSize": 12612504,
+              "FileCs": "c:0-61448-fa7f",
+              "FileHash": "7f6fc0e3d99628a1df6798a3600f421a",
+              "Height": 1080,
+              "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+              "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_bytevc1_1080p_1843663",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1920
+            },
+            "QualityType": 2,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 420503}, {\\\"time\\\": 2, \\\"offset\\\": 688368}, {\\\"time\\\": 3, \\\"offset\\\": 921516}, {\\\"time\\\": 4, \\\"offset\\\": 1091701}, {\\\"time\\\": 5, \\\"offset\\\": 1285844}, {\\\"time\\\": 10, \\\"offset\\\": 2410011}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 90.494, \\\"v960\\\": 91.873, \\\"v864\\\": 93.34, \\\"v720\\\": 95.337}, \\\"ori\\\": {\\\"v1080\\\": 84.311, \\\"v960\\\": 86.798, \\\"v864\\\": 88.643, \\\"v720\\\": 91.514}}}\",\"ufq\":\"{\\\"enh\\\":76.908,\\\"playback\\\":{\\\"ori\\\":65.392,\\\"srv1\\\":71.575},\\\"src\\\":76.908,\\\"trans\\\":65.392,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"e91245375450b02a8794eaf362ea32ee\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 90.042, \\\"sr20\\\": 99.907}}\",\"audio_bit_rate\":64191,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwCWAACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwCWAACgA8CAEOWWIJElySUQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAI\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 1204084,
+            "BitrateFPS": 30,
+            "CodecType": "h264",
+            "Format": "mp4",
+            "GearName": "lower_540_0",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 83.565, \"v960\": 87.793, \"v864\": 89.714, \"v720\": 90.763}, \"ori\": {\"v1080\": 76.022, \"v960\": 77.664, \"v864\": 78.989, \"v720\": 85.714}}}",
+            "PlayAddr": {
+              "DataSize": 8243014,
+              "FileCs": "c:0-45239-232f",
+              "FileHash": "5eabb66a68911e2741d664d73a330912",
+              "Height": 576,
+              "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+              "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_h264_540p_1204084",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 24,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 247873}, {\\\"time\\\": 2, \\\"offset\\\": 418864}, {\\\"time\\\": 3, \\\"offset\\\": 562309}, {\\\"time\\\": 4, \\\"offset\\\": 665172}, {\\\"time\\\": 5, \\\"offset\\\": 774284}, {\\\"time\\\": 10, \\\"offset\\\": 1404063}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 83.565, \\\"v960\\\": 87.793, \\\"v864\\\": 89.714, \\\"v720\\\": 90.763}, \\\"ori\\\": {\\\"v1080\\\": 76.022, \\\"v960\\\": 77.664, \\\"v864\\\": 78.989, \\\"v720\\\": 85.714}}}\",\"ufq\":\"\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"25b3faebdda74a9e438e851988a6efcc\",\"dec_info\":\"\",\"gearvqm\":\"\",\"audio_bit_rate\":32103}"
+          },
+          {
+            "Bitrate": 923110,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_lower_720_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 87.394, \"v960\": 89.225, \"v864\": 91.276, \"v720\": 94.189}, \"ori\": {\"v1080\": 79.464, \"v960\": 82.054, \"v864\": 84.693, \"v720\": 88.645}}}",
+            "PlayAddr": {
+              "DataSize": 6319501,
+              "FileCs": "c:0-46860-55c6",
+              "FileHash": "e00773d4cc42ef0ff46070ed61d26b68",
+              "Height": 720,
+              "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+              "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_bytevc1_720p_923110",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1280
+            },
+            "QualityType": 14,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 244169}, {\\\"time\\\": 2, \\\"offset\\\": 347469}, {\\\"time\\\": 3, \\\"offset\\\": 450701}, {\\\"time\\\": 4, \\\"offset\\\": 523282}, {\\\"time\\\": 5, \\\"offset\\\": 617010}, {\\\"time\\\": 10, \\\"offset\\\": 1156341}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 87.394, \\\"v960\\\": 89.225, \\\"v864\\\": 91.276, \\\"v720\\\": 94.189}, \\\"ori\\\": {\\\"v1080\\\": 79.464, \\\"v960\\\": 82.054, \\\"v864\\\": 84.693, \\\"v720\\\": 88.645}}}\",\"ufq\":\"{\\\"enh\\\":76.908,\\\"playback\\\":{\\\"ori\\\":61.756,\\\"srv1\\\":69.686},\\\"src\\\":76.908,\\\"trans\\\":61.756,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"cebe96cc7e15fab783061bbf7caef166\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 88.732, \\\"sr20\\\": 94.771}}\",\"audio_bit_rate\":64191,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAoCALRZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          },
+          {
+            "Bitrate": 711248,
+            "BitrateFPS": 30,
+            "CodecType": "h265_hvc1",
+            "Format": "mp4",
+            "GearName": "adapt_540_1",
+            "MVMAF": "{\"v2.0\": {\"srv1\": {\"v1080\": 83.609, \"v960\": 86.052, \"v864\": 88.53, \"v720\": 91.675}, \"ori\": {\"v1080\": 73.655, \"v960\": 77.12, \"v864\": 79.806, \"v720\": 84.463}}}",
+            "PlayAddr": {
+              "DataSize": 4869115,
+              "FileCs": "c:0-46860-78cc",
+              "FileHash": "1f2d769ce1b3cc19429b07af04bcfd0b",
+              "Height": 576,
+              "Uri": "v26044gc0000dbbo0c7og65msth44idg",
+              "UrlKey": "v26044gc0000dbbo0c7og65msth44idg_bytevc1_540p_711248",
+              "UrlList": [
+                "https://redacted.invalid/",
+                "https://redacted.invalid/",
+                "https://redacted.invalid/"
+              ],
+              "Width": 1024
+            },
+            "QualityType": 28,
+            "VideoExtra": "{\"PktOffsetMap\":\"[{\\\"time\\\": 1, \\\"offset\\\": 208644}, {\\\"time\\\": 2, \\\"offset\\\": 294185}, {\\\"time\\\": 3, \\\"offset\\\": 377118}, {\\\"time\\\": 4, \\\"offset\\\": 433459}, {\\\"time\\\": 5, \\\"offset\\\": 509242}, {\\\"time\\\": 10, \\\"offset\\\": 926243}]\",\"mvmaf\":\"{\\\"v2.0\\\": {\\\"srv1\\\": {\\\"v1080\\\": 83.609, \\\"v960\\\": 86.052, \\\"v864\\\": 88.53, \\\"v720\\\": 91.675}, \\\"ori\\\": {\\\"v1080\\\": 73.655, \\\"v960\\\": 77.12, \\\"v864\\\": 79.806, \\\"v720\\\": 84.463}}}\",\"ufq\":\"{\\\"enh\\\":76.908,\\\"playback\\\":{\\\"ori\\\":57.4,\\\"srv1\\\":67.354},\\\"src\\\":76.908,\\\"trans\\\":57.4,\\\"version\\\":\\\"v1.2\\\"}\",\"volume_info_json\":\"\",\"transcode_feature_id\":\"0fb9126be2a766a8dd0f51cc544b234d\",\"dec_info\":\"\",\"gearvqm\":\"{\\\"v3.0\\\": {\\\"ori\\\": 83.876, \\\"sr20\\\": 92.034}}\",\"audio_bit_rate\":32103,\"ps_info\":\"{\\\"vps\\\": \\\"AQwC//8BYAAAAwAAAwAAAwAAAwC6AACIJElgSA==\\\", \\\"sps\\\": \\\"AQMBYAAAAwAAAwAAAwAAAwC6AACgAgCAJBZYgkSXJIkQTPCEREREREYR8xPOX+/+v82fy/+v8yh+S/3/1/mz+X/1/jOEAg5qAgICCAAAAwAIAAADAPBA\\\", \\\"pps\\\": \\\"AcElPAiQ\\\"}\"}"
+          }
+        ],
+        "claInfo": {
+          "enableAutoCaption": true,
+          "hasOriginalAudio": true,
+          "noCaptionReason": 3
+        },
+        "codecType": "h264",
+        "cover": "https://redacted.invalid/",
+        "definition": "540p",
+        "downloadAddr": "https://redacted.invalid/",
+        "duration": 54,
+        "dynamicCover": "https://redacted.invalid/",
+        "encodeUserTag": "",
+        "encodedType": "normal",
+        "format": "mp4",
+        "height": 576,
+        "id": "7698764317352611105",
+        "originCover": "https://redacted.invalid/",
+        "playAddr": "https://redacted.invalid/",
+        "ratio": "540p",
+        "size": 15148925,
+        "videoID": "v26044gc0000dbbo0c7og65msth44idg",
+        "videoQuality": "normal",
+        "volumeInfo": {
+          "Loudness": -10.7,
+          "Peak": 0.90157
+        },
+        "width": 1024,
+        "zoomCover": {
+          "240": "https://redacted.invalid/",
+          "480": "https://redacted.invalid/",
+          "720": "https://redacted.invalid/",
+          "960": "https://redacted.invalid/"
+        }
+      }
+    }
+  ],
+  "log_pb": {
+    "impr_id": "redacted"
+  },
+  "statusCode": 0,
+  "status_code": 0,
+  "status_msg": ""
+}
