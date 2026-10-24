@@ -177,11 +177,23 @@ export function installInterceptor(env: InterceptorEnv): Interceptor {
       if (!adapter || !res.ok) return res;
       const ct = res.headers.get('content-type') ?? '';
       if (ct && !ct.includes('json')) return res;
+      // Read the claimed body once (no clone/tee) and always hand back a rebuilt Response.
+      let text: string;
       try {
-        const body = await res.clone().json();
-        const out = await filterBody(adapter, body, true);
-        if (out === body) return res;
-        const next = new Response(JSON.stringify(out), { status: res.status, statusText: res.statusText, headers: res.headers });
+        text = await res.text();
+      } catch {
+        return res;
+      }
+      try {
+        let outText = text;
+        try {
+          const body = JSON.parse(text);
+          const out = await filterBody(adapter, body, true);
+          if (out !== body) outText = JSON.stringify(out);
+        } catch {
+          /* not JSON or adapter error: pass the original bytes through */
+        }
+        const next = new Response(outText, { status: res.status, statusText: res.statusText, headers: res.headers });
         for (const k of ['url', 'redirected', 'type'] as const) {
           try {
             Object.defineProperty(next, k, { value: res[k] });
@@ -191,7 +203,7 @@ export function installInterceptor(env: InterceptorEnv): Interceptor {
         }
         return next;
       } catch {
-        return res;
+        return new Response(text, { status: res.status, statusText: res.statusText, headers: res.headers });
       }
     };
     try {
