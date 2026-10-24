@@ -21,7 +21,7 @@ npm test
 
 Load the extension: Chrome → `chrome://extensions` → Developer mode → **Load unpacked** → `extension/dist`. Open <https://www.tiktok.com>. First launch asks you to create a PIN.
 
-Chrome 137+ no longer honours `--load-extension` for branded Chrome. Load unpacked manually, or use Chrome for Testing / Chromium when you need a scripted launch. The automated fixture run in `docs/TESTING.md` used Chrome for Testing 133.
+Chrome 137+ no longer honours `--load-extension` for branded Chrome. Load unpacked manually, or use Chrome for Testing / Chromium when you need a scripted launch. The automated fixture run in `docs/TESTING.md` used Chrome for Testing 149.
 
 ### Stage preview (no TikTok account needed)
 

@@ -10,7 +10,7 @@ A result belongs to both a video and its analysis request/provider. Changing pro
 
 ## Stage preview — verified 2026-10-24
 
-`chrome-extension://<id>/preview.html` (also reachable from `chrome://extensions` → LNZ → Extension options) mounts the real content script over a synthetic four-clip feed. Verified in Chrome for Testing 133 on macOS with the production `extension/dist`:
+`chrome-extension://<id>/preview.html` (also reachable from `chrome://extensions` → LNZ → Extension options) mounts the real content script over a synthetic four-clip feed. Verified in Chrome for Testing 149 on macOS with the production `extension/dist`:
 
 - Overlay mounts with the real launcher and filter rail; the panel reports **PROTECTED**.
 - Clip 1 (`100000000000039`) resolves to Calm 5% / Learn 87% / Shield no flags → **KEEP** with correct title/author from the stage DOM.
