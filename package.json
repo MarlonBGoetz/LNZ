@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "icons": "node scripts/icons.mjs",
-    "build:ext": "node scripts/icons.mjs && vite build -c extension/vite.background.config.ts && vite build -c extension/vite.content.config.ts",
+    "build:ext": "node scripts/icons.mjs && vite build -c extension/vite.background.config.ts && vite build -c extension/vite.content.config.ts && vite build -c extension/vite.feed.config.ts --mode main && vite build -c extension/vite.feed.config.ts --mode bridge",
     "dev:analytics": "vite -c analytics/vite.config.ts",
     "build:analytics": "vite build -c analytics/vite.config.ts",
     "build": "npm run build:ext && npm run build:analytics",

@@ -21,6 +21,7 @@ import {
   writeUnlocked,
 } from '../lib/storage';
 import { buildProviders } from './providers';
+import { registerFeedJudge } from './feedJudge';
 import './toolbar';
 import { classifierKey } from '../lib/analysis';
 import { createSerialQueue } from '../lib/serialQueue';
@@ -263,3 +264,6 @@ chrome.runtime.onInstalled.addListener(() => {
 setInterval(() => {
   if (providers.length) void refreshAvailability();
 }, 15_000);
+
+// Feed filtering: judge feed items ahead of the viewport (see docs/FEED_FILTERING.md).
+registerFeedJudge();
