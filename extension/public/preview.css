@@ -81,7 +81,7 @@ svg { display: block; }
 .pill.on { color: var(--text); }
 .pill.demo { color: var(--amber); border-color: rgba(245, 184, 74, 0.4); }
 
-.right { margin-left: auto; }
+.right { margin-left: auto; display: flex; gap: 8px; }
 .ghost {
   display: inline-flex;
   align-items: center;

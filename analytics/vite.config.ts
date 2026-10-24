@@ -1,9 +1,20 @@
 import { defineConfig, type Plugin, type ViteDevServer, type PreviewServer } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath } from 'node:url';
+import { appendFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 
 const r = (p: string) => fileURLToPath(new URL(p, import.meta.url));
+
+/** Local-only day log. Gitignored; never uploaded. */
+const DATA_DIR = r('./.data');
+const dayKey = (d = new Date()) => {
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+};
+const dayFile = (date: string) => join(DATA_DIR, `events-${date}.jsonl`);
+const ISO_DAY = /^\d{4}-\d{2}-\d{2}$/;
 
 /**
  * Local event relay for the analytics dashboard.
@@ -39,6 +50,12 @@ function relay(): Plugin {
           const line = JSON.stringify(ev);
           history.push(line);
           if (history.length > 500) history.shift();
+          try {
+            mkdirSync(DATA_DIR, { recursive: true });
+            appendFileSync(dayFile(dayKey()), `${line}\n`);
+          } catch {
+            // Persistence is best-effort; the live session must keep working.
+          }
           for (const c of clients) c.write(`data: ${line}\n\n`);
           res.statusCode = 204;
           res.end();
@@ -64,6 +81,29 @@ function relay(): Plugin {
     if (url === '/api/history' && req.method === 'GET') {
       res.setHeader('content-type', 'application/json');
       res.end(`[${history.join(',')}]`);
+      return;
+    }
+    if (url === '/api/day' && req.method === 'GET') {
+      const date = new URL(req.url ?? '/', 'http://localhost').searchParams.get('date') ?? dayKey();
+      if (!ISO_DAY.test(date)) {
+        res.statusCode = 400;
+        res.end('invalid date');
+        return;
+      }
+      let events: unknown[] = [];
+      try {
+        const file = dayFile(date);
+        if (existsSync(file)) {
+          events = readFileSync(file, 'utf8')
+            .split('\n')
+            .filter(Boolean)
+            .map((line) => JSON.parse(line) as unknown);
+        }
+      } catch {
+        events = [];
+      }
+      res.setHeader('content-type', 'application/json');
+      res.end(JSON.stringify({ date, events }));
       return;
     }
     next();

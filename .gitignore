@@ -9,3 +9,6 @@ extension/public/icons/*.png
 
 # Local demo browser profile
 .chrome-demo/
+
+# Local analytics day log (private, machine-only)
+analytics/.data/

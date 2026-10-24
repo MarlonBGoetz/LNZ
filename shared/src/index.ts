@@ -4,3 +4,5 @@ export * from './decision';
 export * from './demoProvider';
 export * from './events';
 export * from './brand';
+
+export * from './day';

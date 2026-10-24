@@ -12,6 +12,7 @@ import {
   type FilterId,
 } from '@lnz/shared';
 import { Brain, REGION_META, REGION_ORDER } from './Brain';
+import { DayView } from './Day';
 import { Ring, SessionBars, Timeline, type Bar } from './Charts';
 import { emptyStore, filtersOf, reduce, startDemoStream, type Store } from './store';
 
@@ -27,6 +28,7 @@ export function App() {
   const [store, dispatch] = useReducer(reducer, undefined, emptyStore);
   const [relay, setRelay] = useState<'connecting' | 'open' | 'down'>('connecting');
   const [demo, setDemo] = useState(params.get('demo') === '1');
+  const [view, setView] = useState<'session' | 'day'>('session');
   const [now, setNow] = useState(Date.now());
   const started = useRef(Date.now());
 
@@ -110,20 +112,34 @@ export function App() {
           </svg>
           <b>LNZ</b>
           <span className="sep" />
-          <span className="title">Live Analysis</span>
+          <span className="title">{view === 'day' ? 'Day Summary' : 'Live Analysis'}</span>
         </div>
         <div className="pills">
           <Pill on={relay === 'open'} label={relay === 'open' ? 'RELAY' : relay === 'down' ? 'RELAY DOWN' : 'RELAY …'} />
           <Pill on={linked} label={linked ? 'EXTENSION LINKED' : 'NO EXTENSION'} />
           {store.config && <Pill on={store.config.locked} label={store.config.locked ? 'PROTECTED' : 'EDIT MODE'} />}
-          {isDemo && <span className="pill demo">DEMO DATA</span>}
+          {view === 'session' && isDemo && <span className="pill demo">DEMO DATA</span>}
         </div>
         <div className="right">
-          <span className="mono clock">{clock}</span>
-          <button type="button" className={`ghost-btn ${demo ? 'on' : ''}`} onClick={() => setDemo((d) => !d)} disabled={linked}
-            title={linked ? 'Live extension data is streaming' : 'Synthetic fixture stream for rehearsals'}>
-            {demo ? 'Stop demo' : 'Run demo'}
-          </button>
+          {view === 'session' ? (
+            <>
+              <span className="mono clock">{clock}</span>
+              <button
+                type="button"
+                className={`ghost-btn ${demo ? 'on' : ''}`}
+                onClick={() => setDemo((d) => !d)}
+                disabled={linked}
+                title={linked ? 'Live extension data is streaming' : 'Synthetic fixture stream for rehearsals'}
+              >
+                {demo ? 'Stop demo' : 'Run demo'}
+              </button>
+            </>
+          ) : (
+            <span className="pill on">
+              <i />
+              LOCAL ONLY
+            </span>
+          )}
           <div className="user">
             <span className="avatar">{initials}</span>
             <span className="who">
@@ -134,6 +150,25 @@ export function App() {
         </div>
       </header>
 
+      <nav className="view-tabs" role="tablist" aria-label="Dashboard view">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={view === 'session'}
+          className={view === 'session' ? 'on' : ''}
+          onClick={() => setView('session')}
+        >
+          Session
+        </button>
+        <button type="button" role="tab" aria-selected={view === 'day'} className={view === 'day' ? 'on' : ''} onClick={() => setView('day')}>
+          Day
+        </button>
+        <span className="view-spacer" />
+        <span className="mono dim small">{view === 'day' ? 'LOCAL DAY LOG · AUTO 30s' : 'LIVE SESSION'}</span>
+      </nav>
+
+      {view === 'session' ? (
+        <>
       <section className="card now-card">
         <div className="now-left">
           <span className="eyebrow">CURRENT VIDEO {cur?.video.index ? `· #${String(cur.video.index).padStart(3, '0')}` : ''}</span>
@@ -294,6 +329,10 @@ export function App() {
           {store.log.length === 0 && <li className="mono dim">No events yet.</li>}
         </ol>
       </section>
+        </>
+      ) : (
+        <DayView />
+      )}
     </div>
   );
 }
