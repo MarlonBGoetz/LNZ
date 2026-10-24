@@ -1,0 +1,10 @@
+{"id": "demo-0001", "tier": 1, "dataset": "demo", "path": "/workspace/clips/demo/demo-0001.mp4", "non_cuttable": true}
+{"id": "demo-0002", "tier": 1, "dataset": "demo", "path": "/workspace/clips/demo/demo-0002.mp4", "non_cuttable": true}
+{"id": "tikharm-000001", "tier": 1, "dataset": "tikharm", "path": "/workspace/clips/tikharm/000001.mp4"}
+{"id": "tikharm-000002", "tier": 1, "dataset": "tikharm", "path": "/workspace/clips/tikharm/000002.mp4"}
+# LIRIS-ACCEDE goes to the FRONT of tier 2 if/when it lands on the volume; do
+# NOT wait for it. Uncomment and prepend records like the following (ahead of
+# the xd-violence tier-2 records) once the clips are staged on /workspace:
+# {"id": "liris-accede-0001", "tier": 2, "dataset": "liris-accede", "path": "/workspace/clips/liris-accede/0001.mp4", "front_of_tier": 2}
+{"id": "xd-violence-0001", "tier": 2, "dataset": "xd-violence", "path": "/workspace/clips/xd-violence/0001.mp4"}
+{"id": "xd-violence-0002", "tier": 2, "dataset": "xd-violence", "path": "/workspace/clips/xd-violence/0002.mp4"}

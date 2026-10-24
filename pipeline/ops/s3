@@ -1,0 +1,3 @@
+#!/bin/bash
+set -a; source ${LNZ_SECRETS:-$HOME/.lnz/secrets.env}; set +a
+exec aws --endpoint-url https://s3api-us-mo-1.runpod.io --region US-MO-1 "$@"

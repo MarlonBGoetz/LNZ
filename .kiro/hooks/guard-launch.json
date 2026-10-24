@@ -1,0 +1,10 @@
+{
+  "name": "guard-launch",
+  "description": "Guard overwatch launch/restart tools: enforce budget and GPU allowlist and require a passed smoke test before provisioning.",
+  "trigger": "PreToolUse",
+  "matcher": "overwatch/run_launch|overwatch/run_restart",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.guard --require-smoke-passed"
+  }
+}

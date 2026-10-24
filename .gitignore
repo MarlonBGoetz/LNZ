@@ -12,3 +12,22 @@ extension/public/icons/*.png
 
 # Local analytics day log (private, machine-only)
 analytics/.data/
+
+# gpu-overwatch
+# Local overwatch state (holds per-run bearer tokens) — never commit
+.overwatch/state.json
+.overwatch/setup.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+build/
+
+# Environment
+.venv/
+
+# Generated datasets and shards
+datasets/
