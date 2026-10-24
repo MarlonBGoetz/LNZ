@@ -1,0 +1,855 @@
+clip_id,dataset,source_group,path,duration_s,valence,arousal,stress_label,split,prio,orig_split,orig_class,src_file
+th_589900795163_e79a20,demo,tienhoda,/workspace/data/clips/demo/th_589900795163_e79a20.mp4,10.04,,,1,test,0,train,Harmful Content,Dataset/train/Harmful Content/tienhoda_6986976589900795163.mp4
+th_328683789574_1290c8,demo,carlosmartinmx39,/workspace/data/clips/demo/th_328683789574_1290c8.mp4,5.42,,,1,test,1,train,Harmful Content,Dataset/train/Harmful Content/carlosmartinmx39_7158167328683789574.mp4
+th_470774095136_48bcf7,demo,detective.tiger,/workspace/data/clips/demo/th_470774095136_48bcf7.mp4,10.0,,,1,test,2,val,Harmful Content,Dataset/val/Harmful Content/detective.tiger_7307899470774095136.mp4
+th_998841744666_362464,demo,therealdanktrank,/workspace/data/clips/demo/th_998841744666_362464.mp4,10.0,,,1,test,3,train,Harmful Content,Dataset/train/Harmful Content/therealdanktrank_7225345998841744666.mp4
+th_015694036225_df7fbf,demo,vivutaxua,/workspace/data/clips/demo/th_015694036225_df7fbf.mp4,10.0,,,0,test,4,train,Safe,Dataset/train/Safe/vivutaxua_7282761015694036225.mp4
+th_270716566791_ce9e09,demo,hcaii,/workspace/data/clips/demo/th_270716566791_ce9e09.mp4,10.0,,,0,test,5,train,Safe,Dataset/train/Safe/hcaii_7304137270716566791.mp4
+th_450436345106_03d9fb,demo,t8t1989,/workspace/data/clips/demo/th_450436345106_03d9fb.mp4,6.39,,,0,test,6,train,Safe,Dataset/train/Safe/t8t1989_7364262450436345106.mp4
+th_380503403802_1f171e,demo,visit,/workspace/data/clips/demo/th_380503403802_1f171e.mp4,6.09,,,0,test,7,train,Safe,Dataset/train/Safe/visit_7258010380503403802.mp4
+th_888635968786_845151,tikharm,halinh.chienthan,/workspace/data/clips/tikharm/th_888635968786_845151.mp4,5.04,,,0,train,9,train,Safe,Dataset/train/Safe/halinh.chienthan_7374996888635968786.mp4
+th_033312832773_2c4e64,tikharm,nikki.hooper,/workspace/data/clips/tikharm/th_033312832773_2c4e64.mp4,10.0,,,1,val,12,train,Harmful Content,Dataset/train/Harmful Content/nikki.hooper_7102137033312832773.mp4
+th_834018897185_3e5c91,tikharm,sxrahwwe,/workspace/data/clips/tikharm/th_834018897185_3e5c91.mp4,10.0,,,1,train,16,train,Harmful Content,Dataset/train/Harmful Content/sxrahwwe_7276486834018897185.mp4
+th_203668638978_b72b72,tikharm,fikriff16,/workspace/data/clips/tikharm/th_203668638978_b72b72.mp4,9.88,,,1,train,8,train,Harmful Content,Dataset/train/Harmful Content/fikriff16_6981640203668638978.mp4
+th_090977398018_15c536,tikharm,gocnhaclive,/workspace/data/clips/tikharm/th_090977398018_15c536.mp4,10.0,,,0,train,11,train,Safe,Dataset/train/Safe/gocnhaclive_7127954090977398018.mp4
+th_136136768774_d0cf6e,tikharm,cuoibebung88,/workspace/data/clips/tikharm/th_136136768774_d0cf6e.mp4,10.04,,,0,test,17,train,Safe,Dataset/train/Safe/cuoibebung88_7245217136136768774.mp4
+th_781209361690_2e2e78,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_781209361690_2e2e78.mp4,10.0,,,1,train,18,train,Harmful Content,Dataset/train/Harmful Content/alvinmarinas_7024295781209361690.mp4
+th_675236396293_3307da,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_675236396293_3307da.mp4,9.84,,,1,val,10,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_7011285675236396293.mp4
+th_013962837255_0eaf18,tikharm,hamuvevoi,/workspace/data/clips/tikharm/th_013962837255_0eaf18.mp4,10.0,,,0,train,15,train,Safe,Dataset/train/Safe/hamuvevoi_7261949013962837255.mp4
+th_167073459482_8e4a8c,tikharm,changcamping,/workspace/data/clips/tikharm/th_167073459482_8e4a8c.mp4,10.0,,,0,train,13,train,Safe,Dataset/train/Safe/changcamping_7087162167073459482.mp4
+th_712122629422_344a01,tikharm,torilanaee,/workspace/data/clips/tikharm/th_712122629422_344a01.mp4,10.0,,,0,test,19,train,Safe,Dataset/train/Safe/torilanaee_7274689712122629422.mp4
+th_410545540360_bbd7f1,tikharm,1life.anthonyblane,/workspace/data/clips/tikharm/th_410545540360_bbd7f1.mp4,10.0,,,1,train,22,train,Harmful Content,Dataset/train/Harmful Content/1life.anthonyblane_7348456410545540360.mp4
+th_499174391047_c4635d,tikharm,gobungynepal,/workspace/data/clips/tikharm/th_499174391047_c4635d.mp4,10.0,,,1,train,20,test,Harmful Content,Dataset/test/Harmful Content/gobungynepal_7311917499174391047.mp4
+th_979665538310_d2fca8,tikharm,nekochan.meow1,/workspace/data/clips/tikharm/th_979665538310_d2fca8.mp4,6.43,,,0,train,27,val,Safe,Dataset/val/Safe/nekochan.meow1_7255856979665538310.mp4
+th_657579265282_1080f3,tikharm,colortour68,/workspace/data/clips/tikharm/th_657579265282_1080f3.mp4,10.0,,,0,test,21,val,Safe,Dataset/val/Safe/colortour68_7278692657579265282.mp4
+th_457931083013_208a9a,tikharm,jovempanentrete,/workspace/data/clips/tikharm/th_457931083013_208a9a.mp4,10.0,,,1,train,26,train,Harmful Content,Dataset/train/Harmful Content/jovempanentrete_7353644457931083013.mp4
+th_446505131266_15732e,tikharm,giadungtq8,/workspace/data/clips/tikharm/th_446505131266_15732e.mp4,5.04,,,0,train,29,train,Safe,Dataset/train/Safe/giadungtq8_7347167446505131266.mp4
+th_345769221422_0a470a,tikharm,espn,/workspace/data/clips/tikharm/th_345769221422_0a470a.mp4,10.0,,,1,train,24,train,Harmful Content,Dataset/train/Harmful Content/espn_7194911345769221422.mp4
+th_713537105195_aa3bfc,tikharm,maugamu,/workspace/data/clips/tikharm/th_713537105195_aa3bfc.mp4,10.0,,,1,test,14,train,Harmful Content,Dataset/train/Harmful Content/maugamu_7184618713537105195.mp4
+th_626623274246_b877a6,tikharm,sp.scoot01,/workspace/data/clips/tikharm/th_626623274246_b877a6.mp4,8.58,,,1,train,34,train,Harmful Content,Dataset/train/Harmful Content/sp.scoot01_7160843626623274246.mp4
+th_256853495086_53b792,tikharm,ryderthompson451,/workspace/data/clips/tikharm/th_256853495086_53b792.mp4,8.2,,,1,train,32,train,Harmful Content,Dataset/train/Harmful Content/ryderthompson451_7173732256853495086.mp4
+th_057953594630_96390e,tikharm,coreuk,/workspace/data/clips/tikharm/th_057953594630_96390e.mp4,9.84,,,1,test,38,train,Harmful Content,Dataset/train/Harmful Content/coreuk_7016294057953594630.mp4
+th_622818114842_673d29,tikharm,ghetanhang,/workspace/data/clips/tikharm/th_622818114842_673d29.mp4,10.0,,,0,test,33,test,Safe,Dataset/test/Safe/ghetanhang_7099305622818114842.mp4
+th_029732474138_2d8b74,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_029732474138_2d8b74.mp4,10.0,,,1,train,28,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7072240029732474138.mp4
+th_086268345606_e0ae42,tikharm,xluicci_,/workspace/data/clips/tikharm/th_086268345606_e0ae42.mp4,10.0,,,1,train,36,test,Harmful Content,Dataset/test/Harmful Content/xluicci__6935521086268345606.mp4
+th_278021332270_a67524,tikharm,sheri_wilson_,/workspace/data/clips/tikharm/th_278021332270_a67524.mp4,10.0,,,0,test,41,train,Safe,Dataset/train/Safe/sheri_wilson__7296583278021332270.mp4
+th_710124993793_2932d7,tikharm,cobedotdiem,/workspace/data/clips/tikharm/th_710124993793_2932d7.mp4,10.0,,,0,train,43,test,Safe,Dataset/test/Safe/cobedotdiem_7341581710124993793.mp4
+th_169081789701_ec6c83,tikharm,phutlela,/workspace/data/clips/tikharm/th_169081789701_ec6c83.mp4,10.0,,,0,train,37,train,Safe,Dataset/train/Safe/phutlela_7245259169081789701.mp4
+th_729046605058_161876,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_729046605058_161876.mp4,10.0,,,0,train,39,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7284967729046605058.mp4
+th_819636288773_f78e5e,tikharm,victoriafaeze,/workspace/data/clips/tikharm/th_819636288773_f78e5e.mp4,10.0,,,1,test,40,train,Harmful Content,Dataset/train/Harmful Content/victoriafaeze_7240957819636288773.mp4
+th_249433181446_977b7f,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_249433181446_977b7f.mp4,10.0,,,1,val,42,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6877696249433181446.mp4
+th_203954920706_00071f,tikharm,kaguzuchi_info,/workspace/data/clips/tikharm/th_203954920706_00071f.mp4,6.04,,,1,test,46,train,Harmful Content,Dataset/train/Harmful Content/kaguzuchi_info_7210703203954920706.mp4
+th_793988017413_06205e,tikharm,rensomango,/workspace/data/clips/tikharm/th_793988017413_06205e.mp4,8.42,,,1,train,50,train,Harmful Content,Dataset/train/Harmful Content/rensomango_7150662793988017413.mp4
+th_087855103239_a59fff,tikharm,viaconyeu,/workspace/data/clips/tikharm/th_087855103239_a59fff.mp4,10.0,,,0,val,45,test,Safe,Dataset/test/Safe/viaconyeu_7314953087855103239.mp4
+th_692916555041_114023,tikharm,cartoonmovies7,/workspace/data/clips/tikharm/th_692916555041_114023.mp4,10.0,,,0,train,31,train,Safe,Dataset/train/Safe/.cartoonmovies7_7298084692916555041.mp4
+th_740663786758_fb7310,tikharm,luutruong.vn,/workspace/data/clips/tikharm/th_740663786758_fb7310.mp4,10.0,,,1,test,54,val,Harmful Content,Dataset/val/Harmful Content/luutruong.vn_7232645740663786758.mp4
+th_226172857601_c462f3,tikharm,caominhtienofficial,/workspace/data/clips/tikharm/th_226172857601_c462f3.mp4,10.0,,,0,train,35,train,Safe,Dataset/train/Safe/caominhtienofficial_7300794226172857601.mp4
+th_198781451536_548cce,tikharm,dayna_b_whips,/workspace/data/clips/tikharm/th_198781451536_548cce.mp4,10.0,,,1,val,52,train,Harmful Content,Dataset/train/Harmful Content/dayna_b_whips_7363057198781451536.mp4
+th_304413064480_7ebe9c,tikharm,ironchin,/workspace/data/clips/tikharm/th_304413064480_7ebe9c.mp4,9.13,,,1,train,56,train,Harmful Content,Dataset/train/Harmful Content/ironchin_7277325304413064480.mp4
+th_345953074438_285cdd,tikharm,barbyyy.girl,/workspace/data/clips/tikharm/th_345953074438_285cdd.mp4,9.08,,,1,test,58,train,Harmful Content,Dataset/train/Harmful Content/barbyyy.girl_7162537345953074438.mp4
+th_704659528986_9f3f28,tikharm,tusportlife,/workspace/data/clips/tikharm/th_704659528986_9f3f28.mp4,10.0,,,1,train,30,train,Harmful Content,Dataset/train/Harmful Content/tusportlife_7171067704659528986.mp4
+th_094092303621_4c9faf,tikharm,jollysadvent,/workspace/data/clips/tikharm/th_094092303621_4c9faf.mp4,10.0,,,0,train,59,test,Safe,Dataset/test/Safe/jollysadvent_7263171094092303621.mp4
+th_757613878529_440ede,tikharm,thanhtrungquay,/workspace/data/clips/tikharm/th_757613878529_440ede.mp4,10.0,,,0,test,49,train,Safe,Dataset/train/Safe/thanhtrungquay_7364675757613878529.mp4
+th_168623885611_48fff0,tikharm,jabreezzy,/workspace/data/clips/tikharm/th_168623885611_48fff0.mp4,8.34,,,1,train,60,val,Harmful Content,Dataset/val/Harmful Content/jabreezzy_7194560168623885611.mp4
+th_962281786666_ea50a7,tikharm,espn,/workspace/data/clips/tikharm/th_962281786666_ea50a7.mp4,9.92,,,1,train,62,test,Harmful Content,Dataset/test/Harmful Content/espn_7207584962281786666.mp4
+th_219596569874_37d407,tikharm,thanhtrann2000,/workspace/data/clips/tikharm/th_219596569874_37d407.mp4,10.0,,,0,train,57,test,Safe,Dataset/test/Safe/thanhtrann2000_7352505219596569874.mp4
+th_668434349319_139d59,tikharm,nghipnguynthdoanh,/workspace/data/clips/tikharm/th_668434349319_139d59.mp4,10.0,,,0,train,61,train,Safe,Dataset/train/Safe/nghipnguynthdoanh_7358797668434349319.mp4
+th_996253883691_19211c,tikharm,onechampionship,/workspace/data/clips/tikharm/th_996253883691_19211c.mp4,10.0,,,1,train,64,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7286823996253883691.mp4
+th_849265245467_058a40,tikharm,huyhoang972,/workspace/data/clips/tikharm/th_849265245467_058a40.mp4,10.0,,,0,test,63,test,Safe,Dataset/test/Safe/huyhoang972_6996953849265245467.mp4
+th_006967942405_eaca67,tikharm,peachseizwi,/workspace/data/clips/tikharm/th_006967942405_eaca67.mp4,10.0,,,0,val,65,test,Safe,Dataset/test/Safe/peachseizwi_7226447006967942405.mp4
+th_377438084370_4bf3c6,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_377438084370_4bf3c6.mp4,10.0,,,0,train,51,train,Safe,Dataset/train/Safe/le_anh_nuoi_7309075377438084370.mp4
+th_412381134086_11e3c8,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_412381134086_11e3c8.mp4,8.21,,,1,train,66,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7038953412381134086.mp4
+th_461722258731_be6c45,tikharm,ripitupfilms,/workspace/data/clips/tikharm/th_461722258731_be6c45.mp4,8.52,,,1,train,68,train,Harmful Content,Dataset/train/Harmful Content/ripitupfilms_7152600461722258731.mp4
+th_376399965448_fa1172,tikharm,hacoi1711,/workspace/data/clips/tikharm/th_376399965448_fa1172.mp4,10.0,,,0,train,69,val,Safe,Dataset/val/Safe/hacoi1711_7367178376399965448.mp4
+th_354088287534_497a6a,tikharm,elemental.dancer,/workspace/data/clips/tikharm/th_354088287534_497a6a.mp4,9.87,,,1,train,70,train,Harmful Content,Dataset/train/Harmful Content/elemental.dancer_7132113354088287534.mp4
+th_339657665798_734ca3,tikharm,kingleduc,/workspace/data/clips/tikharm/th_339657665798_734ca3.mp4,10.0,,,1,train,72,test,Harmful Content,Dataset/test/Harmful Content/kingleduc_7016730339657665798.mp4
+th_627644017937_938180,tikharm,mayo.creamsauce,/workspace/data/clips/tikharm/th_627644017937_938180.mp4,10.0,,,1,train,74,train,Harmful Content,Dataset/train/Harmful Content/mayo.creamsauce_7369994627644017937.mp4
+th_300423908613_044915,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_300423908613_044915.mp4,10.0,,,1,val,76,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6940664300423908613.mp4
+th_978330176776_0d6950,tikharm,saigon_xanh,/workspace/data/clips/tikharm/th_978330176776_0d6950.mp4,10.0,,,0,train,75,train,Safe,Dataset/train/Safe/saigon_xanh_7264824978330176776.mp4
+th_742836432136_ef4338,tikharm,davidnop.gnob,/workspace/data/clips/tikharm/th_742836432136_ef4338.mp4,10.0,,,1,val,44,val,Harmful Content,Dataset/val/Harmful Content/davidnop.gnob_7358110742836432136.mp4
+th_603353148699_71f81a,tikharm,10vancauhoivisao247,/workspace/data/clips/tikharm/th_603353148699_71f81a.mp4,10.0,,,0,val,73,train,Safe,Dataset/train/Safe/10vancauhoivisao247_7131698603353148699.mp4
+th_158340988193_6280e0,tikharm,spartan_violence,/workspace/data/clips/tikharm/th_158340988193_6280e0.mp4,10.0,,,1,train,80,train,Harmful Content,Dataset/train/Harmful Content/spartan_violence_7304977158340988193.mp4
+th_953139948833_154b61,tikharm,asmr_usa6,/workspace/data/clips/tikharm/th_953139948833_154b61.mp4,10.0,,,0,val,25,train,Safe,Dataset/train/Safe/asmr_usa6_7340446953139948833.mp4
+th_375548169478_93d3f1,tikharm,nh.thinhh,/workspace/data/clips/tikharm/th_375548169478_93d3f1.mp4,10.0,,,0,train,71,train,Safe,Dataset/train/Safe/nh.thinhh_7236524375548169478.mp4
+th_794667879698_48edb0,tikharm,elyitclean,/workspace/data/clips/tikharm/th_794667879698_48edb0.mp4,10.0,,,0,train,77,test,Safe,Dataset/test/Safe/elyitclean_7338040794667879698.mp4
+th_978808016130_2373e5,tikharm,hd05117,/workspace/data/clips/tikharm/th_978808016130_2373e5.mp4,10.0,,,0,test,81,train,Safe,Dataset/train/Safe/hd05117_7295444978808016130.mp4
+th_127089188101_80e29a,tikharm,stefymadness,/workspace/data/clips/tikharm/th_127089188101_80e29a.mp4,10.0,,,1,train,84,test,Harmful Content,Dataset/test/Harmful Content/stefymadness_6764343127089188101.mp4
+th_575655824648_53a10b,tikharm,mysunshine698,/workspace/data/clips/tikharm/th_575655824648_53a10b.mp4,10.0,,,0,test,85,test,Safe,Dataset/test/Safe/mysunshine698_7352484575655824648.mp4
+th_435454926122_6fa272,tikharm,rosannagray150,/workspace/data/clips/tikharm/th_435454926122_6fa272.mp4,10.0,,,0,train,83,val,Safe,Dataset/val/Safe/rosannagray150_7145851435454926122.mp4
+th_046843133202_372f87,tikharm,hihihaha6668,/workspace/data/clips/tikharm/th_046843133202_372f87.mp4,10.0,,,0,val,79,train,Safe,Dataset/train/Safe/hihihaha6668_7355901046843133202.mp4
+th_896426953991_d7adda,tikharm,anden75,/workspace/data/clips/tikharm/th_896426953991_d7adda.mp4,10.0,,,0,test,47,train,Safe,Dataset/train/Safe/anden75_7365116896426953991.mp4
+th_816109870379_ca0688,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_816109870379_ca0688.mp4,5.92,,,1,test,86,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_7327387816109870379.mp4
+th_557006880018_dc0212,tikharm,anden75,/workspace/data/clips/tikharm/th_557006880018_dc0212.mp4,10.0,,,0,test,55,train,Safe,Dataset/train/Safe/anden75_7364377557006880018.mp4
+th_399372631302_897fb9,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_399372631302_897fb9.mp4,10.0,,,1,val,82,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6877281399372631302.mp4
+th_618457787654_bf013b,tikharm,targetjunkie,/workspace/data/clips/tikharm/th_618457787654_bf013b.mp4,9.86,,,0,train,87,test,Safe,Dataset/test/Safe/targetjunkie_7026918618457787654.mp4
+th_666459122950_6d71c4,tikharm,absolutechristmas,/workspace/data/clips/tikharm/th_666459122950_6d71c4.mp4,10.0,,,0,train,89,train,Safe,Dataset/train/Safe/absolutechristmas_7137606666459122950.mp4
+th_082537831685_0a72ac,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_082537831685_0a72ac.mp4,10.0,,,1,val,92,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6945855082537831685.mp4
+th_152290909446_b640e4,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_152290909446_b640e4.mp4,10.0,,,1,train,94,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7191875152290909446.mp4
+th_160426388743_bf0495,tikharm,voidzed,/workspace/data/clips/tikharm/th_160426388743_bf0495.mp4,10.0,,,1,train,96,test,Harmful Content,Dataset/test/Harmful Content/voidzed_7209774160426388743.mp4
+th_271416712454_7b037d,tikharm,noor035official,/workspace/data/clips/tikharm/th_271416712454_7b037d.mp4,10.0,,,1,train,88,test,Harmful Content,Dataset/test/Harmful Content/noor035official_7219715271416712454.mp4
+th_870392601861_623574,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_870392601861_623574.mp4,10.0,,,1,train,78,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7190411870392601861.mp4
+th_144377421057_3768a7,tikharm,vannhut.vinhlong,/workspace/data/clips/tikharm/th_144377421057_3768a7.mp4,10.0,,,1,train,48,val,Harmful Content,Dataset/val/Harmful Content/vannhut.vinhlong_7261579144377421057.mp4
+th_417991666990_5fa279,tikharm,spladlecity,/workspace/data/clips/tikharm/th_417991666990_5fa279.mp4,7.46,,,1,train,100,train,Harmful Content,Dataset/train/Harmful Content/spladlecity_7246558417991666990.mp4
+th_980663262465_ee93e0,tikharm,mavis.vivuky,/workspace/data/clips/tikharm/th_980663262465_ee93e0.mp4,8.94,,,0,train,99,train,Safe,Dataset/train/Safe/mavis.vivuky_6933203980663262465.mp4
+th_735738801450_0d09c3,tikharm,togethxr,/workspace/data/clips/tikharm/th_735738801450_0d09c3.mp4,10.0,,,1,test,98,train,Harmful Content,Dataset/train/Harmful Content/togethxr_7086930735738801450.mp4
+th_516871912720_930e92,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_516871912720_930e92.mp4,10.0,,,0,train,23,train,Safe,Dataset/train/Safe/chutuphuyen_7372429516871912720.mp4
+th_290354965761_2ce901,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_290354965761_2ce901.mp4,10.0,,,0,train,91,train,Safe,Dataset/train/Safe/chutuphuyen_7372762290354965761.mp4
+th_211024583938_f7a336,tikharm,toongadventure,/workspace/data/clips/tikharm/th_211024583938_f7a336.mp4,10.0,,,0,val,93,test,Safe,Dataset/test/Safe/toongadventure_7316383211024583938.mp4
+th_235638115617_6a73d2,tikharm,supermhon,/workspace/data/clips/tikharm/th_235638115617_6a73d2.mp4,10.0,,,1,train,102,train,Harmful Content,Dataset/train/Harmful Content/supermhon_7350936235638115617.mp4
+th_933912485122_018345,tikharm,brodiepawson,/workspace/data/clips/tikharm/th_933912485122_018345.mp4,10.0,,,1,test,104,train,Harmful Content,Dataset/train/Harmful Content/brodiepawson_6899667933912485122.mp4
+th_688878177542_ed256a,tikharm,saleforcus,/workspace/data/clips/tikharm/th_688878177542_ed256a.mp4,10.0,,,1,train,106,val,Harmful Content,Dataset/val/Harmful Content/saleforcus_6849140688878177542.mp4
+th_133013032198_7f6f77,tikharm,hoest,/workspace/data/clips/tikharm/th_133013032198_7f6f77.mp4,8.8,,,0,train,109,val,Safe,Dataset/val/Safe/hoest_7322880133013032198.mp4
+th_916403461378_61df51,tikharm,mals.home,/workspace/data/clips/tikharm/th_916403461378_61df51.mp4,10.0,,,0,val,105,train,Safe,Dataset/train/Safe/mals.home_7041895916403461378.mp4
+th_246098021640_0b619c,tikharm,hoshiphan,/workspace/data/clips/tikharm/th_246098021640_0b619c.mp4,10.0,,,0,train,103,train,Safe,Dataset/train/Safe/hoshiphan_7366260246098021640.mp4
+th_110721105157_7db3e9,tikharm,giaitrishowbiz.vn,/workspace/data/clips/tikharm/th_110721105157_7db3e9.mp4,10.0,,,1,val,110,train,Harmful Content,Dataset/train/Harmful Content/giaitrishowbiz.vn_7252961110721105157.mp4
+th_112996707590_8a2383,tikharm,minn.cookie,/workspace/data/clips/tikharm/th_112996707590_8a2383.mp4,10.0,,,0,val,67,train,Safe,Dataset/train/Safe/minn.cookie_7241178112996707590.mp4
+th_944449428741_5cdb35,tikharm,brodiepawson,/workspace/data/clips/tikharm/th_944449428741_5cdb35.mp4,10.0,,,1,test,112,test,Harmful Content,Dataset/test/Harmful Content/brodiepawson_6834103944449428741.mp4
+th_184259603738_340fa7,tikharm,bankschool._,/workspace/data/clips/tikharm/th_184259603738_340fa7.mp4,10.0,,,0,train,113,train,Safe,Dataset/train/Safe/bankschool.__7134210184259603738.mp4
+th_187574103323_e516b3,tikharm,kengam_of,/workspace/data/clips/tikharm/th_187574103323_e516b3.mp4,9.54,,,1,train,114,train,Harmful Content,Dataset/train/Harmful Content/kengam_of_7224154187574103323.mp4
+th_985961581840_db2fb1,tikharm,nkc.9x,/workspace/data/clips/tikharm/th_985961581840_db2fb1.mp4,10.0,,,0,train,95,test,Safe,Dataset/test/Safe/nkc.9x_7359064985961581840.mp4
+th_990614662407_c6e9ec,tikharm,anden75,/workspace/data/clips/tikharm/th_990614662407_c6e9ec.mp4,10.0,,,0,test,107,train,Safe,Dataset/train/Safe/anden75_7347694990614662407.mp4
+th_703167876379_77c6b3,tikharm,coco_samui_asmr,/workspace/data/clips/tikharm/th_703167876379_77c6b3.mp4,10.0,,,1,train,116,test,Harmful Content,Dataset/test/Harmful Content/coco_samui_asmr_7018012703167876379.mp4
+th_526758378758_ebe4fb,tikharm,_th.moon203,/workspace/data/clips/tikharm/th_526758378758_ebe4fb.mp4,10.0,,,0,train,111,train,Safe,Dataset/train/Safe/_th.moon203_7223973526758378758.mp4
+th_427410496800_8cf5be,tikharm,dailymotivationcult,/workspace/data/clips/tikharm/th_427410496800_8cf5be.mp4,10.0,,,1,val,108,test,Harmful Content,Dataset/test/Harmful Content/dailymotivationcult_7317743427410496800.mp4
+th_398489263362_6ed322,tikharm,huynhnguyenmusic,/workspace/data/clips/tikharm/th_398489263362_6ed322.mp4,10.0,,,0,test,101,train,Safe,Dataset/train/Safe/huynhnguyenmusic_7287015398489263362.mp4
+th_151924002090_5c7255,tikharm,thehandsomeartist,/workspace/data/clips/tikharm/th_151924002090_5c7255.mp4,10.0,,,1,train,90,train,Harmful Content,Dataset/train/Harmful Content/thehandsomeartist_7177880151924002090.mp4
+th_306208599297_947163,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_306208599297_947163.mp4,10.0,,,0,train,53,train,Safe,Dataset/train/Safe/chutuphuyen_7374370306208599297.mp4
+th_034243906817_fe3dda,tikharm,pamyeuoi,/workspace/data/clips/tikharm/th_034243906817_fe3dda.mp4,10.0,,,0,train,97,train,Safe,Dataset/train/Safe/pamyeuoi_7319484034243906817.mp4
+th_374389984517_67dfb3,tikharm,tuthien_hih3t,/workspace/data/clips/tikharm/th_374389984517_67dfb3.mp4,10.0,,,0,train,115,train,Safe,Dataset/train/Safe/tuthien_hih3t_7234756374389984517.mp4
+th_762942270746_ed32b4,tikharm,patt.tran,/workspace/data/clips/tikharm/th_762942270746_ed32b4.mp4,9.84,,,0,train,119,train,Safe,Dataset/train/Safe/patt.tran_7096818762942270746.mp4
+th_533953400070_233b8e,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_533953400070_233b8e.mp4,10.0,,,1,test,118,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_6939580533953400070.mp4
+th_633178311937_eb59b6,tikharm,kanockstar1,/workspace/data/clips/tikharm/th_633178311937_eb59b6.mp4,10.0,,,1,train,120,train,Harmful Content,Dataset/train/Harmful Content/kanockstar1_6839644633178311937.mp4
+th_913665580330_b87a67,tikharm,ratcartoon001,/workspace/data/clips/tikharm/th_913665580330_b87a67.mp4,10.0,,,0,train,117,train,Safe,Dataset/train/Safe/ratcartoon001_7216503913665580330.mp4
+th_978968849690_41b7fc,tikharm,tllloexho9i,/workspace/data/clips/tikharm/th_978968849690_41b7fc.mp4,10.0,,,0,train,121,test,Safe,Dataset/test/Safe/tllloexho9i_7247362978968849690.mp4
+th_630360345857_9cfba1,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_630360345857_9cfba1.mp4,10.0,,,1,train,122,train,Harmful Content,Dataset/train/Harmful Content/alvinmarinas_6953964630360345857.mp4
+th_317620485408_27b0d7,tikharm,esullytok_,/workspace/data/clips/tikharm/th_317620485408_27b0d7.mp4,10.0,,,1,train,124,train,Harmful Content,Dataset/train/Harmful Content/esullytok__7266821317620485408.mp4
+th_856115662098_5dac9f,tikharm,anden75,/workspace/data/clips/tikharm/th_856115662098_5dac9f.mp4,10.0,,,0,test,123,val,Safe,Dataset/val/Safe/anden75_7358428856115662098.mp4
+th_390684204330_582347,tikharm,the_hayeks,/workspace/data/clips/tikharm/th_390684204330_582347.mp4,10.0,,,0,train,125,val,Safe,Dataset/val/Safe/the_hayeks_7378579390684204330.mp4
+th_324063599877_8e0864,tikharm,jamminworld,/workspace/data/clips/tikharm/th_324063599877_8e0864.mp4,10.08,,,1,train,126,train,Harmful Content,Dataset/train/Harmful Content/jamminworld_6769547324063599877.mp4
+th_530291793157_ca3439,tikharm,tuthien_hih3t,/workspace/data/clips/tikharm/th_530291793157_ca3439.mp4,10.0,,,0,train,127,train,Safe,Dataset/train/Safe/tuthien_hih3t_7233651530291793157.mp4
+th_540627930394_77cc3a,tikharm,thuantrendy,/workspace/data/clips/tikharm/th_540627930394_77cc3a.mp4,10.0,,,1,test,128,val,Harmful Content,Dataset/val/Harmful Content/thuantrendy_7085704540627930394.mp4
+th_744520477953_1a6531,tikharm,anpham1310,/workspace/data/clips/tikharm/th_744520477953_1a6531.mp4,10.0,,,0,train,129,train,Safe,Dataset/train/Safe/anpham1310_6995886744520477953.mp4
+th_942645329158_f0eed0,tikharm,swinging_angel_,/workspace/data/clips/tikharm/th_942645329158_f0eed0.mp4,10.04,,,1,train,130,train,Harmful Content,Dataset/train/Harmful Content/swinging_angel__7213073942645329158.mp4
+th_547958361387_1a984d,tikharm,thehaidendeegan,/workspace/data/clips/tikharm/th_547958361387_1a984d.mp4,8.34,,,1,train,132,test,Harmful Content,Dataset/test/Harmful Content/thehaidendeegan_7130296547958361387.mp4
+th_014220414209_cfed49,tikharm,color_tour,/workspace/data/clips/tikharm/th_014220414209_cfed49.mp4,10.0,,,0,test,131,test,Safe,Dataset/test/Safe/color_tour_7373212014220414209.mp4
+th_732191980818_be4601,tikharm,areumdecor,/workspace/data/clips/tikharm/th_732191980818_be4601.mp4,10.0,,,0,train,133,train,Safe,Dataset/train/Safe/areumdecor_7358089732191980818.mp4
+th_094008749318_54e90e,tikharm,the3dumbbells,/workspace/data/clips/tikharm/th_094008749318_54e90e.mp4,10.0,,,1,test,134,train,Harmful Content,Dataset/train/Harmful Content/the3dumbbells_6988542094008749318.mp4
+th_737866284290_4087cc,tikharm,kieranxholland,/workspace/data/clips/tikharm/th_737866284290_4087cc.mp4,7.46,,,1,train,136,train,Harmful Content,Dataset/train/Harmful Content/kieranxholland_7240293737866284290.mp4
+th_368319663378_d8cdc0,tikharm,vo_media,/workspace/data/clips/tikharm/th_368319663378_d8cdc0.mp4,10.0,,,0,test,135,train,Safe,Dataset/train/Safe/vo_media_7352140368319663378.mp4
+th_860947143941_450640,tikharm,harveyperkinss,/workspace/data/clips/tikharm/th_860947143941_450640.mp4,5.97,,,1,train,140,train,Harmful Content,Dataset/train/Harmful Content/harveyperkinss_7127403860947143941.mp4
+th_293889490222_dba673,tikharm,montannamichels,/workspace/data/clips/tikharm/th_293889490222_dba673.mp4,10.0,,,1,val,138,test,Harmful Content,Dataset/test/Harmful Content/montannamichels_7071729293889490222.mp4
+th_734155070721_7633fd,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_734155070721_7633fd.mp4,10.0,,,0,train,137,train,Safe,Dataset/train/Safe/le_anh_nuoi_7332691734155070721.mp4
+th_371370073345_3e52cf,tikharm,ghiendulich.anchoi,/workspace/data/clips/tikharm/th_371370073345_3e52cf.mp4,10.0,,,0,train,139,val,Safe,Dataset/val/Safe/ghiendulich.anchoi_7358843371370073345.mp4
+th_433188093189_a2eeff,tikharm,curiousmind0808,/workspace/data/clips/tikharm/th_433188093189_a2eeff.mp4,10.0,,,0,test,141,test,Safe,Dataset/test/Safe/curiousmind0808_7268977433188093189.mp4
+th_488881384705_5504b1,tikharm,girl_xinh.sexy,/workspace/data/clips/tikharm/th_488881384705_5504b1.mp4,10.0,,,1,test,142,train,Harmful Content,Dataset/train/Harmful Content/girl_xinh.sexy_7281318488881384705.mp4
+th_788805250330_b5e0b3,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_788805250330_b5e0b3.mp4,10.0,,,1,train,144,train,Harmful Content,Dataset/train/Harmful Content/alvinmarinas_6985490788805250330.mp4
+th_474242260251_07bc1e,tikharm,davidthoc2018,/workspace/data/clips/tikharm/th_474242260251_07bc1e.mp4,10.0,,,0,train,143,train,Safe,Dataset/train/Safe/davidthoc2018_7203655474242260251.mp4
+th_179450563846_a0114e,tikharm,cmll_oficial,/workspace/data/clips/tikharm/th_179450563846_a0114e.mp4,10.0,,,1,train,146,train,Harmful Content,Dataset/train/Harmful Content/cmll_oficial_7213368179450563846.mp4
+th_653143182624_d7cd5f,tikharm,nuirungtv,/workspace/data/clips/tikharm/th_653143182624_d7cd5f.mp4,10.0,,,0,val,145,train,Safe,Dataset/train/Safe/nuirungtv_7308864653143182624.mp4
+th_094141558024_9c7c0f,tikharm,chilly.hah,/workspace/data/clips/tikharm/th_094141558024_9c7c0f.mp4,10.0,,,0,train,147,train,Safe,Dataset/train/Safe/chilly.hah_7364746094141558024.mp4
+th_970580217094_ac73df,tikharm,__psyd3vil,/workspace/data/clips/tikharm/th_970580217094_ac73df.mp4,10.0,,,1,val,148,train,Harmful Content,Dataset/train/Harmful Content/__psyd3vil_7210460970580217094.mp4
+th_731207093547_5652b5,tikharm,aemoorn,/workspace/data/clips/tikharm/th_731207093547_5652b5.mp4,9.84,,,1,val,150,train,Harmful Content,Dataset/train/Harmful Content/aemoorn_7234164731207093547.mp4
+th_365418294535_e72d3d,tikharm,queenenglish123,/workspace/data/clips/tikharm/th_365418294535_e72d3d.mp4,10.0,,,0,train,151,train,Safe,Dataset/train/Safe/queenenglish123_7310962365418294535.mp4
+th_103206264069_81f100,tikharm,dulichtinhbariavungtau,/workspace/data/clips/tikharm/th_103206264069_81f100.mp4,10.0,,,0,train,149,train,Safe,Dataset/train/Safe/dulichtinhbariavungtau_7249215103206264069.mp4
+th_441650597125_3deec1,tikharm,lightsout.productions,/workspace/data/clips/tikharm/th_441650597125_3deec1.mp4,10.0,,,1,train,152,test,Harmful Content,Dataset/test/Harmful Content/lightsout.productions_7105464441650597125.mp4
+th_886415973652_e03de8,tikharm,anden75,/workspace/data/clips/tikharm/th_886415973652_e03de8.mp4,10.0,,,0,test,153,test,Safe,Dataset/test/Safe/anden75_7357699886415973652.mp4
+th_522777791750_3c38b3,tikharm,togethxr,/workspace/data/clips/tikharm/th_522777791750_3c38b3.mp4,8.71,,,1,test,154,test,Harmful Content,Dataset/test/Harmful Content/togethxr_6959712522777791750.mp4
+th_485024312596_a61f1e,tikharm,anden75,/workspace/data/clips/tikharm/th_485024312596_a61f1e.mp4,10.0,,,0,test,155,val,Safe,Dataset/val/Safe/anden75_7338050485024312596.mp4
+th_169470233864_2127db,tikharm,mitch_fletchmtb,/workspace/data/clips/tikharm/th_169470233864_2127db.mp4,10.0,,,1,val,156,test,Harmful Content,Dataset/test/Harmful Content/mitch_fletchmtb_7349364169470233864.mp4
+th_433066609952_39e23e,tikharm,shibari_sari,/workspace/data/clips/tikharm/th_433066609952_39e23e.mp4,10.0,,,1,test,158,test,Harmful Content,Dataset/test/Harmful Content/shibari_sari_7277440433066609952.mp4
+th_788219395355_8e6b3f,tikharm,mocuabatoctv,/workspace/data/clips/tikharm/th_788219395355_8e6b3f.mp4,10.0,,,0,train,157,train,Safe,Dataset/train/Safe/mocuabatoctv_7012989788219395355.mp4
+th_333725777173_18f612,tikharm,anden75,/workspace/data/clips/tikharm/th_333725777173_18f612.mp4,10.0,,,0,test,159,test,Safe,Dataset/test/Safe/anden75_7356961333725777173.mp4
+th_920329366826_2b71d0,tikharm,senator_junup,/workspace/data/clips/tikharm/th_920329366826_2b71d0.mp4,9.42,,,1,train,162,test,Harmful Content,Dataset/test/Harmful Content/senator_junup_7285386920329366826.mp4
+th_918711868678_ca2748,tikharm,narcolepsyboy94,/workspace/data/clips/tikharm/th_918711868678_ca2748.mp4,10.0,,,1,train,160,val,Harmful Content,Dataset/val/Harmful Content/narcolepsyboy94_6851591918711868678.mp4
+th_281537101082_85fc77,tikharm,anden75,/workspace/data/clips/tikharm/th_281537101082_85fc77.mp4,10.0,,,0,test,161,train,Safe,Dataset/train/Safe/anden75_7102045281537101082.mp4
+th_788135771393_1dfc75,tikharm,020700sang,/workspace/data/clips/tikharm/th_788135771393_1dfc75.mp4,10.0,,,0,test,163,train,Safe,Dataset/train/Safe/020700sang_7347305788135771393.mp4
+th_431093755163_158978,tikharm,dembele_mady_,/workspace/data/clips/tikharm/th_431093755163_158978.mp4,10.0,,,1,train,166,train,Harmful Content,Dataset/train/Harmful Content/dembele_mady__7225006431093755163.mp4
+th_502242921770_1561a2,tikharm,espn,/workspace/data/clips/tikharm/th_502242921770_1561a2.mp4,10.0,,,1,train,164,train,Harmful Content,Dataset/train/Harmful Content/espn_7271348502242921770.mp4
+th_506533907720_c2e9fc,tikharm,anden75,/workspace/data/clips/tikharm/th_506533907720_c2e9fc.mp4,10.0,,,0,test,167,val,Safe,Dataset/val/Safe/anden75_7361788506533907720.mp4
+th_924407713041_1f07a1,tikharm,anden75,/workspace/data/clips/tikharm/th_924407713041_1f07a1.mp4,10.0,,,0,test,165,train,Safe,Dataset/train/Safe/anden75_7371056924407713041.mp4
+th_393939778858_8e02d9,tikharm,gocreightonprep,/workspace/data/clips/tikharm/th_393939778858_8e02d9.mp4,8.21,,,1,val,168,train,Harmful Content,Dataset/train/Harmful Content/gocreightonprep_7207253393939778858.mp4
+th_537336937755_661bdb,tikharm,10vancauhoivisao247,/workspace/data/clips/tikharm/th_537336937755_661bdb.mp4,10.0,,,0,val,169,train,Safe,Dataset/train/Safe/10vancauhoivisao247_7095301537336937755.mp4
+th_339310636289_ef51dc,tikharm,dangkhai0105,/workspace/data/clips/tikharm/th_339310636289_ef51dc.mp4,10.0,,,0,test,171,test,Safe,Dataset/test/Safe/dangkhai0105_6959522339310636289.mp4
+th_784186977542_aee2cd,tikharm,matt.larose,/workspace/data/clips/tikharm/th_784186977542_aee2cd.mp4,10.0,,,1,val,170,train,Harmful Content,Dataset/train/Harmful Content/matt.larose_7224134784186977542.mp4
+th_476453461253_9c8042,tikharm,extremeofficial,/workspace/data/clips/tikharm/th_476453461253_9c8042.mp4,6.71,,,1,train,172,train,Harmful Content,Dataset/train/Harmful Content/extremeofficial_7187875476453461253.mp4
+th_883789917482_24621b,tikharm,funnycats0ftiktok,/workspace/data/clips/tikharm/th_883789917482_24621b.mp4,10.0,,,0,test,173,train,Safe,Dataset/train/Safe/funnycats0ftiktok_7313586883789917482.mp4
+th_419218763050_ee3e26,tikharm,theonemona,/workspace/data/clips/tikharm/th_419218763050_ee3e26.mp4,9.88,,,1,val,174,test,Harmful Content,Dataset/test/Harmful Content/theonemona_7100030419218763050.mp4
+th_843343576322_e9b7a3,tikharm,anvat.cungtui,/workspace/data/clips/tikharm/th_843343576322_e9b7a3.mp4,10.0,,,0,train,175,test,Safe,Dataset/test/Safe/anvat.cungtui_7341369843343576322.mp4
+th_103159184667_d4b3e6,tikharm,fb.anghesever,/workspace/data/clips/tikharm/th_103159184667_d4b3e6.mp4,10.0,,,1,train,176,train,Harmful Content,Dataset/train/Harmful Content/fb.anghesever_7201153103159184667.mp4
+th_717796728072_60eb54,tikharm,tiemhoatrentanglauu,/workspace/data/clips/tikharm/th_717796728072_60eb54.mp4,10.0,,,0,train,177,val,Safe,Dataset/val/Safe/tiemhoatrentanglauu_7366687717796728072.mp4
+th_857433873669_88a33a,tikharm,bob.reese,/workspace/data/clips/tikharm/th_857433873669_88a33a.mp4,8.71,,,1,val,178,train,Harmful Content,Dataset/train/Harmful Content/bob.reese_7009411857433873669.mp4
+th_402976144641_85ffa1,tikharm,king_of_wrestler,/workspace/data/clips/tikharm/th_402976144641_85ffa1.mp4,10.0,,,1,test,180,train,Harmful Content,Dataset/train/Harmful Content/king_of_wrestler_7254149402976144641.mp4
+th_978697002266_6d631a,tikharm,cu_porter,/workspace/data/clips/tikharm/th_978697002266_6d631a.mp4,10.0,,,0,test,179,train,Safe,Dataset/train/Safe/cu_porter_7158695978697002266.mp4
+th_931767495979_df2820,tikharm,jennifurfurr,/workspace/data/clips/tikharm/th_931767495979_df2820.mp4,10.0,,,0,train,181,val,Safe,Dataset/val/Safe/jennifurfurr_7273906931767495979.mp4
+th_649220660507_613394,tikharm,husqvarna.motorcycles,/workspace/data/clips/tikharm/th_649220660507_613394.mp4,8.57,,,1,val,182,val,Harmful Content,Dataset/val/Harmful Content/husqvarna.motorcycles_7244955649220660507.mp4
+th_141182545198_fc9f50,tikharm,onechampionship,/workspace/data/clips/tikharm/th_141182545198_fc9f50.mp4,4.95,,,1,train,184,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7224010141182545198.mp4
+th_871638686992_f03fe8,tikharm,chill_78phuyen,/workspace/data/clips/tikharm/th_871638686992_f03fe8.mp4,10.0,,,0,test,183,val,Safe,Dataset/val/Safe/chill_78phuyen_7360331871638686992.mp4
+th_533333904666_20bcf5,tikharm,joescandrett,/workspace/data/clips/tikharm/th_533333904666_20bcf5.mp4,5.25,,,1,train,186,train,Harmful Content,Dataset/train/Harmful Content/joescandrett_7248584533333904666.mp4
+th_062008421638_1a7f04,tikharm,color_tour,/workspace/data/clips/tikharm/th_062008421638_1a7f04.mp4,10.0,,,0,test,185,train,Safe,Dataset/train/Safe/color_tour_7246798062008421638.mp4
+th_640756083976_c26a33,tikharm,vuongcongkien1910,/workspace/data/clips/tikharm/th_640756083976_c26a33.mp4,10.0,,,0,val,187,train,Safe,Dataset/train/Safe/vuongcongkien1910_7358298640756083976.mp4
+th_625933274374_167ddd,tikharm,natho1199,/workspace/data/clips/tikharm/th_625933274374_167ddd.mp4,10.0,,,1,train,188,test,Harmful Content,Dataset/test/Harmful Content/natho1199_7252700625933274374.mp4
+th_715287928107_a225ad,tikharm,haivlvideo,/workspace/data/clips/tikharm/th_715287928107_a225ad.mp4,8.38,,,0,train,189,train,Safe,Dataset/train/Safe/haivlvideo_7187615715287928107.mp4
+th_933207334150_bc7d2d,tikharm,peaceful_anyen,/workspace/data/clips/tikharm/th_933207334150_bc7d2d.mp4,7.04,,,0,train,191,train,Safe,Dataset/train/Safe/peaceful_anyen_7270091933207334150.mp4
+th_323545685250_3028a1,tikharm,nicole.dyerofficial,/workspace/data/clips/tikharm/th_323545685250_3028a1.mp4,10.0,,,1,train,190,test,Harmful Content,Dataset/test/Harmful Content/nicole.dyerofficial_6882395323545685250.mp4
+th_698341678382_afad8f,tikharm,bungee_min,/workspace/data/clips/tikharm/th_698341678382_afad8f.mp4,9.86,,,1,train,192,val,Harmful Content,Dataset/val/Harmful Content/bungee_min_7148239698341678382.mp4
+th_136676302098_d18df0,tikharm,maphayke,/workspace/data/clips/tikharm/th_136676302098_d18df0.mp4,10.0,,,0,train,193,train,Safe,Dataset/train/Safe/maphayke_7343943136676302098.mp4
+th_342468857094_0fc073,tikharm,demiskinner,/workspace/data/clips/tikharm/th_342468857094_0fc073.mp4,10.0,,,1,train,194,train,Harmful Content,Dataset/train/Harmful Content/demiskinner_7130404342468857094.mp4
+th_171882859777_6c1542,tikharm,cleanwithnessa,/workspace/data/clips/tikharm/th_171882859777_6c1542.mp4,10.0,,,0,train,195,val,Safe,Dataset/val/Safe/cleanwithnessa_7017800171882859777.mp4
+th_998794632454_35aec9,tikharm,salgadopk,/workspace/data/clips/tikharm/th_998794632454_35aec9.mp4,10.0,,,1,train,196,train,Harmful Content,Dataset/train/Harmful Content/salgadopk_7069599998794632454.mp4
+th_834826575110_b6a609,tikharm,absolutechristmas,/workspace/data/clips/tikharm/th_834826575110_b6a609.mp4,10.0,,,0,train,199,test,Safe,Dataset/test/Safe/absolutechristmas_7143239834826575110.mp4
+th_325678636330_af15f0,tikharm,theromandellapena,/workspace/data/clips/tikharm/th_325678636330_af15f0.mp4,7.54,,,1,train,198,train,Harmful Content,Dataset/train/Harmful Content/theromandellapena_7282583325678636330.mp4
+th_969021447426_3faa96,tikharm,hoshiphan,/workspace/data/clips/tikharm/th_969021447426_3faa96.mp4,10.0,,,0,train,197,train,Safe,Dataset/train/Safe/hoshiphan_7000011969021447426.mp4
+th_483043454255_8fc52c,tikharm,vivianagonza1ez,/workspace/data/clips/tikharm/th_483043454255_8fc52c.mp4,10.04,,,1,val,200,train,Harmful Content,Dataset/train/Harmful Content/vivianagonza1ez_7033142483043454255.mp4
+th_394014543150_763886,tikharm,thienmodna2,/workspace/data/clips/tikharm/th_394014543150_763886.mp4,7.27,,,1,val,204,train,Harmful Content,Dataset/train/Harmful Content/thienmodna2_7132004394014543150.mp4
+th_708698787099_93476b,tikharm,hananguyen298,/workspace/data/clips/tikharm/th_708698787099_93476b.mp4,8.71,,,0,train,201,test,Safe,Dataset/test/Safe/hananguyen298_7082364708698787099.mp4
+th_873075100929_6510c5,tikharm,tiger050794,/workspace/data/clips/tikharm/th_873075100929_6510c5.mp4,10.0,,,0,train,203,test,Safe,Dataset/test/Safe/tiger050794_7236364873075100929.mp4
+th_367326768389_c6f6a0,tikharm,jade.oconnell,/workspace/data/clips/tikharm/th_367326768389_c6f6a0.mp4,10.0,,,1,train,202,train,Harmful Content,Dataset/train/Harmful Content/jade.oconnell_6824650367326768389.mp4
+th_794264370453_00ae7f,tikharm,lang_cay_tay_bac,/workspace/data/clips/tikharm/th_794264370453_00ae7f.mp4,10.0,,,0,train,205,train,Safe,Dataset/train/Safe/lang_cay_tay_bac_7360653794264370453.mp4
+th_196738669830_d4e638,tikharm,sonqmao,/workspace/data/clips/tikharm/th_196738669830_d4e638.mp4,10.0,,,0,test,207,train,Safe,Dataset/train/Safe/sonqmao_7254855196738669830.mp4
+th_934718917931_c785b6,tikharm,borshgreg,/workspace/data/clips/tikharm/th_934718917931_c785b6.mp4,10.0,,,1,train,206,train,Harmful Content,Dataset/train/Harmful Content/borshgreg_7368864934718917931.mp4
+th_470838750507_917d4b,tikharm,parkour.com_,/workspace/data/clips/tikharm/th_470838750507_917d4b.mp4,10.0,,,1,val,208,train,Harmful Content,Dataset/train/Harmful Content/parkour.com__7221214470838750507.mp4
+th_266602650885_cc60ba,tikharm,adaptnetwork,/workspace/data/clips/tikharm/th_266602650885_cc60ba.mp4,10.0,,,1,train,210,train,Harmful Content,Dataset/train/Harmful Content/adaptnetwork_7143987266602650885.mp4
+th_448980770050_8e215e,tikharm,cleanwithnessa,/workspace/data/clips/tikharm/th_448980770050_8e215e.mp4,10.0,,,0,train,209,train,Safe,Dataset/train/Safe/cleanwithnessa_6990711448980770050.mp4
+th_618079710471_5acc9f,tikharm,littledaisy.vlog,/workspace/data/clips/tikharm/th_618079710471_5acc9f.mp4,10.0,,,0,test,211,val,Safe,Dataset/val/Safe/littledaisy.vlog_7316522618079710471.mp4
+th_721337077000_61156e,tikharm,taitomontiktok,/workspace/data/clips/tikharm/th_721337077000_61156e.mp4,10.0,,,1,test,212,train,Harmful Content,Dataset/train/Harmful Content/taitomontiktok_7300448721337077000.mp4
+th_747675700507_4ad7f4,tikharm,_idktsu.xx,/workspace/data/clips/tikharm/th_747675700507_4ad7f4.mp4,10.0,,,0,test,213,train,Safe,Dataset/train/Safe/_idktsu.xx_7212604747675700507.mp4
+th_517771238699_f75635,tikharm,l3elites,/workspace/data/clips/tikharm/th_517771238699_f75635.mp4,10.0,,,1,train,214,train,Harmful Content,Dataset/train/Harmful Content/l3elites_7264651517771238699.mp4
+th_911010835714_7ff999,tikharm,_ttqueen,/workspace/data/clips/tikharm/th_911010835714_7ff999.mp4,10.0,,,0,train,215,test,Safe,Dataset/test/Safe/_ttqueen_7302398911010835714.mp4
+th_347726843168_0a0e39,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_347726843168_0a0e39.mp4,10.0,,,1,train,216,val,Harmful Content,Dataset/val/Harmful Content/olivernordin1_7269028347726843168.mp4
+th_852424748321_532d02,tikharm,joescandrett,/workspace/data/clips/tikharm/th_852424748321_532d02.mp4,10.0,,,1,train,218,val,Harmful Content,Dataset/val/Harmful Content/joescandrett_7273878852424748321.mp4
+th_458760248609_9c938b,tikharm,000cartoon000,/workspace/data/clips/tikharm/th_458760248609_9c938b.mp4,10.0,,,0,train,219,test,Safe,Dataset/test/Safe/000cartoon000_7273719458760248609.mp4
+th_497402547488_57fb15,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_497402547488_57fb15.mp4,10.0,,,1,train,220,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7272284497402547488.mp4
+th_946542005537_c72d36,tikharm,a.i.tinerary,/workspace/data/clips/tikharm/th_946542005537_c72d36.mp4,8.42,,,0,val,221,train,Safe,Dataset/train/Safe/a.i.tinerary_7331572946542005537.mp4
+th_359939575047_6ba76c,tikharm,bombom_vlog,/workspace/data/clips/tikharm/th_359939575047_6ba76c.mp4,10.0,,,0,train,217,train,Safe,Dataset/train/Safe/bombom_vlog_7337652359939575047.mp4
+th_902044826886_9b2eba,tikharm,jucrewsade,/workspace/data/clips/tikharm/th_902044826886_9b2eba.mp4,8.99,,,1,train,222,test,Harmful Content,Dataset/test/Harmful Content/jucrewsade_7191821902044826886.mp4
+th_927845055761_80d6d0,tikharm,2ueennn,/workspace/data/clips/tikharm/th_927845055761_80d6d0.mp4,10.0,,,0,train,223,train,Safe,Dataset/train/Safe/2ueennn_7354229927845055761.mp4
+th_217488502017_5c8650,tikharm,krlov4,/workspace/data/clips/tikharm/th_217488502017_5c8650.mp4,9.67,,,1,val,224,test,Harmful Content,Dataset/test/Harmful Content/krlov4_6768270217488502017.mp4
+th_317912243457_a31a64,tikharm,sajjadharipur,/workspace/data/clips/tikharm/th_317912243457_a31a64.mp4,9.21,,,1,train,226,train,Harmful Content,Dataset/train/Harmful Content/sajjadharipur_6918679317912243457.mp4
+th_147257888026_9d9e4c,tikharm,hatvuvo69,/workspace/data/clips/tikharm/th_147257888026_9d9e4c.mp4,9.13,,,0,test,227,test,Safe,Dataset/test/Safe/hatvuvo69_7169972147257888026.mp4
+th_532769516817_ec5b50,tikharm,vietphuongthoa98,/workspace/data/clips/tikharm/th_532769516817_ec5b50.mp4,10.0,,,0,train,225,train,Safe,Dataset/train/Safe/vietphuongthoa98_7369954532769516817.mp4
+th_621133356293_fb003a,tikharm,alwuhu,/workspace/data/clips/tikharm/th_621133356293_fb003a.mp4,10.0,,,1,train,228,train,Harmful Content,Dataset/train/Harmful Content/alwuhu_6897775621133356293.mp4
+th_617813998850_f93c25,tikharm,bayashi.tiktok,/workspace/data/clips/tikharm/th_617813998850_f93c25.mp4,10.0,,,1,test,230,train,Harmful Content,Dataset/train/Harmful Content/bayashi.tiktok_7297469617813998850.mp4
+th_387116281096_a7f5a5,tikharm,maphayke,/workspace/data/clips/tikharm/th_387116281096_a7f5a5.mp4,10.0,,,0,train,229,train,Safe,Dataset/train/Safe/maphayke_7338026387116281096.mp4
+th_784812412186_d2eb5a,tikharm,mamaharumaru,/workspace/data/clips/tikharm/th_784812412186_d2eb5a.mp4,10.0,,,0,val,231,test,Safe,Dataset/test/Safe/mamaharumaru_7221136784812412186.mp4
+th_357664976133_f89722,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_357664976133_f89722.mp4,10.0,,,1,train,232,test,Harmful Content,Dataset/test/Harmful Content/olivernordin1_7184018357664976133.mp4
+th_248241384705_5804c1,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_248241384705_5804c1.mp4,10.0,,,1,train,234,train,Harmful Content,Dataset/train/Harmful Content/alvinmarinas_6951666248241384705.mp4
+th_020904156417_3f2e58,tikharm,sachhay83_,/workspace/data/clips/tikharm/th_020904156417_3f2e58.mp4,10.0,,,0,test,233,train,Safe,Dataset/train/Safe/sachhay83__6813223020904156417.mp4
+th_125654551813_d0b7a1,tikharm,asmr.satisfyyng,/workspace/data/clips/tikharm/th_125654551813_d0b7a1.mp4,10.0,,,0,train,235,val,Safe,Dataset/val/Safe/asmr.satisfyyng_7271356125654551813.mp4
+th_613121690886_3a712e,tikharm,extremeofficial,/workspace/data/clips/tikharm/th_613121690886_3a712e.mp4,10.0,,,1,train,236,train,Harmful Content,Dataset/train/Harmful Content/extremeofficial_7099132613121690886.mp4
+th_886786944274_98aab6,tikharm,halinhofficial,/workspace/data/clips/tikharm/th_886786944274_98aab6.mp4,10.0,,,0,train,237,test,Safe,Dataset/test/Safe/halinhofficial_7329862886786944274.mp4
+th_077316537605_001381,tikharm,onechampionship,/workspace/data/clips/tikharm/th_077316537605_001381.mp4,10.0,,,1,train,238,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_6969797077316537605.mp4
+th_975351872773_4f5f94,tikharm,learningexpressbham,/workspace/data/clips/tikharm/th_975351872773_4f5f94.mp4,10.0,,,0,train,239,train,Safe,Dataset/train/Safe/learningexpressbham_6975153975351872773.mp4
+th_995940437266_b70511,tikharm,nadiu271206,/workspace/data/clips/tikharm/th_995940437266_b70511.mp4,8.85,,,0,test,241,train,Safe,Dataset/train/Safe/nadiu271206_7372728995940437266.mp4
+th_788575710472_2b2223,tikharm,titanfoodductrong,/workspace/data/clips/tikharm/th_788575710472_2b2223.mp4,10.0,,,1,train,240,train,Harmful Content,Dataset/train/Harmful Content/titanfoodductrong_7323154788575710472.mp4
+th_572657372422_c8bab3,tikharm,malikov112,/workspace/data/clips/tikharm/th_572657372422_c8bab3.mp4,10.0,,,1,val,242,test,Harmful Content,Dataset/test/Harmful Content/malikov112_6779308572657372422.mp4
+th_065330593030_bbbedd,tikharm,xuancongmai1,/workspace/data/clips/tikharm/th_065330593030_bbbedd.mp4,10.0,,,0,train,243,train,Safe,Dataset/train/Safe/xuancongmai1_7242265065330593030.mp4
+th_716365675794_175946,tikharm,baby_socuteeee,/workspace/data/clips/tikharm/th_716365675794_175946.mp4,10.0,,,0,train,245,train,Safe,Dataset/train/Safe/baby_socuteeee_7260421716365675794.mp4
+th_177456696582_7953ff,tikharm,victoriafaeze,/workspace/data/clips/tikharm/th_177456696582_7953ff.mp4,10.0,,,1,test,244,test,Harmful Content,Dataset/test/Harmful Content/victoriafaeze_6914668177456696582.mp4
+th_375534189851_0bf266,tikharm,_editsco_,/workspace/data/clips/tikharm/th_375534189851_0bf266.mp4,10.0,,,1,test,246,train,Harmful Content,Dataset/train/Harmful Content/_editsco__7235713375534189851.mp4
+th_650954681606_b35450,tikharm,andreeslatorre,/workspace/data/clips/tikharm/th_650954681606_b35450.mp4,9.59,,,1,train,248,train,Harmful Content,Dataset/train/Harmful Content/andreeslatorre_6951106650954681606.mp4
+th_401670151431_eadc5c,tikharm,juu.xuann11,/workspace/data/clips/tikharm/th_401670151431_eadc5c.mp4,10.0,,,0,train,249,train,Safe,Dataset/train/Safe/juu.xuann11_7353115401670151431.mp4
+th_352132717831_b2334e,tikharm,tntnkiwooza,/workspace/data/clips/tikharm/th_352132717831_b2334e.mp4,10.0,,,0,train,247,test,Safe,Dataset/test/Safe/tntnkiwooza_7252291352132717831.mp4
+th_533592550682_c95dfe,tikharm,belva.faristha,/workspace/data/clips/tikharm/th_533592550682_c95dfe.mp4,10.0,,,1,train,250,test,Harmful Content,Dataset/test/Harmful Content/belva.faristha_7134242533592550682.mp4
+th_001720839467_391b93,tikharm,masterofstorage,/workspace/data/clips/tikharm/th_001720839467_391b93.mp4,10.0,,,0,train,253,test,Safe,Dataset/test/Safe/masterofstorage_7325326001720839467.mp4
+th_669660282118_e66d45,tikharm,qualitystreetuki,/workspace/data/clips/tikharm/th_669660282118_e66d45.mp4,10.0,,,0,train,251,train,Safe,Dataset/train/Safe/qualitystreetuki_7174461669660282118.mp4
+th_134782172459_3429e1,tikharm,the_real_mulisha,/workspace/data/clips/tikharm/th_134782172459_3429e1.mp4,6.5,,,1,test,254,train,Harmful Content,Dataset/train/Harmful Content/the_real_mulisha_7241601134782172459.mp4
+th_204769250603_11eb59,tikharm,carlosmonteonjr,/workspace/data/clips/tikharm/th_204769250603_11eb59.mp4,10.0,,,1,test,252,test,Harmful Content,Dataset/test/Harmful Content/carlosmonteonjr_7267040204769250603.mp4
+th_402722663706_84c8e0,tikharm,kmgags,/workspace/data/clips/tikharm/th_402722663706_84c8e0.mp4,10.0,,,1,test,256,train,Harmful Content,Dataset/train/Harmful Content/kmgags_7217006402722663706.mp4
+th_376678571266_9664b2,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_376678571266_9664b2.mp4,10.0,,,0,train,255,train,Safe,Dataset/train/Safe/cochuoithichdi_35_7281327376678571266.mp4
+th_268981972267_5313de,tikharm,lilylynks,/workspace/data/clips/tikharm/th_268981972267_5313de.mp4,8.76,,,1,train,258,test,Harmful Content,Dataset/test/Harmful Content/lilylynks_7155190268981972267.mp4
+th_892204322056_a7d037,tikharm,kouseibutnoclassic,/workspace/data/clips/tikharm/th_892204322056_a7d037.mp4,10.0,,,0,train,257,val,Safe,Dataset/val/Safe/kouseibutnoclassic_7216696892204322056.mp4
+th_619936455944_9a2b88,tikharm,giadinh.disney,/workspace/data/clips/tikharm/th_619936455944_9a2b88.mp4,10.0,,,0,train,259,train,Safe,Dataset/train/Safe/giadinh.disney_7357303619936455944.mp4
+th_412522630401_bd317a,tikharm,colortour68,/workspace/data/clips/tikharm/th_412522630401_bd317a.mp4,10.0,,,0,test,261,train,Safe,Dataset/train/Safe/colortour68_7278668412522630401.mp4
+th_253880294702_dad1e1,tikharm,dejiontaylorr,/workspace/data/clips/tikharm/th_253880294702_dad1e1.mp4,10.0,,,1,test,260,train,Harmful Content,Dataset/train/Harmful Content/dejiontaylorr_7246491253880294702.mp4
+th_169457290522_522782,tikharm,comedyclip12,/workspace/data/clips/tikharm/th_169457290522_522782.mp4,10.0,,,1,train,262,test,Harmful Content,Dataset/test/Harmful Content/comedyclip12_7139268169457290522.mp4
+th_536174779654_5b93de,tikharm,ollielowthorpe,/workspace/data/clips/tikharm/th_536174779654_5b93de.mp4,10.0,,,1,train,264,train,Harmful Content,Dataset/train/Harmful Content/ollielowthorpe_7195983536174779654.mp4
+th_341215460615_245a5e,tikharm,dicungtuito,/workspace/data/clips/tikharm/th_341215460615_245a5e.mp4,10.0,,,0,train,263,train,Safe,Dataset/train/Safe/dicungtuito_7273869341215460615.mp4
+th_976402103558_8d5954,tikharm,mx_clip,/workspace/data/clips/tikharm/th_976402103558_8d5954.mp4,9.88,,,1,val,266,train,Harmful Content,Dataset/train/Harmful Content/mx_clip_7165549976402103558.mp4
+th_803782786311_75bb17,tikharm,anden75,/workspace/data/clips/tikharm/th_803782786311_75bb17.mp4,10.0,,,0,test,265,train,Safe,Dataset/train/Safe/anden75_7368461803782786311.mp4
+th_171550530818_dcf80f,tikharm,loanhquanhmotminh,/workspace/data/clips/tikharm/th_171550530818_dcf80f.mp4,10.0,,,0,train,267,train,Safe,Dataset/train/Safe/loanhquanhmotminh_7235327171550530818.mp4
+th_566048029953_a5659c,tikharm,nhacvaoloira,/workspace/data/clips/tikharm/th_566048029953_a5659c.mp4,10.0,,,0,test,269,train,Safe,Dataset/train/Safe/nhacvaoloira_6917653566048029953.mp4
+th_384949919002_723e89,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_384949919002_723e89.mp4,10.0,,,1,train,268,test,Harmful Content,Dataset/test/Harmful Content/olivernordin1_7226359384949919002.mp4
+th_790822046983_e9e848,tikharm,12a6isthebest,/workspace/data/clips/tikharm/th_790822046983_e9e848.mp4,10.0,,,1,train,270,train,Harmful Content,Dataset/train/Harmful Content/12a6isthebest_7351604790822046983.mp4
+th_134205926662_21ade9,tikharm,letsbeginchristmas2023,/workspace/data/clips/tikharm/th_134205926662_21ade9.mp4,10.0,,,0,train,273,test,Safe,Dataset/test/Safe/letsbeginchristmas2023_7132866134205926662.mp4
+th_613199486213_a6eed2,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_613199486213_a6eed2.mp4,10.0,,,1,train,272,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7180735613199486213.mp4
+th_593628601602_faa68d,tikharm,char.jk7,/workspace/data/clips/tikharm/th_593628601602_faa68d.mp4,10.0,,,0,train,271,train,Safe,Dataset/train/Safe/char.jk7_7289659593628601602.mp4
+th_675404713222_606da8,tikharm,whistlerbungee,/workspace/data/clips/tikharm/th_675404713222_606da8.mp4,10.0,,,1,train,274,train,Harmful Content,Dataset/train/Harmful Content/whistlerbungee_7306240675404713222.mp4
+th_524047912225_756906,tikharm,tuncamxuc0,/workspace/data/clips/tikharm/th_524047912225_756906.mp4,10.0,,,1,train,276,train,Harmful Content,Dataset/train/Harmful Content/tuncamxuc0_7367304524047912225.mp4
+th_112347671810_6e2f56,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_112347671810_6e2f56.mp4,10.04,,,0,train,275,train,Safe,Dataset/train/Safe/le_anh_nuoi_7279050112347671810.mp4
+th_953477864722_692b6c,tikharm,lthnhun99,/workspace/data/clips/tikharm/th_953477864722_692b6c.mp4,10.0,,,0,train,277,train,Safe,Dataset/train/Safe/lthnhun99_7379471953477864722.mp4
+th_831559941381_ca05a9,tikharm,redbullfreerunning,/workspace/data/clips/tikharm/th_831559941381_ca05a9.mp4,9.88,,,1,train,278,train,Harmful Content,Dataset/train/Harmful Content/redbullfreerunning_6933241831559941381.mp4
+th_700682935553_0a2bec,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_700682935553_0a2bec.mp4,9.84,,,1,train,280,val,Harmful Content,Dataset/val/Harmful Content/alvinmarinas_6949151700682935553.mp4
+th_706468711706_7ed79e,tikharm,ofbaublesandfairylights,/workspace/data/clips/tikharm/th_706468711706_7ed79e.mp4,10.0,,,0,train,281,train,Safe,Dataset/train/Safe/ofbaublesandfairylights_7256516706468711706.mp4
+th_520996547856_792722,tikharm,vtthaoo,/workspace/data/clips/tikharm/th_520996547856_792722.mp4,10.0,,,0,train,279,train,Safe,Dataset/train/Safe/vtthaoo_7376122520996547856.mp4
+th_504890535175_ecf39e,tikharm,danhdeonline,/workspace/data/clips/tikharm/th_504890535175_ecf39e.mp4,7.97,,,1,train,282,test,Harmful Content,Dataset/test/Harmful Content/danhdeonline_7266010504890535175.mp4
+th_583666617605_3d2998,tikharm,eminemiac,/workspace/data/clips/tikharm/th_583666617605_3d2998.mp4,10.0,,,1,val,284,train,Harmful Content,Dataset/train/Harmful Content/eminemiac_7134120583666617605.mp4
+th_343021911316_b9092c,tikharm,toongadventure,/workspace/data/clips/tikharm/th_343021911316_b9092c.mp4,9.42,,,0,val,283,train,Safe,Dataset/train/Safe/toongadventure_7344997343021911316.mp4
+th_623834975496_3ca1e7,tikharm,halinhofficial,/workspace/data/clips/tikharm/th_623834975496_3ca1e7.mp4,10.0,,,0,train,285,test,Safe,Dataset/test/Safe/halinhofficial_7373308623834975496.mp4
+th_902198934814_db97bd,tikharm,overtimeboxing,/workspace/data/clips/tikharm/th_902198934814_db97bd.mp4,9.92,,,1,train,288,train,Harmful Content,Dataset/train/Harmful Content/overtimeboxing_7282505902198934814.mp4
+th_147418291499_51c3b1,tikharm,danahassonn,/workspace/data/clips/tikharm/th_147418291499_51c3b1.mp4,10.0,,,0,train,289,train,Safe,Dataset/train/Safe/danahassonn_7176739147418291499.mp4
+th_928938806574_20edcd,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_928938806574_20edcd.mp4,10.0,,,1,test,290,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_7186732928938806574.mp4
+th_139540364545_cf7309,tikharm,meohoangdep,/workspace/data/clips/tikharm/th_139540364545_cf7309.mp4,10.0,,,0,val,291,train,Safe,Dataset/train/Safe/meohoangdep_7042661139540364545.mp4
+th_275068796191_7e2c37,tikharm,davdlifts,/workspace/data/clips/tikharm/th_275068796191_7e2c37.mp4,10.0,,,1,train,292,train,Harmful Content,Dataset/train/Harmful Content/davdlifts_7359741275068796191.mp4
+th_081624595738_bbf8ee,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_081624595738_bbf8ee.mp4,10.0,,,1,train,294,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7148793081624595738.mp4
+th_151481834784_81ed0b,tikharm,chuoichienthimasterchef,/workspace/data/clips/tikharm/th_151481834784_81ed0b.mp4,10.0,,,0,train,295,train,Safe,Dataset/train/Safe/chuoichienthimasterchef_7361807151481834784.mp4
+th_849016102149_57979f,tikharm,karennietot,/workspace/data/clips/tikharm/th_849016102149_57979f.mp4,9.64,,,1,train,296,train,Harmful Content,Dataset/train/Harmful Content/karennietot_6924355849016102149.mp4
+th_956013403410_81f74b,tikharm,maphayke,/workspace/data/clips/tikharm/th_956013403410_81f74b.mp4,10.0,,,0,train,297,train,Safe,Dataset/train/Safe/maphayke_7374003956013403410.mp4
+th_264355986694_8485aa,tikharm,worldchasetag,/workspace/data/clips/tikharm/th_264355986694_8485aa.mp4,10.0,,,1,test,298,train,Harmful Content,Dataset/train/Harmful Content/worldchasetag_7112453264355986694.mp4
+th_930496949505_e095cc,tikharm,hamuvevoi,/workspace/data/clips/tikharm/th_930496949505_e095cc.mp4,10.08,,,0,train,293,train,Safe,Dataset/train/Safe/hamuvevoi_7260846930496949505.mp4
+th_502664432903_3957a8,tikharm,maphayke,/workspace/data/clips/tikharm/th_502664432903_3957a8.mp4,10.0,,,0,train,299,train,Safe,Dataset/train/Safe/maphayke_7356220502664432903.mp4
+th_115543162145_0cfb8d,tikharm,hoangreactionn,/workspace/data/clips/tikharm/th_115543162145_0cfb8d.mp4,10.0,,,1,train,300,train,Harmful Content,Dataset/train/Harmful Content/hoangreactionn_7278401115543162145.mp4
+th_475031399701_1ef0df,tikharm,anden75,/workspace/data/clips/tikharm/th_475031399701_1ef0df.mp4,10.0,,,0,test,301,train,Safe,Dataset/train/Safe/anden75_7356210475031399701.mp4
+th_701360573702_e3ff9c,tikharm,heather.be,/workspace/data/clips/tikharm/th_701360573702_e3ff9c.mp4,10.0,,,1,test,302,val,Harmful Content,Dataset/val/Harmful Content/heather.be_6866876701360573702.mp4
+th_140872375558_fbd212,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_140872375558_fbd212.mp4,9.88,,,1,test,286,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_6954767140872375558.mp4
+th_607384915243_775c79,tikharm,omgsoulcute,/workspace/data/clips/tikharm/th_607384915243_775c79.mp4,10.0,,,0,test,287,test,Safe,Dataset/test/Safe/omgsoulcute_7341880607384915243.mp4
+th_370048990484_0cecb0,tikharm,hien.vaobep,/workspace/data/clips/tikharm/th_370048990484_0cecb0.mp4,10.0,,,0,train,303,test,Safe,Dataset/test/Safe/hien.vaobep_7352825370048990484.mp4
+th_802465484037_edeba8,tikharm,happymukbangs,/workspace/data/clips/tikharm/th_802465484037_edeba8.mp4,10.0,,,1,test,304,test,Harmful Content,Dataset/test/Harmful Content/happymukbangs_7213136802465484037.mp4
+th_204152073474_a4c5f3,tikharm,thegioiaitheky23,/workspace/data/clips/tikharm/th_204152073474_a4c5f3.mp4,10.0,,,0,train,305,test,Safe,Dataset/test/Safe/thegioiaitheky23_7269798204152073474.mp4
+th_294525857029_9ffaef,tikharm,motoshop.ua,/workspace/data/clips/tikharm/th_294525857029_9ffaef.mp4,10.0,,,1,val,306,train,Harmful Content,Dataset/train/Harmful Content/motoshop.ua_7340014294525857029.mp4
+th_846620777734_ff3215,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_846620777734_ff3215.mp4,6.9,,,0,train,309,train,Safe,Dataset/train/Safe/cochuoithichdi_35_7239255846620777734.mp4
+th_655901469953_3b7484,tikharm,yuiitakitori,/workspace/data/clips/tikharm/th_655901469953_3b7484.mp4,10.0,,,0,train,307,test,Safe,Dataset/test/Safe/yuiitakitori_7310790655901469953.mp4
+th_862458707202_697ac0,tikharm,harburgery,/workspace/data/clips/tikharm/th_862458707202_697ac0.mp4,10.0,,,1,train,308,train,Harmful Content,Dataset/train/Harmful Content/harburgery_7285777862458707202.mp4
+th_391844928770_f0902b,tikharm,bestmoto.22,/workspace/data/clips/tikharm/th_391844928770_f0902b.mp4,7.46,,,1,test,310,train,Harmful Content,Dataset/train/Harmful Content/bestmoto.22_7030903391844928770.mp4
+th_271385521409_512514,tikharm,babykopohome,/workspace/data/clips/tikharm/th_271385521409_512514.mp4,10.0,,,0,val,311,train,Safe,Dataset/train/Safe/babykopohome_6824450271385521409.mp4
+th_124219342126_960dd9,tikharm,meghanbenkendorf,/workspace/data/clips/tikharm/th_124219342126_960dd9.mp4,5.48,,,1,train,312,test,Harmful Content,Dataset/test/Harmful Content/meghanbenkendorf_7075857124219342126.mp4
+th_938007334162_c18b97,tikharm,huydoan571,/workspace/data/clips/tikharm/th_938007334162_c18b97.mp4,7.55,,,0,train,313,train,Safe,Dataset/train/Safe/huydoan571_7303808938007334162.mp4
+th_024407497992_174d2c,tikharm,sabneejkhuam,/workspace/data/clips/tikharm/th_024407497992_174d2c.mp4,10.0,,,1,train,316,test,Harmful Content,Dataset/test/Harmful Content/sabneejkhuam_7375067024407497992.mp4
+th_260797103403_747d5c,tikharm,live_simply_aesthetic,/workspace/data/clips/tikharm/th_260797103403_747d5c.mp4,10.0,,,0,train,317,train,Safe,Dataset/train/Safe/live_simply_aesthetic_7233873260797103403.mp4
+th_471213026593_353cd1,tikharm,antoinebaldisserri,/workspace/data/clips/tikharm/th_471213026593_353cd1.mp4,10.0,,,1,train,314,train,Harmful Content,Dataset/train/Harmful Content/antoinebaldisserri_7338086471213026593.mp4
+th_389190339848_3f961f,tikharm,vinhdauhoii,/workspace/data/clips/tikharm/th_389190339848_3f961f.mp4,10.0,,,0,val,315,test,Safe,Dataset/test/Safe/vinhdauhoii_7348664389190339848.mp4
+th_703756131590_1d50b4,tikharm,cheddar,/workspace/data/clips/tikharm/th_703756131590_1d50b4.mp4,10.0,,,1,train,318,train,Harmful Content,Dataset/train/Harmful Content/cheddar_6746251703756131590.mp4
+th_629437156635_8de7c0,tikharm,hong_hanh8901,/workspace/data/clips/tikharm/th_629437156635_8de7c0.mp4,10.0,,,0,test,319,train,Safe,Dataset/train/Safe/hong_hanh8901_7017428629437156635.mp4
+th_794100182298_8e9bb3,tikharm,husqvarna.motorcycles,/workspace/data/clips/tikharm/th_794100182298_8e9bb3.mp4,5.55,,,1,val,320,train,Harmful Content,Dataset/train/Harmful Content/husqvarna.motorcycles_7247566794100182298.mp4
+th_146028125482_60c059,tikharm,sheri_wilson_,/workspace/data/clips/tikharm/th_146028125482_60c059.mp4,10.0,,,0,test,321,train,Safe,Dataset/train/Safe/sheri_wilson__7299599146028125482.mp4
+th_693912960282_a1b3b0,tikharm,genzi2_,/workspace/data/clips/tikharm/th_693912960282_a1b3b0.mp4,10.0,,,1,train,322,test,Harmful Content,Dataset/test/Harmful Content/genzi2__7191701693912960282.mp4
+th_803018255621_feba7f,tikharm,alexalanko,/workspace/data/clips/tikharm/th_803018255621_feba7f.mp4,10.0,,,1,train,324,val,Harmful Content,Dataset/val/Harmful Content/alexalanko_7218562803018255621.mp4
+th_000702950664_10f25b,tikharm,any_bot_2k10,/workspace/data/clips/tikharm/th_000702950664_10f25b.mp4,10.0,,,0,test,325,train,Safe,Dataset/train/Safe/any_bot_2k10_7370694000702950664.mp4
+th_088256748806_731c55,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_088256748806_731c55.mp4,10.0,,,0,train,323,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7246955088256748806.mp4
+th_928308116763_1f9516,tikharm,kengam_of,/workspace/data/clips/tikharm/th_928308116763_1f9516.mp4,9.54,,,1,train,326,val,Harmful Content,Dataset/val/Harmful Content/kengam_of_7229473928308116763.mp4
+th_933432098056_71531f,tikharm,mii.catherine,/workspace/data/clips/tikharm/th_933432098056_71531f.mp4,10.0,,,0,train,327,val,Safe,Dataset/val/Safe/mii.catherine_7298705933432098056.mp4
+th_162558622982_aec0f3,tikharm,rafagarciamx,/workspace/data/clips/tikharm/th_162558622982_aec0f3.mp4,10.0,,,1,train,330,val,Harmful Content,Dataset/val/Harmful Content/rafagarciamx_7205237162558622982.mp4
+th_376878939410_89a708,tikharm,rubyvuvn,/workspace/data/clips/tikharm/th_376878939410_89a708.mp4,10.0,,,0,train,329,test,Safe,Dataset/test/Safe/rubyvuvn_7328257376878939410.mp4
+th_433577364769_c7b51d,tikharm,mma.is.cold,/workspace/data/clips/tikharm/th_433577364769_c7b51d.mp4,10.0,,,1,train,328,train,Harmful Content,Dataset/train/Harmful Content/mma.is.cold_7359540433577364769.mp4
+th_877477162245_7a6965,tikharm,mattpianoman,/workspace/data/clips/tikharm/th_877477162245_7a6965.mp4,10.0,,,0,test,331,train,Safe,Dataset/train/Safe/mattpianoman_7243778877477162245.mp4
+th_701953993990_9a87c7,tikharm,maythangtuw,/workspace/data/clips/tikharm/th_701953993990_9a87c7.mp4,10.0,,,0,train,333,train,Safe,Dataset/train/Safe/maythangtuw_7231098701953993990.mp4
+th_565862079776_fa47c4,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_565862079776_fa47c4.mp4,10.0,,,1,train,332,val,Harmful Content,Dataset/val/Harmful Content/olivernordin1_7264515565862079776.mp4
+th_387714952450_491792,tikharm,herby.bby,/workspace/data/clips/tikharm/th_387714952450_491792.mp4,10.0,,,0,train,335,train,Safe,Dataset/train/Safe/herby.bby_6863778387714952450.mp4
+th_846791220482_0587a2,tikharm,mother_of_swamps,/workspace/data/clips/tikharm/th_846791220482_0587a2.mp4,10.0,,,1,test,338,test,Harmful Content,Dataset/test/Harmful Content/mother_of_swamps_6985055846791220482.mp4
+th_037740997893_f2a9b9,tikharm,venzxbanks,/workspace/data/clips/tikharm/th_037740997893_f2a9b9.mp4,10.0,,,1,val,334,train,Harmful Content,Dataset/train/Harmful Content/venzxbanks_7224078037740997893.mp4
+th_032096939265_33f7fc,tikharm,andamdelam,/workspace/data/clips/tikharm/th_032096939265_33f7fc.mp4,10.0,,,0,train,339,train,Safe,Dataset/train/Safe/andamdelam_7349722032096939265.mp4
+th_448464055595_d3fbb7,tikharm,maugamu,/workspace/data/clips/tikharm/th_448464055595_d3fbb7.mp4,10.0,,,1,test,336,test,Harmful Content,Dataset/test/Harmful Content/maugamu_7351610448464055595.mp4
+th_801873874177_718a08,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_801873874177_718a08.mp4,10.0,,,0,train,337,train,Safe,Dataset/train/Safe/chutuphuyen_7369556801873874177.mp4
+th_030840139035_d10476,tikharm,muoitoday,/workspace/data/clips/tikharm/th_030840139035_d10476.mp4,10.0,,,1,val,340,train,Harmful Content,Dataset/train/Harmful Content/muoitoday_7056310030840139035.mp4
+th_133582687530_2abd74,tikharm,thekefferkrew,/workspace/data/clips/tikharm/th_133582687530_2abd74.mp4,10.0,,,1,train,342,train,Harmful Content,Dataset/train/Harmful Content/thekefferkrew_7176172133582687530.mp4
+th_292904213768_71baf1,tikharm,hinzhomnaylaca,/workspace/data/clips/tikharm/th_292904213768_71baf1.mp4,10.0,,,0,train,345,train,Safe,Dataset/train/Safe/hinzhomnaylaca_7345047292904213768.mp4
+th_833332260097_628077,tikharm,tronmama93,/workspace/data/clips/tikharm/th_833332260097_628077.mp4,10.0,,,0,train,341,train,Safe,Dataset/train/Safe/tronmama93_7342486833332260097.mp4
+th_561338633474_e2b954,tikharm,anton_deryabin,/workspace/data/clips/tikharm/th_561338633474_e2b954.mp4,9.98,,,1,train,346,train,Harmful Content,Dataset/train/Harmful Content/anton_deryabin_7021776561338633474.mp4
+th_507134553350_6ed848,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_507134553350_6ed848.mp4,10.0,,,1,val,344,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6960782507134553350.mp4
+th_109304364306_f9a460,tikharm,maphayke,/workspace/data/clips/tikharm/th_109304364306_f9a460.mp4,10.0,,,0,train,343,train,Safe,Dataset/train/Safe/maphayke_7329101109304364306.mp4
+th_128753286443_7ebd90,tikharm,kristinaquintana,/workspace/data/clips/tikharm/th_128753286443_7ebd90.mp4,10.0,,,0,train,347,train,Safe,Dataset/train/Safe/kristinaquintana_7300037128753286443.mp4
+th_419300748546_2cd881,tikharm,wheelridersjb,/workspace/data/clips/tikharm/th_419300748546_2cd881.mp4,10.0,,,1,train,348,train,Harmful Content,Dataset/train/Harmful Content/wheelridersjb_7345050419300748546.mp4
+th_478005615888_1bc79d,tikharm,matchashop.vn3,/workspace/data/clips/tikharm/th_478005615888_1bc79d.mp4,10.0,,,0,train,349,train,Safe,Dataset/train/Safe/matchashop.vn3_7368111478005615888.mp4
+th_667739753775_28e3e7,tikharm,vegastaughtme,/workspace/data/clips/tikharm/th_667739753775_28e3e7.mp4,8.62,,,0,train,353,train,Safe,Dataset/train/Safe/vegastaughtme_7041384667739753775.mp4
+th_055620467974_30cf7a,tikharm,coreuk,/workspace/data/clips/tikharm/th_055620467974_30cf7a.mp4,7.92,,,1,test,354,test,Harmful Content,Dataset/test/Harmful Content/coreuk_7063521055620467974.mp4
+th_167472852271_460383,tikharm,blaycewilson,/workspace/data/clips/tikharm/th_167472852271_460383.mp4,10.0,,,1,train,350,test,Harmful Content,Dataset/test/Harmful Content/blaycewilson_7067994167472852271.mp4
+th_244135734529_dbfc50,tikharm,trnchoww,/workspace/data/clips/tikharm/th_244135734529_dbfc50.mp4,10.0,,,0,test,351,test,Safe,Dataset/test/Safe/trnchoww_7047086244135734529.mp4
+th_564391529746_4f9b54,tikharm,thlinh_onthidaihoc,/workspace/data/clips/tikharm/th_564391529746_4f9b54.mp4,10.0,,,0,train,355,train,Safe,Dataset/train/Safe/thlinh_onthidaihoc_7370924564391529746.mp4
+th_076676414753_11fc1e,tikharm,spannerowanner,/workspace/data/clips/tikharm/th_076676414753_11fc1e.mp4,10.0,,,1,val,356,train,Harmful Content,Dataset/train/Harmful Content/spannerowanner_7348849076676414753.mp4
+th_627274616065_b92484,tikharm,funfact.66,/workspace/data/clips/tikharm/th_627274616065_b92484.mp4,10.0,,,0,val,359,train,Safe,Dataset/train/Safe/funfact.66_7132376627274616065.mp4
+th_840695221510_f247d6,tikharm,onechampionship,/workspace/data/clips/tikharm/th_840695221510_f247d6.mp4,10.0,,,1,train,360,test,Harmful Content,Dataset/test/Harmful Content/onechampionship_7014320840695221510.mp4
+th_177932086530_82e129,tikharm,checancook.3111,/workspace/data/clips/tikharm/th_177932086530_82e129.mp4,10.0,,,0,val,357,train,Safe,Dataset/train/Safe/checancook.3111_7332342177932086530.mp4
+th_468436016389_59c517,tikharm,uebdizb,/workspace/data/clips/tikharm/th_468436016389_59c517.mp4,10.0,,,1,train,358,test,Harmful Content,Dataset/test/Harmful Content/uebdizb_6918279468436016389.mp4
+th_005001161986_932c99,tikharm,tuthien_hih3t,/workspace/data/clips/tikharm/th_005001161986_932c99.mp4,10.0,,,0,train,361,test,Safe,Dataset/test/Safe/tuthien_hih3t_7272570005001161986.mp4
+th_412387163397_0edcaa,tikharm,extremeofficial,/workspace/data/clips/tikharm/th_412387163397_0edcaa.mp4,9.96,,,1,train,362,train,Harmful Content,Dataset/train/Harmful Content/extremeofficial_6805185412387163397.mp4
+th_602114272538_f19cda,tikharm,thecampvilledalat,/workspace/data/clips/tikharm/th_602114272538_f19cda.mp4,10.0,,,0,train,363,test,Safe,Dataset/test/Safe/thecampvilledalat_7195898602114272538.mp4
+th_122195221786_b48b6a,tikharm,platesandplacesph,/workspace/data/clips/tikharm/th_122195221786_b48b6a.mp4,10.0,,,1,train,352,train,Harmful Content,Dataset/train/Harmful Content/platesandplacesph_6996283122195221786.mp4
+th_123685776645_755a8c,tikharm,stefymadness,/workspace/data/clips/tikharm/th_123685776645_755a8c.mp4,10.0,,,1,train,364,train,Harmful Content,Dataset/train/Harmful Content/stefymadness_7157318123685776645.mp4
+th_018025377030_967b61,tikharm,phimphot0,/workspace/data/clips/tikharm/th_018025377030_967b61.mp4,10.0,,,0,train,365,test,Safe,Dataset/test/Safe/phimphot0_7254894018025377030.mp4
+th_289126829317_627c6d,tikharm,luladelbianco,/workspace/data/clips/tikharm/th_289126829317_627c6d.mp4,10.0,,,1,train,366,train,Harmful Content,Dataset/train/Harmful Content/luladelbianco_7263280289126829317.mp4
+th_745211264283_806efd,tikharm,mocuabatoctv,/workspace/data/clips/tikharm/th_745211264283_806efd.mp4,10.0,,,0,train,367,train,Safe,Dataset/train/Safe/mocuabatoctv_7063025745211264283.mp4
+th_226287074602_c7260a,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_226287074602_c7260a.mp4,10.0,,,1,val,370,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_7124429226287074602.mp4
+th_616842698001_fb3dca,tikharm,hng_aan,/workspace/data/clips/tikharm/th_616842698001_fb3dca.mp4,10.0,,,0,train,369,train,Safe,Dataset/train/Safe/hng_aan_7354567616842698001.mp4
+th_804895804674_89d054,tikharm,kenhstd,/workspace/data/clips/tikharm/th_804895804674_89d054.mp4,10.0,,,1,train,368,train,Harmful Content,Dataset/train/Harmful Content/kenhstd_7189844804895804674.mp4
+th_403341667585_d6368f,tikharm,kyucngoisao.official,/workspace/data/clips/tikharm/th_403341667585_d6368f.mp4,10.0,,,0,train,371,train,Safe,Dataset/train/Safe/kyucngoisao.official_6962010403341667585.mp4
+th_114310139142_ecb867,tikharm,perfilimprevisivel,/workspace/data/clips/tikharm/th_114310139142_ecb867.mp4,10.0,,,1,val,372,train,Harmful Content,Dataset/train/Harmful Content/perfilimprevisivel_7293160114310139142.mp4
+th_595797757202_d5cce0,tikharm,utvevuon99,/workspace/data/clips/tikharm/th_595797757202_d5cce0.mp4,10.0,,,0,train,373,train,Safe,Dataset/train/Safe/utvevuon99_7255960595797757202.mp4
+th_616010939653_97a0b2,tikharm,jared.falgien,/workspace/data/clips/tikharm/th_616010939653_97a0b2.mp4,9.96,,,1,test,374,test,Harmful Content,Dataset/test/Harmful Content/jared.falgien_6852849616010939653.mp4
+th_001479023899_04315a,tikharm,j.corner93,/workspace/data/clips/tikharm/th_001479023899_04315a.mp4,10.0,,,0,train,375,test,Safe,Dataset/test/Safe/j.corner93_7215899001479023899.mp4
+th_717215980805_363a2d,tikharm,th1rt3enth,/workspace/data/clips/tikharm/th_717215980805_363a2d.mp4,10.0,,,1,train,378,train,Harmful Content,Dataset/train/Harmful Content/th1rt3enth_7022439717215980805.mp4
+th_544486706438_14d7a1,tikharm,iris.hasi,/workspace/data/clips/tikharm/th_544486706438_14d7a1.mp4,9.88,,,1,train,376,train,Harmful Content,Dataset/train/Harmful Content/iris.hasi_7017488544486706438.mp4
+th_403707874586_46395a,tikharm,zi.truong,/workspace/data/clips/tikharm/th_403707874586_46395a.mp4,10.0,,,0,val,377,train,Safe,Dataset/train/Safe/zi.truong_7029312403707874586.mp4
+th_136365096199_6fda02,tikharm,elyitclean,/workspace/data/clips/tikharm/th_136365096199_6fda02.mp4,10.0,,,0,train,379,test,Safe,Dataset/test/Safe/elyitclean_7358825136365096199.mp4
+th_969610693894_475ff4,tikharm,pipedh56,/workspace/data/clips/tikharm/th_969610693894_475ff4.mp4,9.84,,,1,train,380,test,Harmful Content,Dataset/test/Harmful Content/pipedh56_7144888969610693894.mp4
+th_906118987054_8fb4e5,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_906118987054_8fb4e5.mp4,10.0,,,1,val,382,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_7254281906118987054.mp4
+th_624868044040_fe88ee,tikharm,umachan199x,/workspace/data/clips/tikharm/th_624868044040_fe88ee.mp4,10.0,,,0,train,381,val,Safe,Dataset/val/Safe/umachan199x_7361370624868044040.mp4
+th_630958243074_8b458b,tikharm,vtvgo,/workspace/data/clips/tikharm/th_630958243074_8b458b.mp4,10.0,,,1,train,384,train,Harmful Content,Dataset/train/Harmful Content/vtvgo_6993621630958243074.mp4
+th_184082554144_cc2ea3,tikharm,tiktok.love.57,/workspace/data/clips/tikharm/th_184082554144_cc2ea3.mp4,10.0,,,0,train,385,train,Safe,Dataset/train/Safe/tiktok.love.57_7285707184082554144.mp4
+th_475818351915_863f03,tikharm,krisvstudio,/workspace/data/clips/tikharm/th_475818351915_863f03.mp4,10.0,,,0,train,383,train,Safe,Dataset/train/Safe/krisvstudio_7290015475818351915.mp4
+th_190811757831_31834d,tikharm,gain.sinapong,/workspace/data/clips/tikharm/th_190811757831_31834d.mp4,10.0,,,1,train,386,train,Harmful Content,Dataset/train/Harmful Content/gain.sinapong_7373615190811757831.mp4
+th_258548317472_af2753,tikharm,freeride_mtb0,/workspace/data/clips/tikharm/th_258548317472_af2753.mp4,9.82,,,1,val,388,train,Harmful Content,Dataset/train/Harmful Content/freeride_mtb0_7373417258548317472.mp4
+th_498681019681_b3d7e8,tikharm,000cartoon000,/workspace/data/clips/tikharm/th_498681019681_b3d7e8.mp4,10.0,,,0,train,387,train,Safe,Dataset/train/Safe/000cartoon000_7275693498681019681.mp4
+th_794850405664_778e68,tikharm,flo.landr,/workspace/data/clips/tikharm/th_794850405664_778e68.mp4,10.0,,,1,train,390,train,Harmful Content,Dataset/train/Harmful Content/flo.landr_7278262794850405664.mp4
+th_799552068871_7491ad,tikharm,gobungynepal,/workspace/data/clips/tikharm/th_799552068871_7491ad.mp4,10.0,,,1,train,392,train,Harmful Content,Dataset/train/Harmful Content/gobungynepal_7288547799552068871.mp4
+th_472145603842_98bdd7,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_472145603842_98bdd7.mp4,10.0,,,0,train,389,train,Safe,Dataset/train/Safe/le_anh_nuoi_7280510472145603842.mp4
+th_244329614593_99256a,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_244329614593_99256a.mp4,10.0,,,0,train,391,train,Safe,Dataset/train/Safe/chutuphuyen_7375168244329614593.mp4
+th_400548015406_2c9456,tikharm,tmc.media,/workspace/data/clips/tikharm/th_400548015406_2c9456.mp4,10.0,,,1,train,394,train,Harmful Content,Dataset/train/Harmful Content/tmc.media_7196242400548015406.mp4
+th_719470943515_75d00c,tikharm,numbersixtysix,/workspace/data/clips/tikharm/th_719470943515_75d00c.mp4,10.0,,,0,train,393,val,Safe,Dataset/val/Safe/numbersixtysix_7226359719470943515.mp4
+th_441869184261_82359a,tikharm,legoshi_kinnie,/workspace/data/clips/tikharm/th_441869184261_82359a.mp4,10.0,,,1,train,396,train,Harmful Content,Dataset/train/Harmful Content/legoshi_kinnie_7151454441869184261.mp4
+th_080310295816_536510,tikharm,hoshiphan,/workspace/data/clips/tikharm/th_080310295816_536510.mp4,10.0,,,0,train,395,val,Safe,Dataset/val/Safe/hoshiphan_7363635080310295816.mp4
+th_566583323950_da534a,tikharm,jolly_christian,/workspace/data/clips/tikharm/th_566583323950_da534a.mp4,7.41,,,1,train,398,train,Harmful Content,Dataset/train/Harmful Content/jolly_christian_7203714566583323950.mp4
+th_864144928005_77dc88,tikharm,khatvong_xanh,/workspace/data/clips/tikharm/th_864144928005_77dc88.mp4,10.0,,,0,val,397,train,Safe,Dataset/train/Safe/khatvong_xanh_7252206864144928005.mp4
+th_748123340059_2b31ae,tikharm,vinhgau.tt,/workspace/data/clips/tikharm/th_748123340059_2b31ae.mp4,10.0,,,0,train,399,train,Safe,Dataset/train/Safe/vinhgau.tt_7171793748123340059.mp4
+th_890728447238_386579,tikharm,jonbezrouch,/workspace/data/clips/tikharm/th_890728447238_386579.mp4,10.0,,,1,val,400,train,Harmful Content,Dataset/train/Harmful Content/jonbezrouch_6938173890728447238.mp4
+th_285476007184_71e20d,tikharm,phuongmin_,/workspace/data/clips/tikharm/th_285476007184_71e20d.mp4,10.0,,,0,test,401,train,Safe,Dataset/train/Safe/phuongmin__7369478285476007184.mp4
+th_167935065345_465195,tikharm,xuanca._,/workspace/data/clips/tikharm/th_167935065345_465195.mp4,10.0,,,1,val,402,train,Harmful Content,Dataset/train/Harmful Content/xuanca.__7374389167935065345.mp4
+th_671377616134_b10783,tikharm,extremsport_tv,/workspace/data/clips/tikharm/th_671377616134_b10783.mp4,9.84,,,1,train,404,train,Harmful Content,Dataset/train/Harmful Content/extremsport_tv_6936666671377616134.mp4
+th_938326584581_33bd5b,tikharm,miyaevarenae,/workspace/data/clips/tikharm/th_938326584581_33bd5b.mp4,10.0,,,0,train,403,train,Safe,Dataset/train/Safe/miyaevarenae_6960046938326584581.mp4
+th_230016462081_5e318f,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_230016462081_5e318f.mp4,10.0,,,0,train,405,train,Safe,Dataset/train/Safe/chutuphuyen_7367602230016462081.mp4
+th_280601464070_c17cbb,tikharm,michaelmaze727,/workspace/data/clips/tikharm/th_280601464070_c17cbb.mp4,10.0,,,1,val,406,val,Harmful Content,Dataset/val/Harmful Content/michaelmaze727_6991852280601464070.mp4
+th_256520142122_0c0048,tikharm,askinem,/workspace/data/clips/tikharm/th_256520142122_0c0048.mp4,10.0,,,0,train,407,train,Safe,Dataset/train/Safe/askinem_7350681256520142122.mp4
+th_535348768005_e91dda,tikharm,rensomango,/workspace/data/clips/tikharm/th_535348768005_e91dda.mp4,9.86,,,1,train,408,train,Harmful Content,Dataset/train/Harmful Content/rensomango_7151438535348768005.mp4
+th_232225869089_871b67,tikharm,antoniglia,/workspace/data/clips/tikharm/th_232225869089_871b67.mp4,10.0,,,0,train,409,train,Safe,Dataset/train/Safe/antoniglia_7347896232225869089.mp4
+th_266930244891_c52880,tikharm,humui2003,/workspace/data/clips/tikharm/th_266930244891_c52880.mp4,10.0,,,1,test,410,test,Harmful Content,Dataset/test/Harmful Content/humui2003_7184408266930244891.mp4
+th_176659389704_eca6ed,tikharm,halinhofficial,/workspace/data/clips/tikharm/th_176659389704_eca6ed.mp4,10.0,,,0,train,411,train,Safe,Dataset/train/Safe/halinhofficial_7331355176659389704.mp4
+th_686222818592_d8669c,tikharm,renezzbro,/workspace/data/clips/tikharm/th_686222818592_d8669c.mp4,10.0,,,1,val,412,train,Harmful Content,Dataset/train/Harmful Content/renezzbro_7324321686222818592.mp4
+th_552433548571_e8dc81,tikharm,maingoc.onhalachill,/workspace/data/clips/tikharm/th_552433548571_e8dc81.mp4,10.0,,,0,test,413,test,Safe,Dataset/test/Safe/maingoc.onhalachill_7135461552433548571.mp4
+th_782672682241_c66fcd,tikharm,_.littt._,/workspace/data/clips/tikharm/th_782672682241_c66fcd.mp4,10.0,,,1,val,416,train,Harmful Content,Dataset/train/Harmful Content/_.littt.__7259715782672682241.mp4
+th_788246293787_bcb845,tikharm,cacaane,/workspace/data/clips/tikharm/th_788246293787_bcb845.mp4,10.0,,,0,train,415,test,Safe,Dataset/test/Safe/cacaane_7083494788246293787.mp4
+th_931399769371_d8c755,tikharm,helloimtin,/workspace/data/clips/tikharm/th_931399769371_d8c755.mp4,10.0,,,1,val,414,train,Harmful Content,Dataset/train/Harmful Content/helloimtin_7032927931399769371.mp4
+th_877580406018_4ea9e5,tikharm,naomiganda21,/workspace/data/clips/tikharm/th_877580406018_4ea9e5.mp4,10.0,,,1,train,418,train,Harmful Content,Dataset/train/Harmful Content/naomiganda21_6858784877580406018.mp4
+th_960495156481_9dfdd6,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_960495156481_9dfdd6.mp4,10.0,,,0,train,419,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7297449960495156481.mp4
+th_046699539714_b5dd15,tikharm,loanhquanhmotminh,/workspace/data/clips/tikharm/th_046699539714_b5dd15.mp4,10.04,,,0,train,417,train,Safe,Dataset/train/Safe/loanhquanhmotminh_7236810046699539714.mp4
+th_390457986309_94c917,tikharm,domitrick,/workspace/data/clips/tikharm/th_390457986309_94c917.mp4,10.0,,,1,train,420,val,Harmful Content,Dataset/val/Harmful Content/domitrick_6919896390457986309.mp4
+th_962035379458_88c219,tikharm,asraedit,/workspace/data/clips/tikharm/th_962035379458_88c219.mp4,10.0,,,0,train,421,train,Safe,Dataset/train/Safe/asraedit_7349778962035379458.mp4
+th_505471757573_d61c6c,tikharm,tommy_dugan0422,/workspace/data/clips/tikharm/th_505471757573_d61c6c.mp4,6.11,,,1,val,422,test,Harmful Content,Dataset/test/Harmful Content/tommy_dugan0422_7012670505471757573.mp4
+th_940982627585_cdc4f8,tikharm,dongam_den.vauvn,/workspace/data/clips/tikharm/th_940982627585_cdc4f8.mp4,10.0,,,0,train,423,test,Safe,Dataset/test/Safe/dongam_den.vauvn_7322830940982627585.mp4
+th_098713533698_c5c6e3,tikharm,a__kravchenko__,/workspace/data/clips/tikharm/th_098713533698_c5c6e3.mp4,8.85,,,1,val,424,val,Harmful Content,Dataset/val/Harmful Content/a__kravchenko___7022913098713533698.mp4
+th_847281683718_3f2fc5,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_847281683718_3f2fc5.mp4,10.0,,,0,train,425,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7271561847281683718.mp4
+th_293538905387_f73864,tikharm,ginniandmatt,/workspace/data/clips/tikharm/th_293538905387_f73864.mp4,10.0,,,1,val,426,train,Harmful Content,Dataset/train/Harmful Content/ginniandmatt_7352717293538905387.mp4
+th_220042792194_ef4424,tikharm,diacaurua,/workspace/data/clips/tikharm/th_220042792194_ef4424.mp4,10.0,,,0,train,427,train,Safe,Dataset/train/Safe/diacaurua_7279840220042792194.mp4
+th_296437853482_2ba882,tikharm,copperhead347,/workspace/data/clips/tikharm/th_296437853482_2ba882.mp4,10.0,,,1,val,428,val,Harmful Content,Dataset/val/Harmful Content/copperhead347_7270662296437853482.mp4
+th_705446001967_87ed03,tikharm,onechampionship,/workspace/data/clips/tikharm/th_705446001967_87ed03.mp4,8.57,,,1,train,430,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7053465705446001967.mp4
+th_693920840966_6419a3,tikharm,numbersixtysix,/workspace/data/clips/tikharm/th_693920840966_6419a3.mp4,10.0,,,0,train,429,val,Safe,Dataset/val/Safe/numbersixtysix_7174421693920840966.mp4
+th_662503128327_9e1fae,tikharm,nguyenhoa070784,/workspace/data/clips/tikharm/th_662503128327_9e1fae.mp4,10.0,,,0,train,431,train,Safe,Dataset/train/Safe/nguyenhoa070784_7373653662503128327.mp4
+th_283930762501_d88333,tikharm,ollielowthorpe,/workspace/data/clips/tikharm/th_283930762501_d88333.mp4,10.0,,,1,train,432,train,Harmful Content,Dataset/train/Harmful Content/ollielowthorpe_7142895283930762501.mp4
+th_043705638171_4b84d2,tikharm,cookwithme_369,/workspace/data/clips/tikharm/th_043705638171_4b84d2.mp4,10.0,,,0,train,433,train,Safe,Dataset/train/Safe/cookwithme_369_7252199043705638171.mp4
+th_374489287938_12fe2b,tikharm,flexibilitymotivation,/workspace/data/clips/tikharm/th_374489287938_12fe2b.mp4,10.0,,,1,train,434,train,Harmful Content,Dataset/train/Harmful Content/flexibilitymotivation_7317944374489287938.mp4
+th_754737913134_de1e8d,tikharm,mickeywithmiranda,/workspace/data/clips/tikharm/th_754737913134_de1e8d.mp4,10.0,,,0,train,435,train,Safe,Dataset/train/Safe/mickeywithmiranda_7285431754737913134.mp4
+th_061200825646_1d8ed8,tikharm,escotim,/workspace/data/clips/tikharm/th_061200825646_1d8ed8.mp4,9.86,,,1,train,436,train,Harmful Content,Dataset/train/Harmful Content/escotim_7120341061200825646.mp4
+th_984394304774_a8700c,tikharm,rainbowsaregay._,/workspace/data/clips/tikharm/th_984394304774_a8700c.mp4,10.0,,,1,train,438,train,Harmful Content,Dataset/train/Harmful Content/rainbowsaregay.__7210112984394304774.mp4
+th_607386279188_52fa33,tikharm,anden75,/workspace/data/clips/tikharm/th_607386279188_52fa33.mp4,10.0,,,0,test,437,train,Safe,Dataset/train/Safe/anden75_7346939607386279188.mp4
+th_376625282321_b79107,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_376625282321_b79107.mp4,10.0,,,0,train,439,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7359021376625282321.mp4
+th_824651238682_fd731c,tikharm,uyeenek,/workspace/data/clips/tikharm/th_824651238682_fd731c.mp4,10.0,,,0,train,443,train,Safe,Dataset/train/Safe/uyeenek_7207656824651238682.mp4
+th_683663031584_3e84a0,tikharm,thistrippyhippie,/workspace/data/clips/tikharm/th_683663031584_3e84a0.mp4,10.0,,,1,train,442,train,Harmful Content,Dataset/train/Harmful Content/thistrippyhippie_7319989683663031584.mp4
+th_925137952007_3e9311,tikharm,muzikvinahouse,/workspace/data/clips/tikharm/th_925137952007_3e9311.mp4,10.0,,,1,train,440,test,Harmful Content,Dataset/test/Harmful Content/muzikvinahouse_7355347925137952007.mp4
+th_863802735890_908ef0,tikharm,bombom_vlog,/workspace/data/clips/tikharm/th_863802735890_908ef0.mp4,10.0,,,0,train,441,train,Safe,Dataset/train/Safe/bombom_vlog_7372533863802735890.mp4
+th_856832052481_4df78d,tikharm,maimaila1nam,/workspace/data/clips/tikharm/th_856832052481_4df78d.mp4,10.0,,,1,train,444,train,Harmful Content,Dataset/train/Harmful Content/maimaila1nam_7350984856832052481.mp4
+th_193484881159_8eb054,tikharm,chi.lam.0129,/workspace/data/clips/tikharm/th_193484881159_8eb054.mp4,10.0,,,0,train,445,val,Safe,Dataset/val/Safe/chi.lam.0129_7327265193484881159.mp4
+th_387784940826_b2ba19,tikharm,alexalanko,/workspace/data/clips/tikharm/th_387784940826_b2ba19.mp4,10.0,,,1,train,446,train,Harmful Content,Dataset/train/Harmful Content/alexalanko_7235235387784940826.mp4
+th_515735305515_22fe89,tikharm,cantstopdom9,/workspace/data/clips/tikharm/th_515735305515_22fe89.mp4,10.0,,,1,test,448,train,Harmful Content,Dataset/train/Harmful Content/cantstopdom9_7354553515735305515.mp4
+th_714896375057_4a7380,tikharm,taphoaanvat0,/workspace/data/clips/tikharm/th_714896375057_4a7380.mp4,10.0,,,0,train,447,test,Safe,Dataset/test/Safe/taphoaanvat0_7365113714896375057.mp4
+th_095944215814_f9cbbe,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_095944215814_f9cbbe.mp4,10.0,,,1,test,450,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_7007120095944215814.mp4
+th_678397222186_372ff9,tikharm,reviewbet,/workspace/data/clips/tikharm/th_678397222186_372ff9.mp4,9.86,,,0,test,451,train,Safe,Dataset/train/Safe/reviewbet_7206179678397222186.mp4
+th_181649505537_589503,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_181649505537_589503.mp4,10.0,,,0,train,449,val,Safe,Dataset/val/Safe/le_anh_nuoi_7283837181649505537.mp4
+th_081380429061_479027,tikharm,rvroptics,/workspace/data/clips/tikharm/th_081380429061_479027.mp4,9.93,,,1,train,452,val,Harmful Content,Dataset/val/Harmful Content/rvroptics_6852196081380429061.mp4
+th_496394792193_bc6e88,tikharm,dongam_den.vauvn,/workspace/data/clips/tikharm/th_496394792193_bc6e88.mp4,10.0,,,0,train,453,train,Safe,Dataset/train/Safe/dongam_den.vauvn_7321730496394792193.mp4
+th_223244508417_c50f39,tikharm,tranngocphuongmai,/workspace/data/clips/tikharm/th_223244508417_c50f39.mp4,10.0,,,0,test,455,train,Safe,Dataset/train/Safe/tranngocphuongmai_6959115223244508417.mp4
+th_589003570433_0c9d63,tikharm,dayna_b_whips,/workspace/data/clips/tikharm/th_589003570433_0c9d63.mp4,10.0,,,1,val,456,train,Harmful Content,Dataset/train/Harmful Content/dayna_b_whips_7366013589003570433.mp4
+th_254351588614_41062e,tikharm,nicholirogatkin,/workspace/data/clips/tikharm/th_254351588614_41062e.mp4,10.0,,,1,train,454,train,Harmful Content,Dataset/train/Harmful Content/nicholirogatkin_6944861254351588614.mp4
+th_375724748039_ad1f82,tikharm,embegaoj,/workspace/data/clips/tikharm/th_375724748039_ad1f82.mp4,10.0,,,0,train,457,val,Safe,Dataset/val/Safe/embegaoj_7344182375724748039.mp4
+th_773992230150_5a70cf,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_773992230150_5a70cf.mp4,10.0,,,1,train,458,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7182246773992230150.mp4
+th_798247333146_1c1331,tikharm,ttmduyenn,/workspace/data/clips/tikharm/th_798247333146_1c1331.mp4,9.86,,,0,train,459,test,Safe,Dataset/test/Safe/ttmduyenn_7070910798247333146.mp4
+th_039900241157_458280,tikharm,venegaslupita15,/workspace/data/clips/tikharm/th_039900241157_458280.mp4,10.0,,,1,train,460,test,Harmful Content,Dataset/test/Harmful Content/venegaslupita15_7211723039900241157.mp4
+th_030838889754_90d3e4,tikharm,imhoatippp,/workspace/data/clips/tikharm/th_030838889754_90d3e4.mp4,10.0,,,0,train,461,train,Safe,Dataset/train/Safe/imhoatippp_6986903030838889754.mp4
+th_956348787974_60db82,tikharm,dylanpawson,/workspace/data/clips/tikharm/th_956348787974_60db82.mp4,10.0,,,1,train,462,train,Harmful Content,Dataset/train/Harmful Content/dylanpawson_6835234956348787974.mp4
+th_523961343234_337231,tikharm,kyokwang_mb,/workspace/data/clips/tikharm/th_523961343234_337231.mp4,10.0,,,1,train,464,test,Harmful Content,Dataset/test/Harmful Content/kyokwang_mb_6763955523961343234.mp4
+th_233476963602_c2d116,tikharm,maphayke,/workspace/data/clips/tikharm/th_233476963602_c2d116.mp4,10.0,,,0,train,463,test,Safe,Dataset/test/Safe/maphayke_7319821233476963602.mp4
+th_244135660802_24f640,tikharm,anvat.cungtui,/workspace/data/clips/tikharm/th_244135660802_24f640.mp4,10.0,,,0,train,465,train,Safe,Dataset/train/Safe/anvat.cungtui_7339192244135660802.mp4
+th_373216165125_d38e68,tikharm,ch.sohail.gujjar12,/workspace/data/clips/tikharm/th_373216165125_d38e68.mp4,10.0,,,1,train,468,train,Harmful Content,Dataset/train/Harmful Content/ch.sohail.gujjar12_6686149373216165125.mp4
+th_371424455941_525289,tikharm,antonivilloni,/workspace/data/clips/tikharm/th_371424455941_525289.mp4,10.0,,,1,train,466,train,Harmful Content,Dataset/train/Harmful Content/antonivilloni_6814398371424455941.mp4
+th_647193361669_809bdb,tikharm,color_tour,/workspace/data/clips/tikharm/th_647193361669_809bdb.mp4,10.0,,,0,test,467,train,Safe,Dataset/train/Safe/color_tour_7241609647193361669.mp4
+th_398406405422_f7fbab,tikharm,operation_niki,/workspace/data/clips/tikharm/th_398406405422_f7fbab.mp4,10.0,,,0,train,469,train,Safe,Dataset/train/Safe/operation_niki_7274060398406405422.mp4
+th_166376942853_52c9a0,tikharm,greatcanadianbungee,/workspace/data/clips/tikharm/th_166376942853_52c9a0.mp4,10.0,,,1,train,470,train,Harmful Content,Dataset/train/Harmful Content/greatcanadianbungee_7106126166376942853.mp4
+th_321199639854_16f088,tikharm,failarmy,/workspace/data/clips/tikharm/th_321199639854_16f088.mp4,7.36,,,1,train,472,train,Harmful Content,Dataset/train/Harmful Content/failarmy_7185320321199639854.mp4
+th_535857343770_230a25,tikharm,ours.14_,/workspace/data/clips/tikharm/th_535857343770_230a25.mp4,10.0,,,0,val,471,test,Safe,Dataset/test/Safe/ours.14__7218526535857343770.mp4
+th_396910771457_1ed557,tikharm,parthchauhan5,/workspace/data/clips/tikharm/th_396910771457_1ed557.mp4,10.08,,,1,train,474,train,Harmful Content,Dataset/train/Harmful Content/parthchauhan5_6802225396910771457.mp4
+th_807514021122_e4609a,tikharm,camapchuadaiduong,/workspace/data/clips/tikharm/th_807514021122_e4609a.mp4,10.0,,,0,train,475,train,Safe,Dataset/train/Safe/camapchuadaiduong_7287823807514021122.mp4
+th_529816071430_089159,tikharm,kengam_of,/workspace/data/clips/tikharm/th_529816071430_089159.mp4,10.0,,,1,train,476,train,Harmful Content,Dataset/train/Harmful Content/kengam_of_7196710529816071430.mp4
+th_468230548737_2fb353,tikharm,a.meodepzai,/workspace/data/clips/tikharm/th_468230548737_2fb353.mp4,10.0,,,0,val,473,train,Safe,Dataset/train/Safe/a.meodepzai_7337910468230548737.mp4
+th_762626796817_daf183,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_762626796817_daf183.mp4,10.0,,,0,train,477,train,Safe,Dataset/train/Safe/chutuphuyen_7371986762626796817.mp4
+th_967340416261_ed3964,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_967340416261_ed3964.mp4,10.0,,,0,train,479,test,Safe,Dataset/test/Safe/cochuoithichdi_35_7250155967340416261.mp4
+th_469135731994_a0aa63,tikharm,amiable.cruz,/workspace/data/clips/tikharm/th_469135731994_a0aa63.mp4,10.0,,,1,train,478,train,Harmful Content,Dataset/train/Harmful Content/amiable.cruz_7128018469135731994.mp4
+th_150055038210_1414c5,tikharm,gabrielberdonar,/workspace/data/clips/tikharm/th_150055038210_1414c5.mp4,10.0,,,1,test,480,train,Harmful Content,Dataset/train/Harmful Content/gabrielberdonar_6951710150055038210.mp4
+th_907652893995_03d284,tikharm,lovecat00_,/workspace/data/clips/tikharm/th_907652893995_03d284.mp4,10.0,,,0,train,481,train,Safe,Dataset/train/Safe/lovecat00__7147908907652893995.mp4
+th_026803305746_6ed13d,tikharm,xuantran2311,/workspace/data/clips/tikharm/th_026803305746_6ed13d.mp4,10.0,,,0,train,483,train,Safe,Dataset/train/Safe/xuantran2311_7372789026803305746.mp4
+th_979182951685_837ed9,tikharm,marshallarkleyuk,/workspace/data/clips/tikharm/th_979182951685_837ed9.mp4,10.0,,,1,train,484,test,Harmful Content,Dataset/test/Harmful Content/marshallarkleyuk_7221679979182951685.mp4
+th_992343072005_1058cf,tikharm,bulldustndreams,/workspace/data/clips/tikharm/th_992343072005_1058cf.mp4,10.0,,,1,train,482,train,Harmful Content,Dataset/train/Harmful Content/bulldustndreams_6724943992343072005.mp4
+th_568986316038_4a529f,tikharm,mummummeoi,/workspace/data/clips/tikharm/th_568986316038_4a529f.mp4,10.04,,,0,train,485,train,Safe,Dataset/train/Safe/mummummeoi_7257734568986316038.mp4
+th_862357556522_626216,tikharm,xlalexscylixlx,/workspace/data/clips/tikharm/th_862357556522_626216.mp4,10.0,,,1,val,486,train,Harmful Content,Dataset/train/Harmful Content/xlalexscylixlx_7233472862357556522.mp4
+th_031376964906_0552e0,tikharm,smittywit,/workspace/data/clips/tikharm/th_031376964906_0552e0.mp4,10.0,,,1,train,488,train,Harmful Content,Dataset/train/Harmful Content/smittywit_7198893031376964906.mp4
+th_388660296966_015238,tikharm,hammondscandies,/workspace/data/clips/tikharm/th_388660296966_015238.mp4,10.0,,,0,test,487,test,Safe,Dataset/test/Safe/hammondscandies_7010401388660296966.mp4
+th_462933728554_228781,tikharm,rosannagray150,/workspace/data/clips/tikharm/th_462933728554_228781.mp4,10.0,,,0,train,489,train,Safe,Dataset/train/Safe/rosannagray150_7260571462933728554.mp4
+th_803757575467_07a68c,tikharm,worlds.best.tattoos,/workspace/data/clips/tikharm/th_803757575467_07a68c.mp4,10.0,,,1,val,490,train,Harmful Content,Dataset/train/Harmful Content/worlds.best.tattoos_7349972803757575467.mp4
+th_887726230811_c21951,tikharm,ghome.official,/workspace/data/clips/tikharm/th_887726230811_c21951.mp4,10.0,,,0,train,491,train,Safe,Dataset/train/Safe/ghome.official_7128716887726230811.mp4
+th_325033332014_76f5d3,tikharm,bungee20,/workspace/data/clips/tikharm/th_325033332014_76f5d3.mp4,10.0,,,1,train,492,test,Harmful Content,Dataset/test/Harmful Content/bungee20_7120012325033332014.mp4
+th_622531226882_73ad4e,tikharm,dongam_den.vauvn,/workspace/data/clips/tikharm/th_622531226882_73ad4e.mp4,10.0,,,0,train,493,train,Safe,Dataset/train/Safe/dongam_den.vauvn_7342510622531226882.mp4
+th_812630859054_548de2,tikharm,tiktokusvn_bkt,/workspace/data/clips/tikharm/th_812630859054_548de2.mp4,10.0,,,1,train,494,train,Harmful Content,Dataset/train/Harmful Content/tiktokusvn_bkt_7184311812630859054.mp4
+th_944000175362_663dac,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_944000175362_663dac.mp4,10.0,,,0,train,495,train,Safe,Dataset/train/Safe/cochuoithichdi_35_7283912944000175362.mp4
+th_021652606213_0d8e09,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_021652606213_0d8e09.mp4,10.0,,,1,train,496,val,Harmful Content,Dataset/val/Harmful Content/olivernordin1_7213456021652606213.mp4
+th_703190306053_12c413,tikharm,my_christmas.tree,/workspace/data/clips/tikharm/th_703190306053_12c413.mp4,10.0,,,0,train,497,train,Safe,Dataset/train/Safe/my_christmas.tree_7131128703190306053.mp4
+th_655315922181_5ca63b,tikharm,ollielowthorpe,/workspace/data/clips/tikharm/th_655315922181_5ca63b.mp4,10.0,,,1,train,498,test,Harmful Content,Dataset/test/Harmful Content/ollielowthorpe_7214150655315922181.mp4
+th_903050419464_7129ba,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_903050419464_7129ba.mp4,10.0,,,0,train,499,train,Safe,Dataset/train/Safe/le_anh_nuoi_7342099903050419464.mp4
+th_505232837889_8c5883,tikharm,baja.undedo,/workspace/data/clips/tikharm/th_505232837889_8c5883.mp4,10.04,,,1,train,500,train,Harmful Content,Dataset/train/Harmful Content/baja.undedo_6885188505232837889.mp4
+th_531670072594_a86966,tikharm,tuan..tho..an,/workspace/data/clips/tikharm/th_531670072594_a86966.mp4,10.0,,,1,test,502,train,Harmful Content,Dataset/train/Harmful Content/tuan..tho..an_7301657531670072594.mp4
+th_712348970272_e1aa3f,tikharm,nuirungtv,/workspace/data/clips/tikharm/th_712348970272_e1aa3f.mp4,10.0,,,0,val,501,train,Safe,Dataset/train/Safe/nuirungtv_7322394712348970272.mp4
+th_519344196906_d6b4c0,tikharm,poox.noon,/workspace/data/clips/tikharm/th_519344196906_d6b4c0.mp4,10.0,,,0,train,503,val,Safe,Dataset/val/Safe/poox.noon_7243052519344196906.mp4
+th_295218457883_154d30,tikharm,audreyfannyau,/workspace/data/clips/tikharm/th_295218457883_154d30.mp4,10.0,,,1,train,504,train,Harmful Content,Dataset/train/Harmful Content/audreyfannyau_7127994295218457883.mp4
+th_193134357766_a95870,tikharm,jarrodluty2897,/workspace/data/clips/tikharm/th_193134357766_a95870.mp4,10.0,,,1,train,508,train,Harmful Content,Dataset/train/Harmful Content/jarrodluty2897_6830462193134357766.mp4
+th_133812620551_f168f9,tikharm,hannanguyen.123,/workspace/data/clips/tikharm/th_133812620551_f168f9.mp4,10.0,,,0,val,507,test,Safe,Dataset/test/Safe/hannanguyen.123_7327992133812620551.mp4
+th_705117314309_51cb91,tikharm,kengam_of,/workspace/data/clips/tikharm/th_705117314309_51cb91.mp4,9.5,,,1,train,506,train,Harmful Content,Dataset/train/Harmful Content/kengam_of_7217107705117314309.mp4
+th_389502438688_8c68bd,tikharm,yahalddlgle,/workspace/data/clips/tikharm/th_389502438688_8c68bd.mp4,10.0,,,0,train,505,train,Safe,Dataset/train/Safe/yahalddlgle_7337104389502438688.mp4
+th_193474198804_2b2ee7,tikharm,tho.pea,/workspace/data/clips/tikharm/th_193474198804_2b2ee7.mp4,10.0,,,0,train,509,train,Safe,Dataset/train/Safe/tho.pea_7357297193474198804.mp4
+th_514334178606_19595d,tikharm,gopro,/workspace/data/clips/tikharm/th_514334178606_19595d.mp4,10.0,,,1,train,510,train,Harmful Content,Dataset/train/Harmful Content/gopro_7245353514334178606.mp4
+th_361760161026_2c5854,tikharm,evertonfreestyle,/workspace/data/clips/tikharm/th_361760161026_2c5854.mp4,7.64,,,1,val,512,val,Harmful Content,Dataset/val/Harmful Content/evertonfreestyle_7170657361760161026.mp4
+th_918350302469_6fc26a,tikharm,elyitclean,/workspace/data/clips/tikharm/th_918350302469_6fc26a.mp4,10.0,,,0,train,513,train,Safe,Dataset/train/Safe/elyitclean_7271996918350302469.mp4
+th_604555472145_a27f45,tikharm,vietphuongthoa98,/workspace/data/clips/tikharm/th_604555472145_a27f45.mp4,10.0,,,0,train,511,test,Safe,Dataset/test/Safe/vietphuongthoa98_7353278604555472145.mp4
+th_627260828958_bd0cf2,tikharm,onechampionship,/workspace/data/clips/tikharm/th_627260828958_bd0cf2.mp4,10.0,,,1,train,514,test,Harmful Content,Dataset/test/Harmful Content/onechampionship_7288862627260828958.mp4
+th_766480858369_400952,tikharm,elyitclean,/workspace/data/clips/tikharm/th_766480858369_400952.mp4,10.0,,,0,train,515,test,Safe,Dataset/test/Safe/elyitclean_7276825766480858369.mp4
+th_245217013000_e59bfa,tikharm,bichcao439,/workspace/data/clips/tikharm/th_245217013000_e59bfa.mp4,10.0,,,1,train,516,val,Harmful Content,Dataset/val/Harmful Content/bichcao439_7353606245217013000.mp4
+th_851732724997_3f37f7,tikharm,xgames,/workspace/data/clips/tikharm/th_851732724997_3f37f7.mp4,9.97,,,1,train,518,test,Harmful Content,Dataset/test/Harmful Content/xgames_6953233851732724997.mp4
+th_263965584686_9220e6,tikharm,_kaylaargyle_,/workspace/data/clips/tikharm/th_263965584686_9220e6.mp4,10.0,,,0,val,517,train,Safe,Dataset/train/Safe/_kaylaargyle__7161954263965584686.mp4
+th_927676271915_016c6b,tikharm,russellhedges1,/workspace/data/clips/tikharm/th_927676271915_016c6b.mp4,9.84,,,1,train,520,train,Harmful Content,Dataset/train/Harmful Content/russellhedges1_7199096927676271915.mp4
+th_153341185285_1bd1fb,tikharm,bee.viee,/workspace/data/clips/tikharm/th_153341185285_1bd1fb.mp4,10.0,,,0,train,519,test,Safe,Dataset/test/Safe/bee.viee_7256388153341185285.mp4
+th_827294698769_ebd388,tikharm,color_tour,/workspace/data/clips/tikharm/th_827294698769_ebd388.mp4,10.0,,,0,test,521,test,Safe,Dataset/test/Safe/color_tour_7361632827294698769.mp4
+th_460275764522_a7f9e1,tikharm,mytiktok_airicademia,/workspace/data/clips/tikharm/th_460275764522_a7f9e1.mp4,6.39,,,1,train,522,train,Harmful Content,Dataset/train/Harmful Content/mytiktok_airicademia_7151524460275764522.mp4
+th_452074421511_b45484,tikharm,lthnhun99,/workspace/data/clips/tikharm/th_452074421511_b45484.mp4,10.0,,,0,train,523,test,Safe,Dataset/test/Safe/lthnhun99_7374261452074421511.mp4
+th_417652309266_6464f6,tikharm,h_any202,/workspace/data/clips/tikharm/th_417652309266_6464f6.mp4,10.0,,,1,train,524,train,Harmful Content,Dataset/train/Harmful Content/h_any202_7367673417652309266.mp4
+th_439257599250_38459d,tikharm,panh.yoga,/workspace/data/clips/tikharm/th_439257599250_38459d.mp4,10.0,,,0,train,525,val,Safe,Dataset/val/Safe/panh.yoga_7377324439257599250.mp4
+th_728581971218_864f2e,tikharm,theanh28trending,/workspace/data/clips/tikharm/th_728581971218_864f2e.mp4,10.0,,,1,train,526,train,Harmful Content,Dataset/train/Harmful Content/theanh28trending_7301247728581971218.mp4
+th_974766963994_646511,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_974766963994_646511.mp4,10.0,,,1,train,528,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7177405974766963994.mp4
+th_522528730370_f4a3aa,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_522528730370_f4a3aa.mp4,10.0,,,0,train,529,train,Safe,Dataset/train/Safe/linhcuuhoadaily_7281986522528730370.mp4
+th_295217626395_f0fafe,tikharm,ofbaublesandfairylights,/workspace/data/clips/tikharm/th_295217626395_f0fafe.mp4,9.92,,,0,train,527,train,Safe,Dataset/train/Safe/ofbaublesandfairylights_7239821295217626395.mp4
+th_068625009925_fbced6,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_068625009925_fbced6.mp4,10.0,,,1,train,530,val,Harmful Content,Dataset/val/Harmful Content/olivernordin1_6788444068625009925.mp4
+th_598924066054_41dc24,tikharm,mrleephotoshops,/workspace/data/clips/tikharm/th_598924066054_41dc24.mp4,10.0,,,0,train,531,val,Safe,Dataset/val/Safe/mrleephotoshops_7227277598924066054.mp4
+th_734303149313_a322c2,tikharm,vinhgau.tt,/workspace/data/clips/tikharm/th_734303149313_a322c2.mp4,10.0,,,0,train,535,train,Safe,Dataset/train/Safe/vinhgau.tt_7114575734303149313.mp4
+th_392307862817_c640b9,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_392307862817_c640b9.mp4,8.67,,,1,train,536,val,Harmful Content,Dataset/val/Harmful Content/olivernordin1_7265666392307862817.mp4
+th_865605553451_b9dcb9,tikharm,espn,/workspace/data/clips/tikharm/th_865605553451_b9dcb9.mp4,7.04,,,1,train,532,train,Harmful Content,Dataset/train/Harmful Content/espn_7161484865605553451.mp4
+th_353348177153_ec96d5,tikharm,hanoiangi,/workspace/data/clips/tikharm/th_353348177153_ec96d5.mp4,10.0,,,0,train,537,train,Safe,Dataset/train/Safe/hanoiangi_7259316353348177153.mp4
+th_622850624774_8b3184,tikharm,scxrvyyy,/workspace/data/clips/tikharm/th_622850624774_8b3184.mp4,6.06,,,1,train,538,test,Harmful Content,Dataset/test/Harmful Content/scxrvyyy_6996080622850624774.mp4
+th_292656975110_3c9434,tikharm,babette_ate_oatmeal_gg,/workspace/data/clips/tikharm/th_292656975110_3c9434.mp4,10.0,,,0,train,539,train,Safe,Dataset/train/Safe/babette_ate_oatmeal_gg_7037840292656975110.mp4
+th_851024444699_50bccf,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_851024444699_50bccf.mp4,9.92,,,1,train,540,test,Harmful Content,Dataset/test/Harmful Content/alvinmarinas_6994065851024444699.mp4
+th_298809093383_78889f,tikharm,_tolamidoriinee_,/workspace/data/clips/tikharm/th_298809093383_78889f.mp4,10.0,,,0,train,541,train,Safe,Dataset/train/Safe/_tolamidoriinee__7373298298809093383.mp4
+th_577206566187_13a848,tikharm,ian.gunther,/workspace/data/clips/tikharm/th_577206566187_13a848.mp4,10.0,,,1,train,542,val,Harmful Content,Dataset/val/Harmful Content/ian.gunther_7189033577206566187.mp4
+th_633906248961_682dab,tikharm,hungquangngai93,/workspace/data/clips/tikharm/th_633906248961_682dab.mp4,10.0,,,0,val,543,train,Safe,Dataset/train/Safe/hungquangngai93_7331189633906248961.mp4
+th_040010665218_6383c4,tikharm,traceygrief,/workspace/data/clips/tikharm/th_040010665218_6383c4.mp4,10.0,,,1,train,544,train,Harmful Content,Dataset/train/Harmful Content/traceygrief_6967520040010665218.mp4
+th_561674665217_56f373,tikharm,trangheothi,/workspace/data/clips/tikharm/th_561674665217_56f373.mp4,10.0,,,0,test,545,train,Safe,Dataset/train/Safe/trangheothi_7357653561674665217.mp4
+th_722760375553_f07d2c,tikharm,punkdesigns,/workspace/data/clips/tikharm/th_722760375553_f07d2c.mp4,10.0,,,1,train,546,train,Harmful Content,Dataset/train/Harmful Content/punkdesigns_7250843722760375553.mp4
+th_980393209106_e5b2be,tikharm,teubongday,/workspace/data/clips/tikharm/th_980393209106_e5b2be.mp4,10.0,,,0,train,533,train,Safe,Dataset/train/Safe/teubongday_7356594980393209106.mp4
+th_135908334855_8027bc,tikharm,ktienn.1412,/workspace/data/clips/tikharm/th_135908334855_8027bc.mp4,10.0,,,0,train,547,train,Safe,Dataset/train/Safe/ktienn.1412_7348811135908334855.mp4
+th_465565850907_566c52,tikharm,user4573582120851,/workspace/data/clips/tikharm/th_465565850907_566c52.mp4,10.0,,,1,test,534,train,Harmful Content,Dataset/train/Harmful Content/user4573582120851_7210667465565850907.mp4
+th_397594017029_cace38,tikharm,user3005322287261,/workspace/data/clips/tikharm/th_397594017029_cace38.mp4,10.0,,,1,val,548,train,Harmful Content,Dataset/train/Harmful Content/user3005322287261_7287741397594017029.mp4
+th_631857265926_526053,tikharm,theifys,/workspace/data/clips/tikharm/th_631857265926_526053.mp4,10.0,,,1,train,550,train,Harmful Content,Dataset/train/Harmful Content/theifys_6793785631857265926.mp4
+th_400096513281_23b639,tikharm,toongadventure,/workspace/data/clips/tikharm/th_400096513281_23b639.mp4,10.0,,,0,val,549,test,Safe,Dataset/test/Safe/toongadventure_7316816400096513281.mp4
+th_616314154241_bd116c,tikharm,tieuman090,/workspace/data/clips/tikharm/th_616314154241_bd116c.mp4,6.67,,,0,train,551,test,Safe,Dataset/test/Safe/tieuman090_7323462616314154241.mp4
+th_002067029253_c1aedf,tikharm,onechampionship,/workspace/data/clips/tikharm/th_002067029253_c1aedf.mp4,6.67,,,1,train,552,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_6937887002067029253.mp4
+th_243612089608_d093ad,tikharm,duongbaolam,/workspace/data/clips/tikharm/th_243612089608_d093ad.mp4,10.0,,,1,train,554,train,Harmful Content,Dataset/train/Harmful Content/duongbaolam_7361825243612089608.mp4
+th_814252629249_c68927,tikharm,toongadventure,/workspace/data/clips/tikharm/th_814252629249_c68927.mp4,10.0,,,0,val,553,val,Safe,Dataset/val/Safe/toongadventure_7306007814252629249.mp4
+th_309735427333_66f920,tikharm,jang26789,/workspace/data/clips/tikharm/th_309735427333_66f920.mp4,10.0,,,0,train,555,val,Safe,Dataset/val/Safe/jang26789_7242668309735427333.mp4
+th_969291578630_50d9be,tikharm,jackfrancis1995,/workspace/data/clips/tikharm/th_969291578630_50d9be.mp4,10.0,,,1,train,556,train,Harmful Content,Dataset/train/Harmful Content/jackfrancis1995_7104985969291578630.mp4
+th_054886100245_9372a5,tikharm,miistory_,/workspace/data/clips/tikharm/th_054886100245_9372a5.mp4,10.04,,,0,train,557,train,Safe,Dataset/train/Safe/miistory__7343978054886100245.mp4
+th_591034113288_7b3ccf,tikharm,music98s,/workspace/data/clips/tikharm/th_591034113288_7b3ccf.mp4,10.0,,,0,val,561,train,Safe,Dataset/train/Safe/music98s_7261475591034113288.mp4
+th_036394913029_7b352d,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_036394913029_7b352d.mp4,9.92,,,1,test,562,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_6955132036394913029.mp4
+th_849266351376_73fad9,tikharm,taphoaanvat0,/workspace/data/clips/tikharm/th_849266351376_73fad9.mp4,10.0,,,0,train,563,train,Safe,Dataset/train/Safe/taphoaanvat0_7365855849266351376.mp4
+th_396149222662_8ca30f,tikharm,kelseyvenkov,/workspace/data/clips/tikharm/th_396149222662_8ca30f.mp4,10.0,,,0,test,559,train,Safe,Dataset/train/Safe/kelseyvenkov_6995686396149222662.mp4
+th_038465273094_bd8109,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_038465273094_bd8109.mp4,10.0,,,1,test,558,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_6998581038465273094.mp4
+th_364874964226_2d4948,tikharm,thembosat,/workspace/data/clips/tikharm/th_364874964226_2d4948.mp4,10.0,,,1,train,560,train,Harmful Content,Dataset/train/Harmful Content/thembosat_7206995364874964226.mp4
+th_720911244590_07de5b,tikharm,shewillevolve,/workspace/data/clips/tikharm/th_720911244590_07de5b.mp4,10.0,,,0,train,565,test,Safe,Dataset/test/Safe/shewillevolve_7307351720911244590.mp4
+th_639228685573_195e0c,tikharm,79_bin,/workspace/data/clips/tikharm/th_639228685573_195e0c.mp4,10.0,,,1,train,568,train,Harmful Content,Dataset/train/Harmful Content/79_bin_7186622639228685573.mp4
+th_735340895493_901cc8,tikharm,olivernordin1,/workspace/data/clips/tikharm/th_735340895493_901cc8.mp4,8.25,,,1,train,564,train,Harmful Content,Dataset/train/Harmful Content/olivernordin1_7036695735340895493.mp4
+th_452864400667_44084f,tikharm,vungtau.72,/workspace/data/clips/tikharm/th_452864400667_44084f.mp4,10.0,,,0,train,569,train,Safe,Dataset/train/Safe/vungtau.72_7098219452864400667.mp4
+th_549874044176_cdbe5b,tikharm,jan_30129,/workspace/data/clips/tikharm/th_549874044176_cdbe5b.mp4,10.0,,,0,train,567,train,Safe,Dataset/train/Safe/jan_30129_7372760549874044176.mp4
+th_656782740782_254df0,tikharm,askinem,/workspace/data/clips/tikharm/th_656782740782_254df0.mp4,10.0,,,1,train,566,train,Harmful Content,Dataset/train/Harmful Content/askinem_7319032656782740782.mp4
+th_452618669317_de34bc,tikharm,prisonbirkin,/workspace/data/clips/tikharm/th_452618669317_de34bc.mp4,10.0,,,1,val,570,train,Harmful Content,Dataset/train/Harmful Content/prisonbirkin_6898452452618669317.mp4
+th_485769919745_0358df,tikharm,colortour68,/workspace/data/clips/tikharm/th_485769919745_0358df.mp4,10.0,,,0,test,571,train,Safe,Dataset/train/Safe/colortour68_7359753485769919745.mp4
+th_037335330074_826864,tikharm,macvu19,/workspace/data/clips/tikharm/th_037335330074_826864.mp4,8.71,,,1,train,572,train,Harmful Content,Dataset/train/Harmful Content/macvu19_6991854037335330074.mp4
+th_654613449989_c1061c,tikharm,ziplineiceland,/workspace/data/clips/tikharm/th_654613449989_c1061c.mp4,5.64,,,1,val,574,val,Harmful Content,Dataset/val/Harmful Content/ziplineiceland_7151376654613449989.mp4
+th_435536215323_e13ebe,tikharm,kyucngoisao.official,/workspace/data/clips/tikharm/th_435536215323_e13ebe.mp4,10.0,,,0,train,573,train,Safe,Dataset/train/Safe/kyucngoisao.official_7137161435536215323.mp4
+th_474584632583_e8843d,tikharm,maphayke,/workspace/data/clips/tikharm/th_474584632583_e8843d.mp4,10.0,,,0,train,575,train,Safe,Dataset/train/Safe/maphayke_7352500474584632583.mp4
+th_441869184261_b312df,tikharm,legoshi_kinnie,/workspace/data/clips/tikharm/th_441869184261_b312df.mp4,10.0,,,1,train,576,val,Harmful Content,Dataset/val/Harmful Content/legoshi_kinnie_7151454441869184261.mp4
+th_667825306882_a7fd18,tikharm,color_tour,/workspace/data/clips/tikharm/th_667825306882_a7fd18.mp4,10.0,,,0,test,577,train,Safe,Dataset/train/Safe/color_tour_7264617667825306882.mp4
+th_689478630687_52613c,tikharm,onechampionship,/workspace/data/clips/tikharm/th_689478630687_52613c.mp4,10.0,,,1,train,578,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7331941689478630687.mp4
+th_634755464454_a95298,tikharm,asmr.satisfyyng,/workspace/data/clips/tikharm/th_634755464454_a95298.mp4,10.0,,,0,train,579,test,Safe,Dataset/test/Safe/asmr.satisfyyng_7291765634755464454.mp4
+th_984777620754_0049a6,tikharm,muoitoday,/workspace/data/clips/tikharm/th_984777620754_0049a6.mp4,10.0,,,1,val,580,train,Harmful Content,Dataset/train/Harmful Content/muoitoday_7283437984777620754.mp4
+th_077567577352_3b00eb,tikharm,tuelinhbong,/workspace/data/clips/tikharm/th_077567577352_3b00eb.mp4,10.0,,,0,train,581,train,Safe,Dataset/train/Safe/tuelinhbong_7291240077567577352.mp4
+th_936820325674_4511c5,tikharm,xprof.houndsx,/workspace/data/clips/tikharm/th_936820325674_4511c5.mp4,8.08,,,1,val,582,train,Harmful Content,Dataset/train/Harmful Content/xprof.houndsx_7218633936820325674.mp4
+th_380380232965_60619c,tikharm,nikki.hooper,/workspace/data/clips/tikharm/th_380380232965_60619c.mp4,9.87,,,1,val,584,train,Harmful Content,Dataset/train/Harmful Content/nikki.hooper_7084725380380232965.mp4
+th_585324875014_7f9b7d,tikharm,maythangtuw,/workspace/data/clips/tikharm/th_585324875014_7f9b7d.mp4,10.0,,,0,train,583,train,Safe,Dataset/train/Safe/maythangtuw_7224152585324875014.mp4
+th_916510616840_08e551,tikharm,halinhofficial,/workspace/data/clips/tikharm/th_916510616840_08e551.mp4,10.0,,,0,train,585,train,Safe,Dataset/train/Safe/halinhofficial_7340258916510616840.mp4
+th_713136647429_29ee4e,tikharm,sicepatkilat94,/workspace/data/clips/tikharm/th_713136647429_29ee4e.mp4,10.0,,,1,train,586,train,Harmful Content,Dataset/train/Harmful Content/sicepatkilat94_7242638713136647429.mp4
+th_488023936274_e3b8ef,tikharm,halinhofficial,/workspace/data/clips/tikharm/th_488023936274_e3b8ef.mp4,10.0,,,0,train,587,train,Safe,Dataset/train/Safe/halinhofficial_7333168488023936274.mp4
+th_633921813766_de6d15,tikharm,bangcachnao,/workspace/data/clips/tikharm/th_633921813766_de6d15.mp4,10.0,,,1,train,588,train,Harmful Content,Dataset/train/Harmful Content/bangcachnao_7241877633921813766.mp4
+th_064428854546_e16fbc,tikharm,muayonechampionship,/workspace/data/clips/tikharm/th_064428854546_e16fbc.mp4,10.0,,,1,train,590,train,Harmful Content,Dataset/train/Harmful Content/muayonechampionship_7267884064428854546.mp4
+th_982920707334_f9a67b,tikharm,ltrnhan02,/workspace/data/clips/tikharm/th_982920707334_f9a67b.mp4,10.0,,,0,train,593,test,Safe,Dataset/test/Safe/ltrnhan02_7236241982920707334.mp4
+th_409684159750_1feb5a,tikharm,jakepolito_,/workspace/data/clips/tikharm/th_409684159750_1feb5a.mp4,10.0,,,1,train,594,train,Harmful Content,Dataset/train/Harmful Content/jakepolito__7040894409684159750.mp4
+th_482497793285_f2c9b9,tikharm,akh_cartoons,/workspace/data/clips/tikharm/th_482497793285_f2c9b9.mp4,10.0,,,0,train,589,test,Safe,Dataset/test/Safe/akh_cartoons_7285072482497793285.mp4
+th_212366269722_e75c5a,tikharm,emiarchive,/workspace/data/clips/tikharm/th_212366269722_e75c5a.mp4,10.0,,,0,train,595,train,Safe,Dataset/train/Safe/emiarchive_7112659212366269722.mp4
+th_609024896299_97e83b,tikharm,elemental.dancer,/workspace/data/clips/tikharm/th_609024896299_97e83b.mp4,9.88,,,1,train,596,train,Harmful Content,Dataset/train/Harmful Content/elemental.dancer_7244954609024896299.mp4
+th_535252282667_06a57f,tikharm,kaelimaee,/workspace/data/clips/tikharm/th_535252282667_06a57f.mp4,10.0,,,0,test,591,train,Safe,Dataset/train/Safe/kaelimaee_7255014535252282667.mp4
+th_484253691178_d550d0,tikharm,crclines,/workspace/data/clips/tikharm/th_484253691178_d550d0.mp4,9.31,,,0,train,597,test,Safe,Dataset/test/Safe/crclines_7232486484253691178.mp4
+th_787649842437_6bf903,tikharm,ufc,/workspace/data/clips/tikharm/th_787649842437_6bf903.mp4,10.0,,,1,train,598,train,Harmful Content,Dataset/train/Harmful Content/ufc_6882148787649842437.mp4
+th_240525188357_7bce2e,tikharm,dominiqueolfsen,/workspace/data/clips/tikharm/th_240525188357_7bce2e.mp4,10.0,,,1,train,600,train,Harmful Content,Dataset/train/Harmful Content/dominiqueolfsen_7174787240525188357.mp4
+th_396511194385_f5e013,tikharm,hiendilac_,/workspace/data/clips/tikharm/th_396511194385_f5e013.mp4,10.04,,,0,train,601,train,Safe,Dataset/train/Safe/hiendilac__7369202396511194385.mp4
+th_682365574405_03e578,tikharm,whipmasterflash,/workspace/data/clips/tikharm/th_682365574405_03e578.mp4,10.0,,,1,train,602,test,Harmful Content,Dataset/test/Harmful Content/whipmasterflash_6922479682365574405.mp4
+th_430892993798_080916,tikharm,salgadopk,/workspace/data/clips/tikharm/th_430892993798_080916.mp4,7.75,,,1,train,604,test,Harmful Content,Dataset/test/Harmful Content/salgadopk_7080848430892993798.mp4
+th_341729119506_c3cb28,tikharm,trasuaruby.q5,/workspace/data/clips/tikharm/th_341729119506_c3cb28.mp4,10.0,,,0,train,603,train,Safe,Dataset/train/Safe/trasuaruby.q5_7351352341729119506.mp4
+th_908289961221_990732,tikharm,thangqt,/workspace/data/clips/tikharm/th_908289961221_990732.mp4,10.0,,,0,train,599,train,Safe,Dataset/train/Safe/thangqt_7250322908289961221.mp4
+th_562074037509_5dd641,tikharm,thisisplanetfood,/workspace/data/clips/tikharm/th_562074037509_5dd641.mp4,9.82,,,0,train,605,train,Safe,Dataset/train/Safe/thisisplanetfood_7172894562074037509.mp4
+th_990074535173_6b0e3b,tikharm,serbanspd,/workspace/data/clips/tikharm/th_990074535173_6b0e3b.mp4,10.0,,,1,train,606,test,Harmful Content,Dataset/test/Harmful Content/serbanspd_6787481990074535173.mp4
+th_763364687109_4a1d7c,tikharm,mrdainhattin,/workspace/data/clips/tikharm/th_763364687109_4a1d7c.mp4,10.0,,,0,train,607,train,Safe,Dataset/train/Safe/mrdainhattin_7228937763364687109.mp4
+th_381340450066_b88491,tikharm,hihihaha6668,/workspace/data/clips/tikharm/th_381340450066_b88491.mp4,10.0,,,0,val,609,train,Safe,Dataset/train/Safe/hihihaha6668_7349221381340450066.mp4
+th_459109862674_fa1876,tikharm,tuankiet.2000,/workspace/data/clips/tikharm/th_459109862674_fa1876.mp4,10.0,,,1,train,608,train,Harmful Content,Dataset/train/Harmful Content/tuankiet.2000_7365464459109862674.mp4
+th_935569800455_8565fe,tikharm,femin,/workspace/data/clips/tikharm/th_935569800455_8565fe.mp4,10.0,,,1,train,610,val,Harmful Content,Dataset/val/Harmful Content/femin_7371413935569800455.mp4
+th_778022911258_96ad65,tikharm,skyskymtp,/workspace/data/clips/tikharm/th_778022911258_96ad65.mp4,10.0,,,0,test,611,val,Safe,Dataset/val/Safe/skyskymtp_7139485778022911258.mp4
+th_759886134535_24897b,tikharm,theyluvsoelse,/workspace/data/clips/tikharm/th_759886134535_24897b.mp4,7.04,,,0,train,613,train,Safe,Dataset/train/Safe/theyluvsoelse_7277777759886134535.mp4
+th_844798856454_b75dd7,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_844798856454_b75dd7.mp4,10.0,,,1,val,612,test,Harmful Content,Dataset/test/Harmful Content/flowmayhem_6882080844798856454.mp4
+th_378238364929_d212b4,tikharm,bestmoto.22,/workspace/data/clips/tikharm/th_378238364929_d212b4.mp4,10.0,,,1,test,614,train,Harmful Content,Dataset/train/Harmful Content/bestmoto.22_7031150378238364929.mp4
+th_206667758874_101509,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_206667758874_101509.mp4,9.84,,,1,train,616,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7056701206667758874.mp4
+th_455327673621_561011,tikharm,anden75,/workspace/data/clips/tikharm/th_455327673621_561011.mp4,10.0,,,0,test,615,test,Safe,Dataset/test/Safe/anden75_7342490455327673621.mp4
+th_055975509266_02f182,tikharm,maphayke,/workspace/data/clips/tikharm/th_055975509266_02f182.mp4,10.0,,,0,train,617,train,Safe,Dataset/train/Safe/maphayke_7324633055975509266.mp4
+th_712821161262_9ec574,tikharm,_the_pumpkin_king_,/workspace/data/clips/tikharm/th_712821161262_9ec574.mp4,10.0,,,1,val,618,train,Harmful Content,Dataset/train/Harmful Content/_the_pumpkin_king__7049465712821161262.mp4
+th_987429682448_54a88f,tikharm,nh.bn.tp.ho.20,/workspace/data/clips/tikharm/th_987429682448_54a88f.mp4,10.0,,,0,train,619,train,Safe,Dataset/train/Safe/nh.bn.tp.ho.20_7373229987429682448.mp4
+th_155900624134_5fbe5e,tikharm,chaserost,/workspace/data/clips/tikharm/th_155900624134_5fbe5e.mp4,10.0,,,1,train,620,train,Harmful Content,Dataset/train/Harmful Content/chaserost_6798221155900624134.mp4
+th_427564928258_bdd264,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_427564928258_bdd264.mp4,10.0,,,0,train,621,train,Safe,Dataset/train/Safe/chutuphuyen_7323352427564928258.mp4
+th_988335365381_949350,tikharm,alex.artfire,/workspace/data/clips/tikharm/th_988335365381_949350.mp4,10.0,,,1,train,622,train,Harmful Content,Dataset/train/Harmful Content/alex.artfire_6782167988335365381.mp4
+th_396811586822_160bbd,tikharm,babyplazaa,/workspace/data/clips/tikharm/th_396811586822_160bbd.mp4,9.13,,,0,test,623,train,Safe,Dataset/train/Safe/babyplazaa_7269588396811586822.mp4
+th_565867568402_675aa2,tikharm,dayna_b_whips,/workspace/data/clips/tikharm/th_565867568402_675aa2.mp4,10.0,,,1,val,624,train,Harmful Content,Dataset/train/Harmful Content/dayna_b_whips_7355255565867568402.mp4
+th_080500346139_b8be92,tikharm,maythangtuw,/workspace/data/clips/tikharm/th_080500346139_b8be92.mp4,10.04,,,0,train,625,train,Safe,Dataset/train/Safe/maythangtuw_7215992080500346139.mp4
+th_654150982945_b51757,tikharm,baby.love212,/workspace/data/clips/tikharm/th_654150982945_b51757.mp4,10.0,,,0,train,627,train,Safe,Dataset/train/Safe/baby.love212_7325415654150982945.mp4
+th_879577308434_12fe03,tikharm,dieutrinh_1407,/workspace/data/clips/tikharm/th_879577308434_12fe03.mp4,10.0,,,0,val,629,val,Safe,Dataset/val/Safe/dieutrinh_1407_7354987879577308434.mp4
+th_619300297989_b2d94a,tikharm,ziggy.pearce,/workspace/data/clips/tikharm/th_619300297989_b2d94a.mp4,8.08,,,1,train,626,train,Harmful Content,Dataset/train/Harmful Content/ziggy.pearce_6853579619300297989.mp4
+th_748515962113_f17521,tikharm,ltngoctram2009,/workspace/data/clips/tikharm/th_748515962113_f17521.mp4,10.0,,,1,test,630,test,Harmful Content,Dataset/test/Harmful Content/ltngoctram2009_7267390748515962113.mp4
+th_680828120367_f362c3,tikharm,onechampionship,/workspace/data/clips/tikharm/th_680828120367_f362c3.mp4,9.03,,,1,train,628,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7063134680828120367.mp4
+th_285698645275_c6c1d6,tikharm,joescandrett,/workspace/data/clips/tikharm/th_285698645275_c6c1d6.mp4,7.73,,,1,train,632,test,Harmful Content,Dataset/test/Harmful Content/joescandrett_7243443285698645275.mp4
+th_565739326747_71e983,tikharm,caphenytv33,/workspace/data/clips/tikharm/th_565739326747_71e983.mp4,10.0,,,0,train,631,train,Safe,Dataset/train/Safe/caphenytv33_7123908565739326747.mp4
+th_071364910341_22abf8,tikharm,akh_cartoons,/workspace/data/clips/tikharm/th_071364910341_22abf8.mp4,10.0,,,0,train,633,train,Safe,Dataset/train/Safe/akh_cartoons_7285075071364910341.mp4
+th_730377137414_2bd9ec,tikharm,mollycarlson,/workspace/data/clips/tikharm/th_730377137414_2bd9ec.mp4,10.0,,,1,train,634,train,Harmful Content,Dataset/train/Harmful Content/mollycarlson_7030538730377137414.mp4
+th_033421675822_b1713f,tikharm,onechampionship,/workspace/data/clips/tikharm/th_033421675822_b1713f.mp4,6.29,,,1,train,636,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7113952033421675822.mp4
+th_105064705281_c1224d,tikharm,colortour68,/workspace/data/clips/tikharm/th_105064705281_c1224d.mp4,10.0,,,0,test,637,val,Safe,Dataset/val/Safe/colortour68_7357726105064705281.mp4
+th_951981260064_141a06,tikharm,thefuelgirls,/workspace/data/clips/tikharm/th_951981260064_141a06.mp4,10.0,,,1,train,638,test,Harmful Content,Dataset/test/Harmful Content/thefuelgirls_7358445951981260064.mp4
+th_985084820782_ba21a8,tikharm,nghenhac.wetube,/workspace/data/clips/tikharm/th_985084820782_ba21a8.mp4,10.0,,,0,train,639,train,Safe,Dataset/train/Safe/nghenhac.wetube_7174713985084820782.mp4
+th_614000291073_882ba1,tikharm,alvinmarinas,/workspace/data/clips/tikharm/th_614000291073_882ba1.mp4,10.0,,,1,train,640,train,Harmful Content,Dataset/train/Harmful Content/alvinmarinas_6965462614000291073.mp4
+th_277366402310_d93034,tikharm,sarajean1111,/workspace/data/clips/tikharm/th_277366402310_d93034.mp4,10.0,,,1,train,642,train,Harmful Content,Dataset/train/Harmful Content/sarajean1111_6978190277366402310.mp4
+th_354924240136_1d9d42,tikharm,vua_an_may_,/workspace/data/clips/tikharm/th_354924240136_1d9d42.mp4,10.0,,,0,train,641,test,Safe,Dataset/test/Safe/vua_an_may__7298351354924240136.mp4
+th_208478792961_847d2b,tikharm,saranghe.kdrama,/workspace/data/clips/tikharm/th_208478792961_847d2b.mp4,10.0,,,0,train,635,val,Safe,Dataset/val/Safe/saranghe.kdrama_7362646208478792961.mp4
+th_144893738242_f736c9,tikharm,haan.nghiem,/workspace/data/clips/tikharm/th_144893738242_f736c9.mp4,10.0,,,0,train,643,train,Safe,Dataset/train/Safe/haan.nghiem_7304257144893738242.mp4
+th_834390809861_d14f7b,tikharm,deanclancy01,/workspace/data/clips/tikharm/th_834390809861_d14f7b.mp4,8.25,,,1,train,646,train,Harmful Content,Dataset/train/Harmful Content/deanclancy01_7192263834390809861.mp4
+th_942591733019_013151,tikharm,mokhoet_hanoi,/workspace/data/clips/tikharm/th_942591733019_013151.mp4,10.0,,,0,train,647,train,Safe,Dataset/train/Safe/mokhoet_hanoi_7024446942591733019.mp4
+th_160565988654_ef6e95,tikharm,herodw,/workspace/data/clips/tikharm/th_160565988654_ef6e95.mp4,10.0,,,1,train,644,train,Harmful Content,Dataset/train/Harmful Content/herodw_7146232160565988654.mp4
+th_170506706182_e69411,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_170506706182_e69411.mp4,10.0,,,1,test,648,train,Harmful Content,Dataset/train/Harmful Content/gracegoodcirque_6992663170506706182.mp4
+th_337418345770_c99b76,tikharm,thechefronny,/workspace/data/clips/tikharm/th_337418345770_c99b76.mp4,10.0,,,1,val,650,train,Harmful Content,Dataset/train/Harmful Content/thechefronny_7094395337418345770.mp4
+th_106724240645_554d16,tikharm,elyitclean,/workspace/data/clips/tikharm/th_106724240645_554d16.mp4,10.0,,,0,train,651,train,Safe,Dataset/train/Safe/elyitclean_7257530106724240645.mp4
+th_558415633682_b66ad5,tikharm,uyeenek,/workspace/data/clips/tikharm/th_558415633682_b66ad5.mp4,10.0,,,0,train,649,test,Safe,Dataset/test/Safe/uyeenek_7290183558415633682.mp4
+th_096504356098_4d8750,tikharm,allknockouts,/workspace/data/clips/tikharm/th_096504356098_4d8750.mp4,10.0,,,1,train,652,train,Harmful Content,Dataset/train/Harmful Content/allknockouts_7052719096504356098.mp4
+th_508842458386_1e9547,tikharm,giakhanh2802,/workspace/data/clips/tikharm/th_508842458386_1e9547.mp4,10.0,,,0,train,653,train,Safe,Dataset/train/Safe/giakhanh2802_7363597508842458386.mp4
+th_583449160965_915e9e,tikharm,yoannlerouxofficiel,/workspace/data/clips/tikharm/th_583449160965_915e9e.mp4,10.0,,,1,train,654,train,Harmful Content,Dataset/train/Harmful Content/yoannlerouxofficiel_6827778583449160965.mp4
+th_413308796203_5ccec2,tikharm,brooklynrreidhead,/workspace/data/clips/tikharm/th_413308796203_5ccec2.mp4,10.0,,,0,train,655,train,Safe,Dataset/train/Safe/brooklynrreidhead_7296569413308796203.mp4
+th_431028116741_f97311,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_431028116741_f97311.mp4,10.0,,,1,val,656,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_6880299431028116741.mp4
+th_419364093205_41f9a9,tikharm,jan_30129,/workspace/data/clips/tikharm/th_419364093205_41f9a9.mp4,10.0,,,0,train,657,test,Safe,Dataset/test/Safe/jan_30129_7372033419364093205.mp4
+th_462962269458_b0fb13,tikharm,yuying98,/workspace/data/clips/tikharm/th_462962269458_b0fb13.mp4,10.0,,,0,train,659,test,Safe,Dataset/test/Safe/yuying98_7368435462962269458.mp4
+th_907468778795_8caa9a,tikharm,elemental.dancer,/workspace/data/clips/tikharm/th_907468778795_8caa9a.mp4,10.0,,,1,train,658,val,Harmful Content,Dataset/val/Harmful Content/elemental.dancer_7283290907468778795.mp4
+th_128275946757_48230c,tikharm,thefightresort,/workspace/data/clips/tikharm/th_128275946757_48230c.mp4,10.0,,,1,train,592,test,Harmful Content,Dataset/test/Harmful Content/thefightresort_7276887128275946757.mp4
+th_720873266437_bcbbac,tikharm,motoshop.ua,/workspace/data/clips/tikharm/th_720873266437_bcbbac.mp4,10.0,,,1,val,660,val,Harmful Content,Dataset/val/Harmful Content/motoshop.ua_7344519720873266437.mp4
+th_286228380954_6b4901,tikharm,willinvietnam,/workspace/data/clips/tikharm/th_286228380954_6b4901.mp4,10.0,,,0,train,661,train,Safe,Dataset/train/Safe/willinvietnam_6986213286228380954.mp4
+th_564368997638_0df8e9,tikharm,ccarolinapg,/workspace/data/clips/tikharm/th_564368997638_0df8e9.mp4,10.0,,,0,test,663,train,Safe,Dataset/train/Safe/ccarolinapg_7172633564368997638.mp4
+th_536384195846_715e67,tikharm,vanhuu2020,/workspace/data/clips/tikharm/th_536384195846_715e67.mp4,10.0,,,1,train,664,train,Harmful Content,Dataset/train/Harmful Content/vanhuu2020_7215092536384195846.mp4
+th_920259804442_73ea95,tikharm,connhcruz,/workspace/data/clips/tikharm/th_920259804442_73ea95.mp4,10.0,,,0,test,665,train,Safe,Dataset/train/Safe/connhcruz_6990513920259804442.mp4
+th_864960572715_b81198,tikharm,gopro,/workspace/data/clips/tikharm/th_864960572715_b81198.mp4,10.0,,,1,train,666,train,Harmful Content,Dataset/train/Harmful Content/gopro_7285006864960572715.mp4
+th_518970354949_b659cb,tikharm,cutebaby2855,/workspace/data/clips/tikharm/th_518970354949_b659cb.mp4,6.29,,,0,train,667,train,Safe,Dataset/train/Safe/cutebaby2855_7283710518970354949.mp4
+th_823378492704_c60584,tikharm,acherontia.am,/workspace/data/clips/tikharm/th_823378492704_c60584.mp4,10.0,,,1,test,668,test,Harmful Content,Dataset/test/Harmful Content/acherontia.am_7305049823378492704.mp4
+th_248237214982_43769a,tikharm,mekemdaily,/workspace/data/clips/tikharm/th_248237214982_43769a.mp4,10.0,,,0,train,669,test,Safe,Dataset/test/Safe/mekemdaily_7271192248237214982.mp4
+th_027823082758_09af28,tikharm,ollielowthorpe,/workspace/data/clips/tikharm/th_027823082758_09af28.mp4,10.0,,,1,train,670,train,Harmful Content,Dataset/train/Harmful Content/ollielowthorpe_7086124027823082758.mp4
+th_472089828616_9b3af1,tikharm,khongphuongmai,/workspace/data/clips/tikharm/th_472089828616_9b3af1.mp4,10.0,,,0,train,671,train,Safe,Dataset/train/Safe/khongphuongmai_7363199472089828616.mp4
+th_610804747547_6be739,tikharm,onecpsth,/workspace/data/clips/tikharm/th_610804747547_6be739.mp4,10.0,,,1,train,672,train,Harmful Content,Dataset/train/Harmful Content/onecpsth_7207668610804747547.mp4
+th_527219010821_02d743,tikharm,greenbvbblecrafts,/workspace/data/clips/tikharm/th_527219010821_02d743.mp4,10.0,,,0,test,673,val,Safe,Dataset/val/Safe/greenbvbblecrafts_7325054527219010821.mp4
+th_743646674202_81f382,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_743646674202_81f382.mp4,10.0,,,1,train,674,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7155893743646674202.mp4
+th_949960629509_cc34f3,tikharm,pam.yu.i12,/workspace/data/clips/tikharm/th_949960629509_cc34f3.mp4,10.0,,,0,train,675,train,Safe,Dataset/train/Safe/pam.yu.i12_7324903949960629509.mp4
+th_924073491720_cc3d8b,tikharm,gobungynepal,/workspace/data/clips/tikharm/th_924073491720_cc3d8b.mp4,10.0,,,1,train,676,train,Harmful Content,Dataset/train/Harmful Content/gobungynepal_7308253924073491720.mp4
+th_762924641582_272397,tikharm,thechefronny,/workspace/data/clips/tikharm/th_762924641582_272397.mp4,10.0,,,1,val,678,train,Harmful Content,Dataset/train/Harmful Content/thechefronny_7111966762924641582.mp4
+th_469065796872_43145b,tikharm,chuyencudaqua,/workspace/data/clips/tikharm/th_469065796872_43145b.mp4,10.0,,,0,train,679,train,Safe,Dataset/train/Safe/chuyencudaqua_7351372469065796872.mp4
+th_471116754182_4eba25,tikharm,tiistorm,/workspace/data/clips/tikharm/th_471116754182_4eba25.mp4,7.97,,,1,test,680,test,Harmful Content,Dataset/test/Harmful Content/tiistorm_6974654471116754182.mp4
+th_703011327234_020c92,tikharm,linhcuuhoadaily,/workspace/data/clips/tikharm/th_703011327234_020c92.mp4,10.0,,,0,train,677,test,Safe,Dataset/test/Safe/linhcuuhoadaily_7284876703011327234.mp4
+th_377761737985_0c1398,tikharm,cristina.mabbam,/workspace/data/clips/tikharm/th_377761737985_0c1398.mp4,7.25,,,1,train,662,train,Harmful Content,Dataset/train/Harmful Content/cristina.mabbam_6874878377761737985.mp4
+th_902892133674_d258d3,tikharm,hoaquxpua4a,/workspace/data/clips/tikharm/th_902892133674_d258d3.mp4,9.87,,,0,train,681,train,Safe,Dataset/train/Safe/hoaquxpua4a_7168787902892133674.mp4
+th_070711962885_96c962,tikharm,travelcloser,/workspace/data/clips/tikharm/th_070711962885_96c962.mp4,9.84,,,1,test,682,train,Harmful Content,Dataset/train/Harmful Content/travelcloser_7104322070711962885.mp4
+th_841552473345_c75604,tikharm,sunny..river,/workspace/data/clips/tikharm/th_841552473345_c75604.mp4,7.58,,,1,test,684,train,Harmful Content,Dataset/train/Harmful Content/sunny..river_7083454841552473345.mp4
+th_841253473537_30f624,tikharm,anpham1310,/workspace/data/clips/tikharm/th_841253473537_30f624.mp4,10.0,,,0,train,685,train,Safe,Dataset/train/Safe/anpham1310_6995836841253473537.mp4
+th_593199942939_0101c1,tikharm,aetherrising,/workspace/data/clips/tikharm/th_593199942939_0101c1.mp4,10.0,,,1,train,686,train,Harmful Content,Dataset/train/Harmful Content/aetherrising_7235712593199942939.mp4
+th_918970506523_40c7af,tikharm,diy1368,/workspace/data/clips/tikharm/th_918970506523_40c7af.mp4,10.0,,,0,train,687,train,Safe,Dataset/train/Safe/diy1368_7251979918970506523.mp4
+th_161947663622_abfb2c,tikharm,gracegoodcirque,/workspace/data/clips/tikharm/th_161947663622_abfb2c.mp4,9.88,,,1,test,688,val,Harmful Content,Dataset/val/Harmful Content/gracegoodcirque_7006109161947663622.mp4
+th_531583937794_08e245,tikharm,shirinaholmatova1,/workspace/data/clips/tikharm/th_531583937794_08e245.mp4,10.0,,,0,test,689,test,Safe,Dataset/test/Safe/shirinaholmatova1_7197450531583937794.mp4
+th_148521663787_661d6b,tikharm,chimeracostumes,/workspace/data/clips/tikharm/th_148521663787_661d6b.mp4,10.0,,,1,train,690,train,Harmful Content,Dataset/train/Harmful Content/chimeracostumes_7337797148521663787.mp4
+th_316715846958_23e829,tikharm,hoathinhvasuckhoe,/workspace/data/clips/tikharm/th_316715846958_23e829.mp4,10.0,,,0,train,691,test,Safe,Dataset/test/Safe/hoathinhvasuckhoe_7371436316715846958.mp4
+th_530579909930_fd720d,tikharm,anythingscooters,/workspace/data/clips/tikharm/th_530579909930_fd720d.mp4,9.87,,,1,val,692,train,Harmful Content,Dataset/train/Harmful Content/anythingscooters_7189718530579909930.mp4
+th_852387880194_f9a496,tikharm,nhaccover.vn,/workspace/data/clips/tikharm/th_852387880194_f9a496.mp4,10.0,,,0,train,693,train,Safe,Dataset/train/Safe/nhaccover.vn_7108335852387880194.mp4
+th_228856986885_83277f,tikharm,e.albxl,/workspace/data/clips/tikharm/th_228856986885_83277f.mp4,10.0,,,1,val,694,train,Harmful Content,Dataset/train/Harmful Content/e.albxl_7211953228856986885.mp4
+th_643353976070_db5f35,tikharm,coreuk,/workspace/data/clips/tikharm/th_643353976070_db5f35.mp4,7.75,,,1,test,696,train,Harmful Content,Dataset/train/Harmful Content/coreuk_6992883643353976070.mp4
+th_828922510593_b43c4e,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_828922510593_b43c4e.mp4,10.0,,,0,train,695,test,Safe,Dataset/test/Safe/le_anh_nuoi_7315001828922510593.mp4
+th_179049078033_4bda62,tikharm,sachnhadu,/workspace/data/clips/tikharm/th_179049078033_4bda62.mp4,10.0,,,0,train,697,train,Safe,Dataset/train/Safe/sachnhadu_7353507179049078033.mp4
+th_941108645125_b341fc,tikharm,jakubvencl,/workspace/data/clips/tikharm/th_941108645125_b341fc.mp4,10.0,,,1,train,698,train,Harmful Content,Dataset/train/Harmful Content/jakubvencl_7121392941108645125.mp4
+th_942719610113_d70039,tikharm,colortour68,/workspace/data/clips/tikharm/th_942719610113_d70039.mp4,10.0,,,0,test,699,train,Safe,Dataset/train/Safe/colortour68_7274814942719610113.mp4
+th_523414437146_14436c,tikharm,10vancauhoivisao247,/workspace/data/clips/tikharm/th_523414437146_14436c.mp4,10.0,,,0,val,683,train,Safe,Dataset/train/Safe/10vancauhoivisao247_7030301523414437146.mp4
+th_954898566446_106936,tikharm,theangelzzz,/workspace/data/clips/tikharm/th_954898566446_106936.mp4,10.0,,,1,train,700,test,Harmful Content,Dataset/test/Harmful Content/theangelzzz_7302580954898566446.mp4
+th_559426231558_87abd3,tikharm,nhacnaynghelanghien.real,/workspace/data/clips/tikharm/th_559426231558_87abd3.mp4,10.0,,,0,train,701,test,Safe,Dataset/test/Safe/nhacnaynghelanghien.real_7232675559426231558.mp4
+th_774281751835_e77a91,tikharm,kathebqk6cc,/workspace/data/clips/tikharm/th_774281751835_e77a91.mp4,10.0,,,1,train,702,train,Harmful Content,Dataset/train/Harmful Content/kathebqk6cc_7259918774281751835.mp4
+th_236332383530_941675,tikharm,dautocartoon,/workspace/data/clips/tikharm/th_236332383530_941675.mp4,10.0,,,0,train,705,train,Safe,Dataset/train/Safe/dautocartoon_7253681236332383530.mp4
+th_473313844506_7322f9,tikharm,johnloydarenas,/workspace/data/clips/tikharm/th_473313844506_7322f9.mp4,10.0,,,1,train,704,test,Harmful Content,Dataset/test/Harmful Content/johnloydarenas_7058087473313844506.mp4
+th_481021205765_2ba52d,tikharm,mma_edit3,/workspace/data/clips/tikharm/th_481021205765_2ba52d.mp4,10.0,,,1,train,706,val,Harmful Content,Dataset/val/Harmful Content/mma_edit3_7035931481021205765.mp4
+th_928484408577_4e7aec,tikharm,babykopohome,/workspace/data/clips/tikharm/th_928484408577_4e7aec.mp4,10.0,,,0,val,707,train,Safe,Dataset/train/Safe/babykopohome_6813185928484408577.mp4
+th_728581971218_5bdf04,tikharm,theanh28trending,/workspace/data/clips/tikharm/th_728581971218_5bdf04.mp4,10.0,,,1,train,708,val,Harmful Content,Dataset/val/Harmful Content/theanh28trending_7301247728581971218.mp4
+th_929406766341_e9bac6,tikharm,peaceful_anyen,/workspace/data/clips/tikharm/th_929406766341_e9bac6.mp4,7.04,,,0,train,703,train,Safe,Dataset/train/Safe/peaceful_anyen_7270832929406766341.mp4
+th_158073204010_2b26b1,tikharm,dautocartoon,/workspace/data/clips/tikharm/th_158073204010_2b26b1.mp4,10.0,,,0,train,709,train,Safe,Dataset/train/Safe/dautocartoon_7248206158073204010.mp4
+th_423615860011_f21b94,tikharm,parttimexoverlord,/workspace/data/clips/tikharm/th_423615860011_f21b94.mp4,4.86,,,1,val,710,train,Harmful Content,Dataset/train/Harmful Content/parttimexoverlord_7214132423615860011.mp4
+th_041199660294_841f08,tikharm,motocrossdorno,/workspace/data/clips/tikharm/th_041199660294_841f08.mp4,8.17,,,1,test,712,train,Harmful Content,Dataset/train/Harmful Content/motocrossdorno_6944746041199660294.mp4
+th_094629874962_b55849,tikharm,zodleshop,/workspace/data/clips/tikharm/th_094629874962_b55849.mp4,10.0,,,0,test,713,train,Safe,Dataset/train/Safe/zodleshop_7372364094629874962.mp4
+th_240699821344_472cf9,tikharm,rahhh_rahhh21,/workspace/data/clips/tikharm/th_240699821344_472cf9.mp4,10.0,,,1,train,714,train,Harmful Content,Dataset/train/Harmful Content/rahhh_rahhh21_7345540240699821344.mp4
+th_389631307015_32908a,tikharm,utvevuon99,/workspace/data/clips/tikharm/th_389631307015_32908a.mp4,10.0,,,0,train,715,train,Safe,Dataset/train/Safe/utvevuon99_7265630389631307015.mp4
+th_657319570734_736528,tikharm,maugamu,/workspace/data/clips/tikharm/th_657319570734_736528.mp4,9.79,,,1,test,716,train,Harmful Content,Dataset/train/Harmful Content/maugamu_7294102657319570734.mp4
+th_630114950402_5fd705,tikharm,anchoda1804,/workspace/data/clips/tikharm/th_630114950402_5fd705.mp4,10.0,,,0,val,717,test,Safe,Dataset/test/Safe/anchoda1804_7297535630114950402.mp4
+th_462330445082_1759fa,tikharm,dungchu_184,/workspace/data/clips/tikharm/th_462330445082_1759fa.mp4,10.0,,,1,train,718,train,Harmful Content,Dataset/train/Harmful Content/dungchu_184_7010005462330445082.mp4
+th_549048851754_1fad94,tikharm,jacqueszewhipper,/workspace/data/clips/tikharm/th_549048851754_1fad94.mp4,10.0,,,1,train,720,train,Harmful Content,Dataset/train/Harmful Content/jacqueszewhipper_7145827549048851754.mp4
+th_326896413960_f7f57a,tikharm,peachcrap,/workspace/data/clips/tikharm/th_326896413960_f7f57a.mp4,10.0,,,0,train,721,val,Safe,Dataset/val/Safe/peachcrap_7363898326896413960.mp4
+th_491945491718_880280,tikharm,viez.vn,/workspace/data/clips/tikharm/th_491945491718_880280.mp4,10.0,,,1,val,722,train,Harmful Content,Dataset/train/Harmful Content/viez.vn_7250749491945491718.mp4
+th_610021391621_2af9c1,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_610021391621_2af9c1.mp4,10.0,,,0,train,719,test,Safe,Dataset/test/Safe/cochuoithichdi_35_7254965610021391621.mp4
+th_447218007302_36fedb,tikharm,spencer.barbosa,/workspace/data/clips/tikharm/th_447218007302_36fedb.mp4,10.0,,,1,val,724,test,Harmful Content,Dataset/test/Harmful Content/spencer.barbosa_7116641447218007302.mp4
+th_330720644369_576c1f,tikharm,bonghostel,/workspace/data/clips/tikharm/th_330720644369_576c1f.mp4,9.67,,,0,val,723,test,Safe,Dataset/test/Safe/bonghostel_7365140330720644369.mp4
+th_627351964933_e9e2d6,tikharm,lxekai,/workspace/data/clips/tikharm/th_627351964933_e9e2d6.mp4,10.04,,,1,train,726,val,Harmful Content,Dataset/val/Harmful Content/lxekai_7188400627351964933.mp4
+th_834181659905_96f71e,tikharm,shopee_vn,/workspace/data/clips/tikharm/th_834181659905_96f71e.mp4,10.0,,,0,train,727,test,Safe,Dataset/test/Safe/shopee_vn_7042277834181659905.mp4
+th_633036811552_d195a8,tikharm,footballfestedits,/workspace/data/clips/tikharm/th_633036811552_d195a8.mp4,10.0,,,1,train,728,val,Harmful Content,Dataset/val/Harmful Content/footballfestedits_7349138633036811552.mp4
+th_572582665489_c9dc0f,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_572582665489_c9dc0f.mp4,10.0,,,0,train,729,test,Safe,Dataset/test/Safe/chutuphuyen_7367695572582665489.mp4
+th_807174790446_e95c08,tikharm,jajabyfdyxy,/workspace/data/clips/tikharm/th_807174790446_e95c08.mp4,10.0,,,1,train,730,train,Harmful Content,Dataset/train/Harmful Content/jajabyfdyxy_7200263807174790446.mp4
+th_134091037958_813e50,tikharm,woodcarestore,/workspace/data/clips/tikharm/th_134091037958_813e50.mp4,10.0,,,0,train,725,val,Safe,Dataset/val/Safe/woodcarestore_7165443134091037958.mp4
+th_524005154075_a46c17,tikharm,maythangtuw,/workspace/data/clips/tikharm/th_524005154075_a46c17.mp4,10.0,,,0,train,731,train,Safe,Dataset/train/Safe/maythangtuw_7221007524005154075.mp4
+th_185565977902_15e657,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_185565977902_15e657.mp4,10.0,,,1,val,732,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_7363371185565977902.mp4
+th_292703591687_1cad0a,tikharm,yuying98,/workspace/data/clips/tikharm/th_292703591687_1cad0a.mp4,10.0,,,0,train,733,train,Safe,Dataset/train/Safe/yuying98_7357687292703591687.mp4
+th_253317909793_a17d1a,tikharm,wrestlingvidv,/workspace/data/clips/tikharm/th_253317909793_a17d1a.mp4,10.0,,,1,test,734,train,Harmful Content,Dataset/train/Harmful Content/wrestlingvidv_7305612253317909793.mp4
+th_819237960965_0db9a0,tikharm,numbersixtysix,/workspace/data/clips/tikharm/th_819237960965_0db9a0.mp4,10.0,,,0,train,735,train,Safe,Dataset/train/Safe/numbersixtysix_7094221819237960965.mp4
+th_213484293382_c36133,tikharm,onechampionship,/workspace/data/clips/tikharm/th_213484293382_c36133.mp4,9.84,,,1,train,736,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7034000213484293382.mp4
+th_798774074656_72da98,tikharm,cleanyourhomee,/workspace/data/clips/tikharm/th_798774074656_72da98.mp4,10.0,,,0,train,737,val,Safe,Dataset/val/Safe/cleanyourhomee_7368539798774074656.mp4
+th_038638091526_b686b4,tikharm,tsn,/workspace/data/clips/tikharm/th_038638091526_b686b4.mp4,10.0,,,1,train,738,test,Harmful Content,Dataset/test/Harmful Content/tsn_7104341038638091526.mp4
+th_751239769350_7d087d,tikharm,heoo2610,/workspace/data/clips/tikharm/th_751239769350_7d087d.mp4,10.0,,,0,train,739,train,Safe,Dataset/train/Safe/heoo2610_7234010751239769350.mp4
+th_184262589739_587f5f,tikharm,elemental.dancer,/workspace/data/clips/tikharm/th_184262589739_587f5f.mp4,10.0,,,1,train,740,train,Harmful Content,Dataset/train/Harmful Content/elemental.dancer_7112829184262589739.mp4
+th_888118172933_47797b,tikharm,blackpinkupdate31,/workspace/data/clips/tikharm/th_888118172933_47797b.mp4,10.0,,,0,train,741,train,Safe,Dataset/train/Safe/blackpinkupdate31_7252191888118172933.mp4
+th_680953228549_c2a83c,tikharm,danharkerbase,/workspace/data/clips/tikharm/th_680953228549_c2a83c.mp4,9.84,,,1,train,742,train,Harmful Content,Dataset/train/Harmful Content/danharkerbase_7116106680953228549.mp4
+th_629087034630_d1efd1,tikharm,duchieumedia,/workspace/data/clips/tikharm/th_629087034630_d1efd1.mp4,10.0,,,0,train,743,train,Safe,Dataset/train/Safe/duchieumedia_7234111629087034630.mp4
+th_072894184747_f97c3d,tikharm,codyburns555,/workspace/data/clips/tikharm/th_072894184747_f97c3d.mp4,10.0,,,1,train,744,test,Harmful Content,Dataset/test/Harmful Content/codyburns555_7079989072894184747.mp4
+th_698559798544_bcbbdd,tikharm,tranmanhnam20,/workspace/data/clips/tikharm/th_698559798544_bcbbdd.mp4,10.0,,,0,train,745,train,Safe,Dataset/train/Safe/tranmanhnam20_7353899698559798544.mp4
+th_154115169541_33f3e2,tikharm,lunar_pole,/workspace/data/clips/tikharm/th_154115169541_33f3e2.mp4,10.0,,,1,train,746,train,Harmful Content,Dataset/train/Harmful Content/lunar_pole_7302531154115169541.mp4
+th_152949562642_38a5cd,tikharm,tinathaothi,/workspace/data/clips/tikharm/th_152949562642_38a5cd.mp4,10.0,,,0,val,747,train,Safe,Dataset/train/Safe/tinathaothi_7359191152949562642.mp4
+th_804219362603_7d1e8b,tikharm,themarcbarrios,/workspace/data/clips/tikharm/th_804219362603_7d1e8b.mp4,10.0,,,1,train,748,val,Harmful Content,Dataset/val/Harmful Content/themarcbarrios_7289915804219362603.mp4
+th_761194581275_94d424,tikharm,phu_lonely2k2,/workspace/data/clips/tikharm/th_761194581275_94d424.mp4,9.84,,,0,train,749,train,Safe,Dataset/train/Safe/phu_lonely2k2_7143956761194581275.mp4
+th_138767244571_2ca91f,tikharm,hoangdinhtien205,/workspace/data/clips/tikharm/th_138767244571_2ca91f.mp4,10.0,,,1,train,750,test,Harmful Content,Dataset/test/Harmful Content/hoangdinhtien205_7122803138767244571.mp4
+th_929457618177_39e826,tikharm,dongam_den.vauvn,/workspace/data/clips/tikharm/th_929457618177_39e826.mp4,10.0,,,0,train,751,train,Safe,Dataset/train/Safe/dongam_den.vauvn_7342517929457618177.mp4
+th_555888639237_0a178c,tikharm,salgadopk,/workspace/data/clips/tikharm/th_555888639237_0a178c.mp4,8.85,,,1,train,752,train,Harmful Content,Dataset/train/Harmful Content/salgadopk_7078145555888639237.mp4
+th_303004888328_2b0846,tikharm,fbncvietnam,/workspace/data/clips/tikharm/th_303004888328_2b0846.mp4,10.0,,,0,train,753,train,Safe,Dataset/train/Safe/fbncvietnam_7250426303004888328.mp4
+th_061528374560_7e025e,tikharm,redbullswitzerland,/workspace/data/clips/tikharm/th_061528374560_7e025e.mp4,10.0,,,1,val,754,train,Harmful Content,Dataset/train/Harmful Content/redbullswitzerland_7274989061528374560.mp4
+th_297314778370_1506d8,tikharm,tranthanhtu79799,/workspace/data/clips/tikharm/th_297314778370_1506d8.mp4,9.25,,,0,train,755,train,Safe,Dataset/train/Safe/tranthanhtu79799_6909461297314778370.mp4
+th_967457914155_42809c,tikharm,pasfika,/workspace/data/clips/tikharm/th_967457914155_42809c.mp4,10.0,,,1,train,756,val,Harmful Content,Dataset/val/Harmful Content/pasfika_7252165967457914155.mp4
+th_773590576385_8dd4f3,tikharm,vinhgau.tt,/workspace/data/clips/tikharm/th_773590576385_8dd4f3.mp4,10.0,,,0,train,645,train,Safe,Dataset/train/Safe/vinhgau.tt_6969934773590576385.mp4
+th_200269290760_a2d15e,tikharm,linnhhh.m,/workspace/data/clips/tikharm/th_200269290760_a2d15e.mp4,10.0,,,0,test,711,train,Safe,Dataset/train/Safe/linnhhh.m_7341367200269290760.mp4
+th_127840165127_2b3abb,tikharm,ahfoo2,/workspace/data/clips/tikharm/th_127840165127_2b3abb.mp4,8.06,,,0,train,757,train,Safe,Dataset/train/Safe/ahfoo2_7365127127840165127.mp4
+th_003356626181_06a3a0,tikharm,extremeofficial,/workspace/data/clips/tikharm/th_003356626181_06a3a0.mp4,9.84,,,1,train,758,val,Harmful Content,Dataset/val/Harmful Content/extremeofficial_7153332003356626181.mp4
+th_906248224001_209293,tikharm,kyucngoisao.official,/workspace/data/clips/tikharm/th_906248224001_209293.mp4,10.0,,,0,train,761,train,Safe,Dataset/train/Safe/kyucngoisao.official_6961229906248224001.mp4
+th_323298946350_da7e57,tikharm,luchalibreonline,/workspace/data/clips/tikharm/th_323298946350_da7e57.mp4,10.0,,,1,test,760,test,Harmful Content,Dataset/test/Harmful Content/luchalibreonline_7268802323298946350.mp4
+th_278611410177_786e34,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_278611410177_786e34.mp4,10.0,,,0,train,759,test,Safe,Dataset/test/Safe/le_anh_nuoi_7277181278611410177.mp4
+th_521160924443_3a9534,tikharm,chaukhadi2107,/workspace/data/clips/tikharm/th_521160924443_3a9534.mp4,10.0,,,0,test,763,val,Safe,Dataset/val/Safe/chaukhadi2107_7179543521160924443.mp4
+th_998324141317_b6193b,tikharm,matt_boltz,/workspace/data/clips/tikharm/th_998324141317_b6193b.mp4,10.0,,,1,train,762,train,Harmful Content,Dataset/train/Harmful Content/matt_boltz_7251241998324141317.mp4
+th_478902955310_d80f32,tikharm,maugamu,/workspace/data/clips/tikharm/th_478902955310_d80f32.mp4,10.0,,,1,test,764,train,Harmful Content,Dataset/train/Harmful Content/maugamu_7290762478902955310.mp4
+th_240950377771_c45715,tikharm,thewitchymom,/workspace/data/clips/tikharm/th_240950377771_c45715.mp4,10.0,,,1,train,768,train,Harmful Content,Dataset/train/Harmful Content/thewitchymom_7360733240950377771.mp4
+th_620457450759_401f5a,tikharm,_.yi_zi._,/workspace/data/clips/tikharm/th_620457450759_401f5a.mp4,10.0,,,0,train,769,train,Safe,Dataset/train/Safe/_.yi_zi.__7274571620457450759.mp4
+th_416442731803_561d8e,tikharm,mocuabatoctv,/workspace/data/clips/tikharm/th_416442731803_561d8e.mp4,10.0,,,0,train,765,train,Safe,Dataset/train/Safe/mocuabatoctv_7018500416442731803.mp4
+th_419143617822_3fa69b,tikharm,onechampionship,/workspace/data/clips/tikharm/th_419143617822_3fa69b.mp4,10.0,,,1,train,770,train,Harmful Content,Dataset/train/Harmful Content/onechampionship_7335372419143617822.mp4
+th_452326436102_f5996d,tikharm,kengam_of,/workspace/data/clips/tikharm/th_452326436102_f5996d.mp4,9.54,,,1,train,766,train,Harmful Content,Dataset/train/Harmful Content/kengam_of_7229010452326436102.mp4
+th_563565923592_9df124,tikharm,itsahollyjollychristmas_,/workspace/data/clips/tikharm/th_563565923592_9df124.mp4,7.41,,,0,test,767,train,Safe,Dataset/train/Safe/itsahollyjollychristmas__7281404563565923592.mp4
+th_122762722567_6fff02,tikharm,yimi.toys,/workspace/data/clips/tikharm/th_122762722567_6fff02.mp4,10.0,,,0,train,771,train,Safe,Dataset/train/Safe/yimi.toys_7369053122762722567.mp4
+th_429217852679_2bb6fe,tikharm,bombom_vlog,/workspace/data/clips/tikharm/th_429217852679_2bb6fe.mp4,10.0,,,0,train,775,train,Safe,Dataset/train/Safe/bombom_vlog_7366966429217852679.mp4
+th_056428178693_043011,tikharm,kengam_of,/workspace/data/clips/tikharm/th_056428178693_043011.mp4,9.5,,,1,train,772,train,Harmful Content,Dataset/train/Harmful Content/kengam_of_7222670056428178693.mp4
+th_241028955435_bc6a22,tikharm,xlalexscylixlx,/workspace/data/clips/tikharm/th_241028955435_bc6a22.mp4,10.0,,,1,val,776,test,Harmful Content,Dataset/test/Harmful Content/xlalexscylixlx_7283469241028955435.mp4
+th_031986400528_2fc00e,tikharm,declaration2211,/workspace/data/clips/tikharm/th_031986400528_2fc00e.mp4,10.0,,,0,train,773,test,Safe,Dataset/test/Safe/declaration2211_7367773031986400528.mp4
+th_713853136133_e5ec6a,tikharm,dmitry_krilovs,/workspace/data/clips/tikharm/th_713853136133_e5ec6a.mp4,10.0,,,1,train,774,train,Harmful Content,Dataset/train/Harmful Content/dmitry_krilovs_7146650713853136133.mp4
+th_006714301723_11d7b6,tikharm,wanderwithson,/workspace/data/clips/tikharm/th_006714301723_11d7b6.mp4,10.0,,,0,train,777,test,Safe,Dataset/test/Safe/wanderwithson_7211371006714301723.mp4
+th_600567491846_9a6b34,tikharm,iminjulyy,/workspace/data/clips/tikharm/th_600567491846_9a6b34.mp4,10.0,,,0,train,781,train,Safe,Dataset/train/Safe/iminjulyy_7255262600567491846.mp4
+th_145021480219_59fa8b,tikharm,mtbeditzbyalfred,/workspace/data/clips/tikharm/th_145021480219_59fa8b.mp4,10.0,,,1,train,782,test,Harmful Content,Dataset/test/Harmful Content/mtbeditzbyalfred_7238330145021480219.mp4
+th_303414164744_d376d5,tikharm,quyensachnho,/workspace/data/clips/tikharm/th_303414164744_d376d5.mp4,10.0,,,0,test,783,train,Safe,Dataset/train/Safe/quyensachnho_7370309303414164744.mp4
+th_919294774555_91467a,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_919294774555_91467a.mp4,10.0,,,1,train,784,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7055892919294774555.mp4
+th_734937500934_4d6f62,tikharm,mhmdngprsty,/workspace/data/clips/tikharm/th_734937500934_4d6f62.mp4,10.0,,,0,train,785,test,Safe,Dataset/test/Safe/mhmdngprsty_7362652734937500934.mp4
+th_638691319046_be6876,tikharm,jaybruv,/workspace/data/clips/tikharm/th_638691319046_be6876.mp4,10.0,,,1,test,786,train,Harmful Content,Dataset/train/Harmful Content/jaybruv_6964131638691319046.mp4
+th_028140186886_742948,tikharm,the_cookie_baker,/workspace/data/clips/tikharm/th_028140186886_742948.mp4,10.0,,,0,train,787,train,Safe,Dataset/train/Safe/the_cookie_baker_6894426028140186886.mp4
+th_410005568770_be9221,tikharm,myanh.hg,/workspace/data/clips/tikharm/th_410005568770_be9221.mp4,10.0,,,1,train,788,test,Harmful Content,Dataset/test/Harmful Content/myanh.hg_7303529410005568770.mp4
+th_569433337095_4857d0,tikharm,duongnhatle.dnl,/workspace/data/clips/tikharm/th_569433337095_4857d0.mp4,10.0,,,0,val,789,train,Safe,Dataset/train/Safe/duongnhatle.dnl_7320494569433337095.mp4
+th_710073543942_813d09,tikharm,chandongshowbiz,/workspace/data/clips/tikharm/th_710073543942_813d09.mp4,10.0,,,1,train,790,test,Harmful Content,Dataset/test/Harmful Content/chandongshowbiz_7252958710073543942.mp4
+th_791704898818_90d590,tikharm,vuphamthaoly,/workspace/data/clips/tikharm/th_791704898818_90d590.mp4,10.0,,,0,test,791,test,Safe,Dataset/test/Safe/vuphamthaoly_6922276791704898818.mp4
+th_689504111878_ec7bfa,tikharm,ryaa.wursita,/workspace/data/clips/tikharm/th_689504111878_ec7bfa.mp4,10.0,,,1,val,792,test,Harmful Content,Dataset/test/Harmful Content/ryaa.wursita_7288888689504111878.mp4
+th_863244299522_f8d0a5,tikharm,vmtmytam,/workspace/data/clips/tikharm/th_863244299522_f8d0a5.mp4,10.0,,,0,train,793,test,Safe,Dataset/test/Safe/vmtmytam_6997378863244299522.mp4
+th_104479427887_6cb25f,tikharm,windhorse_sherpa,/workspace/data/clips/tikharm/th_104479427887_6cb25f.mp4,10.0,,,1,train,794,train,Harmful Content,Dataset/train/Harmful Content/windhorse_sherpa_7062960104479427887.mp4
+th_219613740296_afbfd9,tikharm,caibungnho_03,/workspace/data/clips/tikharm/th_219613740296_afbfd9.mp4,10.0,,,0,train,795,test,Safe,Dataset/test/Safe/caibungnho_03_7301329219613740296.mp4
+th_820149996805_03d2c4,tikharm,herodw,/workspace/data/clips/tikharm/th_820149996805_03d2c4.mp4,10.0,,,1,train,796,train,Harmful Content,Dataset/train/Harmful Content/herodw_6770056820149996805.mp4
+th_750538026246_f8d74e,tikharm,huynhhongloan94,/workspace/data/clips/tikharm/th_750538026246_f8d74e.mp4,10.04,,,0,train,797,test,Safe,Dataset/test/Safe/huynhhongloan94_7249374750538026246.mp4
+th_440388402478_8495a0,tikharm,flowmayhem,/workspace/data/clips/tikharm/th_440388402478_8495a0.mp4,10.0,,,1,val,798,train,Harmful Content,Dataset/train/Harmful Content/flowmayhem_7250625440388402478.mp4
+th_524171517202_a5b336,tikharm,hinzhomnaylaca,/workspace/data/clips/tikharm/th_524171517202_a5b336.mp4,10.0,,,0,train,799,train,Safe,Dataset/train/Safe/hinzhomnaylaca_7345459524171517202.mp4
+th_825936010498_55a2e5,tikharm,troomtroom_wow,/workspace/data/clips/tikharm/th_825936010498_55a2e5.mp4,10.0,,,1,train,800,train,Harmful Content,Dataset/train/Harmful Content/troomtroom_wow_6893619825936010498.mp4
+th_035356433697_161c22,tikharm,asmrkitchens,/workspace/data/clips/tikharm/th_035356433697_161c22.mp4,10.0,,,0,val,801,train,Safe,Dataset/train/Safe/asmrkitchens_7357679035356433697.mp4
+th_325941640494_79f771,tikharm,mukbang_korea_fan,/workspace/data/clips/tikharm/th_325941640494_79f771.mp4,10.0,,,1,train,802,test,Harmful Content,Dataset/test/Harmful Content/mukbang_korea_fan_7216697325941640494.mp4
+th_375606463746_7936ca,tikharm,_babiesoftiktok,/workspace/data/clips/tikharm/th_375606463746_7936ca.mp4,10.0,,,0,train,803,train,Safe,Dataset/train/Safe/_babiesoftiktok_7261076375606463746.mp4
+th_573316123910_98d0e6,tikharm,thistrippyhippie,/workspace/data/clips/tikharm/th_573316123910_98d0e6.mp4,10.0,,,1,train,804,train,Harmful Content,Dataset/train/Harmful Content/thistrippyhippie_7212712573316123910.mp4
+th_799129693442_b9d62d,tikharm,vmtmytam,/workspace/data/clips/tikharm/th_799129693442_b9d62d.mp4,10.0,,,0,train,805,train,Safe,Dataset/train/Safe/vmtmytam_6999238799129693442.mp4
+th_655357439259_89b21e,tikharm,anakhantubeachbar_,/workspace/data/clips/tikharm/th_655357439259_89b21e.mp4,9.84,,,1,train,806,train,Harmful Content,Dataset/train/Harmful Content/anakhantubeachbar__7116454655357439259.mp4
+th_210888834350_75a613,tikharm,gopro,/workspace/data/clips/tikharm/th_210888834350_75a613.mp4,10.0,,,1,train,778,train,Harmful Content,Dataset/train/Harmful Content/gopro_7273481210888834350.mp4
+th_212234661126_bfff7b,tikharm,trapvel_,/workspace/data/clips/tikharm/th_212234661126_bfff7b.mp4,10.0,,,0,train,807,train,Safe,Dataset/train/Safe/trapvel__7258622212234661126.mp4
+th_475299454254_a5750f,tikharm,bob.reese,/workspace/data/clips/tikharm/th_475299454254_a5750f.mp4,10.0,,,1,val,808,train,Harmful Content,Dataset/train/Harmful Content/bob.reese_7085983475299454254.mp4
+th_951412067604_56c76b,tikharm,anden75,/workspace/data/clips/tikharm/th_951412067604_56c76b.mp4,10.0,,,0,test,809,train,Safe,Dataset/train/Safe/anden75_7359560951412067604.mp4
+th_545322605830_24d034,tikharm,thanhtuyendaily,/workspace/data/clips/tikharm/th_545322605830_24d034.mp4,10.0,,,0,train,811,train,Safe,Dataset/train/Safe/thanhtuyendaily_7269243545322605830.mp4
+th_193498385707_e8ba84,tikharm,erik_the_gladiator,/workspace/data/clips/tikharm/th_193498385707_e8ba84.mp4,9.88,,,1,test,812,train,Harmful Content,Dataset/train/Harmful Content/erik_the_gladiator_7164048193498385707.mp4
+th_957366414599_edfe83,tikharm,bongwtok,/workspace/data/clips/tikharm/th_957366414599_edfe83.mp4,10.0,,,0,val,813,train,Safe,Dataset/train/Safe/bongwtok_7323586957366414599.mp4
+th_819027037447_0a507f,tikharm,femin,/workspace/data/clips/tikharm/th_819027037447_0a507f.mp4,10.0,,,1,train,814,train,Harmful Content,Dataset/train/Harmful Content/femin_7368448819027037447.mp4
+th_427820162336_312e4d,tikharm,cozy..place,/workspace/data/clips/tikharm/th_427820162336_312e4d.mp4,10.0,,,0,train,815,train,Safe,Dataset/train/Safe/cozy..place_7271895427820162336.mp4
+th_382345624838_60a9e9,tikharm,gnarlee_mtb,/workspace/data/clips/tikharm/th_382345624838_60a9e9.mp4,10.0,,,1,train,816,train,Harmful Content,Dataset/train/Harmful Content/gnarlee_mtb_7219481382345624838.mp4
+th_072514559240_96cb68,tikharm,bombom_vlog,/workspace/data/clips/tikharm/th_072514559240_96cb68.mp4,10.0,,,0,train,817,train,Safe,Dataset/train/Safe/bombom_vlog_7328739072514559240.mp4
+th_385840823595_809880,tikharm,dell2x._,/workspace/data/clips/tikharm/th_385840823595_809880.mp4,8.01,,,1,train,818,test,Harmful Content,Dataset/test/Harmful Content/dell2x.__7218061385840823595.mp4
+th_548788432160_e36649,tikharm,khoward91,/workspace/data/clips/tikharm/th_548788432160_e36649.mp4,10.0,,,1,train,820,test,Harmful Content,Dataset/test/Harmful Content/khoward91_7276818548788432160.mp4
+th_344318254341_6c8759,tikharm,flffyegg,/workspace/data/clips/tikharm/th_344318254341_6c8759.mp4,10.0,,,1,train,822,train,Harmful Content,Dataset/train/Harmful Content/flffyegg_7321735344318254341.mp4
+th_216571366674_388668,tikharm,bongbaysaodoshop,/workspace/data/clips/tikharm/th_216571366674_388668.mp4,8.2,,,0,train,823,train,Safe,Dataset/train/Safe/bongbaysaodoshop_7283072216571366674.mp4
+th_384211889409_9dd47e,tikharm,genfest.mmusic,/workspace/data/clips/tikharm/th_384211889409_9dd47e.mp4,10.0,,,1,val,810,test,Harmful Content,Dataset/test/Harmful Content/genfest.mmusic_7297982384211889409.mp4
+th_053626420486_0707ea,tikharm,the_lio_de_leo,/workspace/data/clips/tikharm/th_053626420486_0707ea.mp4,10.0,,,1,train,824,train,Harmful Content,Dataset/train/Harmful Content/the_lio_de_leo_6971885053626420486.mp4
+th_722458623239_49ca51,tikharm,tuelinhbong,/workspace/data/clips/tikharm/th_722458623239_49ca51.mp4,10.04,,,0,train,825,train,Safe,Dataset/train/Safe/tuelinhbong_7307529722458623239.mp4
+th_285503356166_d7624d,tikharm,senddicted,/workspace/data/clips/tikharm/th_285503356166_d7624d.mp4,10.0,,,1,test,826,train,Harmful Content,Dataset/train/Harmful Content/senddicted_6777745285503356166.mp4
+th_967365123329_5b9150,tikharm,colortour68,/workspace/data/clips/tikharm/th_967365123329_5b9150.mp4,10.0,,,0,test,819,train,Safe,Dataset/train/Safe/colortour68_7277931967365123329.mp4
+th_806950677761_50d4ff,tikharm,hatgiongsmileseeds,/workspace/data/clips/tikharm/th_806950677761_50d4ff.mp4,10.0,,,0,val,829,train,Safe,Dataset/train/Safe/hatgiongsmileseeds_7294622806950677761.mp4
+th_228318809371_ef2086,tikharm,maythangtuw,/workspace/data/clips/tikharm/th_228318809371_ef2086.mp4,10.0,,,0,train,827,test,Safe,Dataset/test/Safe/maythangtuw_7215440228318809371.mp4
+th_187196562694_de7923,tikharm,khedoori,/workspace/data/clips/tikharm/th_187196562694_de7923.mp4,7.88,,,1,train,830,train,Harmful Content,Dataset/train/Harmful Content/khedoori_6776167187196562694.mp4
+th_426886335745_a7df5d,tikharm,colortour68,/workspace/data/clips/tikharm/th_426886335745_a7df5d.mp4,10.0,,,0,test,831,train,Safe,Dataset/train/Safe/colortour68_7286852426886335745.mp4
+th_978067586305_b7dd10,tikharm,thistrippyhippie,/workspace/data/clips/tikharm/th_978067586305_b7dd10.mp4,10.0,,,1,train,832,train,Harmful Content,Dataset/train/Harmful Content/thistrippyhippie_6904289978067586305.mp4
+th_020903808258_35b9b6,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_020903808258_35b9b6.mp4,10.0,,,0,train,833,train,Safe,Dataset/train/Safe/le_anh_nuoi_7290528020903808258.mp4
+th_173120433409_c7a283,tikharm,mieejustdancing,/workspace/data/clips/tikharm/th_173120433409_c7a283.mp4,10.0,,,1,train,834,test,Harmful Content,Dataset/test/Harmful Content/mieejustdancing_7260146173120433409.mp4
+th_149462928666_b77337,tikharm,sicepatkilat94,/workspace/data/clips/tikharm/th_149462928666_b77337.mp4,7.25,,,1,train,836,test,Harmful Content,Dataset/test/Harmful Content/sicepatkilat94_7193692149462928666.mp4
+th_550120205575_91c561,tikharm,bombom_vlog,/workspace/data/clips/tikharm/th_550120205575_91c561.mp4,10.0,,,0,train,835,train,Safe,Dataset/train/Safe/bombom_vlog_7375874550120205575.mp4
+th_849658592513_37e5fe,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_849658592513_37e5fe.mp4,10.0,,,0,train,837,val,Safe,Dataset/val/Safe/le_anh_nuoi_7282361849658592513.mp4
+th_568682396930_26ff28,tikharm,coming_true520,/workspace/data/clips/tikharm/th_568682396930_26ff28.mp4,10.0,,,1,test,838,train,Harmful Content,Dataset/train/Harmful Content/coming_true520_6802433568682396930.mp4
+th_136829332737_853d1f,tikharm,tconnect.tv,/workspace/data/clips/tikharm/th_136829332737_853d1f.mp4,10.0,,,0,train,839,val,Safe,Dataset/val/Safe/tconnect.tv_7214350136829332737.mp4
+th_987838401793_269e1f,tikharm,fixtard.com,/workspace/data/clips/tikharm/th_987838401793_269e1f.mp4,10.0,,,1,train,840,train,Harmful Content,Dataset/train/Harmful Content/fixtard.com_7230148987838401793.mp4
+th_566431259906_585f38,tikharm,nguuka199,/workspace/data/clips/tikharm/th_566431259906_585f38.mp4,10.0,,,0,train,841,train,Safe,Dataset/train/Safe/nguuka199_7314935566431259906.mp4
+th_078593268998_3f7094,tikharm,byromes,/workspace/data/clips/tikharm/th_078593268998_3f7094.mp4,9.62,,,1,train,842,test,Harmful Content,Dataset/test/Harmful Content/byromes_6836659078593268998.mp4
+th_382173285648_b77dc4,tikharm,trangdinh.giadinhdua,/workspace/data/clips/tikharm/th_382173285648_b77dc4.mp4,10.0,,,0,test,843,train,Safe,Dataset/train/Safe/trangdinh.giadinhdua_7362760382173285648.mp4
+th_978928835886_2367c8,tikharm,lock.in.dante,/workspace/data/clips/tikharm/th_978928835886_2367c8.mp4,10.0,,,1,val,844,train,Harmful Content,Dataset/train/Harmful Content/lock.in.dante_7193887978928835886.mp4
+th_652601208082_b0d4ad,tikharm,le_anh_nuoi,/workspace/data/clips/tikharm/th_652601208082_b0d4ad.mp4,10.0,,,0,train,847,train,Safe,Dataset/train/Safe/le_anh_nuoi_7315390652601208082.mp4
+th_104788667654_904733,tikharm,chrisrayfilms,/workspace/data/clips/tikharm/th_104788667654_904733.mp4,10.0,,,1,train,828,train,Harmful Content,Dataset/train/Harmful Content/chrisrayfilms_6963130104788667654.mp4
+th_164864191770_824cf0,tikharm,top.animevn,/workspace/data/clips/tikharm/th_164864191770_824cf0.mp4,10.0,,,0,train,849,test,Safe,Dataset/test/Safe/top.animevn_7065250164864191770.mp4
+th_381599534342_f9a8a1,tikharm,valentin.ink,/workspace/data/clips/tikharm/th_381599534342_f9a8a1.mp4,10.0,,,1,train,850,val,Harmful Content,Dataset/val/Harmful Content/valentin.ink_6982752381599534342.mp4
+th_006718287110_8cc4d1,tikharm,khedoori,/workspace/data/clips/tikharm/th_006718287110_8cc4d1.mp4,9.5,,,1,train,848,train,Harmful Content,Dataset/train/Harmful Content/khedoori_6766886006718287110.mp4
+th_418463083793_e54f9b,tikharm,chutuphuyen,/workspace/data/clips/tikharm/th_418463083793_e54f9b.mp4,10.0,,,0,train,851,train,Safe,Dataset/train/Safe/chutuphuyen_7375210418463083793.mp4
+th_794800512302_32aa71,tikharm,that140k1d,/workspace/data/clips/tikharm/th_794800512302_32aa71.mp4,5.23,,,1,train,852,train,Harmful Content,Dataset/train/Harmful Content/that140k1d_7202011794800512302.mp4
+th_561147194651_804c72,tikharm,owkayclothing,/workspace/data/clips/tikharm/th_561147194651_804c72.mp4,10.0,,,1,test,854,train,Harmful Content,Dataset/train/Harmful Content/owkayclothing_7235206561147194651.mp4
+th_507019468033_3f8ac4,tikharm,cochuoithichdi_35,/workspace/data/clips/tikharm/th_507019468033_3f8ac4.mp4,10.0,,,0,train,853,train,Safe,Dataset/train/Safe/cochuoithichdi_35_7285743507019468033.mp4
+th_253231910145_e42862,tikharm,babykopohome,/workspace/data/clips/tikharm/th_253231910145_e42862.mp4,10.0,,,0,val,855,train,Safe,Dataset/train/Safe/babykopohome_6811848253231910145.mp4
+th_708166597889_d49fe7,tikharm,_tuiruanee49,/workspace/data/clips/tikharm/th_708166597889_d49fe7.mp4,10.0,,,0,train,857,train,Safe,Dataset/train/Safe/_tuiruanee49_7272365708166597889.mp4
+th_066556288257_5d637f,tikharm,allknockouts,/workspace/data/clips/tikharm/th_066556288257_5d637f.mp4,10.0,,,1,train,858,train,Harmful Content,Dataset/train/Harmful Content/allknockouts_7071267066556288257.mp4
+th_645771058440_525c5f,tikharm,mehuonghuong,/workspace/data/clips/tikharm/th_645771058440_525c5f.mp4,10.0,,,0,train,859,val,Safe,Dataset/val/Safe/mehuonghuong_7299435645771058440.mp4

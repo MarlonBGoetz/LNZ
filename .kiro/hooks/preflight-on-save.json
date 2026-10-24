@@ -1,0 +1,10 @@
+{
+  "name": "preflight-on-save",
+  "description": "On saving a training script or a run config, re-run the preflight checks (training contract, config validity, sizing sanity).",
+  "trigger": "PostFileSave",
+  "matcher": "(^|/)train[^/]*\\.py$|(^|/)configs/.*\\.ya?ml$",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.cli preflight"
+  }
+}

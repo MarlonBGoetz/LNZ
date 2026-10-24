@@ -1,0 +1,9 @@
+{
+  "name": "fleet-brief",
+  "description": "On session start, load policy and print a brief of the live fleet and budget.",
+  "trigger": "SessionStart",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.cli brief"
+  }
+}

@@ -1,0 +1,48 @@
+{
+ "vision": {
+  "name": "MobileCLIP-S1",
+  "pretrained": "datacompdr",
+  "open_clip": "3.3.0",
+  "params": 21461056,
+  "dim": 512,
+  "mean": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "std": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "input": "float32 [N,3,224,224] RGB in [0,1]",
+  "resize": "resize short side to 224 (bilinear), center crop 224x224",
+  "fps": 4
+ },
+ "audio": {
+  "name": "EfficientAT mn10_as (AudioSet)",
+  "repo": "https://github.com/fschmid56/EfficientAT",
+  "params": 4876831,
+  "dim": 960,
+  "output": "penultimate embedding",
+  "mel": {
+   "sample_rate": 32000,
+   "n_mels": 128,
+   "win_length": 800,
+   "hop_length": 320,
+   "n_fft": 1024,
+   "f_min": 0.0,
+   "f_max": 16000.0,
+   "window": "hann",
+   "center": true,
+   "power": 2.0,
+   "log": "log(mel + 1e-5)",
+   "mel_scale": "htk",
+   "norm": null,
+   "post": "(logmel + 4.5) / 5.0"
+  },
+  "window_s": 1.0,
+  "hop_s": 0.25,
+  "input": "float32 [N,1,128,101] log-mel"
+ }
+}

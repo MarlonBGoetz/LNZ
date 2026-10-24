@@ -1,0 +1,9 @@
+{
+  "name": "session-summary",
+  "description": "On session end, reap orphaned Pods and write a session summary of the fleet and total spend.",
+  "trigger": "SessionEnd",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.cli reap --idle-minutes 10 && python -m overwatch.cli brief --spend-summary"
+  }
+}
