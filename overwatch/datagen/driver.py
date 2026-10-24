@@ -29,6 +29,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import sys
 import tempfile
 import threading
 import time
@@ -196,14 +197,17 @@ def get_inference(spec: Optional[Dict[str, Any]] = None, *, inference: Any = Non
     if inference is not None:
         return inference
     if _use_fake():
+        print("overwatch datagen: using FakeInference (offline)", file=sys.stderr)
         return FakeInference()
     spec = spec or {}
     endpoint_id = spec.get("endpoint_id") or os.environ.get("RUNPOD_ENDPOINT_ID", "")
     api_key = os.environ.get(API_KEY_ENV, "")
-    try:  # pragma: no cover - requires live credentials
-        return _RealServerlessInference(endpoint_id=endpoint_id, api_key=api_key)
-    except Exception:  # pragma: no cover
-        return FakeInference()
+    # No silent fallback: when a key is present and OVERWATCH_FAKE != '1' we
+    # construct the real inference backend and let any failure RAISE rather than
+    # silently returning FakeInference (which would corrupt a dataset with fake
+    # teacher outputs). The Serverless request path itself is deferred.
+    print("overwatch datagen: using RealServerlessInference (live Runpod)", file=sys.stderr)
+    return _RealServerlessInference(endpoint_id=endpoint_id, api_key=api_key)
 
 
 # ----------------------------------------------------------------------

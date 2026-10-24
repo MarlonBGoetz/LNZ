@@ -223,4 +223,6 @@ The PostTaskExecution hook runs `pytest -q tests/`.
 
 ## Out of scope for the sandbox
 
-Live Runpod actions (provisioning Pods, real smoke/chaos tests on GPUs, installing the Power in the IDE, toggling Workflows) are documented, not executed. No GPU is present; all detector tests run on CPU via `tests/fake_train.py` with failure injection `--fail nan@300`, `oom@100`, `hang@200`, `crash@50`.
+Update (supersedes the original scope note): in a later live session the supervised lifecycle was exercised against real hardware. The real backend reached the live Runpod REST API and GraphQL pricing using only stdlib `urllib`, a 200 GB network volume was created in datacenter `US-MO-1`, H100 80GB Pods launched on secure cloud at $3.99/hr and mounted the volume, and the Pods were cleanly stopped and terminated afterward, with the budget guard, GPU allowlist and smoke-before-launch gate all holding.
+
+Honest scope: a full training run and a finished distillation dataset were not completed, so those remain future work rather than claimed results. Installing the Power in the IDE and toggling Workflows stay manual, human-confirmed steps. The offline validation path is unchanged: no GPU is required for the suite, and all detector tests run on CPU via `tests/fake_train.py` with failure injection `--fail nan@300`, `oom@100`, `hang@200`, `crash@50`.

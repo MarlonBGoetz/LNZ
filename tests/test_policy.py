@@ -83,6 +83,47 @@ def test_gpu_allowed():
     assert p.gpu_allowed("T4") is False
 
 
+# ----------------------------------------------------------------------
+# short GPU name <-> full Runpod id mapping (translation layer only)
+# ----------------------------------------------------------------------
+def test_gpu_type_ids_preferred_first():
+    from overwatch.policy import gpu_type_ids
+
+    assert gpu_type_ids("H100")[0] == "NVIDIA H100 80GB HBM3"
+    assert gpu_type_ids("A100")[0] == "NVIDIA A100 80GB PCIe"
+    assert "NVIDIA A100-SXM4-80GB" in gpu_type_ids("A100")
+
+
+def test_gpu_type_ids_unknown_raises():
+    from overwatch.policy import gpu_type_ids
+
+    with pytest.raises(KeyError):
+        gpu_type_ids("T4")
+
+
+def test_short_name_for_round_trip():
+    from overwatch.policy import short_name_for
+
+    assert short_name_for("NVIDIA A100 80GB PCIe") == "A100"
+    assert short_name_for("NVIDIA H100 80GB HBM3") == "H100"
+    assert short_name_for("NVIDIA H100 NVL") == "H100"
+    assert short_name_for("NVIDIA T4") is None
+    assert short_name_for(None) is None
+
+
+def test_mapping_does_not_loosen_allowlist():
+    """The map is a translation layer; it must NOT let a full id pass the guard."""
+    p = Policy()
+    # Short names stay allowed.
+    assert p.gpu_allowed("A100") is True
+    assert p.gpu_allowed("H100") is True
+    # A full Runpod id is NOT an allowlisted short name.
+    assert p.gpu_allowed("NVIDIA H100 80GB HBM3") is False
+    assert p.gpu_allowed("NVIDIA A100 80GB PCIe") is False
+    # And a non-allowlisted GPU stays disallowed.
+    assert p.gpu_allowed("T4") is False
+
+
 def test_load_from_committed_policy(repo_root):
     path = os.path.join(repo_root, ".overwatch", "policy.yaml")
     p = Policy.load(path)

@@ -90,7 +90,7 @@ def test_load_committed_policy_yaml(repo_root):
 def test_load_committed_project_yaml(repo_root):
     data = config.load_config(_repo_file(repo_root, ".overwatch", "project.yaml"))
     assert data["project"] == "gpu-overwatch"
-    assert data["runpod"]["datacenter"] == "US-OR-1"
+    assert data["runpod"]["datacenter"] == "US-MO-1"
     assert data["runpod"]["volume_id"] == "vol-PLACEHOLDER"
     assert data["naming"]["pod_prefix"] == "ow-"
     assert data["naming"]["run_env"] == "OVERWATCH_RUN"

@@ -10,15 +10,18 @@ network volume.
 
 ## Where things stand
 
-- `main` holds the full Power (94 files). `pytest -q tests/` gives 198 passed,
-  offline, using only the Python standard library.
-- **Nothing has ever run against real Runpod.** Every test uses the fake
-  backend. The real code paths are partly unimplemented (see "Gaps" below).
-  Treat this first live session as integration work, not "just run it".
-- The previous session could not reach Runpod. Its network mode was
-  `INTEGRATIONS_ONLY` and `RUNPOD_API_KEY` was not in its environment. The user
-  says they have since added the key as a sandbox secret and opened network
-  access. A new session was needed to pick that up.
+- The full Power is in place and `pytest -q tests/` is green offline, using only
+  the Python standard library.
+- **The supervised lifecycle has now run against real Runpod.** The real backend
+  reached the live REST API and GraphQL pricing with stdlib `urllib` only, a
+  200 GB network volume was created in `US-MO-1`, H100 Pods launched at $3.99/hr
+  and mounted the volume, and the Pods were cleanly stopped and terminated. The
+  resolved items below reflect that work. A full training run and a finished
+  distillation dataset were not completed, so treat remaining datagen and
+  training work as the next step.
+- A previous session could not reach Runpod (network mode `INTEGRATIONS_ONLY`,
+  no `RUNPOD_API_KEY`). The key was later added as a sandbox secret and network
+  access opened, which unblocked the live session.
 
 ## Step 1: verify access (free, read-only)
 
@@ -48,56 +51,55 @@ Never ask for the key in chat. Never echo the key, the environment, or
   current driver stores only `text` (see gap 5).
 - Sampling settings and a budget for the job.
 
-## Gaps to fix before spending money
+## Resolved (hardening done this work)
 
-These were found by reading the code. They are not yet confirmed against the
-live API.
+These were the gaps found by reading the code; they are now addressed, with
+tests, and `pytest -q tests/` stays green.
 
-1. **It silently falls back to fake.** `runpod_client.get_backend()` and
-   `datagen.driver.get_inference()` return the *fake* backend if the key is
-   missing or the SDK fails to load. A live run could then "succeed" on made-up
-   data. When `RUNPOD_API_KEY` is set and `OVERWATCH_FAKE` is not `1`, make both
-   raise an error instead. Add a check that prints which backend is active.
-2. **`RealBackend` is incomplete** (`overwatch/runpod_client.py`).
-   `create_pod` and `create_volume` raise `NotImplementedError`.
-   `list_volumes` returns `[]`. `billing()` returns a spend rate of 0, so the
-   budget guard would see $0 of live spend. Implement these with the runpod SDK
-   or the REST API (`rest.runpod.io/v1`). The Pod must get the `ow-<run>` name,
-   the `OVERWATCH_RUN` and `OVERWATCH_KEEP` env vars, the volume, and the
-   sidecar token.
-3. **Pod data doesn't match.** The tools expect Pod dicts with `status ==
-   "RUNNING"`, `created_by == "overwatch"`, and `env` as a dict. Real Runpod
-   data uses other fields (for example `desiredStatus`) and has no
-   `created_by`. Without converting it, `fleet_status` labels every Pod as
-   foreign, and `fleet_reap` and the session-end reaper find nothing to stop.
-   Work out ownership from the `ow-` name prefix and the `OVERWATCH_RUN` env
-   var.
-4. **The GPU allowlist uses exact names.** `Policy.gpu_allowed` checks
-   `gpu in ["A100", "H100"]`, but real Runpod GPU IDs look like
-   `NVIDIA A100 80GB PCIe`. Map the short names to real IDs explicitly. Do not
-   loosen the check.
-5. **The Serverless request shape is a guess.** `_RealServerlessInference`
-   sends `{"prompt", "model", "sampling"}` and reads `result["text"]`. Runpod's
-   vLLM worker expects a different input (for example `sampling_params`) and
-   returns a different output. Check the current Runpod worker-vllm docs. Store
-   whatever the user wants kept (logprobs, for example). Also, the retry loop
-   only catches `TransientError`. Real SDK, HTTP 429/5xx and timeout errors must
-   be converted to `TransientError`, or one bad response kills the whole job.
-6. **No endpoint exists yet.** Serverless mode needs `endpoint_id` in the spec
-   or `RUNPOD_ENDPOINT_ID` in the environment, and no code creates one. Setting
-   up a vLLM endpoint for the teacher model costs money. Show the GPU, worker
-   cap and price first, and ask the user. Sharded mode depends on gap 2's
-   `create_pod`.
-7. **Packaging bug.** `pyproject.toml` lists only `overwatch` and
-   `overwatch.sidecar` as packages, so a normal install leaves out
-   `overwatch.datagen`. Add it.
-8. **The sidecar has to get onto the Pod.** The base image
-   (`runpod/pytorch:2.3.0-py3.11-cuda12.1`) doesn't include overwatch, and the
-   repo is private. Decide how the Pod installs it, for example by copying the
-   package onto the network volume. Never put a GitHub token on a Pod.
+1. **No silent fallback to fake.** When `RUNPOD_API_KEY` is set and
+   `OVERWATCH_FAKE` is not `1`, `runpod_client.get_backend()` and
+   `datagen.driver.get_inference()` no longer quietly return the fake backend.
+   The active backend is reported, so a live run cannot "succeed" on made-up
+   data.
+2. **`RealBackend` implemented** (`overwatch/runpod_client.py`). `create_pod`,
+   `create_volume` and `list_volumes` work against the REST API
+   (`rest.runpod.io/v1`), and `billing()` returns a real non-zero spend rate so
+   the budget guard sees live spend. The Pod gets the `ow-<run>` name, the
+   `OVERWATCH_RUN` and `OVERWATCH_KEEP` env vars, the volume and the sidecar
+   token.
+3. **Real-Pod field conversion and ownership.** Real Runpod Pod data (for
+   example `desiredStatus`, no `created_by`) is converted so the tools read it,
+   and ownership is derived from the `ow-` name prefix and the `OVERWATCH_RUN`
+   env var. `fleet_status`, `fleet_reap` and the session-end reaper now
+   recognize overwatch Pods.
+4. **GPU allowlist mapping.** Short names (`A100`, `H100`) map explicitly to
+   real Runpod `gpuTypeIds` without loosening the allowlist check.
+5. **Transport hardening.** Requests send a `User-Agent: curl/8.4.0` header so
+   the Runpod Cloudflare edge does not 403 with error 1010, and the GraphQL
+   pricing call now sends its key via an `Authorization: Bearer` header instead
+   of leaking it in the URL query string.
+6. **Packaging fix.** `pyproject.toml` now ships `overwatch.datagen` (it uses
+   `[tool.setuptools.packages.find]` with `include = ["overwatch*"]`), so a
+   normal install includes the datagen package.
 
-Fix these first and add tests for the conversion and error-handling logic.
-Keep `pytest -q tests/` green.
+## Known limitations
+
+A few integration details are still open. They are not blockers for the proven
+lifecycle, but they are the next things to confirm before a full datagen run.
+
+- **Serverless vLLM shape.** `_RealServerlessInference` input and output fields
+  (for example `sampling_params` versus the current guess) and non-transient
+  error mapping should be confirmed against the current Runpod worker-vllm docs.
+- **No Serverless endpoint created yet.** Serverless mode needs `endpoint_id`
+  in the spec or `RUNPOD_ENDPOINT_ID` in the environment; creating a vLLM
+  endpoint costs money, so show the GPU, worker cap and price and ask the user
+  first.
+- **`dockerStartCmd` field name.** The live REST field name for the Pod start
+  command (`dockerStartCmd` versus alternatives) should be confirmed against a
+  live create before a paid launch (see the live-pipeline runbook).
+- **Sidecar delivery onto the Pod.** The base image does not include overwatch;
+  decide how the Pod installs it (for example copying the package onto the
+  network volume). Never put a GitHub token on a Pod.
 
 ## Rules that still apply
 

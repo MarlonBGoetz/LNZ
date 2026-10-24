@@ -4,12 +4,14 @@
 project: gpu-overwatch
 
 runpod:
-  # Runpod datacenter placeholder — override per environment.
-  datacenter: US-OR-1
-  # Network volume that holds checkpoints/artifacts (placeholder id).
+  # Runpod datacenter for the live distillation session.
+  datacenter: US-MO-1
+  # Network volume that holds checkpoints/artifacts. Placeholder until the
+  # orchestrator creates the real 200 GB US-MO-1 volume; the real id is then
+  # written to .overwatch/setup.json (gitignored) or filled in here.
   volume_id: vol-PLACEHOLDER
   # Default container image for runs.
-  image: runpod/pytorch:2.3.0-py3.11-cuda12.1
+  image: runpod/pytorch:1.4.1-cu1290-torch291-ubuntu2404
   cloud: SECURE
 
 # Every Pod is named ow-<run>; these env vars travel with each Pod.

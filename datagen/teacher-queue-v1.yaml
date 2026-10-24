@@ -1,0 +1,99 @@
+# Teacher-queue job spec: TRIBE v2 -> student stress-distillation teacher traces.
+#
+# This drives the GPU-A on-pod pipeline (pod/gpu_a_pipeline.py). It is consumed
+# by overwatch.datagen.driver.run_driver, so the usual idempotency guarantees
+# apply unchanged: record_key = hash(input, model, template, sampling); atomic
+# shards; manifest.json; failed.jsonl poison queue; QA sampling.
+#
+# The real teacher is TRIBE v2 (facebook/tribev2) with its text feature pointed
+# at the LOCAL Llama copy via CONFIG OVERRIDE ONLY (never edit TRIBE code):
+#   model = TribeModel.from_pretrained(
+#       "facebook/tribev2",
+#       config_update={"data.text_feature.model_name":
+#                      "/workspace/models/Llama-3.2-3B"})
+# Full trimodal pathway (text included).
+#
+# NO FAKE TEACHER. If the real teacher/model path fails the run errors nonzero;
+# it never silently falls back to fabricated teacher data.
+name: teacher-queue-v1
+mode: tribe-teacher
+
+# The TRIBE v2 teacher identifier. The local-Llama override is applied on the
+# Pod (config_update data.text_feature.model_name -> /workspace/models/Llama-3.2-3B);
+# recording it here keeps the override visible to anyone reading the spec.
+model: facebook/tribev2
+model_local_override:
+  "data.text_feature.model_name": /workspace/models/Llama-3.2-3B
+
+# Clip manifest on the mounted network volume. One JSON record per clip (see
+# datagen/teacher-queue-inputs.example.jsonl for the record shape). The real,
+# large manifest is staged on the volume by the orchestrator, NOT committed.
+input: /workspace/datagen/teacher-queue-inputs.jsonl
+
+# Teacher traces land here (shards + manifest.json + failed.jsonl).
+output: /workspace/datasets/teacher-queue-v1/
+
+# TRIBE consumes clips directly (no text prompt template); the driver falls back
+# to the canonical record form when template is null.
+template: null
+
+# Decoding / teacher knobs. These are part of the idempotency key, so changing
+# them produces new records rather than colliding with old ones.
+sampling:
+  temperature: 0.0
+  max_new_tokens: 512
+
+# Bounded concurrency: 1 vs 2 workers are benchmarked in Step 0; 2 is the
+# default queue setting for the H100.
+concurrency: 2
+max_workers: 2
+
+# Budget: the per-run cap is $20. At $3.99/hr for one H100 a focused ~2h run is
+# ~$7.98; keep budget_usd under the cap with headroom. (3.99 * 2 = 7.98 <= 20.)
+budget_usd: 16
+
+qa:
+  every_records: 200
+  sample_size: 20
+  rubric: datagen/qa_rubric_teacher.md
+
+# ---------------------------------------------------------------------------
+# TIERING (the order the queue is worked).
+#
+# The driver iterates the single `input` manifest above in file order; the
+# `datasets` block below documents that order and is the source of truth for how
+# the manifest must be assembled on the volume. Each entry carries its `tier` so
+# staging can concatenate the per-dataset manifests in tier order.
+#
+# Tier 1 runs first: demo-clip teacher traces (NON-CUTTABLE) + TikHarm.
+# Tier 2 follows:    XD-Violence subset (<=300 clips).
+# LIRIS-ACCEDE goes to the FRONT of tier 2 if/when it lands on the volume; do
+# NOT wait for it. The commented `liris-accede` entry below marks where it is
+# prepended once staged.
+# ---------------------------------------------------------------------------
+datasets:
+  # --- Tier 1 (demo-clip traces are NON-CUTTABLE) ---------------------------
+  # NON-CUTTABLE: demo-clip teacher traces must always run; never cut them.
+  - name: demo-clips
+    tier: 1
+    dataset: demo
+    non_cuttable: true
+    source: demo clips staged on the volume
+  - name: tikharm
+    tier: 1
+    dataset: tikharm
+    source: "Kaggle anhoangvo/tikharm-dataset"
+  # --- Tier 2 ---------------------------------------------------------------
+  # LIRIS-ACCEDE goes to the FRONT of tier 2 if/when it lands on the volume.
+  # Do NOT wait for it: leave this commented placeholder and prepend the
+  # records to the tier-2 segment of the manifest once staged.
+  # - name: liris-accede
+  #   tier: 2
+  #   dataset: liris-accede
+  #   front_of_tier: 2
+  #   source: LIRIS-ACCEDE (prepend to tier 2 when available on the volume)
+  - name: xd-violence-subset
+    tier: 2
+    dataset: xd-violence
+    max_clips: 300            # XD-Violence subset is capped at <=300 clips.
+    source: XD-Violence subset staged on the volume

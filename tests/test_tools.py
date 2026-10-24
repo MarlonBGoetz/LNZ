@@ -139,6 +139,37 @@ def test_run_launch_success(fake_env):
     assert run["status"] == "running"
 
 
+def test_default_image_is_current(fake_env):
+    assert tools.DEFAULT_IMAGE == "runpod/pytorch:1.4.1-cu1290-torch291-ubuntu2404"
+
+
+def test_run_launch_forwards_docker_start_cmd(fake_env):
+    start_cmd = "bash -lc 'bash /workspace/pipeline/run.sh'"
+    result, _ = _assert_result(
+        tools.run_launch(
+            config="c", run_id="run-dc", gpu="A100", smoke_passed=True,
+            budget=15, max_hours=2, volume_id="vol-PLACEHOLDER",
+            docker_start_cmd=start_cmd, backend=fake_env,
+        )
+    )
+    assert result["docker_start_cmd_set"] is True
+    # The created Pod carries the start command threaded through create_pod.
+    pod = fake_env.get_pod(result["pod_id"])
+    assert pod["docker_start_cmd"] == start_cmd
+
+
+def test_run_launch_without_docker_start_cmd_is_noop(fake_env):
+    result, _ = _assert_result(
+        tools.run_launch(
+            config="c", run_id="run-nodc", gpu="A100", smoke_passed=True,
+            budget=15, max_hours=2, volume_id="vol-PLACEHOLDER", backend=fake_env,
+        )
+    )
+    assert result["docker_start_cmd_set"] is False
+    pod = fake_env.get_pod(result["pod_id"])
+    assert "docker_start_cmd" not in pod
+
+
 def test_run_launch_keep_env(fake_env):
     result, _ = tools.run_launch(
         config="c", run_id="run-k", gpu="A100", smoke_passed=True,
