@@ -1,0 +1,19 @@
+{
+ "role": "A",
+ "done": 1,
+ "failed": 0,
+ "skipped_existing": 0,
+ "times": [
+  184.2
+ ],
+ "last_error": null,
+ "shape": [
+  11,
+  20484
+ ],
+ "peak_mem_gb": 10.8,
+ "sec_per_clip": 184.2,
+ "clips_per_hour": 20,
+ "time_left_s": 3252,
+ "updated": "21:11:08"
+}

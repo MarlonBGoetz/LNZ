@@ -10,7 +10,7 @@ A result belongs to both a video and its analysis request/provider. Changing pro
 
 ## Stage previews — verified 2026-10-24
 
-`chrome-extension://<id>/preview.html` (also reachable from `chrome://extensions` → LNZ → Extension options) mounts the real content script over a synthetic four-clip TikTok-style feed. The X-style stage is `preview-x.html?platform=x` and uses the same content script with the X post adapter. Verified in Chrome for Testing 149 on macOS with the production `extension/dist`:
+`http://localhost:5174/stage/tiktok.html` mounts the real content script over a synthetic four-clip TikTok-style feed. The X-style stage is `preview-x.html?platform=x` and uses the same content script with the X post adapter. Verified in Chrome for Testing 149 on macOS with the production `extension/dist`:
 
 - Overlay mounts with the real launcher and filter rail; the panel reports **PROTECTED**.
 - Clip 1 (`100000000000039`) resolves to Calm 5% / Learn 87% / Shield no flags → **KEEP** with correct title/author from the stage DOM; the collapsed rail shows three green rings and a green launcher dot.

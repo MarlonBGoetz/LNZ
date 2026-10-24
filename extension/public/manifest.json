@@ -21,10 +21,6 @@
     "service_worker": "background.js",
     "type": "module"
   },
-  "options_ui": {
-    "page": "preview.html",
-    "open_in_tab": true
-  },
   "content_scripts": [
     {
       "matches": [
@@ -54,7 +50,9 @@
       "matches": [
         "https://www.tiktok.com/*",
         "https://x.com/*",
-        "https://twitter.com/*"
+        "https://twitter.com/*",
+        "http://localhost:5174/stage/*",
+        "http://127.0.0.1:5174/stage/*"
       ],
       "js": [
         "content.js"

@@ -1,0 +1,17 @@
+# Example datagen job spec: label a dataset via aggressive Serverless inference.
+name: labels-v1
+mode: serverless
+model: meta-llama/Llama-3.1-8B-Instruct
+input: data/prompts.jsonl
+output: /workspace/datasets/labels-v1/
+template: prompts/label.jinja
+sampling:
+  temperature: 0.7
+  max_tokens: 512
+concurrency: 64
+max_workers: 8
+budget_usd: 25
+qa:
+  every_records: 2000
+  sample_size: 20
+  rubric: prompts/qa_rubric.md

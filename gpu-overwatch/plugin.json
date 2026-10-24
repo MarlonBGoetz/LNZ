@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gpu-overwatch",
+  "version": "0.1.0",
+  "description": "Launch, watch, auto-heal and shut down Runpod GPU training and dataset-generation runs, with spend caps and safety guardrails.",
+  "author": "gpu-overwatch",
+  "keywords": [
+    "runpod",
+    "gpu",
+    "training",
+    "mlops",
+    "supervision",
+    "fine-tuning",
+    "datagen",
+    "cost-control"
+  ],
+  "mcp": "mcp.json"
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overwatch"
+version = "0.1.0"
+description = "gpu-overwatch: Kiro Power to launch, watch, fix and shut down Runpod GPU work"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "gpu-overwatch" }]
+# Core install is intentionally dependency-free: the testable surface runs on
+# the Python standard library only (no network, no GPU, no package installs).
+dependencies = []
+
+[project.optional-dependencies]
+# Real integrations. These are NOT required to import the package or run tests;
+# every use site is import-guarded so the stdlib-only surface never fails.
+mcp = ["fastmcp", "httpx", "runpod", "pyyaml", "jinja2"]
+dev = ["pytest"]
+
+[project.scripts]
+overwatch = "overwatch.cli:main"
+
+[tool.setuptools.packages.find]
+# Distribute every real `overwatch` subpackage (overwatch, overwatch.sidecar,
+# overwatch.datagen) via automatic discovery so new subpackages ship too.
+# `tests` is intentionally not matched and stays unpackaged.
+include = ["overwatch*"]
