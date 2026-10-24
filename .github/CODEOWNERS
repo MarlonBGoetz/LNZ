@@ -1,0 +1,5 @@
+# Marlon reviews every path, including this file and the ruleset definitions.
+# Review routing alone does not restrict writes.
+# Private-repository CODEOWNERS and rulesets require a supported GitHub plan.
+# See docs/OWNER_APPROVAL.md for activation and verification.
+* @MarlonBGoetz
