@@ -43,8 +43,15 @@ function containerOf(v: HTMLVideoElement): Element {
 }
 
 function text(root: ParentNode, sel: string): string | undefined {
+  if (typeof root.querySelector !== 'function') return undefined;
   const t = root.querySelector(sel)?.textContent?.trim();
   return t ? t.slice(0, 160) : undefined;
+}
+
+/** Site chrome, not a video caption. */
+function genericPageTitle(title: string): boolean {
+  const s = title.replace(/\s*\|\s*TikTok$/, '').trim();
+  return !s || /^(TikTok|Log in|Sign up|Watch|For You)\b/i.test(s);
 }
 
 export function describeVideo(v: HTMLVideoElement): VideoRef {
@@ -63,9 +70,19 @@ export function describeVideo(v: HTMLVideoElement): VideoRef {
     const href = c.querySelector<HTMLAnchorElement>('a[href*="/video/"]')?.href;
     videoId = href?.match(/\/video\/(\d+)/)?.[1];
   }
+  // The caption can live outside the <article> (login wall, browse pages, modal
+  // layouts). Check the video's container first, then the document, and never
+  // fall back to TikTok's generic page title ("TikTok - Make Your Day").
   const title =
-    text(c, '[data-e2e="video-desc"]') ?? text(c, '[data-e2e="browse-video-desc"]') ?? document.title.replace(/\s*\|\s*TikTok$/, '');
-  const author = text(c, '[data-e2e="video-author-uniqueid"]') ?? text(c, '[data-e2e="browse-username"]');
+    text(c, '[data-e2e="video-desc"]') ??
+    text(c, '[data-e2e="browse-video-desc"]') ??
+    text(document, '[data-e2e="browse-video-desc"]') ??
+    text(document, '[data-e2e="video-desc"]') ??
+    (genericPageTitle(document.title) ? undefined : document.title.replace(/\s*\|\s*TikTok$/, '').trim());
+  const author =
+    text(c, '[data-e2e="video-author-uniqueid"]') ??
+    text(c, '[data-e2e="browse-username"]') ??
+    text(document, '[data-e2e="browse-username"]');
   if (!videoId) videoId = `h${hashString(`${author ?? ''}|${title ?? ''}|${v.poster || v.currentSrc}`).toString(36)}`;
   return {
     videoId,

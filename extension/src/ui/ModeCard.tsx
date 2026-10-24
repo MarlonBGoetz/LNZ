@@ -128,9 +128,11 @@ function valueText(id: FilterId, r?: ClassifierResult) {
   if (!o) return <span className="dim">Unknown</span>;
   if (o.kind === 'categories') {
     return o.flagged.length === 0 ? (
-      <span>No flagged categories</span>
+      <span title="No flagged categories">No flags</span>
     ) : (
-      <span className="err">Flagged · {o.flagged.map(categoryLabel).join(', ')}</span>
+      <span className="err" title={`Flagged · ${o.flagged.map(categoryLabel).join(', ')}`}>
+        Flagged · {o.flagged.join(', ')}
+      </span>
     );
   }
   const lvl = scoreLevel(o.score);
