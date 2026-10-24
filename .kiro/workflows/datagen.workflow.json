@@ -1,0 +1,49 @@
+{
+  "name": "datagen",
+  "description": "Start, watch, QA and tear down a Runpod dataset-collection job.",
+  "inputs": {
+    "job_id": {
+      "type": "string",
+      "description": "The id of the datagen job to supervise (dg-<name>-<n>)."
+    }
+  },
+  "steps": [
+    {
+      "id": "collect",
+      "repeat": {
+        "maxIterations": 50,
+        "onMaxIterations": "pause",
+        "stopWhen": "progress.terminal"
+      },
+      "steps": [
+        {
+          "id": "progress",
+          "watch": {
+            "handler": {
+              "command": "python -m overwatch.watch",
+              "config": {
+                "runId": "{{job_id}}",
+                "pollIntervalSec": 60,
+                "commandTimeoutSec": 30,
+                "idleTimeoutSec": 43200
+              }
+            }
+          }
+        },
+        {
+          "id": "qa",
+          "agent": "gpu-medic",
+          "prompt": "A new datagen sample is available for job {{job_id}}. Call datagen_sample, grade the records against prompts/qa_rubric.md, and if the bad-output rate crosses the threshold call datagen_stop to pause the job and ask a human. Otherwise record the QA result and continue. Never raise a budget or delete a volume."
+        }
+      ]
+    },
+    {
+      "id": "teardown",
+      "agent": "gpu-medic",
+      "prompt": "Datagen job {{job_id}} has reached a terminal state. Call datagen_stop to tear down the job (serverless workers to zero or sharded Pods terminated), confirm the reaper caught any leftovers, then write a short summary of records produced, shards written, failures and spend.",
+      "artifacts": {
+        "report": ".overwatch/reports/{{job_id}}.md"
+      }
+    }
+  ]
+}

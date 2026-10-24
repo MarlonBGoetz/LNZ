@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>LNZ X Stage — Post Filter Preview</title>
+    <link rel="stylesheet" href="preview-x.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="top">
+      <div class="brand">
+        <svg viewBox="0 0 100 100" width="24" height="24" aria-hidden="true">
+          <path
+            d="M50 6C30.5 6 22.5 20.5 22.5 36.5V44.5C22.5 48.6 20.4 50.8 20.4 55.2C20.4 61.2 23.4 65.6 25.9 69.1C27.6 71.5 28.8 74.6 30 77.6C25.4 79.2 18.8 81.4 18.8 85C18.8 90.4 32.8 95 50 95C67.2 95 81.2 90.4 81.2 85C81.2 81.4 74.6 79.2 70 77.6C71.2 74.6 72.4 71.5 74.1 69.1C76.6 65.6 79.6 61.2 79.6 55.2C79.6 50.8 77.5 48.6 77.5 44.5V36.5C77.5 20.5 69.5 6 50 6ZM27.3 43.6C27.3 40.6 29.2 38.9 31.9 39.6C36.3 40.9 41.4 43.6 44.6 45.1C46.4 46 47.6 47.2 48.9 48C47.3 48.4 45.8 49.6 43.9 50.9C40.9 52.6 37.6 53.6 34.6 53.4C30.1 53.1 27.3 49 27.3 43.6ZM72.7 43.6C72.7 40.6 70.8 38.9 68.1 39.6C63.7 40.9 58.6 43.6 55.4 45.1C53.6 46 52.4 47.2 51.1 48C52.7 48.4 54.2 49.6 56.1 50.9C59.1 52.6 62.4 53.6 65.4 53.4C69.9 53.1 72.7 49 72.7 43.6ZM30.6 80.4C32.6 84.8 37.4 88.4 42.6 90.8C36.6 90 31.2 87.4 29.3 84.3C28.6 83 29.3 81.4 30.6 80.4ZM69.4 80.4C67.4 84.8 62.6 88.4 57.4 90.8C63.4 90 68.8 87.4 70.7 84.3C71.4 83 70.7 81.4 69.4 80.4Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <b>LNZ</b>
+        <span class="sep"></span>
+        <span class="title">X stage</span>
+      </div>
+      <div class="platform-switch" role="group" aria-label="Demo platform">
+        <a class="platform-link" href="/stage/tiktok.html" title="TikTok stage" aria-label="TikTok stage">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" />
+          </svg>
+        </a>
+        <a class="platform-link on" href="/stage/x.html?platform=x" aria-current="page" title="X stage" aria-label="X stage">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" />
+          </svg>
+        </a>
+        <span class="platform-sep" aria-hidden="true"></span>
+        <a class="platform-link live" href="https://www.tiktok.com/foryou" target="_blank" rel="noreferrer" title="Live on tiktok.com" aria-label="Live TikTok on tiktok.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" />
+          </svg>
+          <i class="live-dot" aria-hidden="true"></i>
+        </a>
+        <a class="platform-link live" href="https://x.com/home" target="_blank" rel="noreferrer" title="Live on x.com" aria-label="Live X on x.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" />
+          </svg>
+          <i class="live-dot" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="pills">
+        <span class="pill on"><i></i>REAL OVERLAY</span>
+        <span class="pill">SYNTHETIC POSTS</span>
+        <span class="pill demo">DEMO DATA</span>
+      </div>
+      <div class="right">
+        <a class="ghost" href="/" target="_blank" rel="noreferrer">Open dashboard ↗</a>
+      </div>
+    </header>
+
+    <main class="xstage">
+      <section class="notes">
+        <span class="eyebrow">X STAGE · SYNTHETIC POSTS</span>
+        <h1>Same filters.<br /><em>Different feed.</em></h1>
+        <p class="lede">
+          Calm, Learn and Shield run against posts with video, using the same decision engine and the same
+          heat rail. This page uses the real X DOM adapter (`?platform=x`) and a controlled post timeline, so no X
+          account or network feed is needed.
+        </p>
+        <p class="lede heat-note">
+          Green <b class="good">clear</b>, amber <b class="warn">warning</b>, red <b class="bad">would skip</b>.
+        </p>
+
+        <ol class="try">
+          <li><b>01</b><span>Scroll the timeline. The overlay anchors to the active post's video.</span></li>
+          <li><b>02</b><span>Post 2 is rejected; auto-skip scrolls to the next post with a video.</span></li>
+          <li><b>03</b><span>Post 3 is a mixed read: amber Calm, green Learn and Shield.</span></li>
+          <li><b>04</b><span>Open the mask to see the post text, author, scores and PIN controls.</span></li>
+        </ol>
+
+        <div class="controls">
+          <button id="next-post" class="btn primary" type="button">Next post <span aria-hidden="true">↓</span></button>
+          <a class="btn ghost" href="/stage/tiktok.html">TikTok stage</a>
+        </div>
+
+        <p class="fine">
+          Posts, clips and scores are synthetic. The real `x.com` path uses the same content script and X DOM adapter;
+          the day summary in the dashboard groups TikTok and X separately.
+        </p>
+      </section>
+
+      <section class="timeline-wrap" aria-label="Synthetic X timeline">
+        <div class="timeline-head">
+          <b>Home</b>
+          <div class="tabs"><span class="on">For you</span><span>Following</span></div>
+          <span class="x-mark" aria-hidden="true">X</span>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <article class="post" id="post-100000000000039">
+            <div class="post-head">
+              <div class="avatar" style="--a: #0b4d57">NA</div>
+              <div class="who" data-testid="User-Name">
+                <b>Night Atlas</b>
+                <span>@nightatlas · <a class="time" href="https://x.com/nightatlas/status/100000000000039">2h</a></span>
+              </div>
+              <span class="more" aria-hidden="true">···</span>
+            </div>
+            <p class="post-text" data-testid="tweetText">
+              A quiet field guide to the night sky. A thread on what to look for when the city lights finally go out.
+            </p>
+            <div class="x-video"><video src="clips/clip-1.mp4" muted loop playsinline preload="auto"></video></div>
+            <div class="x-actions" aria-hidden="true">
+              <span><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-10.8 6.7L4 20l1.8-5.2A7.5 7.5 0 1 1 20 11.5Z"/></svg>318</span>
+              <span><svg viewBox="0 0 24 24"><path d="M7 7h9.5a3.5 3.5 0 0 1 0 7H8m0 0 3-3m-3 3 3 3"/></svg>2.1K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.7a4.2 4.2 0 0 1 7 3c0 4.9-7 9.3-7 9.3Z"/></svg>12.4K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg>84K</span>
+            </div>
+          </article>
+
+          <article class="post" id="post-100000000000004">
+            <div class="post-head">
+              <div class="avatar" style="--a: #3a2a55">DR</div>
+              <div class="who" data-testid="User-Name">
+                <b>Daily Reset</b>
+                <span>@dailyreset · <a class="time" href="https://x.com/dailyreset/status/100000000000004">4h</a></span>
+              </div>
+              <span class="more" aria-hidden="true">···</span>
+            </div>
+            <p class="post-text" data-testid="tweetText">
+              30 days of cold showers: the honest results. I tracked mood, sleep and focus every single morning.
+            </p>
+            <div class="x-video"><video src="clips/clip-2.mp4" muted loop playsinline preload="auto"></video></div>
+            <div class="x-actions" aria-hidden="true">
+              <span><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-10.8 6.7L4 20l1.8-5.2A7.5 7.5 0 1 1 20 11.5Z"/></svg>1.4K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M7 7h9.5a3.5 3.5 0 0 1 0 7H8m0 0 3-3m-3 3 3 3"/></svg>9.8K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.7a4.2 4.2 0 0 1 7 3c0 4.9-7 9.3-7 9.3Z"/></svg>84.2K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg>1.1M</span>
+            </div>
+          </article>
+
+          <article class="post" id="post-100000000000024">
+            <div class="post-head">
+              <div class="avatar" style="--a: #5a3514">BL</div>
+              <div class="who" data-testid="User-Name">
+                <b>Bean Lab</b>
+                <span>@beanlab · <a class="time" href="https://x.com/beanlab/status/100000000000024">6h</a></span>
+              </div>
+              <span class="more" aria-hidden="true">···</span>
+            </div>
+            <p class="post-text" data-testid="tweetText">
+              The physics of a perfect espresso. Pressure, puck resistance and why the last five seconds matter.
+            </p>
+            <div class="x-video"><video src="clips/clip-3.mp4" muted loop playsinline preload="auto"></video></div>
+            <div class="x-actions" aria-hidden="true">
+              <span><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-10.8 6.7L4 20l1.8-5.2A7.5 7.5 0 1 1 20 11.5Z"/></svg>642</span>
+              <span><svg viewBox="0 0 24 24"><path d="M7 7h9.5a3.5 3.5 0 0 1 0 7H8m0 0 3-3m-3 3 3 3"/></svg>5.6K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.7a4.2 4.2 0 0 1 7 3c0 4.9-7 9.3-7 9.3Z"/></svg>31.7K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg>420K</span>
+            </div>
+          </article>
+
+          <article class="post" id="post-100000000000043">
+            <div class="post-head">
+              <div class="avatar" style="--a: #5a1a1d">UD</div>
+              <div class="who" data-testid="User-Name">
+                <b>Urban Docs</b>
+                <span>@urbandocs · <a class="time" href="https://x.com/urbandocs/status/100000000000043">8h</a></span>
+              </div>
+              <span class="more" aria-hidden="true">···</span>
+            </div>
+            <p class="post-text" data-testid="tweetText">
+              Street fight compilation: what really happened. We tracked the footage back to three separate nights.
+            </p>
+            <div class="x-video"><video src="clips/clip-4.mp4" muted loop playsinline preload="auto"></video></div>
+            <div class="x-actions" aria-hidden="true">
+              <span><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-10.8 6.7L4 20l1.8-5.2A7.5 7.5 0 1 1 20 11.5Z"/></svg>8.9K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M7 7h9.5a3.5 3.5 0 0 1 0 7H8m0 0 3-3m-3 3 3 3"/></svg>14.2K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.7a4.2 4.2 0 0 1 7 3c0 4.9-7 9.3-7 9.3Z"/></svg>207K</span>
+              <span><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg>2.8M</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>LNZ · X post filtering review</span>
+      <span class="dot"></span>
+      <span>Same Calm / Learn / Shield rules. Synthetic posts and demo scores; not X content.</span>
+    </footer>
+
+    <script src="preview-x.js"></script>
+    <!-- The LNZ extension injects its overlay on /stage/* (see manifest content_scripts). -->
+  </body>
+</html>

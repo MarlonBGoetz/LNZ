@@ -1,0 +1,41 @@
+{
+ "roi_names": [
+  "L_anterior_insula",
+  "R_anterior_insula",
+  "dACC",
+  "mPFC",
+  "early_auditory",
+  "early_visual"
+ ],
+ "feature_names": [
+  "mean_L_anterior_insula",
+  "mean_R_anterior_insula",
+  "mean_dACC",
+  "mean_mPFC",
+  "mean_early_auditory",
+  "mean_early_visual",
+  "max_L_anterior_insula",
+  "max_R_anterior_insula",
+  "max_dACC",
+  "max_mPFC",
+  "max_early_auditory",
+  "max_early_visual"
+ ],
+ "weights": [
+  -10.29914856523353,
+  -10.46848057385931,
+  -2.429008610318301,
+  63.917666963329815,
+  5.135997024701322,
+  6.250625957154709,
+  -5.611962654221719,
+  -6.795139849121115,
+  10.42802413406698,
+  3.272598547419674,
+  -0.344851242720286,
+  -10.507243038310806
+ ],
+ "bias": 1.2521470495014466,
+ "feature_definition": "x = concat(mean over time of each ROI, max over time of each ROI) using the student's predicted roi (teacher units); stress = sigmoid(w.x + b). For a live curve at second t use mean/max over windows 0..t.",
+ "trained_on": "TikHarm Harmful(1) vs Safe(0), train+val splits, n=173"
+}

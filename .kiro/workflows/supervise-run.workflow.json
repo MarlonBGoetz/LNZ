@@ -1,0 +1,49 @@
+{
+  "name": "supervise-run",
+  "description": "Launch, watch, auto-heal and report a Runpod training run.",
+  "inputs": {
+    "run_id": {
+      "type": "string",
+      "description": "The id of the run to supervise (ow-<run>)."
+    }
+  },
+  "steps": [
+    {
+      "id": "supervise",
+      "repeat": {
+        "maxIterations": 25,
+        "onMaxIterations": "pause",
+        "stopWhen": "health.terminal"
+      },
+      "steps": [
+        {
+          "id": "health",
+          "watch": {
+            "handler": {
+              "command": "python -m overwatch.watch",
+              "config": {
+                "runId": "{{run_id}}",
+                "pollIntervalSec": 60,
+                "commandTimeoutSec": 30,
+                "idleTimeoutSec": 43200
+              }
+            }
+          }
+        },
+        {
+          "id": "triage",
+          "agent": "gpu-medic",
+          "prompt": "A supervision poll reported new activity for run {{run_id}}. Read the watch result, the run status and the triage-run skill, then take the smallest safe action that keeps the run healthy. Never raise a budget, delete a volume or terminate a kept Pod. Ask before any destructive action when you are unsure."
+        }
+      ]
+    },
+    {
+      "id": "postmortem",
+      "agent": "gpu-medic",
+      "prompt": "Run {{run_id}} has reached a terminal state. Write a concise post-mortem: what happened, which detectors fired, what actions were taken, and the final spend. Use the overwatch tools to gather status and metrics.",
+      "artifacts": {
+        "report": ".overwatch/reports/{{run_id}}.md"
+      }
+    }
+  ]
+}

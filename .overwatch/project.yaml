@@ -1,0 +1,27 @@
+# gpu-overwatch project defaults (committed). Local overrides live in
+# .overwatch/setup.json (gitignored). Placeholders are safe to commit.
+
+project: gpu-overwatch
+
+runpod:
+  # Runpod datacenter for the live distillation session.
+  datacenter: US-MO-1
+  # Network volume that holds checkpoints/artifacts. Placeholder until the
+  # orchestrator creates the real 200 GB US-MO-1 volume; the real id is then
+  # written to .overwatch/setup.json (gitignored) or filled in here.
+  volume_id: vol-PLACEHOLDER
+  # Default container image for runs.
+  image: runpod/pytorch:1.4.1-cu1290-torch291-ubuntu2404
+  cloud: SECURE
+
+# Every Pod is named ow-<run>; these env vars travel with each Pod.
+naming:
+  pod_prefix: ow-
+  run_env: OVERWATCH_RUN
+  keep_env: OVERWATCH_KEEP
+
+defaults:
+  gpu: A100
+  gpu_count: 1
+  checkpoint_dir: /workspace/checkpoints
+  reports_dir: .overwatch/reports

@@ -1,0 +1,12 @@
+{
+  "name": "reap-on-stop",
+  "description": "On session stop, offer to reap idle Pods. Shows which Pods would be stopped and asks before acting; kept Pods are always skipped.",
+  "trigger": "Stop",
+  "action": {
+    "type": "command",
+    "command": "python -m overwatch.cli reap --idle-minutes 10 --confirm-json",
+    "confirm": true,
+    "confirmCommand": "python -m overwatch.cli reap --idle-minutes 10 --confirm-json",
+    "options": ["stop", "keep"]
+  }
+}
