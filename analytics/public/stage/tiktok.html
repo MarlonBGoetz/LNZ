@@ -24,15 +24,28 @@
         <span class="title">Stage preview</span>
       </div>
       <div class="platform-switch" role="group" aria-label="Demo platform">
-        <a class="platform-link on" href="preview.html" aria-current="page" title="TikTok stage" aria-label="TikTok stage">
+        <a class="platform-link on" href="/stage/tiktok.html" aria-current="page" title="TikTok stage" aria-label="TikTok stage">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" />
           </svg>
         </a>
-        <a class="platform-link" href="preview-x.html?platform=x" title="X stage" aria-label="X stage">
+        <a class="platform-link" href="/stage/x.html?platform=x" title="X stage" aria-label="X stage">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" />
           </svg>
+        </a>
+        <span class="platform-sep" aria-hidden="true"></span>
+        <a class="platform-link live" href="https://www.tiktok.com/foryou" target="_blank" rel="noreferrer" title="Live on tiktok.com" aria-label="Live TikTok on tiktok.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M15 3v10.5a3.5 3.5 0 1 1-2.2-3.3V6.1A5.8 5.8 0 0 0 18 8V5.6A3.4 3.4 0 0 1 15 3Z" />
+          </svg>
+          <i class="live-dot" aria-hidden="true"></i>
+        </a>
+        <a class="platform-link live" href="https://x.com/home" target="_blank" rel="noreferrer" title="Live on x.com" aria-label="Live X on x.com">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 4l5.7 7.4L4.8 20h2.5l4.6-6 4.5 6h2.9l-6.2-8.1L19.7 4h-2.5l-4 5.4L9 4H5Z" />
+          </svg>
+          <i class="live-dot" aria-hidden="true"></i>
         </a>
       </div>
       <div class="pills">
@@ -41,7 +54,7 @@
         <span class="pill demo">DEMO DATA</span>
       </div>
       <div class="right">
-        <a class="ghost" href="http://localhost:5174" target="_blank" rel="noreferrer">Open dashboard ↗</a>
+        <a class="ghost" href="/" target="_blank" rel="noreferrer">Open dashboard ↗</a>
       </div>
     </header>
 
@@ -84,7 +97,7 @@
           <div class="phone-screen">
             <div class="feed" id="feed">
               <article class="clip" id="video-100000000000039">
-                <video src="stage/clip-1.mp4" muted loop playsinline autoplay preload="auto"></video>
+                <video src="clips/clip-1.mp4" muted loop playsinline autoplay preload="auto"></video>
                 <div class="shade" aria-hidden="true"></div>
                 <div class="clip-ui">
                   <span class="stage-mark">STAGE · 01</span>
@@ -117,7 +130,7 @@
               </article>
 
               <article class="clip" id="video-100000000000004">
-                <video src="stage/clip-2.mp4" muted loop playsinline preload="auto"></video>
+                <video src="clips/clip-2.mp4" muted loop playsinline preload="auto"></video>
                 <div class="shade" aria-hidden="true"></div>
                 <div class="clip-ui">
                   <span class="stage-mark">STAGE · 02</span>
@@ -150,7 +163,7 @@
               </article>
 
               <article class="clip" id="video-100000000000024">
-                <video src="stage/clip-3.mp4" muted loop playsinline preload="auto"></video>
+                <video src="clips/clip-3.mp4" muted loop playsinline preload="auto"></video>
                 <div class="shade" aria-hidden="true"></div>
                 <div class="clip-ui">
                   <span class="stage-mark">STAGE · 03</span>
@@ -183,7 +196,7 @@
               </article>
 
               <article class="clip" id="video-100000000000043">
-                <video src="stage/clip-4.mp4" muted loop playsinline preload="auto"></video>
+                <video src="clips/clip-4.mp4" muted loop playsinline preload="auto"></video>
                 <div class="shade" aria-hidden="true"></div>
                 <div class="clip-ui">
                   <span class="stage-mark">STAGE · 04</span>
@@ -231,6 +244,6 @@
     </footer>
 
     <script src="preview.js"></script>
-    <script src="content.js"></script>
+    <!-- The LNZ extension injects its overlay on /stage/* (see manifest content_scripts). -->
   </body>
 </html>

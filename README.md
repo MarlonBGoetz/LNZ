@@ -178,9 +178,9 @@ To install the Power in Kiro, add `gpu-overwatch/` as a Power, with `RUNPOD_API_
 
 ### Stage previews (no platform account needed)
 
-`chrome://extensions` → LNZ → **Extension options**, or open `chrome-extension://<extension-id>/preview.html`. This is a synthetic four-clip TikTok-style stage that mounts the **real content script**, PIN lock, decision engine and demo classifiers. Every value is labelled **DEMO DATA**, and the clips were generated for review, not taken from TikTok.
+Run `npm run dev:analytics`, then open `http://localhost:5174/stage/tiktok.html`. This is a synthetic four-clip TikTok-style stage. The extension injects the **real overlay** into it, with the PIN lock, decision engine and demo classifiers. Every value is labelled **DEMO DATA**, and the clips were generated for review, not taken from TikTok.
 
-The X-style stage is at `chrome-extension://<extension-id>/preview-x.html?platform=x`. Use the **TikTok / X switch** in the stage header to move between them. `./scripts/demo-stage.sh` builds the extension and opens the stage in Chrome for Testing / Chromium. Set `CHROME_FOR_TESTING` if the browser is elsewhere, and `LNZ_STAGE=x` for the X stage.
+The X-style stage is at `http://localhost:5174/stage/x.html?platform=x`. The header switch has four icons: the TikTok stage, the X stage, live tiktok.com and live x.com. The dashboard header has the same switch. `./scripts/demo-stage.sh` builds the extension and opens the stage in Chrome for Testing / Chromium. Set `CHROME_FOR_TESTING` if the browser is elsewhere, and `LNZ_STAGE=x` for the X stage.
 
 ### Split-screen demo
 
