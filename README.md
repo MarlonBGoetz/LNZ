@@ -5,6 +5,9 @@ if the GPUs were local. The full specification lives in
 [`docs/overwatch-plan.md`](docs/overwatch-plan.md) and the project is built from
 it (the "purely Kiro" rule).
 
+> **Next agent:** read [`docs/HANDOFF.md`](docs/HANDOFF.md) before doing any
+> live Runpod work. The real backend has known gaps.
+
 ## Status
 
 Phase 0 foundation. The testable surface runs on the Python standard library
