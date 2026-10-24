@@ -206,6 +206,84 @@ def test_spec_runs_end_to_end_offline_with_fake_inference(repo_root, tmp_path, m
     assert leftovers == []
 
 
+def test_spec_budget_forwarded_to_run_driver_offline(repo_root, tmp_path, monkeypatch):
+    """The committed spec's budget_usd is usable by run_driver for spend tracking.
+
+    Mirrors how the GPU-A on-pod driver forwards spec['budget_usd'] +
+    price_per_record into run_driver so on-pod spend is tracked against the
+    budget. Fully offline via FakeInference.
+    """
+    monkeypatch.setenv("OVERWATCH_FAKE", "1")
+    spec = config.load_config(os.path.join(repo_root, "datagen", "teacher-queue-v1.yaml"))
+    assert "budget_usd" in spec and float(spec["budget_usd"]) > 0
+
+    manifest_path = os.path.join(str(tmp_path), "inputs.jsonl")
+    with open(manifest_path, "w", encoding="utf-8") as handle:
+        for i in range(4):
+            handle.write(json.dumps({"id": f"clip-{i}", "tier": 1, "path": f"/workspace/clips/{i}.mp4"}) + "\n")
+    out_dir = os.path.join(str(tmp_path), "out")
+    spec["input"] = manifest_path
+    spec["output"] = out_dir
+    spec["template"] = None
+
+    report = driver.run_driver(
+        spec,
+        base_dir=str(tmp_path),
+        inference=driver.FakeInference(),
+        output_dir=out_dir,
+        budget_usd=float(spec["budget_usd"]),
+        price_per_record=0.001,
+        shard_size=10,
+    )
+    assert report["records"] == 4
+    # Spend is tracked and stays under the (generous) committed budget.
+    assert report["spend_usd"] == pytest.approx(4 * 0.001)
+    assert report["over_budget"] is False
+
+
+# ----------------------------------------------------------------------
+# GPU-A on-pod driver: source-level guards (NOT imported -- it pulls torch /
+# transformers / TRIBE which are absent in the sandbox). We read it as text and
+# assert the review fixes hold: it runs the COMMITTED spec and flips the HF
+# offline toggles only AFTER the first Step 0 pass.
+# ----------------------------------------------------------------------
+def _gpu_a_source(repo_root):
+    path = os.path.join(repo_root, "pod", "gpu_a_pipeline.py")
+    with open(path, "r", encoding="utf-8") as handle:
+        return handle.read()
+
+
+def test_gpu_a_driver_runs_committed_spec_not_inline(repo_root):
+    src = _gpu_a_source(repo_root)
+    # Loads the committed spec from the volume via the stdlib config loader.
+    assert "/workspace/datagen/teacher-queue-v1.yaml" in src
+    assert "from overwatch.config import load_config" in src
+    # The divergent inline spec builder is gone (no /workspace/inputs/*.jsonl).
+    assert "_teacher_specs" not in src
+    assert "/workspace/inputs/" not in src
+
+
+def test_gpu_a_driver_flips_offline_after_step0(repo_root):
+    src = _gpu_a_source(repo_root)
+    # Ordering guard: the Step 0 smoke/benchmark call must appear BEFORE the
+    # offline toggle in main(), so lazily-loaded encoders cache first.
+    step0_idx = src.find("step0_smoke_and_benchmark(model, args.reports_dir)")
+    offline_idx = src.find("enable_offline_mode()", src.find("def main("))
+    assert step0_idx != -1 and offline_idx != -1
+    assert step0_idx < offline_idx
+
+
+def test_gpu_b_driver_reads_staged_manifest_not_inputs(repo_root):
+    path = os.path.join(repo_root, "pod", "gpu_b_pipeline.py")
+    with open(path, "r", encoding="utf-8") as handle:
+        src = handle.read()
+    # GPU-B reads the staged tier-ordered manifest, fail-closed, and no longer
+    # the unstaged /workspace/inputs/clips.jsonl.
+    assert "/workspace/datagen/teacher-queue-inputs.jsonl" in src
+    assert "/workspace/inputs/clips.jsonl" not in src
+    assert "FileNotFoundError" in src
+
+
 def test_spec_resume_is_idempotent_offline(repo_root, tmp_path, monkeypatch):
     monkeypatch.setenv("OVERWATCH_FAKE", "1")
     spec = config.load_config(os.path.join(repo_root, "datagen", "teacher-queue-v1.yaml"))

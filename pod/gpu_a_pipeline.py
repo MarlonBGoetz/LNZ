@@ -13,11 +13,17 @@ raises and the process exits nonzero):
            "facebook/tribev2",
            config_update={"data.text_feature.model_name":
                           "/workspace/models/Llama-3.2-3B"})
-     Full trimodal pathway (text included). After TRIBE + the other encoders
-     are cached under HF_HOME, flip HF_HUB_OFFLINE / TRANSFORMERS_OFFLINE.
-  6. Step 0 smoke test + throughput benchmark -> /workspace/reports/.
+     Full trimodal pathway (text included).
+  6. Step 0 smoke test + throughput benchmark -> /workspace/reports/. This
+     first full trimodal pass is what exercises (and therefore caches under
+     HF_HOME) any vision/audio/text encoder that TRIBE loads lazily on the
+     first forward. ONLY AFTER this pass completes do we flip
+     HF_HUB_OFFLINE / TRANSFORMERS_OFFLINE -- see the ordering note in main().
   7. Full teacher queue via the datagen driver -> /workspace/datasets/,
-     including the NON-CUTTABLE ONNX export and demo-clip teacher traces.
+     running the COMMITTED+TESTED datagen/teacher-queue-v1.yaml spec staged on
+     the volume at /workspace/datagen/teacher-queue-v1.yaml (NOT an inline
+     divergent spec), including the NON-CUTTABLE ONNX export and demo-clip
+     teacher traces.
 """
 
 from __future__ import annotations
@@ -127,40 +133,45 @@ def step0_smoke_and_benchmark(model, reports_dir: str) -> dict:
 # ---------------------------------------------------------------------------
 # Step 7: full teacher queue (datagen driver), then non-cuttable extras.
 # ---------------------------------------------------------------------------
-def _teacher_specs(datasets_dir: str) -> list:
-    """Teacher-queue job specs (shape mirrors datagen/labels-v1.yaml).
+# The committed+tested teacher-queue spec, staged on the volume by the
+# orchestrator (see docs/live-pipeline-runbook.md). The Pod MUST run THIS spec
+# -- the same single, tier-ordered manifest the offline tests validate (demo +
+# TikHarm tier 1, XD-Violence <=300 tier 2, QA rubric, budget) -- rather than a
+# divergent inline spec, so the executed queue is the reviewed one.
+DEFAULT_SPEC_PATH = "/workspace/datagen/teacher-queue-v1.yaml"
 
-    Tier 1: XD-Violence subset (<=300 clips) + TikHarm + demo clips.
-    LIRIS-ACCEDE goes to the FRONT of tier 2 if/when it lands on the volume; we
-    do not wait for it. FEAT-004 stages the concrete spec file(s); this is the
-    on-pod default wiring.
+
+def load_teacher_spec(spec_path: str) -> dict:
+    """Load the committed teacher-queue job spec from the volume.
+
+    Uses overwatch.config.load_config (the same stdlib loader the offline tests
+    use), so the Pod runs exactly the spec under test. Raises if it is missing
+    -- fail closed, never silently substitute a divergent inline spec.
     """
-    base = {
-        "mode": "tribe-teacher",
-        "model": "facebook/tribev2",
-        "template": None,
-        "sampling": {},
-        "concurrency": 2,
-        "qa": {"every_records": 200, "sample_size": 20, "rubric": None},
-    }
-    tier1 = [
-        {**base, "name": "xd-violence-subset", "input": "/workspace/inputs/xd_violence.jsonl",
-         "output": os.path.join(datasets_dir, "xd-violence-subset")},
-        {**base, "name": "tikharm", "input": "/workspace/inputs/tikharm.jsonl",
-         "output": os.path.join(datasets_dir, "tikharm")},
-        # NON-CUTTABLE: demo-clip teacher traces must always run.
-        {**base, "name": "demo-clips", "input": "/workspace/inputs/demo_clips.jsonl",
-         "output": os.path.join(datasets_dir, "demo-clips")},
-    ]
-    return tier1
+    if not os.path.isfile(spec_path):
+        raise FileNotFoundError(
+            f"teacher-queue spec not found at {spec_path}; the orchestrator "
+            "stages datagen/teacher-queue-v1.yaml onto the volume before launch"
+        )
+    from overwatch.config import load_config  # type: ignore
+
+    spec = load_config(spec_path)
+    if not isinstance(spec, dict):
+        raise RuntimeError(f"teacher-queue spec {spec_path} did not parse to a mapping")
+    return spec
 
 
-def run_teacher_queue(model, datasets_dir: str) -> list:
+def run_teacher_queue(model, spec_path: str = DEFAULT_SPEC_PATH) -> dict:
     """Run the full teacher queue via the datagen driver conventions.
 
-    Reuses overwatch.datagen.driver.run_driver (idempotent/resumable: record
-    keys, atomic shards, manifest, failed.jsonl, QA sampling). The inference
-    backend is the REAL TRIBE teacher -- NO fake fallback. Any failure raises.
+    Loads the COMMITTED teacher-queue spec from the volume and runs it through
+    overwatch.datagen.driver.run_driver (idempotent/resumable: record keys,
+    atomic shards, manifest, failed.jsonl, QA sampling). The inference backend
+    is the REAL TRIBE teacher -- NO fake fallback. Any failure raises.
+
+    The spec's budget_usd is forwarded to run_driver (with a conservative
+    per-record price) so on-pod spend is tracked against the budget in addition
+    to the launch-time guard; set OW_PRICE_PER_RECORD to tune the estimate.
     """
     # The overwatch package is available because bootstrap stages it / adds it
     # to PYTHONPATH on the Pod. Import lazily so this driver file stays usable
@@ -183,14 +194,32 @@ def run_teacher_queue(model, datasets_dir: str) -> list:
                 raise RuntimeError(f"TRIBE teacher produced no trace for {key}")
             return {"text": json.dumps(trace, sort_keys=True)}
 
+    spec = load_teacher_spec(spec_path)
     teacher = _TribeTeacher(model)
-    summaries = []
-    for spec in _teacher_specs(datasets_dir):
-        _log(f"teacher queue: running spec '{spec['name']}'")
-        summary = run_driver(spec, inference=teacher, output_dir=spec["output"])
-        summaries.append(summary)
-        _log(f"teacher queue: '{spec['name']}' -> {summary['records']} records")
-    return summaries
+
+    # On-pod spend awareness: forward the spec's budget to the driver. The
+    # launch-time guard remains the hard enforcement point (price_per_hour *
+    # max_hours <= per-run cap); this gives an in-driver spend estimate too.
+    budget_usd = spec.get("budget_usd")
+    price_per_record = float(os.environ.get("OW_PRICE_PER_RECORD", "0") or 0.0)
+
+    _log(
+        "teacher queue: running committed spec '%s' from %s "
+        "(input=%s output=%s budget_usd=%s)"
+        % (spec.get("name"), spec_path, spec.get("input"), spec.get("output"), budget_usd)
+    )
+    summary = run_driver(
+        spec,
+        inference=teacher,
+        output_dir=spec.get("output"),
+        budget_usd=float(budget_usd) if budget_usd is not None else None,
+        price_per_record=price_per_record,
+    )
+    _log(
+        "teacher queue: '%s' -> %s records (spend_usd=%s over_budget=%s)"
+        % (spec.get("name"), summary["records"], summary["spend_usd"], summary["over_budget"])
+    )
+    return summary
 
 
 def export_onnx(model, reports_dir: str) -> str:
@@ -209,6 +238,8 @@ def main(argv=None) -> int:
     parser.add_argument("--model-dir", default="/workspace/models/Llama-3.2-3B")
     parser.add_argument("--reports-dir", default="/workspace/reports")
     parser.add_argument("--datasets-dir", default="/workspace/datasets")
+    parser.add_argument("--spec", default=DEFAULT_SPEC_PATH,
+                        help="committed teacher-queue spec staged on the volume")
     parser.add_argument("--hf-cache", default="/workspace/hf_cache")
     args = parser.parse_args(argv)
 
@@ -216,14 +247,24 @@ def main(argv=None) -> int:
 
     # Step 5: load TRIBE (reaches the Hub to cache encoders under HF_HOME).
     model = load_tribe(args.model_dir)
-    # Encoders are now cached on the volume -> safe to go offline.
-    enable_offline_mode()
 
     # Step 6: Step 0 smoke + throughput benchmark.
+    #
+    # OFFLINE ORDERING (per the user instruction + review issue #2): do NOT set
+    # HF_HUB_OFFLINE / TRANSFORMERS_OFFLINE yet. A full trimodal model commonly
+    # materialises its vision/audio/text encoders lazily on the FIRST forward
+    # pass, which happens here inside the smoke/benchmark. We keep the Hub
+    # reachable for this first pass so every lazily-loaded encoder is fetched
+    # and cached under HF_HOME=/workspace/hf_cache.
     step0_smoke_and_benchmark(model, args.reports_dir)
 
-    # Step 7: full teacher queue + NON-CUTTABLE extras.
-    run_teacher_queue(model, args.datasets_dir)
+    # Encoders have now been exercised by the full trimodal Step 0 pass and are
+    # cached on the volume -> ONLY NOW is it safe to flip the offline toggles,
+    # before the full teacher queue runs offline from the volume cache.
+    enable_offline_mode()
+
+    # Step 7: full teacher queue (runs the COMMITTED spec) + NON-CUTTABLE extras.
+    run_teacher_queue(model, args.spec)
     export_onnx(model, args.reports_dir)
 
     _log("GPU-A driver complete")

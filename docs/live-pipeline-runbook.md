@@ -104,6 +104,16 @@ Do **not** wait for LIRIS-ACCEDE; prepend its records to the tier-2 segment only
 if/when they land on the volume (see the commented placeholder in the example
 manifest and in `datagen/teacher-queue-v1.yaml`).
 
+#### GPU-B consumes the same manifest
+
+GPU-B does **not** have its own separate input file. Its student-encoder feature
+extraction (`pod/gpu_b_pipeline.py`) reads the **same** tier-ordered clip
+manifest that the GPU-A teacher queue runs against —
+`/workspace/datagen/teacher-queue-inputs.jsonl` — so the orchestrator stages
+that one manifest (step above) and both Pods consume it. GPU-B is **fail-closed**:
+if the manifest is missing it raises `FileNotFoundError` and the run aborts
+(it never fabricates features). There is no `/workspace/inputs/` staging step.
+
 Verify the upload (lists keys only, no secret values):
 
 ```bash

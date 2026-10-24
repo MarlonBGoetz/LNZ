@@ -71,14 +71,18 @@ mark "(4/7) LICENSE present: ${LICENSE_FOUND}"
 # ---------------------------------------------------------------------------
 # (5..7) Heavy driver: TRIBE config-override wiring, Step 0 smoke + throughput
 # benchmark, then the full teacher queue (incl. non-cuttable ONNX export +
-# demo-clip traces). The OFFLINE toggles are flipped INSIDE the driver, only
-# AFTER TRIBE + encoders have been cached under HF_HOME.
+# demo-clip traces). The driver runs the COMMITTED teacher-queue spec staged at
+# ${SPEC_PATH}. The OFFLINE toggles are flipped INSIDE the driver only AFTER the
+# first Step 0 smoke/benchmark pass has exercised the full trimodal pathway, so
+# any lazily-loaded encoder is cached under HF_HOME first.
 # ---------------------------------------------------------------------------
-mark "(5-7/7) TRIBE wiring + Step 0 smoke/throughput + full teacher queue"
+SPEC_PATH="${WORKSPACE}/datagen/teacher-queue-v1.yaml"
+mark "(5-7/7) TRIBE wiring + Step 0 smoke/throughput + full teacher queue (spec=${SPEC_PATH})"
 python3 "${POD_DIR}/gpu_a_pipeline.py" \
   --model-dir "${MODEL_DIR}" \
   --reports-dir "${REPORTS_DIR}" \
   --datasets-dir "${DATASETS_DIR}" \
+  --spec "${SPEC_PATH}" \
   --hf-cache "${HF_CACHE_DIR}"
 
 mark "DONE GPU-A pipeline"

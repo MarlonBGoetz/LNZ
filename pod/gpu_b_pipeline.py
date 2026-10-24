@@ -47,16 +47,19 @@ def smoke_test(encoder, reports_dir: str) -> dict:
     return result
 
 
-def extract_features(encoder, inputs_dir: str, features_dir: str) -> int:
+def extract_features(encoder, manifest_path: str, features_dir: str) -> int:
     """Extract student features for every input clip -> /workspace/features/.
 
-    Reads clip references from inputs_dir, writes one feature file per clip.
-    Any extraction failure raises (never writes fabricated features).
+    Reads clip references from the tier-ordered clip manifest that the
+    orchestrator stages on the volume (the SAME manifest the GPU-A teacher queue
+    consumes: /workspace/datagen/teacher-queue-inputs.jsonl, see
+    docs/live-pipeline-runbook.md). Writes one feature file per clip. Any
+    extraction failure raises (never writes fabricated features). Fail-closed:
+    a missing manifest aborts the run.
     """
-    _log(f"feature extraction: {inputs_dir} -> {features_dir}")
+    _log(f"feature extraction: {manifest_path} -> {features_dir}")
     os.makedirs(features_dir, exist_ok=True)
 
-    manifest_path = os.path.join(inputs_dir, "clips.jsonl")
     if not os.path.isfile(manifest_path):
         raise FileNotFoundError(f"missing input manifest {manifest_path}")
 
@@ -81,7 +84,11 @@ def extract_features(encoder, inputs_dir: str, features_dir: str) -> int:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="GPU-B student encoder driver")
-    parser.add_argument("--inputs-dir", default="/workspace/inputs")
+    # GPU-B consumes the same tier-ordered clip manifest the GPU-A teacher queue
+    # runs against, staged by the orchestrator at
+    # /workspace/datagen/teacher-queue-inputs.jsonl (runbook). Fail-closed if
+    # absent.
+    parser.add_argument("--manifest", default="/workspace/datagen/teacher-queue-inputs.jsonl")
     parser.add_argument("--features-dir", default="/workspace/features")
     parser.add_argument("--reports-dir", default="/workspace/reports")
     parser.add_argument("--hf-cache", default="/workspace/hf_cache")
@@ -89,7 +96,7 @@ def main(argv=None) -> int:
 
     encoder = load_student_encoder(args.hf_cache)
     smoke_test(encoder, args.reports_dir)
-    extract_features(encoder, args.inputs_dir, args.features_dir)
+    extract_features(encoder, args.manifest, args.features_dir)
 
     _log("GPU-B driver complete")
     return 0
