@@ -1,0 +1,10 @@
+{
+  "name": "start-supervision",
+  "description": "After a successful run_launch, start the supervise-run workflow for the new run id so the run is watched and auto-healed.",
+  "trigger": "PostToolUse",
+  "matcher": "overwatch/run_launch",
+  "action": {
+    "type": "agent",
+    "prompt": "A new training run was just launched via run_launch. Read the tool result to find the new run id, then start the supervise-run workflow with that run id so the run is watched, auto-healed and reported. Do not take any other action."
+  }
+}

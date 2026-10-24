@@ -1,0 +1,36 @@
+# gpu-overwatch policy: spend caps and detector thresholds.
+# Caps can only ever be LOWERED by tools (budget_set), never raised.
+# See .kiro/steering/gpu-policy.md for the rationale behind each number.
+
+# Spend caps (USD)
+session_cap_usd: 50.0
+per_run_cap_usd: 20.0
+
+# Wall-clock guard
+max_hours: 8.0
+
+# Allowed GPU types (requests outside this list are rejected by the guard)
+gpu_allowlist: [A100, H100]
+
+# Detector thresholds (mirror the Supervision-loop table in the plan)
+thresholds:
+  # NaN loss: restart at half the learning rate, at most 2 retries
+  nan_restart_lr_factor: 0.5
+  nan_max_retries: 2
+  # Divergence: loss EMA rising for this many steps
+  divergence_ema_rising_steps: 200
+  # OOM: halve the micro-batch and restart
+  oom_microbatch_factor: 0.5
+  # Stall: no optimizer step for N seconds, or utilisation below a floor for N seconds
+  stall_no_step_seconds: 600
+  stall_util_floor_pct: 5
+  stall_util_seconds: 600
+  # Preemption: declare preempted after this many missed polls
+  preempt_missed_polls: 3
+  # Eval regression: eval metric worse for this many evaluations in a row
+  eval_regression_evals: 3
+  # Budget: warn at this fraction of a cap, hard-stop at 1.0
+  budget_warn_fraction: 0.8
+  budget_stop_fraction: 1.0
+  # Checkpoint cadence (seconds) — every 15 minutes
+  checkpoint_interval_seconds: 900
